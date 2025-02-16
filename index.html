@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Systemet</title>
+  <!-- DataTables CSS -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    table.dataTable thead th,
+    table.dataTable thead td {
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <h1>Systemet</h1>
+  <table id="productsTable" class="display" style="width:100%">
+    <thead>
+      <tr>
+        <th>Artikelnummer</th>
+        <th>Namn</th>
+        <th>Namn 2</th>
+        <th>Bryggeri</th>
+        <th>APK</th>
+        <th>Pris</th>
+        <th>Volym</th>
+        <th>Alkohol %</th>
+        <th>Kategori 1</th>
+        <th>Kategori 2</th>
+        <th>Kategori 3</th>
+        <th>Land</th>
+        <th>Lansering</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody">
+      <!-- Data will be injected here -->
+    </tbody>
+  </table>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- DataTables JS -->
+  <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+  <!-- sql.js (SQLite compiled to WebAssembly) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/sql-wasm.js"></script>
+
+  <script>
+    // Initialize sql.js with the locateFile callback
+    initSqlJs({
+      locateFile: file => `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/${file}`
+    }).then(SQL => {
+      // Fetch the SQLite database file as an ArrayBuffer
+      fetch('products.db')
+        .then(response => response.arrayBuffer())
+        .then(buffer => {
+          // Create a new database instance with the loaded data
+          const db = new SQL.Database(new Uint8Array(buffer));
+
+          // Explicitly select the 13 columns to match the table header
+          const query = `
+            SELECT 
+              productNumber, 
+              productNameBold, 
+              productNameThin, 
+              supplierName, 
+              apk, 
+              price, 
+              volume, 
+              alcoholPercentage, 
+              categoryLevel1, 
+              categoryLevel2, 
+              categoryLevel3, 
+              country, 
+              productLaunchDate 
+            FROM products;
+          `;
+
+          const result = db.exec(query);
+
+          if (result.length === 0) {
+            console.error("No data returned from query.");
+            return;
+          }
+
+          // The result contains an array of result sets; we use the first one.
+          const res = result[0];
+          const values = res.values;
+          const tbody = document.getElementById("tableBody");
+
+          // Populate the table body with rows
+          values.forEach(row => {
+            const tr = document.createElement("tr");
+            row.forEach((cell, index) => {
+              const td = document.createElement("td");
+              // For the first column (Artikelnummer), wrap the cell content in a link.
+              if (index === 0) {
+                const a = document.createElement("a");
+                a.href = "https://systembolaget.se/" + cell;
+                a.target = "_blank";
+                a.textContent = cell;
+                td.appendChild(a);
+              } else {
+                td.textContent = cell;
+              }
+              tr.appendChild(td);
+            });
+            tbody.appendChild(tr);
+          });
+
+          // Initialize DataTables with 25 entries per page and sort by the APK column (index 4) in descending order.
+          $('#productsTable').DataTable({
+            pageLength: 25,
+            order: [[4, "desc"]]
+          });
+        })
+        .catch(err => {
+          console.error("Error fetching or processing the database:", err);
+        });
+    });
+  </script>
+</body>
+</html>
