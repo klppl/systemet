@@ -11,7 +11,6 @@ base_url = "https://www.systembolaget.se"
 api_url = "https://api-extern.systembolaget.se/sb-api-ecommerce/v1/productsearch/search"
 api_key = "cfc702aed3094c86b92d6d4ff7a54c84"
 
-
 def initialize_database(db_name="products.db"):
     """
     Creates (if not exists) the SQLite database and the products table.
