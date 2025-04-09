@@ -1,0 +1,51 @@
+name: Update and Deploy
+
+on:
+  workflow_dispatch:  # Allows manual triggering
+    inputs:
+      message:
+        description: 'Update message'
+        required: true
+        default: 'Manual update'
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Update database and generate website
+        run: |
+          python main.py
+          python deploy.py
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Create commit with changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add products.db index.html
+          git commit -m "${{ github.event.inputs.message }}"
+          git push 
