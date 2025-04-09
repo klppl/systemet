@@ -39,10 +39,8 @@ def initialize_database(db_name="products.db"):
             isTemporaryOutOfStock BOOLEAN,
             isCompletelyOutOfStock BOOLEAN,
 
-            -- Pricing
+            -- Current price
             price REAL,
-            originalPrice REAL,
-            newPrice REAL,
             lastUpdated TEXT,
 
             -- Alcohol & Volume
@@ -51,6 +49,19 @@ def initialize_database(db_name="products.db"):
 
             -- APK (ml ethanol per krona)
             apk REAL
+        )
+        """
+    )
+    
+    # Create price history table
+    cursor.execute(
+        """
+        CREATE TABLE IF NOT EXISTS price_history (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            productId TEXT,
+            price REAL,
+            timestamp TEXT,
+            FOREIGN KEY (productId) REFERENCES products(productId)
         )
         """
     )
@@ -100,15 +111,20 @@ def format_launch_date(product):
     return raw_date
 
 
+def format_timestamp():
+    """
+    Returns current timestamp in a query-friendly format: YYYY-MM-DD HH:MM:SS
+    """
+    return datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
+
+
 def insert_new_product(cursor, prod):
     """
     Inserts a new product into the database.
     """
     p_id = prod.get("productId")
     current_price = prod.get("price") or 0.0
-    originalPrice = current_price
-    newPrice = None
-    lastUpdated = datetime.now(timezone.utc).isoformat()
+    lastUpdated = format_timestamp()
     launch_date_str = format_launch_date(prod)
     volume_ml = prod.get("volume") or 0.0
     abv_pct = prod.get("alcoholPercentage") or 0.0
@@ -116,6 +132,15 @@ def insert_new_product(cursor, prod):
     if current_price > 0:
         ml_ethanol = volume_ml * (abv_pct / 100.0)
         apk_value = round(ml_ethanol / current_price, 2)
+
+    # Record initial price in history
+    cursor.execute(
+        """
+        INSERT INTO price_history (productId, price, timestamp)
+        VALUES (?, ?, ?)
+        """,
+        (p_id, current_price, lastUpdated)
+    )
 
     cursor.execute(
         """
@@ -135,14 +160,12 @@ def insert_new_product(cursor, prod):
             isTemporaryOutOfStock,
             isCompletelyOutOfStock,
             price,
-            originalPrice,
-            newPrice,
             lastUpdated,
             volume,
             alcoholPercentage,
             apk
         )
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """,
         (
             p_id,
@@ -160,8 +183,6 @@ def insert_new_product(cursor, prod):
             prod.get("isTemporaryOutOfStock"),
             prod.get("isCompletelyOutOfStock"),
             current_price,
-            originalPrice,
-            newPrice,
             lastUpdated,
             volume_ml,
             abv_pct,
@@ -184,7 +205,7 @@ def update_existing_product(cursor, db_row, prod):
     if abs(new_price_api - current_price_db) < 1e-9:
         return
 
-    lastUpdated = datetime.now(timezone.utc).isoformat()
+    lastUpdated = format_timestamp()
     volume_ml = prod.get("volume") or 0.0
     abv_pct = prod.get("alcoholPercentage") or 0.0
     apk_value = None
@@ -192,12 +213,21 @@ def update_existing_product(cursor, db_row, prod):
         ml_ethanol = volume_ml * (abv_pct / 100.0)
         apk_value = round(ml_ethanol / new_price_api, 2)
     launch_date_str = format_launch_date(prod)
+    
+    # Record the price change in history
+    cursor.execute(
+        """
+        INSERT INTO price_history (productId, price, timestamp)
+        VALUES (?, ?, ?)
+        """,
+        (p_id, new_price_api, lastUpdated)
+    )
+    
     cursor.execute(
         """
         UPDATE products
         SET
             price = ?,
-            newPrice = ?,
             lastUpdated = ?,
             isTemporaryOutOfStock = ?,
             isCompletelyOutOfStock = ?,
@@ -208,7 +238,6 @@ def update_existing_product(cursor, db_row, prod):
         WHERE productId = ?
         """,
         (
-            new_price_api,
             new_price_api,
             lastUpdated,
             prod.get("isTemporaryOutOfStock"),
