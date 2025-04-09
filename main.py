@@ -14,9 +14,12 @@ api_key = "cfc702aed3094c86b92d6d4ff7a54c84"
 def initialize_database(db_name="products.db"):
     """
     Creates (if not exists) the SQLite database and the products table.
+    Also adds new columns if they don't exist.
     """
     conn = sqlite3.connect(db_name)
     cursor = conn.cursor()
+
+    # Create products table if it doesn't exist
     cursor.execute(
         """
         CREATE TABLE IF NOT EXISTS products (
@@ -42,6 +45,7 @@ def initialize_database(db_name="products.db"):
             -- Current price
             price REAL,
             lastUpdated TEXT,
+            price_change_percentage REAL,
 
             -- Alcohol & Volume
             volume REAL,
@@ -52,6 +56,13 @@ def initialize_database(db_name="products.db"):
         )
         """
     )
+
+    # Add price_change_percentage column if it doesn't exist
+    try:
+        cursor.execute("ALTER TABLE products ADD COLUMN price_change_percentage REAL DEFAULT 0.0")
+    except sqlite3.OperationalError:
+        # Column already exists, ignore the error
+        pass
     
     # Create price history table
     cursor.execute(
@@ -133,6 +144,9 @@ def insert_new_product(cursor, prod):
         ml_ethanol = volume_ml * (abv_pct / 100.0)
         apk_value = round(ml_ethanol / current_price, 2)
 
+    # For new products, price change is 0%
+    price_change_percentage = 0.0
+
     # Record initial price in history
     cursor.execute(
         """
@@ -161,11 +175,12 @@ def insert_new_product(cursor, prod):
             isCompletelyOutOfStock,
             price,
             lastUpdated,
+            price_change_percentage,
             volume,
             alcoholPercentage,
             apk
         )
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """,
         (
             p_id,
@@ -184,6 +199,7 @@ def insert_new_product(cursor, prod):
             prod.get("isCompletelyOutOfStock"),
             current_price,
             lastUpdated,
+            price_change_percentage,
             volume_ml,
             abv_pct,
             apk_value
@@ -214,6 +230,17 @@ def update_existing_product(cursor, db_row, prod):
         apk_value = round(ml_ethanol / new_price_api, 2)
     launch_date_str = format_launch_date(prod)
     
+    # Get the highest price from price history
+    cursor.execute("""
+        SELECT MAX(price) 
+        FROM price_history 
+        WHERE productId = ?
+    """, (p_id,))
+    highest_price = cursor.fetchone()[0] or new_price_api
+    
+    # Calculate price change percentage
+    price_change_percentage = round(((new_price_api - highest_price) / highest_price) * 100, 1)
+    
     # Record the price change in history
     cursor.execute(
         """
@@ -229,6 +256,7 @@ def update_existing_product(cursor, db_row, prod):
         SET
             price = ?,
             lastUpdated = ?,
+            price_change_percentage = ?,
             isTemporaryOutOfStock = ?,
             isCompletelyOutOfStock = ?,
             apk = ?,
@@ -240,6 +268,7 @@ def update_existing_product(cursor, db_row, prod):
         (
             new_price_api,
             lastUpdated,
+            price_change_percentage,
             prod.get("isTemporaryOutOfStock"),
             prod.get("isCompletelyOutOfStock"),
             apk_value,
@@ -250,7 +279,7 @@ def update_existing_product(cursor, db_row, prod):
         )
     )
     # Log the update with details.
-    changes_log.append(f"Updated product {p_id} (price: {current_price_db} -> {new_price_api})")
+    changes_log.append(f"Updated product {p_id} (price: {current_price_db} -> {new_price_api}, change: {price_change_percentage}%)")
 
 
 def insert_or_update_product(conn, prod):

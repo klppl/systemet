@@ -18,6 +18,7 @@ def generate_html():
             supplierName, 
             apk, 
             price, 
+            price_change_percentage,
             volume, 
             alcoholPercentage, 
             categoryLevel1, 
@@ -52,6 +53,12 @@ def generate_html():
             color: #666;
             margin-bottom: 20px;
         }}
+        .price-up {{
+            color: red;
+        }}
+        .price-down {{
+            color: green;
+        }}
     </style>
 </head>
 <body>
@@ -66,6 +73,7 @@ def generate_html():
                 <th>Bryggeri</th>
                 <th>APK</th>
                 <th>Pris</th>
+                <th>Prisändring</th>
                 <th>Volym</th>
                 <th>Alkohol %</th>
                 <th>Kategori 1</th>
@@ -80,6 +88,10 @@ def generate_html():
 
     # Add product rows
     for product in products:
+        price_change = product[6]  # price_change_percentage
+        price_change_class = "price-up" if price_change > 0 else "price-down" if price_change < 0 else ""
+        price_change_text = f"{price_change:+.1f}%" if price_change != 0 else "0%"
+        
         html_content += f"""            <tr>
                 <td><a href="https://systembolaget.se/{product[0]}" target="_blank">{product[0]}</a></td>
                 <td>{product[1]}</td>
@@ -87,13 +99,14 @@ def generate_html():
                 <td>{product[3]}</td>
                 <td>{product[4]}</td>
                 <td>{product[5]}</td>
-                <td>{product[6]}</td>
+                <td class="{price_change_class}">{price_change_text}</td>
                 <td>{product[7]}</td>
                 <td>{product[8]}</td>
                 <td>{product[9]}</td>
                 <td>{product[10]}</td>
                 <td>{product[11]}</td>
                 <td>{product[12]}</td>
+                <td>{product[13]}</td>
             </tr>
 """
 
