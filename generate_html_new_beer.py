@@ -1,5 +1,7 @@
+import html
 import json
 from datetime import datetime, timedelta
+from typing import Dict, Any
 
 # Constants
 APK_HIGH_THRESHOLD = 0.8
@@ -8,7 +10,7 @@ DATE_RANGE_DAYS = 14
 
 # File paths
 BEERS_JSON_PATH = "data/beers.json"
-UPCOMING_LAUNCHES_HTML_PATH = "data/upcoming_launches.html"
+UPCOMING_LAUNCHES_HTML_PATH = "docs/index.html"
 
 # Date format
 LAUNCH_DATE_FORMAT = "%Y-%m-%dT%H:%M:%S"
@@ -17,112 +19,30 @@ LAUNCH_DATE_FORMAT = "%Y-%m-%dT%H:%M:%S"
 SYSTEMBOLAGET_BASE_URL = "https://www.systembolaget.se"
 SYSTEMBOLAGET_IMAGE_BASE_URL = "https://product-cdn.systembolaget.se/productimages"
 
+# Swedish weekday names
+SWEDISH_WEEKDAYS = {
+    'Monday': 'Måndag',
+    'Tuesday': 'Tisdag',
+    'Wednesday': 'Onsdag',
+    'Thursday': 'Torsdag',
+    'Friday': 'Fredag',
+    'Saturday': 'Lördag',
+    'Sunday': 'Söndag'
+}
 
-def calculate_apk(beer):
+
+def calculate_apk(beer: Dict[str, Any]) -> float:
     """Calculate Alcohol Per Krona (ml pure alcohol per krona)"""
-    if beer['price'] <= 0:
+    if not beer.get('price') or beer['price'] <= 0:
+        return 0
+    if not beer.get('alcoholPercentage') or not beer.get('volume'):
         return 0
     return (beer['alcoholPercentage'] * beer['volume'] / 100) / beer['price']
 
 
-def filter_upcoming_launches():
-    """
-    Filter beers with productLaunchDate from today to two weeks forward.
-    Save the results to a tidy file with essential information.
-    """
-    # Define date range
-    today = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
-    two_weeks_forward = today + timedelta(days=DATE_RANGE_DAYS)
-    
-    print(f"Filtering beers launching between {today.date()} and {two_weeks_forward.date()}")
-    
-    # Read beers.json
-    try:
-        with open(BEERS_JSON_PATH, "r", encoding="utf-8") as f:
-            beers = json.load(f)
-        print(f"Loaded {len(beers)} beers from {BEERS_JSON_PATH}")
-    except FileNotFoundError:
-        print(f"Error: {BEERS_JSON_PATH} not found!")
-        return
-    except Exception as e:
-        print(f"Error reading {BEERS_JSON_PATH}: {e}")
-        return
-    
-    # Filter beers by launch date
-    upcoming_beers = []
-    for i, beer in enumerate(beers):
-        if "productLaunchDate" in beer and beer["productLaunchDate"]:
-            try:
-                # Parse launch date (format: "2025-09-01T00:00:00")
-                launch_date = datetime.strptime(beer["productLaunchDate"], LAUNCH_DATE_FORMAT)
-                
-                # Check if launch date is within our range
-                if today <= launch_date <= two_weeks_forward:
-                    # Extract essential fields
-                    filtered_beer = {
-                        "productId": beer.get("productId"),
-                        "productNumber": beer.get("productNumber"),
-                        "productNameBold": beer.get("productNameBold"),
-                        "productNameThin": beer.get("productNameThin"),
-                        "productLaunchDate": beer.get("productLaunchDate"),
-                        "price": beer.get("price"),
-                        "volume": beer.get("volume"),
-                        "volumeText": beer.get("volumeText"),
-                        "alcoholPercentage": beer.get("alcoholPercentage"),
-                        "country": beer.get("country"),
-                        "producerName": beer.get("producerName"),
-                        "categoryLevel1": beer.get("categoryLevel1"),
-                        "categoryLevel2": beer.get("categoryLevel2"),
-                        "categoryLevel3": beer.get("categoryLevel3"),
-                        "assortmentText": beer.get("assortmentText"),
-                        "isWebLaunch": beer.get("isWebLaunch", False),
-                        "taste": beer.get("taste"),
-                        "usage": beer.get("usage"),
-                    }
-                    
-                    upcoming_beers.append(filtered_beer)
-                    
-            except ValueError:
-                # Skip if date format is invalid
-                continue
-    
-    # Sort by launch date
-    upcoming_beers.sort(key=lambda x: x["productLaunchDate"])
-    
-    # Calculate and store APK for each beer once
-    for beer in upcoming_beers:
-        beer['apk'] = calculate_apk(beer)
-    
-    print(f"Found {len(upcoming_beers)} beers launching in the next two weeks")
-    
-    # Generate HTML
-    if upcoming_beers:
-        # Group beers by date
-        beers_by_date = {}
-        for beer in upcoming_beers:
-            launch_date = datetime.strptime(beer["productLaunchDate"], LAUNCH_DATE_FORMAT).date()
-            if launch_date not in beers_by_date:
-                beers_by_date[launch_date] = []
-            beers_by_date[launch_date].append(beer)
-        
-        # Sort beers within each date by APK (highest first)
-        for launch_date in beers_by_date:
-            beers_by_date[launch_date].sort(
-                key=lambda beer: beer['apk'],
-                reverse=True
-            )
-        
-        # Create an HTML file
-        html_file = UPCOMING_LAUNCHES_HTML_PATH
-        with open(html_file, "w", encoding="utf-8") as f:
-            f.write("""<!DOCTYPE html>
-<html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kommande ölsläpp - Systembolaget</title>
-    <style>
-        * {
+def get_css_styles() -> str:
+    """Return the CSS styles for the HTML page"""
+    return """        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -383,32 +303,190 @@ def filter_upcoming_launches():
             .beer-list {
                 grid-template-columns: 1fr;
             }
-        }
+        }"""
+
+
+def generate_beer_card(beer: Dict[str, Any]) -> str:
+    """Generate HTML for a single beer card"""
+    # Use pre-calculated APK value
+    apk = beer['apk']
+    
+    # Determine APK class for coloring
+    apk_class = ""
+    if apk >= APK_HIGH_THRESHOLD:
+        apk_class = "high"
+    elif apk >= APK_MEDIUM_THRESHOLD:
+        apk_class = "medium"
+    
+    # Format beer info
+    name_bold = beer.get('productNameBold', '')
+    name_thin = beer.get('productNameThin', '')
+    name = html.escape(f"{name_bold} {name_thin}".strip() or "Namnlös öl")
+    product_number = html.escape(str(beer.get('productNumber', 'N/A')))
+    product_id = beer.get('productId', '')
+    price = beer.get('price', 0)  # Numeric value, no escaping needed
+    
+    # Build URLs with safe fallbacks
+    if product_number != 'N/A':
+        systembolaget_url = f"{SYSTEMBOLAGET_BASE_URL}/{beer.get('productNumber')}"
+    else:
+        systembolaget_url = SYSTEMBOLAGET_BASE_URL
+        
+    if product_id:
+        image_url = f"{SYSTEMBOLAGET_IMAGE_BASE_URL}/{product_id}/{product_id}_400.webp"
+    else:
+        image_url = ""  # Will trigger the placeholder in the HTML
+    
+    return f"""                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="{image_url}" alt="{name}" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\\'beer-image-placeholder\\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="{systembolaget_url}" target="_blank" rel="noopener">{name}</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#{product_number}</span>
+                            <span class="price">{price:.2f} kr</span>
+                        </div>
+                        <div class="apk {apk_class}">APK: {apk:.2f}</div>
+                    </div>
+                </div>
+"""
+
+
+def generate_html_header(today: datetime, two_weeks_forward: datetime) -> str:
+    """Generate the HTML document header with CSS"""
+    return f"""<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kommande ölsläpp - Systembolaget</title>
+    <style>
+{get_css_styles()}
     </style>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>✨🍺 KOMMANDE ÖLSLÄPP 🍺✨</h1>
-            <p>⭐ """ + f"{today.date()} till {two_weeks_forward.date()}" + """ ⭐</p>
+            <p>⭐ {today.date()} till {two_weeks_forward.date()} ⭐</p>
         </header>
-""")
+"""
+
+
+def generate_html_footer() -> str:
+    """Generate the HTML document footer"""
+    return f"""
+        <footer>
+            <p>Genererad {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} | APK = Alkohol per krona (ml ren alkohol/kr)</p>
+        </footer>
+    </div>
+</body>
+</html>
+"""
+
+
+def filter_upcoming_launches() -> None:
+    """
+    Filter beers with productLaunchDate from today to two weeks forward.
+    Save the results to a tidy file with essential information.
+    """
+    # Define date range
+    today = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+    two_weeks_forward = today + timedelta(days=DATE_RANGE_DAYS)
+    
+    print(f"Filtering beers launching between {today.date()} and {two_weeks_forward.date()}")
+    
+    # Read beers.json
+    try:
+        with open(BEERS_JSON_PATH, "r", encoding="utf-8") as f:
+            beers = json.load(f)
+        print(f"Loaded {len(beers)} beers from {BEERS_JSON_PATH}")
+    except FileNotFoundError:
+        print(f"Error: {BEERS_JSON_PATH} not found!")
+        return
+    except Exception as e:
+        print(f"Error reading {BEERS_JSON_PATH}: {e}")
+        return
+    
+    # Filter beers by launch date
+    upcoming_beers = []
+    for i, beer in enumerate(beers):
+        if "productLaunchDate" in beer and beer["productLaunchDate"]:
+            try:
+                # Parse launch date (format: "2025-09-01T00:00:00")
+                launch_date = datetime.strptime(beer["productLaunchDate"], LAUNCH_DATE_FORMAT)
+                
+                # Check if launch date is within our range
+                if today <= launch_date <= two_weeks_forward:
+                    # Extract essential fields
+                    filtered_beer = {
+                        "productId": beer.get("productId"),
+                        "productNumber": beer.get("productNumber"),
+                        "productNameBold": beer.get("productNameBold"),
+                        "productNameThin": beer.get("productNameThin"),
+                        "productLaunchDate": beer.get("productLaunchDate"),
+                        "price": beer.get("price"),
+                        "volume": beer.get("volume"),
+                        "volumeText": beer.get("volumeText"),
+                        "alcoholPercentage": beer.get("alcoholPercentage"),
+                        "country": beer.get("country"),
+                        "producerName": beer.get("producerName"),
+                        "categoryLevel1": beer.get("categoryLevel1"),
+                        "categoryLevel2": beer.get("categoryLevel2"),
+                        "categoryLevel3": beer.get("categoryLevel3"),
+                        "assortmentText": beer.get("assortmentText"),
+                        "isWebLaunch": beer.get("isWebLaunch", False),
+                        "taste": beer.get("taste"),
+                        "usage": beer.get("usage"),
+                    }
+                    
+                    upcoming_beers.append(filtered_beer)
+                    
+            except ValueError:
+                # Skip if date format is invalid
+                continue
+    
+    # Sort by launch date
+    upcoming_beers.sort(key=lambda x: x["productLaunchDate"])
+    
+    # Calculate and store APK for each beer once
+    for beer in upcoming_beers:
+        beer['apk'] = calculate_apk(beer)
+    
+    print(f"Found {len(upcoming_beers)} beers launching in the next two weeks")
+    
+    # Generate HTML
+    if upcoming_beers:
+        # Group beers by date
+        beers_by_date = {}
+        for beer in upcoming_beers:
+            launch_date = datetime.strptime(beer["productLaunchDate"], LAUNCH_DATE_FORMAT).date()
+            if launch_date not in beers_by_date:
+                beers_by_date[launch_date] = []
+            beers_by_date[launch_date].append(beer)
+        
+        # Sort beers within each date by APK (highest first)
+        for launch_date in beers_by_date:
+            beers_by_date[launch_date].sort(
+                key=lambda beer: beer['apk'],
+                reverse=True
+            )
+        
+        # Create an HTML file
+        html_file = UPCOMING_LAUNCHES_HTML_PATH
+        with open(html_file, "w", encoding="utf-8") as f:
+            # Write HTML header
+            f.write(generate_html_header(today, two_weeks_forward))
             
-            # Swedish weekday names
-            swedish_weekdays = {
-                'Monday': 'Måndag',
-                'Tuesday': 'Tisdag',
-                'Wednesday': 'Onsdag',
-                'Thursday': 'Torsdag',
-                'Friday': 'Fredag',
-                'Saturday': 'Lördag',
-                'Sunday': 'Söndag'
-            }
+            # Use Swedish weekday names from constants
             
             # Iterate through dates in order
             for launch_date in sorted(beers_by_date.keys()):
                 weekday_english = launch_date.strftime('%A')
-                weekday_swedish = swedish_weekdays.get(weekday_english, weekday_english)
+                weekday_swedish = SWEDISH_WEEKDAYS.get(weekday_english, weekday_english)
                 date_str = launch_date.strftime('%Y-%m-%d')
                 
                 f.write(f"""
@@ -421,50 +499,14 @@ def filter_upcoming_launches():
 """)
                 
                 for beer in beers_by_date[launch_date]:
-                    # Use pre-calculated APK value
-                    apk = beer['apk']
-                    
-                    # Determine APK class for coloring
-                    apk_class = ""
-                    if apk >= APK_HIGH_THRESHOLD:
-                        apk_class = "high"
-                    elif apk >= APK_MEDIUM_THRESHOLD:
-                        apk_class = "medium"
-                    
-                    # Format beer info
-                    name = f"{beer['productNameBold']} {beer['productNameThin']}"
-                    systembolaget_url = f"{SYSTEMBOLAGET_BASE_URL}/{beer['productNumber']}"
-                    image_url = f"{SYSTEMBOLAGET_IMAGE_BASE_URL}/{beer['productId']}/{beer['productId']}_400.webp"
-                    
-                    f.write(f"""                <div class="beer-item">
-                    <div class="beer-image-container">
-                        <img src="{image_url}" alt="{name}" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\\'beer-image-placeholder\\'>🍺</div>';">
-                    </div>
-                    <div class="beer-content">
-                        <div class="beer-name">
-                            <a href="{systembolaget_url}" target="_blank" rel="noopener">{name}</a>
-                        </div>
-                        <div class="beer-meta">
-                            <span class="product-number">#{beer['productNumber']}</span>
-                            <span class="price">{beer['price']:.2f} kr</span>
-                        </div>
-                        <div class="apk {apk_class}">APK: {apk:.2f}</div>
-                    </div>
-                </div>
-""")
+                    f.write(generate_beer_card(beer))
                 
                 f.write("""            </div>
         </div>
 """)
             
-            f.write(f"""
-        <footer>
-            <p>Genererad {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} | APK = Alkohol per krona (ml ren alkohol/kr)</p>
-        </footer>
-    </div>
-</body>
-</html>
-""")
+            # Write HTML footer
+            f.write(generate_html_footer())
         
         print(f"✓ Saved HTML to {html_file}")
     else:
