@@ -97,9 +97,9 @@ def get_all_beers(product_id_map):
             # Add old data
             old_product = product_id_map[product["productNumber"]]
             product["changedDate"] = old_product["changedDate"]
-            product["priceHistory"] = old_product["priceHistory"]
-            product["alcoholHistory"] = old_product["alcoholHistory"]
-            product["soldVolume"] = old_product["soldVolume"]
+            product["priceHistory"] = old_product.get("priceHistory", [{"x": changed_date, "y": product["price"]}])
+            product["alcoholHistory"] = old_product.get("alcoholHistory", [{"x": changed_date, "y": product.get("alcoholPercentage", 0)}])
+            product["soldVolume"] = old_product.get("soldVolume", 0)
             
             # Add new data
             updated = False
