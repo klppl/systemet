@@ -1,0 +1,2804 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kommande ölsläpp - Systembolaget</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(90deg, #006442 0%, #008855 50%, #006442 100%);
+            color: #FFD100;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #FFD100;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: "🍻";
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 3em;
+            animation: bounce 2s infinite;
+        }
+        
+        header::after {
+            content: "🎉";
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 3em;
+            animation: bounce 2s infinite 1s;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(-50%); }
+            50% { transform: translateY(-60%); }
+        }
+        
+        header h1 {
+            font-size: 2em;
+            margin-bottom: 5px;
+            font-weight: 700;
+            text-shadow: 3px 3px 0px rgba(0,0,0,0.3), -1px -1px 0px rgba(255,255,255,0.1);
+            letter-spacing: 2px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            from { text-shadow: 3px 3px 0px rgba(0,0,0,0.3), 0 0 10px #FFD100; }
+            to { text-shadow: 3px 3px 0px rgba(0,0,0,0.3), 0 0 20px #FFD100, 0 0 30px #FFD100; }
+        }
+        
+        header p {
+            font-size: 0.95em;
+            opacity: 0.95;
+            font-weight: 600;
+        }
+        
+        .date-section {
+            margin: 25px 40px;
+        }
+        
+        .date-header {
+            background: #006442;
+            color: #FFD100;
+            padding: 12px 16px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            font-size: 1.1em;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .beer-count {
+            background: #FFD100;
+            color: #006442;
+            padding: 2px 10px;
+            border-radius: 10px;
+            font-size: 0.8em;
+            font-weight: 700;
+        }
+        
+        .beer-list {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 18px;
+        }
+        
+        .beer-item {
+            background: white;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
+        }
+        
+        @media (max-width: 1400px) {
+            .beer-list {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        
+        .beer-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .beer-image-container {
+            width: 100%;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fafafa;
+            border-bottom: 2px solid #006442;
+        }
+        
+        .beer-image {
+            max-width: 90%;
+            max-height: 110px;
+            object-fit: contain;
+        }
+        
+        .beer-image-placeholder {
+            width: 100%;
+            height: 120px;
+            background: linear-gradient(135deg, #e0e0e0 0%, #d0d0d0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 32px;
+        }
+        
+        .beer-content {
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+        
+        .beer-name {
+            font-weight: 700;
+            font-size: 0.85em;
+            color: #2b2b2b;
+            margin-bottom: 2px;
+            line-height: 1.25;
+            min-height: 2.5em;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        .beer-name a {
+            color: #006442;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        .beer-name a:hover {
+            color: #004d32;
+        }
+        
+        .beer-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+        
+        .product-number {
+            color: #666;
+            font-size: 0.7em;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .web-launch {
+            background: #ff6b35;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 8px;
+            font-size: 0.65em;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .price {
+            font-weight: 700;
+            color: #2b2b2b;
+            font-size: 0.85em;
+        }
+        
+        .apk {
+            background: #555;
+            color: #ffffff;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 0.75em;
+            text-align: center;
+            width: 100%;
+        }
+        
+        .apk.high {
+            background: #004225;
+            color: #ffffff;
+        }
+        
+        .apk.medium {
+            background: #b8860b;
+            color: #ffffff;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+            background: #f5f5f5;
+        }
+        
+        @media (max-width: 1024px) {
+            .beer-list {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .beer-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            header h1 {
+                font-size: 1.8em;
+            }
+            
+            .date-section {
+                margin: 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .beer-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✨🍺 KOMMANDE ÖLSLÄPP 🍺✨</h1>
+            <p>⭐ 2025-10-01 till 2025-10-15 ⭐</p>
+        </header>
+
+        <div class="date-section">
+            <div class="date-header">
+                📅 2025-10-03 (Fredag)
+                <span class="beer-count">9 öl</span>
+            </div>
+            <div class="beer-list">
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56015391/56015391_400.webp" alt="Bligh's Pumpkin Spice Barleywine Ale" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/1023535" target="_blank" rel="noopener">Bligh's Pumpkin Spice Barleywine Ale</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#1023535</span>
+                            <span class="price">59.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.77</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/55137401/55137401_400.webp" alt="Utopian Cream Stout" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/1331614" target="_blank" rel="noopener">Utopian Cream Stout</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#1331614</span>
+                            <span class="price">29.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.74</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56622189/56622189_400.webp" alt="Basqueland Brewing Fudgesicle" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/1064714" target="_blank" rel="noopener">Basqueland Brewing Fudgesicle</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#1064714</span>
+                            <span class="price">69.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.73</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/922258/922258_400.webp" alt="La Trappe Isid'or" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/8980601" target="_blank" rel="noopener">La Trappe Isid'or</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#8980601</span>
+                            <span class="price">79.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.70</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57191724/57191724_400.webp" alt="Stigbergets x Soma Plump!" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/1003934" target="_blank" rel="noopener">Stigbergets x Soma Plump!</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#1003934</span>
+                            <span class="price">47.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.66</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/55905951/55905951_400.webp" alt="Põhjala x Lervig Faraway Friends BA Imperial Stout" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/1026903" target="_blank" rel="noopener">Põhjala x Lervig Faraway Friends BA Imperial Stout</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#1026903</span>
+                            <span class="price">89.00 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.50</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56622248/56622248_400.webp" alt="Omnipollo X Trillium Kanelbullar" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/9338003" target="_blank" rel="noopener">Omnipollo X Trillium Kanelbullar</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#9338003</span>
+                            <span class="price">129.00 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.35</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56634637/56634637_400.webp" alt="Elmeleven X One Drop The Frontier" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/1061534" target="_blank" rel="noopener">Elmeleven X One Drop The Frontier</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#1061534</span>
+                            <span class="price">64.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.32</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56622192/56622192_400.webp" alt="Lindemans Cuvee Rene Dark" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/1064901" target="_blank" rel="noopener">Lindemans Cuvee Rene Dark</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#1064901</span>
+                            <span class="price">214.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.28</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="date-section">
+            <div class="date-header">
+                📅 2025-10-06 (Måndag)
+                <span class="beer-count">126 öl</span>
+            </div>
+            <div class="beer-list">
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/38801563/38801563_400.webp" alt="Finn Oberoende Quadrupel" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3250903" target="_blank" rel="noopener">Finn Oberoende Quadrupel</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3250903</span>
+                            <span class="price">41.10 kr</span>
+                        </div>
+                        
+                        <div class="apk high">APK: 0.96</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56936119/56936119_400.webp" alt="Beersmiths Bockhammer" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3132432" target="_blank" rel="noopener">Beersmiths Bockhammer</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3132432</span>
+                            <span class="price">35.60 kr</span>
+                        </div>
+                        
+                        <div class="apk high">APK: 0.91</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56583373/56583373_400.webp" alt="Reinklou No. 6 Bock" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3417414" target="_blank" rel="noopener">Reinklou No. 6 Bock</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3417414</span>
+                            <span class="price">32.90 kr</span>
+                        </div>
+                        
+                        <div class="apk high">APK: 0.91</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/47131087/47131087_400.webp" alt="Remmarlöv Höstens Lager" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3217312" target="_blank" rel="noopener">Remmarlöv Höstens Lager</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3217312</span>
+                            <span class="price">29.90 kr</span>
+                        </div>
+                        
+                        <div class="apk high">APK: 0.87</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56582810/56582810_400.webp" alt="Östersundsbryggerier Kalorator Dubbelbock" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3421734" target="_blank" rel="noopener">Östersundsbryggerier Kalorator Dubbelbock</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3421734</span>
+                            <span class="price">37.90 kr</span>
+                        </div>
+                        
+                        <div class="apk high">APK: 0.84</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57004108/57004108_400.webp" alt="Stigbergets Primal Saison" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3354815" target="_blank" rel="noopener">Stigbergets Primal Saison</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3354815</span>
+                            <span class="price">23.90 kr</span>
+                        </div>
+                        
+                        <div class="apk high">APK: 0.83</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/55931264/55931264_400.webp" alt="Roslags Näsby Bryggeri Pentavägen #7" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3037203" target="_blank" rel="noopener">Roslags Näsby Bryggeri Pentavägen #7</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3037203</span>
+                            <span class="price">39.30 kr</span>
+                        </div>
+                        
+                        <div class="apk high">APK: 0.81</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56582144/56582144_400.webp" alt="Berretto Hoppy" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3234715" target="_blank" rel="noopener">Berretto Hoppy</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3234715</span>
+                            <span class="price">22.60 kr</span>
+                        </div>
+                        
+                        <div class="apk high">APK: 0.80</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57004584/57004584_400.webp" alt="Grästorps Lilla Edet Gotha River DIPA" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3280135" target="_blank" rel="noopener">Grästorps Lilla Edet Gotha River DIPA</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3280135</span>
+                            <span class="price">31.40 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.79</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57004599/57004599_400.webp" alt="Svartberget Blackwood vintage" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3321115" target="_blank" rel="noopener">Svartberget Blackwood vintage</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3321115</span>
+                            <span class="price">48.50 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.78</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56637330/56637330_400.webp" alt="Snausarve Gårdsbryggeri Silte Saison" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3349235" target="_blank" rel="noopener">Snausarve Gårdsbryggeri Silte Saison</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3349235</span>
+                            <span class="price">35.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.78</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/31639028/31639028_400.webp" alt="U and Me Beer Dubbelripa" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3880115" target="_blank" rel="noopener">U and Me Beer Dubbelripa</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3880115</span>
+                            <span class="price">38.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.78</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56582815/56582815_400.webp" alt="Topparnas bryggeri Pica Pico Skatans Lager" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3583803" target="_blank" rel="noopener">Topparnas bryggeri Pica Pico Skatans Lager</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3583803</span>
+                            <span class="price">22.60 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.77</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56582829/56582829_400.webp" alt="RajRaj Haze Ways" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3274514" target="_blank" rel="noopener">RajRaj Haze Ways</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3274514</span>
+                            <span class="price">44.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.75</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/36308923/36308923_400.webp" alt="Remmarlöv Skördefestens Pilsner" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3976815" target="_blank" rel="noopener">Remmarlöv Skördefestens Pilsner</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3976815</span>
+                            <span class="price">22.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.75</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56582214/56582214_400.webp" alt="Good Guys Brew Chocococo" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3131635" target="_blank" rel="noopener">Good Guys Brew Chocococo</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3131635</span>
+                            <span class="price">39.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.74</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57004605/57004605_400.webp" alt="Sälens Fjällbryggeri Oberoende Unspecified IPA" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3405735" target="_blank" rel="noopener">Sälens Fjällbryggeri Oberoende Unspecified IPA</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3405735</span>
+                            <span class="price">28.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.74</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57003075/57003075_400.webp" alt="Hantverksbryggeriet Oberoende Amber Lager" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3076703" target="_blank" rel="noopener">Hantverksbryggeriet Oberoende Amber Lager</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3076703</span>
+                            <span class="price">24.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.74</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56936140/56936140_400.webp" alt="Gagnef Brewing Rostig" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3182635" target="_blank" rel="noopener">Gagnef Brewing Rostig</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3182635</span>
+                            <span class="price">37.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.74</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57004587/57004587_400.webp" alt="Götaälvdalens x Lödöse bryggeri Gimle" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3047615" target="_blank" rel="noopener">Götaälvdalens x Lödöse bryggeri Gimle</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3047615</span>
+                            <span class="price">34.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.74</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56829604/56829604_400.webp" alt="Barlingbo Ryttmästarns Disig IPA" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3242135" target="_blank" rel="noopener">Barlingbo Ryttmästarns Disig IPA</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3242135</span>
+                            <span class="price">26.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.74</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57079895/57079895_400.webp" alt="RajRaj Oberoende DIPA" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3467734" target="_blank" rel="noopener">RajRaj Oberoende DIPA</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3467734</span>
+                            <span class="price">44.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.73</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56583523/56583523_400.webp" alt="Wessingekälla Brygghus Double" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3408003" target="_blank" rel="noopener">Wessingekälla Brygghus Double</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3408003</span>
+                            <span class="price">33.00 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.72</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/495325/495325_400.webp" alt="Nynäshamns Ångbryggeri Brännskär Brown Ale" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/8915301" target="_blank" rel="noopener">Nynäshamns Ångbryggeri Brännskär Brown Ale</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#8915301</span>
+                            <span class="price">37.00 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.72</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56583038/56583038_400.webp" alt="Television Brewing Helihopper Dubbelhumla DIPA" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3355215" target="_blank" rel="noopener">Television Brewing Helihopper Dubbelhumla DIPA</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3355215</span>
+                            <span class="price">39.60 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.71</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57079850/57079850_400.webp" alt="Örebro Brygghus Hopsan DIPA" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3146734" target="_blank" rel="noopener">Örebro Brygghus Hopsan DIPA</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3146734</span>
+                            <span class="price">49.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.71</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56578673/56578673_400.webp" alt="Beerbliotek The Shape of Haze to Come" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3211634" target="_blank" rel="noopener">Beerbliotek The Shape of Haze to Come</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3211634</span>
+                            <span class="price">49.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.71</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56935652/56935652_400.webp" alt="Ahlafors Barley Wine" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3252803" target="_blank" rel="noopener">Ahlafors Barley Wine</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3252803</span>
+                            <span class="price">49.20 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.70</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57004865/57004865_400.webp" alt="Hop Notch Brewing Double Sunshine NEIPA" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3150735" target="_blank" rel="noopener">Hop Notch Brewing Double Sunshine NEIPA</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3150735</span>
+                            <span class="price">39.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.70</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56582249/56582249_400.webp" alt="Nyköping Brewing Kråkbergets IPA" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3114034" target="_blank" rel="noopener">Nyköping Brewing Kråkbergets IPA</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3114034</span>
+                            <span class="price">42.60 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.70</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56583372/56583372_400.webp" alt="The Uncharted Brewing Woolly Sheep" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3421635" target="_blank" rel="noopener">The Uncharted Brewing Woolly Sheep</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3421635</span>
+                            <span class="price">30.00 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.69</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56936137/56936137_400.webp" alt="Shapes & Objects Pay It Forward" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3179214" target="_blank" rel="noopener">Shapes & Objects Pay It Forward</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3179214</span>
+                            <span class="price">38.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.69</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56417371/56417371_400.webp" alt="Timjans Brygghus Skördeöl" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3039335" target="_blank" rel="noopener">Timjans Brygghus Skördeöl</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3039335</span>
+                            <span class="price">26.80 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.69</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57004120/57004120_400.webp" alt="Prins Katts Hantverksöl Oberoende Hazy Dubbel-IPA" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3556935" target="_blank" rel="noopener">Prins Katts Hantverksöl Oberoende Hazy Dubbel-IPA</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3556935</span>
+                            <span class="price">38.70 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.68</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57004147/57004147_400.webp" alt="Drottningholms Bryggeri Et Cum Spiritu Tuo Quadrupel" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3339403" target="_blank" rel="noopener">Drottningholms Bryggeri Et Cum Spiritu Tuo Quadrupel</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3339403</span>
+                            <span class="price">46.00 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.68</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57079824/57079824_400.webp" alt="O/O Douglas DIPA" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3291015" target="_blank" rel="noopener">O/O Douglas DIPA</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3291015</span>
+                            <span class="price">39.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.68</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56935725/56935725_400.webp" alt="Brewski Pavel Pils" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3066215" target="_blank" rel="noopener">Brewski Pavel Pils</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3066215</span>
+                            <span class="price">24.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.68</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/54166325/54166325_400.webp" alt="Odd Island Brewing Holy Grale" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3111835" target="_blank" rel="noopener">Odd Island Brewing Holy Grale</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3111835</span>
+                            <span class="price">28.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.67</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/24452323/24452323_400.webp" alt="Hantverksbryggeriet American Pale Ale" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3111603" target="_blank" rel="noopener">Hantverksbryggeriet American Pale Ale</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3111603</span>
+                            <span class="price">24.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.66</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/24402263/24402263_400.webp" alt="O/O Porter Porter None" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3119815" target="_blank" rel="noopener">O/O Porter Porter None</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3119815</span>
+                            <span class="price">26.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.66</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56935760/56935760_400.webp" alt="Beerium Kraftölsbryggeri Oberoende NZIPA" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3008235" target="_blank" rel="noopener">Beerium Kraftölsbryggeri Oberoende NZIPA</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3008235</span>
+                            <span class="price">27.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.66</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57004163/57004163_400.webp" alt="Ruckel Brewing Front Flip" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3392615" target="_blank" rel="noopener">Ruckel Brewing Front Flip</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3392615</span>
+                            <span class="price">27.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.66</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56935751/56935751_400.webp" alt="Fjäderholmarnas Bryggeri Oberoende Rye IPA" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3121015" target="_blank" rel="noopener">Fjäderholmarnas Bryggeri Oberoende Rye IPA</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3121015</span>
+                            <span class="price">29.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.66</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57004154/57004154_400.webp" alt="Mariatorgets Saison" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3357215" target="_blank" rel="noopener">Mariatorgets Saison</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3357215</span>
+                            <span class="price">29.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.66</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56936144/56936144_400.webp" alt="Nääs Oberoende Hazy IPA" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3272303" target="_blank" rel="noopener">Nääs Oberoende Hazy IPA</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3272303</span>
+                            <span class="price">29.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.66</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56583040/56583040_400.webp" alt="Majornas Bryggeri Fyra Ett Fyra" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3469235" target="_blank" rel="noopener">Majornas Bryggeri Fyra Ett Fyra</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3469235</span>
+                            <span class="price">39.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.66</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57003056/57003056_400.webp" alt="Ten Hands x Wake Brewing Nebula" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3359614" target="_blank" rel="noopener">Ten Hands x Wake Brewing Nebula</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3359614</span>
+                            <span class="price">39.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.66</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56582824/56582824_400.webp" alt="Viken Bryggeri Punchy Velvet" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3304515" target="_blank" rel="noopener">Viken Bryggeri Punchy Velvet</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3304515</span>
+                            <span class="price">35.00 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.66</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56582240/56582240_400.webp" alt="Nyköping Brewing Call this IPA" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3262135" target="_blank" rel="noopener">Nyköping Brewing Call this IPA</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3262135</span>
+                            <span class="price">32.50 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.66</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57004168/57004168_400.webp" alt="Ruckel Brewing 461" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3393215" target="_blank" rel="noopener">Ruckel Brewing 461</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3393215</span>
+                            <span class="price">25.00 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.66</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57004593/57004593_400.webp" alt="Östersunds Nya Ångbryggeri Rauchbier" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3009134" target="_blank" rel="noopener">Östersunds Nya Ångbryggeri Rauchbier</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3009134</span>
+                            <span class="price">34.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.66</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/54168179/54168179_400.webp" alt="The Uncharted Brewing Hopeful Hedgehog" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3380315" target="_blank" rel="noopener">The Uncharted Brewing Hopeful Hedgehog</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3380315</span>
+                            <span class="price">25.20 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.65</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57079855/57079855_400.webp" alt="Unibärsum Oberoende Schwarzbier" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3295635" target="_blank" rel="noopener">Unibärsum Oberoende Schwarzbier</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3295635</span>
+                            <span class="price">27.80 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.65</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56937176/56937176_400.webp" alt="Hyllie x Minus-1 Mitteln Märzen" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3367615" target="_blank" rel="noopener">Hyllie x Minus-1 Mitteln Märzen</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3367615</span>
+                            <span class="price">27.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.65</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57004123/57004123_400.webp" alt="Timjans Brygghus SOB Amber Ale" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3406735" target="_blank" rel="noopener">Timjans Brygghus SOB Amber Ale</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3406735</span>
+                            <span class="price">32.00 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.65</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56163790/56163790_400.webp" alt="Viken Bryggeri Ellas IPA" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3284335" target="_blank" rel="noopener">Viken Bryggeri Ellas IPA</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3284335</span>
+                            <span class="price">31.60 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.65</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56583028/56583028_400.webp" alt="Television Brewing After Work Ambré" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3447315" target="_blank" rel="noopener">Television Brewing After Work Ambré</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3447315</span>
+                            <span class="price">25.50 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.65</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56935757/56935757_400.webp" alt="Roslags Näsby Bryggeri Oberoende Saison" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3095303" target="_blank" rel="noopener">Roslags Näsby Bryggeri Oberoende Saison</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3095303</span>
+                            <span class="price">31.80 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.64</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56582193/56582193_400.webp" alt="Brewtrade Sweden Two legged flamingo" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3036335" target="_blank" rel="noopener">Brewtrade Sweden Two legged flamingo</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3036335</span>
+                            <span class="price">36.00 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.64</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56935642/56935642_400.webp" alt="A couple of Beer Barons Oberoende Extra Special Bitter" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3241935" target="_blank" rel="noopener">A couple of Beer Barons Oberoende Extra Special Bitter</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3241935</span>
+                            <span class="price">30.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.64</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56582174/56582174_400.webp" alt="Lundabryggeriets Märzen" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3880703" target="_blank" rel="noopener">Lundabryggeriets Märzen</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3880703</span>
+                            <span class="price">29.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.64</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56936120/56936120_400.webp" alt="Fors Bryggeri Premium Pilsner" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3340503" target="_blank" rel="noopener">Fors Bryggeri Premium Pilsner</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3340503</span>
+                            <span class="price">28.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.64</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56637307/56637307_400.webp" alt="Snausarve Gårdsbryggeri Calyptra" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3381935" target="_blank" rel="noopener">Snausarve Gårdsbryggeri Calyptra</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3381935</span>
+                            <span class="price">37.40 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.64</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56935649/56935649_400.webp" alt="Ahlafors Altbier SOB" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3260403" target="_blank" rel="noopener">Ahlafors Altbier SOB</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3260403</span>
+                            <span class="price">29.50 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.63</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56937208/56937208_400.webp" alt="En Aleigen SOB Belgisk Pale Ale" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3344403" target="_blank" rel="noopener">En Aleigen SOB Belgisk Pale Ale</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3344403</span>
+                            <span class="price">29.50 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.63</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57004146/57004146_400.webp" alt="Omaka Suntrip" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3318635" target="_blank" rel="noopener">Omaka Suntrip</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3318635</span>
+                            <span class="price">23.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.62</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57003052/57003052_400.webp" alt="Ten Hands El Nectaron New And Improved" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3014414" target="_blank" rel="noopener">Ten Hands El Nectaron New And Improved</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3014414</span>
+                            <span class="price">49.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.62</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57003090/57003090_400.webp" alt="Fermenterarna Crystal Curse" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3128314" target="_blank" rel="noopener">Fermenterarna Crystal Curse</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3128314</span>
+                            <span class="price">49.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.62</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57004611/57004611_400.webp" alt="Ängöl Oberoende Altbier" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3420003" target="_blank" rel="noopener">Ängöl Oberoende Altbier</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3420003</span>
+                            <span class="price">27.50 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.61</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56935645/56935645_400.webp" alt="A couple of Beer Barons Apple Pie Gose" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3226135" target="_blank" rel="noopener">A couple of Beer Barons Apple Pie Gose</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3226135</span>
+                            <span class="price">34.30 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.61</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56583048/56583048_400.webp" alt="Närke Kulturbryggeri OcT Röklager" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3010903" target="_blank" rel="noopener">Närke Kulturbryggeri OcT Röklager</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3010903</span>
+                            <span class="price">32.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.60</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/46454012/46454012_400.webp" alt="Bökebergs Bryggeri Nobody´s Beach" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3265903" target="_blank" rel="noopener">Bökebergs Bryggeri Nobody´s Beach</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3265903</span>
+                            <span class="price">32.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.60</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56829624/56829624_400.webp" alt="Rocky Point Brewery  ÅPA  Åsa Pale Ale" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3280435" target="_blank" rel="noopener">Rocky Point Brewery  ÅPA  Åsa Pale Ale</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3280435</span>
+                            <span class="price">30.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.60</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56937182/56937182_400.webp" alt="Grästorps Bryggeri Oberoende Session IPA" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3336735" target="_blank" rel="noopener">Grästorps Bryggeri Oberoende Session IPA</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3336735</span>
+                            <span class="price">28.70 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.60</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57079892/57079892_400.webp" alt="Rocky Point Brewery Oberoende Black IPA" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3370335" target="_blank" rel="noopener">Rocky Point Brewery Oberoende Black IPA</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3370335</span>
+                            <span class="price">35.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.60</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56582333/56582333_400.webp" alt="Kurjovikens Hop On IPA" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3271135" target="_blank" rel="noopener">Kurjovikens Hop On IPA</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3271135</span>
+                            <span class="price">33.20 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.60</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56935719/56935719_400.webp" alt="Billdale The Cru" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3031815" target="_blank" rel="noopener">Billdale The Cru</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3031815</span>
+                            <span class="price">32.70 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.60</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57004614/57004614_400.webp" alt="Wättle Brygghus Kråksången" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3436735" target="_blank" rel="noopener">Wättle Brygghus Kråksången</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3436735</span>
+                            <span class="price">27.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.59</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56935660/56935660_400.webp" alt="To Øl City Hot Krush IPA" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3244114" target="_blank" rel="noopener">To Øl City Hot Krush IPA</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3244114</span>
+                            <span class="price">44.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.59</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57004130/57004130_400.webp" alt="Omnipollo Freestyle" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3161714" target="_blank" rel="noopener">Omnipollo Freestyle</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3161714</span>
+                            <span class="price">57.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.59</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57004866/57004866_400.webp" alt="Kvarnagårdens Mellanbäss" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3295415" target="_blank" rel="noopener">Kvarnagårdens Mellanbäss</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3295415</span>
+                            <span class="price">24.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.58</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/55980022/55980022_400.webp" alt="AKiA Brygghus Zipper" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3531414" target="_blank" rel="noopener">AKiA Brygghus Zipper</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3531414</span>
+                            <span class="price">49.10 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.58</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57004114/57004114_400.webp" alt="Stigbergets After laughter comes beer" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3471215" target="_blank" rel="noopener">Stigbergets After laughter comes beer</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3471215</span>
+                            <span class="price">36.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.58</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56935657/56935657_400.webp" alt="Centralbryggeriet i Linköping Folkes Drömmar Som Gror" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3211003" target="_blank" rel="noopener">Centralbryggeriet i Linköping Folkes Drömmar Som Gror</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3211003</span>
+                            <span class="price">27.40 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.58</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57004141/57004141_400.webp" alt="Drottningholms Bryggeri Pax Vobiscum Tripel" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3328503" target="_blank" rel="noopener">Drottningholms Bryggeri Pax Vobiscum Tripel</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3328503</span>
+                            <span class="price">43.00 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.58</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56935648/56935648_400.webp" alt="Apex Wyrm Veil IPA" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3044014" target="_blank" rel="noopener">Apex Wyrm Veil IPA</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3044014</span>
+                            <span class="price">49.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.57</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56163768/56163768_400.webp" alt="Viken Bryggeri The American Dream" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3965035" target="_blank" rel="noopener">Viken Bryggeri The American Dream</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3965035</span>
+                            <span class="price">31.70 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.57</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56634735/56634735_400.webp" alt="Snausarve Gårdsbryggeri Guldkust IPA" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3233735" target="_blank" rel="noopener">Snausarve Gårdsbryggeri Guldkust IPA</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3233735</span>
+                            <span class="price">37.50 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.57</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56935729/56935729_400.webp" alt="Brewski Ponyo Red India Pale Ale" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3074515" target="_blank" rel="noopener">Brewski Ponyo Red India Pale Ale</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3074515</span>
+                            <span class="price">34.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.57</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57004172/57004172_400.webp" alt="Åre Bryggcompagni Community Beer IPA" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3398915" target="_blank" rel="noopener">Åre Bryggcompagni Community Beer IPA</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3398915</span>
+                            <span class="price">34.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.57</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56935744/56935744_400.webp" alt="Brygghus 19 Oberoende Bitter" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3113234" target="_blank" rel="noopener">Brygghus 19 Oberoende Bitter</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3113234</span>
+                            <span class="price">32.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.56</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56935747/56935747_400.webp" alt="Brygghus 19 Creamy Italian Lemonade IPA" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3112734" target="_blank" rel="noopener">Brygghus 19 Creamy Italian Lemonade IPA</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3112734</span>
+                            <span class="price">54.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.56</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57004590/57004590_400.webp" alt="Hönsinge Nya Länsmans Lag" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3050103" target="_blank" rel="noopener">Hönsinge Nya Länsmans Lag</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3050103</span>
+                            <span class="price">31.20 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.56</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57090375/57090375_400.webp" alt="Ringu Proper Bitter" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3435035" target="_blank" rel="noopener">Ringu Proper Bitter</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3435035</span>
+                            <span class="price">24.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.56</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57079849/57079849_400.webp" alt="Örebro Brygghus Oberoende Ljus Röklager Spezial" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3256403" target="_blank" rel="noopener">Örebro Brygghus Oberoende Ljus Röklager Spezial</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3256403</span>
+                            <span class="price">29.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.55</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56634736/56634736_400.webp" alt="Snausarve Gårdsbryggeri Silte Saison" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3057035" target="_blank" rel="noopener">Snausarve Gårdsbryggeri Silte Saison</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3057035</span>
+                            <span class="price">32.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.55</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56936132/56936132_400.webp" alt="Friends x Forager x Humble Forager Space Mycelium DDH DIPA" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3187315" target="_blank" rel="noopener">Friends x Forager x Humble Forager Space Mycelium DDH DIPA</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3187315</span>
+                            <span class="price">44.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.55</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56935716/56935716_400.webp" alt="Billdale Lotus" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3030915" target="_blank" rel="noopener">Billdale Lotus</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3030915</span>
+                            <span class="price">36.00 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.55</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56936113/56936113_400.webp" alt="Bua Beach Brewery Eyes On My Beer" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3034435" target="_blank" rel="noopener">Bua Beach Brewery Eyes On My Beer</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3034435</span>
+                            <span class="price">35.80 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.54</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57004596/57004596_400.webp" alt="Kurjovikens Oberoende Dry Stout" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3196135" target="_blank" rel="noopener">Kurjovikens Oberoende Dry Stout</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3196135</span>
+                            <span class="price">26.70 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.54</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56829609/56829609_400.webp" alt="Åre Bryggcompagni Decade Pale Ale" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3951715" target="_blank" rel="noopener">Åre Bryggcompagni Decade Pale Ale</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3951715</span>
+                            <span class="price">29.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.53</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56582206/56582206_400.webp" alt="Fors Bryggeri Passion" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3023503" target="_blank" rel="noopener">Fors Bryggeri Passion</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3023503</span>
+                            <span class="price">34.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.53</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57079821/57079821_400.webp" alt="Oceanbryggeriet Session IPA" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3202403" target="_blank" rel="noopener">Oceanbryggeriet Session IPA</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3202403</span>
+                            <span class="price">29.60 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.52</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/55046002/55046002_400.webp" alt="The Uncharted Brewing Company Creamy Peach" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3361115" target="_blank" rel="noopener">The Uncharted Brewing Company Creamy Peach</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3361115</span>
+                            <span class="price">35.30 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.52</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56935661/56935661_400.webp" alt="Apex Lumora Hazy Pale Ale" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3048714" target="_blank" rel="noopener">Apex Lumora Hazy Pale Ale</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3048714</span>
+                            <span class="price">37.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.52</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57090372/57090372_400.webp" alt="Poppels Barrel Aged Stout Bourbon Cognac Port" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3495903" target="_blank" rel="noopener">Poppels Barrel Aged Stout Bourbon Cognac Port</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3495903</span>
+                            <span class="price">89.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.51</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57004150/57004150_400.webp" alt="Mariatorgets Pils" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3345215" target="_blank" rel="noopener">Mariatorgets Pils</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3345215</span>
+                            <span class="price">29.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.51</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56634732/56634732_400.webp" alt="Snausarve Gårdsbryggeri Rök" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3066335" target="_blank" rel="noopener">Snausarve Gårdsbryggeri Rök</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3066335</span>
+                            <span class="price">33.00 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.50</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56937179/56937179_400.webp" alt="Hyllie Bryggeri Stout of Order" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3423015" target="_blank" rel="noopener">Hyllie Bryggeri Stout of Order</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3423015</span>
+                            <span class="price">27.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.50</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56582158/56582158_400.webp" alt="Mariatorgets Kaffe/Lönn" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3086015" target="_blank" rel="noopener">Mariatorgets Kaffe/Lönn</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3086015</span>
+                            <span class="price">79.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.50</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56582751/56582751_400.webp" alt="Norrlandsbryggarna Northern Ripa" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3303515" target="_blank" rel="noopener">Norrlandsbryggarna Northern Ripa</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3303515</span>
+                            <span class="price">38.40 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.48</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57003049/57003049_400.webp" alt="Shapes & Objects Ten Shapes Of Fruit" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3028914" target="_blank" rel="noopener">Shapes & Objects Ten Shapes Of Fruit</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3028914</span>
+                            <span class="price">55.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.47</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57003093/57003093_400.webp" alt="Fermenterarna Cult of the currant" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3448014" target="_blank" rel="noopener">Fermenterarna Cult of the currant</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3448014</span>
+                            <span class="price">54.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.45</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/38801566/38801566_400.webp" alt="Gamla Enskede Bryggeri Bloodofjupiter Just let porter burn" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3243501" target="_blank" rel="noopener">Gamla Enskede Bryggeri Bloodofjupiter Just let porter burn</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3243501</span>
+                            <span class="price">111.00 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.45</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56583390/56583390_400.webp" alt="Winterland Brewery Crushing Cold" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3170214" target="_blank" rel="noopener">Winterland Brewery Crushing Cold</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3170214</span>
+                            <span class="price">79.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.44</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57003064/57003064_400.webp" alt="Närke Kulturbryggeri Black Country Mild" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3292203" target="_blank" rel="noopener">Närke Kulturbryggeri Black Country Mild</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3292203</span>
+                            <span class="price">30.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.44</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57079889/57079889_400.webp" alt="Rocket Brewing Company Shoga No Yume Ginger Dreams" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3520715" target="_blank" rel="noopener">Rocket Brewing Company Shoga No Yume Ginger Dreams</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3520715</span>
+                            <span class="price">34.00 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.44</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56936128/56936128_400.webp" alt="Duckpond Scooper" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3166315" target="_blank" rel="noopener">Duckpond Scooper</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3166315</span>
+                            <span class="price">45.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.43</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57004608/57004608_400.webp" alt="Smedsbo Slott Elektra Sauer Kveik" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3411003" target="_blank" rel="noopener">Smedsbo Slott Elektra Sauer Kveik</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3411003</span>
+                            <span class="price">129.00 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.43</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57079907/57079907_400.webp" alt="Smedsbo Slott  Alfablót Sacrificial Barley Wine" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3410803" target="_blank" rel="noopener">Smedsbo Slott  Alfablót Sacrificial Barley Wine</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3410803</span>
+                            <span class="price">149.00 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.40</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56583004/56583004_400.webp" alt="S-Town Brewery DH Jungle Nectaron" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3431103" target="_blank" rel="noopener">S-Town Brewery DH Jungle Nectaron</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3431103</span>
+                            <span class="price">45.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.40</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56936159/56936159_400.webp" alt="Elmeleven Shape The Future PULP" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3368834" target="_blank" rel="noopener">Elmeleven Shape The Future PULP</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3368834</span>
+                            <span class="price">64.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.34</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56937173/56937173_400.webp" alt="Elmeleven Early Earth PULP" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3346234" target="_blank" rel="noopener">Elmeleven Early Earth PULP</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3346234</span>
+                            <span class="price">64.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.34</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57004179/57004179_400.webp" alt="Åre Bryggcompagni Saison Cerìse" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3400601" target="_blank" rel="noopener">Åre Bryggcompagni Saison Cerìse</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3400601</span>
+                            <span class="price">149.00 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.32</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57079898/57079898_400.webp" alt="Vreta kloster Confratres" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3349903" target="_blank" rel="noopener">Vreta kloster Confratres</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3349903</span>
+                            <span class="price">145.00 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.31</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/57003061/57003061_400.webp" alt="Närke Kulturbryggeri Oloroso Kaggen Stormaktsporter" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/3355403" target="_blank" rel="noopener">Närke Kulturbryggeri Oloroso Kaggen Stormaktsporter</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#3355403</span>
+                            <span class="price">169.00 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.17</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="date-section">
+            <div class="date-header">
+                📅 2025-10-07 (Tisdag)
+                <span class="beer-count">3 öl</span>
+            </div>
+            <div class="beer-list">
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/58526445/58526445_400.webp" alt="Neon Raptor Brewing Co. Ninth Birthday Impy" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/8887334" target="_blank" rel="noopener">Neon Raptor Brewing Co. Ninth Birthday Impy</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#8887334</span>
+                            <span class="price">140.80 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.31</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/58526530/58526530_400.webp" alt="Neon Raptor Brewing Co Ninth Birthday DIPA" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/8825334" target="_blank" rel="noopener">Neon Raptor Brewing Co Ninth Birthday DIPA</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#8825334</span>
+                            <span class="price">118.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.30</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/58526435/58526435_400.webp" alt="Neon Raptor Brewing Co. Ninth Birthday Sour" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/8831334" target="_blank" rel="noopener">Neon Raptor Brewing Co. Ninth Birthday Sour</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#8831334</span>
+                            <span class="price">128.60 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.27</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="date-section">
+            <div class="date-header">
+                📅 2025-10-08 (Onsdag)
+                <span class="beer-count">2 öl</span>
+            </div>
+            <div class="beer-list">
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/58373342/58373342_400.webp" alt="Chimay Grande Réserve Barrel Ferment Amrmagnac vintage" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/8823301" target="_blank" rel="noopener">Chimay Grande Réserve Barrel Ferment Amrmagnac vintage</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#8823301</span>
+                            <span class="price">249.00 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.32</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/58373430/58373430_400.webp" alt="Chimay Grande Réserve Barrel Ferment Rhum" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/8845601" target="_blank" rel="noopener">Chimay Grande Réserve Barrel Ferment Rhum</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#8845601</span>
+                            <span class="price">249.00 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.32</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="date-section">
+            <div class="date-header">
+                📅 2025-10-10 (Fredag)
+                <span class="beer-count">14 öl</span>
+            </div>
+            <div class="beer-list">
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/54457394/54457394_400.webp" alt="Prinzen-Bock Weisse" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/1329703" target="_blank" rel="noopener">Prinzen-Bock Weisse</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#1329703</span>
+                            <span class="price">34.90 kr</span>
+                        </div>
+                        
+                        <div class="apk high">APK: 1.00</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/54946263/54946263_400.webp" alt="Northern Monk Heathen" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/1330714" target="_blank" rel="noopener">Northern Monk Heathen</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#1330714</span>
+                            <span class="price">41.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.76</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/54456940/54456940_400.webp" alt="Left Hand Brewing Wake Up Dead" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/1047503" target="_blank" rel="noopener">Left Hand Brewing Wake Up Dead</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#1047503</span>
+                            <span class="price">47.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.76</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56634643/56634643_400.webp" alt="Holy Goat Foehammer" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/1036214" target="_blank" rel="noopener">Holy Goat Foehammer</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#1036214</span>
+                            <span class="price">65.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.75</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/46425923/46425923_400.webp" alt="Slottskällans Rainy Days" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/1319614" target="_blank" rel="noopener">Slottskällans Rainy Days</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#1319614</span>
+                            <span class="price">29.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.74</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/52729960/52729960_400.webp" alt="DC Brau Alternate Gourd Pumpkin Spice Ale" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/1327115" target="_blank" rel="noopener">DC Brau Alternate Gourd Pumpkin Spice Ale</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#1327115</span>
+                            <span class="price">31.90 kr</span>
+                        </div>
+                        
+                        <div class="apk medium">APK: 0.61</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56634646/56634646_400.webp" alt="Cloudwater P.K | NZ DD" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/1036334" target="_blank" rel="noopener">Cloudwater P.K | NZ DD</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#1036334</span>
+                            <span class="price">49.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.60</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56377530/56377530_400.webp" alt="Overtone x  Azvex Motorphobia DIPA" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/1088434" target="_blank" rel="noopener">Overtone x  Azvex Motorphobia DIPA</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#1088434</span>
+                            <span class="price">58.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.60</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/54454381/54454381_400.webp" alt="Nurme Bloodline Big Baltic Porter" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/1329615" target="_blank" rel="noopener">Nurme Bloodline Big Baltic Porter</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#1329615</span>
+                            <span class="price">49.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.60</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56377537/56377537_400.webp" alt="DEYA Glue IPA" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/1033012" target="_blank" rel="noopener">DEYA Glue IPA</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#1033012</span>
+                            <span class="price">59.10 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.55</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56634649/56634649_400.webp" alt="Garage Beer Beer Borg DIPA" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/1036434" target="_blank" rel="noopener">Garage Beer Beer Borg DIPA</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#1036434</span>
+                            <span class="price">66.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.53</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56634652/56634652_400.webp" alt="Two Flints Tunnel Vision IPA" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/1070134" target="_blank" rel="noopener">Two Flints Tunnel Vision IPA</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#1070134</span>
+                            <span class="price">59.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.44</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56634640/56634640_400.webp" alt="Funky Fluid Gelato Bianco" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/1062912" target="_blank" rel="noopener">Funky Fluid Gelato Bianco</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#1062912</span>
+                            <span class="price">62.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.44</div>
+                    </div>
+                </div>
+                <div class="beer-item">
+                    <div class="beer-image-container">
+                        <img src="https://product-cdn.systembolaget.se/productimages/56015394/56015394_400.webp" alt="Hanssens Nordic Dream" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'beer-image-placeholder\'>🍺</div>';">
+                    </div>
+                    <div class="beer-content">
+                        <div class="beer-name">
+                            <a href="https://www.systembolaget.se/1035503" target="_blank" rel="noopener">Hanssens Nordic Dream</a>
+                        </div>
+                        <div class="beer-meta">
+                            <span class="product-number">#1035503</span>
+                            <span class="price">89.90 kr</span>
+                        </div>
+                        
+                        <div class="apk ">APK: 0.21</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Genererad 2025-10-01 21:03:37 | APK = Alkohol per krona (ml ren alkohol/kr)</p>
+        </footer>
+    </div>
+</body>
+</html>
