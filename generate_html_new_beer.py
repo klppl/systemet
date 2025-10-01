@@ -362,7 +362,7 @@ def generate_html_header(today: datetime, two_weeks_forward: datetime) -> str:
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kommande ölsläpp - Systembolaget</title>
+    <title>Ölsläpp som kommer förstöra din ekonomi - Systembolaget</title>
     <style>
 {get_css_styles()}
     </style>

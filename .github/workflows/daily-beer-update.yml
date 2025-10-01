@@ -2,8 +2,8 @@ name: Daily Beer Update
 
 on:
   schedule:
-    # Runs daily at 06:00 UTC
-    - cron: '0 6 * * *'
+    # Runs daily at 12:00 UTC
+    - cron: '0 12 * * *'
   workflow_dispatch:  # Allows manual trigger from GitHub UI
 
 jobs:
@@ -31,17 +31,21 @@ jobs:
         run: |
           python getallbeer.py
       
+      - name: Generate HTML for upcoming beer launches
+        run: |
+          python generate_html_new_beer.py
+      
       - name: Check for changes
         id: git-check
         run: |
-          git diff --exit-code data/ || echo "changes=true" >> $GITHUB_OUTPUT
+          git diff --exit-code data/ docs/ || echo "changes=true" >> $GITHUB_OUTPUT
       
       - name: Commit and push changes
         if: steps.git-check.outputs.changes == 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add data/
-          git commit -m "Update beer data - $(date +'%Y-%m-%d %H:%M:%S UTC')"
+          git add data/ docs/
+          git commit -m "Update beer data and HTML - $(date +'%Y-%m-%d %H:%M:%S UTC')"
           git push
 
