@@ -27,9 +27,9 @@ jobs:
         run: |
           pip install -r requirements.txt
       
-      - name: Run beer.py
+      - name: Run getallbeer.py
         run: |
-          python beer.py
+          python getallbeer.py
       
       - name: Check for changes
         id: git-check
