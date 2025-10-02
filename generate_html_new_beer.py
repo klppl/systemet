@@ -68,62 +68,119 @@ def get_css_styles() -> str:
             background: linear-gradient(90deg, #006442 0%, #008855 50%, #006442 100%);
             color: #FFD100;
             padding: 20px;
-            text-align: center;
             border-bottom: 5px solid #FFD100;
             position: relative;
             overflow: hidden;
         }
         
-        header::before {
-            content: "🍻";
-            position: absolute;
-            left: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 3em;
-            animation: bounce 2s infinite;
+        .header-main {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 20px;
         }
         
-        header::after {
-            content: "🎉";
-            position: absolute;
-            right: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 3em;
-            animation: bounce 2s infinite 1s;
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
         }
         
-        @keyframes bounce {
-            0%, 100% { transform: translateY(-50%); }
-            50% { transform: translateY(-60%); }
+        .header-filters {
+            display: flex;
+            align-items: flex-end;
+            gap: 15px;
+            flex-wrap: wrap;
         }
         
-        header h1 {
+        .header-logo {
+            max-width: 100%;
+            height: auto;
+            max-height: 120px;
+            object-fit: contain;
+        }
+        
+        .header-content {
+            text-align: left;
+        }
+        
+        .header-title {
             font-size: 2em;
             margin-bottom: 5px;
             font-weight: 700;
             text-shadow: 3px 3px 0px rgba(0,0,0,0.3), -1px -1px 0px rgba(255,255,255,0.1);
             letter-spacing: 2px;
-            animation: glow 2s ease-in-out infinite alternate;
         }
         
-        @keyframes glow {
-            from { text-shadow: 3px 3px 0px rgba(0,0,0,0.3), 0 0 10px #FFD100; }
-            to { text-shadow: 3px 3px 0px rgba(0,0,0,0.3), 0 0 20px #FFD100, 0 0 30px #FFD100; }
-        }
-        
-        header p {
+        .header-subtitle {
             font-size: 0.95em;
             opacity: 0.95;
             font-weight: 600;
         }
         
-        .filter-section {
-            background: #f8f9fa;
-            padding: 12px 20px;
-            border-bottom: 1px solid #e9ecef;
+        .header-filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
         }
+        
+        .header-filter-label {
+            font-size: 0.8em;
+            font-weight: 600;
+            color: #FFD100;
+        }
+        
+        .header-filter-select {
+            padding: 6px 10px;
+            border: 1px solid #FFD100;
+            border-radius: 4px;
+            background: white;
+            font-size: 0.85em;
+            color: #495057;
+            min-width: 140px;
+            cursor: pointer;
+        }
+        
+        .header-filter-select:focus {
+            outline: none;
+            border-color: #FFD100;
+            box-shadow: 0 0 0 2px rgba(255, 209, 0, 0.25);
+        }
+        
+        .header-filter-actions {
+            display: flex;
+            gap: 6px;
+        }
+        
+        .header-filter-btn {
+            padding: 6px 12px;
+            border: 1px solid #FFD100;
+            border-radius: 4px;
+            font-size: 0.85em;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .header-filter-btn.primary {
+            background: #FFD100;
+            color: #006442;
+            font-weight: 600;
+        }
+        
+        .header-filter-btn.primary:hover {
+            background: #e6c200;
+        }
+        
+        .header-filter-btn.secondary {
+            background: transparent;
+            color: #FFD100;
+        }
+        
+        .header-filter-btn.secondary:hover {
+            background: rgba(255, 209, 0, 0.1);
+        }
+        
+        
         
         .filter-container {
             max-width: 1200px;
@@ -249,6 +306,8 @@ def get_css_styles() -> str:
             display: flex;
             flex-direction: column;
             height: fit-content;
+            text-decoration: none;
+            color: inherit;
         }
         
         .beer-item.hidden {
@@ -264,6 +323,12 @@ def get_css_styles() -> str:
         .beer-item:hover {
             transform: translateY(-3px);
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .beer-item:hover .beer-name {
+            color: #004d32;
         }
         
         .beer-image-container {
@@ -303,7 +368,7 @@ def get_css_styles() -> str:
         .beer-name {
             font-weight: 700;
             font-size: 0.85em;
-            color: #2b2b2b;
+            color: #006442;
             margin-bottom: 2px;
             line-height: 1.25;
             min-height: 2.5em;
@@ -313,15 +378,6 @@ def get_css_styles() -> str:
             overflow: hidden;
         }
         
-        .beer-name a {
-            color: #006442;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-        
-        .beer-name a:hover {
-            color: #004d32;
-        }
         
         .beer-meta {
             display: flex;
@@ -449,13 +505,13 @@ def generate_beer_card(beer: Dict[str, Any]) -> str:
     else:
         image_url = ""  # Will trigger the placeholder in the HTML
     
-    return f"""                <div class="beer-item" data-category2="{html.escape(category_level2)}" data-category3="{html.escape(category_level3)}" data-apk="{apk:.2f}">
+    return f"""                <a href="{systembolaget_url}" target="_blank" rel="noopener" class="beer-item" data-category2="{html.escape(category_level2)}" data-category3="{html.escape(category_level3)}" data-apk="{apk:.2f}">
                     <div class="beer-image-container">
                         <img src="{image_url}" alt="{name}" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\\'beer-image-placeholder\\'>🍺</div>';">
                     </div>
                     <div class="beer-content">
                         <div class="beer-name">
-                            <a href="{systembolaget_url}" target="_blank" rel="noopener">{name}</a>
+                            {name}
                         </div>
                         <div class="beer-meta">
                             <span class="product-number">#{product_number}</span>
@@ -464,7 +520,7 @@ def generate_beer_card(beer: Dict[str, Any]) -> str:
                         {f'<div class="category-info">{category_text}</div>' if category_text else ''}
                         <div class="apk {apk_class}">APK: {apk:.2f}</div>
                     </div>
-                </div>
+                </a>
 """
 
 
@@ -483,27 +539,30 @@ def generate_html_header(today: datetime, two_weeks_forward: datetime) -> str:
 <body>
     <div class="container">
         <header>
-            <h1>✨🍺 KOMMANDE ÖLSLÄPP 🍺✨</h1>
-            <p>⭐ {today.date()} till {two_weeks_forward.date()} ⭐</p>
-        </header>
-        <div class="filter-section">
-            <div class="filter-container">
-                <div class="filter-dropdowns">
-                    <div class="filter-group">
-                        <label class="filter-label" for="category2-filter">Kategori:</label>
-                        <select id="category2-filter" class="filter-select">
+            <div class="header-main">
+                <div class="header-left">
+                    <img src="logga.png" alt="KOMMANDE ÖLSLÄPP" class="header-logo">
+                    <div class="header-content">
+                        <h1 class="header-title">KOMMANDE ÖLSLÄPP</h1>
+                        <p class="header-subtitle">⭐ {today.date()} till {two_weeks_forward.date()} ⭐</p>
+                    </div>
+                </div>
+                <div class="header-filters">
+                    <div class="header-filter-group">
+                        <label class="header-filter-label" for="category2-filter">Kategori:</label>
+                        <select id="category2-filter" class="header-filter-select">
                             <option value="">Alla kategorier</option>
                         </select>
                     </div>
-                    <div class="filter-group">
-                        <label class="filter-label" for="category3-filter">Underkategori:</label>
-                        <select id="category3-filter" class="filter-select">
+                    <div class="header-filter-group">
+                        <label class="header-filter-label" for="category3-filter">Underkategori:</label>
+                        <select id="category3-filter" class="header-filter-select">
                             <option value="">Alla kategorier</option>
                         </select>
                     </div>
-                    <div class="filter-group">
-                        <label class="filter-label" for="apk-filter">APK Range:</label>
-                        <select id="apk-filter" class="filter-select">
+                    <div class="header-filter-group">
+                        <label class="header-filter-label" for="apk-filter">APK Range:</label>
+                        <select id="apk-filter" class="header-filter-select">
                             <option value="">Alla APK-värden</option>
                             <option value="0.8+">Hög APK (0.8+)</option>
                             <option value="0.6-0.8">Medium APK (0.6-0.8)</option>
@@ -512,14 +571,14 @@ def generate_html_header(today: datetime, two_weeks_forward: datetime) -> str:
                             <option value="0-0.2">Minimal APK (0-0.2)</option>
                         </select>
                     </div>
-                </div>
-                <div class="filter-actions">
-                    <button id="apply-filter" class="filter-btn primary">Filtrera</button>
-                    <button id="clear-filter" class="filter-btn secondary">Rensa</button>
+                    <div class="header-filter-actions">
+                        <button id="apply-filter" class="header-filter-btn primary">Filtrera</button>
+                        <button id="clear-filter" class="header-filter-btn secondary">Rensa</button>
+                    </div>
                 </div>
             </div>
             <div class="filter-results" id="filter-results"></div>
-        </div>
+        </header>
 """
 
 
