@@ -561,7 +561,7 @@ def generate_html_header(today: datetime, two_weeks_forward: datetime) -> str:
                         </select>
                     </div>
                     <div class="header-filter-group">
-                        <label class="header-filter-label" for="apk-filter">APK Range:</label>
+                        <label class="header-filter-label" for="apk-filter">APK:</label>
                         <select id="apk-filter" class="header-filter-select">
                             <option value="">Alla APK-värden</option>
                             <option value="0.8+">Hög APK (0.8+)</option>
