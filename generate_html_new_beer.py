@@ -129,15 +129,15 @@ def get_css_styles() -> str:
             max-width: 1200px;
             margin: 0 auto;
             display: flex;
-            gap: 8px;
-            align-items: center;
+            gap: 20px;
+            align-items: flex-end;
             flex-wrap: wrap;
         }
         
         .filter-dropdowns {
             display: flex;
-            gap: 15px;
-            align-items: center;
+            gap: 12px;
+            align-items: flex-end;
         }
         
         .filter-group {
@@ -159,7 +159,7 @@ def get_css_styles() -> str:
             background: white;
             font-size: 0.9em;
             color: #495057;
-            min-width: 180px;
+            min-width: 160px;
             cursor: pointer;
         }
         
@@ -171,8 +171,8 @@ def get_css_styles() -> str:
         
         .filter-actions {
             display: flex;
-            gap: 10px;
-            margin-left: auto;
+            gap: 8px;
+            margin-left: 10px;
         }
         
         .filter-btn {
