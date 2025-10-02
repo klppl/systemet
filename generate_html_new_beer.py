@@ -80,6 +80,70 @@ def get_css_styles() -> str:
             margin-bottom: 20px;
         }
         
+        @media (max-width: 1024px) {
+            .header-main {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+            }
+            
+            .header-left {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .header-filters {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-left {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+            
+            .header-filters {
+                flex-direction: row;
+                align-items: flex-end;
+                justify-content: center;
+                gap: 15px;
+                width: 100%;
+                flex-wrap: wrap;
+            }
+            
+            .header-filter-group {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .header-filter-actions {
+                display: flex;
+                gap: 10px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header {
+                padding: 15px;
+            }
+            
+            .header-title {
+                font-size: 1.5em;
+            }
+            
+            .header-subtitle {
+                font-size: 0.85em;
+            }
+            
+            .header-logo {
+                max-height: 80px;
+            }
+        }
+        
         .header-left {
             display: flex;
             align-items: center;
