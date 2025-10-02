@@ -119,8 +119,97 @@ def get_css_styles() -> str:
             font-weight: 600;
         }
         
+        .filter-section {
+            background: #f8f9fa;
+            padding: 12px 20px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .filter-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .filter-dropdowns {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+        .filter-label {
+            font-size: 0.85em;
+            font-weight: 600;
+            color: #495057;
+        }
+        
+        .filter-select {
+            padding: 8px 12px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            background: white;
+            font-size: 0.9em;
+            color: #495057;
+            min-width: 180px;
+            cursor: pointer;
+        }
+        
+        .filter-select:focus {
+            outline: none;
+            border-color: #006442;
+            box-shadow: 0 0 0 2px rgba(0, 100, 66, 0.25);
+        }
+        
+        .filter-actions {
+            display: flex;
+            gap: 10px;
+            margin-left: auto;
+        }
+        
+        .filter-btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            font-size: 0.9em;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        
+        .filter-btn.primary {
+            background: #006442;
+            color: white;
+        }
+        
+        .filter-btn.primary:hover {
+            background: #004d32;
+        }
+        
+        .filter-btn.secondary {
+            background: #6c757d;
+            color: white;
+        }
+        
+        .filter-btn.secondary:hover {
+            background: #5a6268;
+        }
+        
+        .filter-results {
+            margin-top: 6px;
+            font-size: 0.85em;
+            color: #6c757d;
+        }
+        
         .date-section {
-            margin: 25px 40px;
+            margin: 15px 40px;
         }
         
         .date-header {
@@ -160,6 +249,10 @@ def get_css_styles() -> str:
             display: flex;
             flex-direction: column;
             height: fit-content;
+        }
+        
+        .beer-item.hidden {
+            display: none;
         }
         
         @media (max-width: 1400px) {
@@ -244,6 +337,14 @@ def get_css_styles() -> str:
             font-family: 'Courier New', monospace;
         }
         
+        .category-info {
+            color: #2b2b2b;
+            font-size: 0.65em;
+            font-style: italic;
+            margin-top: 2px;
+            line-height: 1.2;
+        }
+        
         .price {
             font-weight: 700;
             color: #2b2b2b;
@@ -326,6 +427,17 @@ def generate_beer_card(beer: Dict[str, Any]) -> str:
     product_id = beer.get('productId', '')
     price = beer.get('price', 0)  # Numeric value, no escaping needed
     
+    # Format category info
+    category_level2 = beer.get('categoryLevel2', '')
+    category_level3 = beer.get('categoryLevel3', '')
+    category_text = ""
+    if category_level2 and category_level3:
+        category_text = f"{html.escape(category_level2)} • {html.escape(category_level3)}"
+    elif category_level2:
+        category_text = html.escape(category_level2)
+    elif category_level3:
+        category_text = html.escape(category_level3)
+    
     # Build URLs with safe fallbacks
     if product_number != 'N/A':
         systembolaget_url = f"{SYSTEMBOLAGET_BASE_URL}/{beer.get('productNumber')}"
@@ -337,7 +449,7 @@ def generate_beer_card(beer: Dict[str, Any]) -> str:
     else:
         image_url = ""  # Will trigger the placeholder in the HTML
     
-    return f"""                <div class="beer-item">
+    return f"""                <div class="beer-item" data-category2="{html.escape(category_level2)}" data-category3="{html.escape(category_level3)}" data-apk="{apk:.2f}">
                     <div class="beer-image-container">
                         <img src="{image_url}" alt="{name}" class="beer-image" loading="lazy" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\\'beer-image-placeholder\\'>🍺</div>';">
                     </div>
@@ -349,6 +461,7 @@ def generate_beer_card(beer: Dict[str, Any]) -> str:
                             <span class="product-number">#{product_number}</span>
                             <span class="price">{price:.2f} kr</span>
                         </div>
+                        {f'<div class="category-info">{category_text}</div>' if category_text else ''}
                         <div class="apk {apk_class}">APK: {apk:.2f}</div>
                     </div>
                 </div>
@@ -373,6 +486,40 @@ def generate_html_header(today: datetime, two_weeks_forward: datetime) -> str:
             <h1>✨🍺 KOMMANDE ÖLSLÄPP 🍺✨</h1>
             <p>⭐ {today.date()} till {two_weeks_forward.date()} ⭐</p>
         </header>
+        <div class="filter-section">
+            <div class="filter-container">
+                <div class="filter-dropdowns">
+                    <div class="filter-group">
+                        <label class="filter-label" for="category2-filter">Kategori:</label>
+                        <select id="category2-filter" class="filter-select">
+                            <option value="">Alla kategorier</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label class="filter-label" for="category3-filter">Underkategori:</label>
+                        <select id="category3-filter" class="filter-select">
+                            <option value="">Alla kategorier</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label class="filter-label" for="apk-filter">APK Range:</label>
+                        <select id="apk-filter" class="filter-select">
+                            <option value="">Alla APK-värden</option>
+                            <option value="0.8+">Hög APK (0.8+)</option>
+                            <option value="0.6-0.8">Medium APK (0.6-0.8)</option>
+                            <option value="0.4-0.6">Låg APK (0.4-0.6)</option>
+                            <option value="0.2-0.4">Mycket låg APK (0.2-0.4)</option>
+                            <option value="0-0.2">Minimal APK (0-0.2)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="filter-actions">
+                    <button id="apply-filter" class="filter-btn primary">Filtrera</button>
+                    <button id="clear-filter" class="filter-btn secondary">Rensa</button>
+                </div>
+            </div>
+            <div class="filter-results" id="filter-results"></div>
+        </div>
 """
 
 
@@ -383,6 +530,205 @@ def generate_html_footer() -> str:
             <p>Genererad {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} | APK = Alkohol per krona (ml ren alkohol/kr)</p>
         </footer>
     </div>
+    <script>
+        // Extract unique categories from beer data
+        function extractCategories() {{
+            const beers = document.querySelectorAll('.beer-item');
+            const category2Set = new Set();
+            const category3Set = new Set();
+            
+            beers.forEach(beer => {{
+                const cat2 = beer.getAttribute('data-category2');
+                const cat3 = beer.getAttribute('data-category3');
+                
+                if (cat2 && cat2.trim()) {{
+                    category2Set.add(cat2);
+                }}
+                if (cat3 && cat3.trim()) {{
+                    category3Set.add(cat3);
+                }}
+            }});
+            
+            return {{
+                category2: Array.from(category2Set).sort(),
+                category3: Array.from(category3Set).sort()
+            }};
+        }}
+        
+        // Get available category3 options based on selected category2
+        function getAvailableCategory3Options(selectedCategory2) {{
+            const beers = document.querySelectorAll('.beer-item');
+            const category3Set = new Set();
+            
+            beers.forEach(beer => {{
+                const beerCategory2 = beer.getAttribute('data-category2') || '';
+                const beerCategory3 = beer.getAttribute('data-category3') || '';
+                
+                // If no category2 filter or this beer matches the selected category2
+                if (!selectedCategory2 || beerCategory2 === selectedCategory2) {{
+                    if (beerCategory3 && beerCategory3.trim()) {{
+                        category3Set.add(beerCategory3);
+                    }}
+                }}
+            }});
+            
+            return Array.from(category3Set).sort();
+        }}
+        
+        // Populate filter dropdowns
+        function populateFilters() {{
+            const categories = extractCategories();
+            const category2Select = document.getElementById('category2-filter');
+            const category3Select = document.getElementById('category3-filter');
+            
+            // Clear existing options except first
+            category2Select.innerHTML = '<option value="">Alla kategorier</option>';
+            category3Select.innerHTML = '<option value="">Alla kategorier</option>';
+            
+            // Add category2 options
+            categories.category2.forEach(cat => {{
+                const option = document.createElement('option');
+                option.value = cat;
+                option.textContent = cat;
+                category2Select.appendChild(option);
+            }});
+            
+            // Add all category3 options initially
+            categories.category3.forEach(cat => {{
+                const option = document.createElement('option');
+                option.value = cat;
+                option.textContent = cat;
+                category3Select.appendChild(option);
+            }});
+        }}
+        
+        // Update category3 dropdown based on category2 selection
+        function updateCategory3Options() {{
+            const category2Select = document.getElementById('category2-filter');
+            const category3Select = document.getElementById('category3-filter');
+            const selectedCategory2 = category2Select.value;
+            
+            // Get available category3 options for the selected category2
+            const availableCategory3 = getAvailableCategory3Options(selectedCategory2);
+            
+            // Clear existing options except first
+            category3Select.innerHTML = '<option value="">Alla kategorier</option>';
+            
+            // Add available category3 options
+            availableCategory3.forEach(cat => {{
+                const option = document.createElement('option');
+                option.value = cat;
+                option.textContent = cat;
+                category3Select.appendChild(option);
+            }});
+            
+            // Reset category3 selection if it's no longer available
+            if (selectedCategory2 && !availableCategory3.includes(category3Select.value)) {{
+                category3Select.value = '';
+            }}
+        }}
+        
+        // Check if APK value matches the selected range
+        function matchesApkRange(apkValue, range) {{
+            if (!range) return true;
+            
+            const apk = parseFloat(apkValue);
+            
+            switch(range) {{
+                case '0.8+':
+                    return apk >= 0.8;
+                case '0.6-0.8':
+                    return apk >= 0.6 && apk < 0.8;
+                case '0.4-0.6':
+                    return apk >= 0.4 && apk < 0.6;
+                case '0.2-0.4':
+                    return apk >= 0.2 && apk < 0.4;
+                case '0-0.2':
+                    return apk >= 0 && apk < 0.2;
+                default:
+                    return true;
+            }}
+        }}
+        
+        // Filter beers based on selected categories and APK range
+        function filterBeers() {{
+            const category2Filter = document.getElementById('category2-filter').value;
+            const category3Filter = document.getElementById('category3-filter').value;
+            const apkFilter = document.getElementById('apk-filter').value;
+            const beers = document.querySelectorAll('.beer-item');
+            const resultsDiv = document.getElementById('filter-results');
+            let visibleCount = 0;
+            
+            beers.forEach(beer => {{
+                const beerCategory2 = beer.getAttribute('data-category2') || '';
+                const beerCategory3 = beer.getAttribute('data-category3') || '';
+                const beerApk = beer.getAttribute('data-apk') || '0';
+                
+                let showBeer = true;
+                
+                if (category2Filter && beerCategory2 !== category2Filter) {{
+                    showBeer = false;
+                }}
+                
+                if (category3Filter && beerCategory3 !== category3Filter) {{
+                    showBeer = false;
+                }}
+                
+                if (apkFilter && !matchesApkRange(beerApk, apkFilter)) {{
+                    showBeer = false;
+                }}
+                
+                if (showBeer) {{
+                    beer.classList.remove('hidden');
+                    visibleCount++;
+                }} else {{
+                    beer.classList.add('hidden');
+                }}
+            }});
+            
+            // Update results text
+            const totalCount = beers.length;
+            if (category2Filter || category3Filter || apkFilter) {{
+                resultsDiv.textContent = `Visar ${{visibleCount}} av ${{totalCount}} öl`;
+            }} else {{
+                resultsDiv.textContent = '';
+            }}
+        }}
+        
+        // Clear all filters
+        function clearFilters() {{
+            document.getElementById('category2-filter').value = '';
+            document.getElementById('category3-filter').value = '';
+            document.getElementById('apk-filter').value = '';
+            
+            // Reset category3 dropdown to show all options
+            updateCategory3Options();
+            
+            const beers = document.querySelectorAll('.beer-item');
+            beers.forEach(beer => {{
+                beer.classList.remove('hidden');
+            }});
+            
+            document.getElementById('filter-results').textContent = '';
+        }}
+        
+        // Initialize filters when page loads
+        document.addEventListener('DOMContentLoaded', function() {{
+            populateFilters();
+            
+            // Add event listeners
+            document.getElementById('apply-filter').addEventListener('click', filterBeers);
+            document.getElementById('clear-filter').addEventListener('click', clearFilters);
+            
+            // Auto-filter on dropdown change
+            document.getElementById('category2-filter').addEventListener('change', function() {{
+                updateCategory3Options();
+                filterBeers();
+            }});
+            document.getElementById('category3-filter').addEventListener('change', filterBeers);
+            document.getElementById('apk-filter').addEventListener('change', filterBeers);
+        }});
+    </script>
 </body>
 </html>
 """
