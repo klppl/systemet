@@ -1423,5 +1423,30 @@
     "id": "1132901",
     "date": 1760313600000,
     "reason": "Priset ändrades från 16.8 till 18.9 kr."
+  },
+  {
+    "id": "8812001",
+    "date": 1760486400000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "3687703",
+    "date": 1760486400000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "3687103",
+    "date": 1760486400000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "3769503",
+    "date": 1760486400000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "3212415",
+    "date": 1760486400000,
+    "reason": "Ny produkt."
   }
 ]
