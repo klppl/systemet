@@ -1,60 +1,5 @@
 [
   {
-    "id": "8848501",
-    "date": 1760054400000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "162703",
-    "date": 1760054400000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "1037001",
-    "date": 1760054400000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "1081014",
-    "date": 1760054400000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "1029734",
-    "date": 1760054400000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "1037234",
-    "date": 1760054400000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "1002614",
-    "date": 1760054400000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "1032414",
-    "date": 1760054400000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3214915",
-    "date": 1760054400000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "1330814",
-    "date": 1760054400000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "1328314",
-    "date": 1760054400000,
-    "reason": "Ny produkt."
-  },
-  {
     "id": "8883501",
     "date": 1760140800000,
     "reason": "Ny produkt."
@@ -1432,6 +1377,71 @@
   {
     "id": "3212415",
     "date": 1760486400000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "3113435",
+    "date": 1760659200000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "1083202",
+    "date": 1760659200000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "1037403",
+    "date": 1760659200000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "1053803",
+    "date": 1760659200000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "1040103",
+    "date": 1760659200000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "1063701",
+    "date": 1760659200000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "1332201",
+    "date": 1760659200000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "1045901",
+    "date": 1760659200000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "5453601",
+    "date": 1760659200000,
+    "reason": "Priset ändrades från 125.0 till 109.0 kr."
+  },
+  {
+    "id": "1113201",
+    "date": 1760659200000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "1330215",
+    "date": 1760659200000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "1330135",
+    "date": 1760659200000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "1327215",
+    "date": 1760659200000,
     "reason": "Ny produkt."
   }
 ]
