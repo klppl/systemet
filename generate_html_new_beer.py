@@ -548,8 +548,8 @@ def generate_beer_card(beer: Dict[str, Any]) -> str:
     price = beer.get('price', 0)  # Numeric value, no escaping needed
     
     # Format category info
-    category_level2 = beer.get('categoryLevel2', '')
-    category_level3 = beer.get('categoryLevel3', '')
+    category_level2 = beer.get('categoryLevel2') or ''
+    category_level3 = beer.get('categoryLevel3') or ''
     category_text = ""
     if category_level2 and category_level3:
         category_text = f"{html.escape(category_level2)} • {html.escape(category_level3)}"
