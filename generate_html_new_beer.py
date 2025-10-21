@@ -65,64 +65,67 @@ def get_css_styles() -> str:
         }
         
         header {
-            background: linear-gradient(90deg, #006442 0%, #008855 50%, #006442 100%);
+            background: linear-gradient(180deg, #1e8449 0%, #166534 100%);
             color: #FFD100;
-            padding: 20px;
+            padding: 26px 20px 20px 20px;
             border-bottom: 5px solid #FFD100;
             position: relative;
             overflow: hidden;
         }
         
-        .header-main {
+        .header-top {
             display: flex;
+            justify-content: center;
             align-items: center;
-            gap: 30px;
-            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 3rem;
         }
         
         @media (max-width: 1024px) {
-            .header-main {
+            .header-top {
                 flex-direction: column;
                 align-items: flex-start;
-                gap: 20px;
+                gap: 1.5rem;
             }
             
             .header-left {
                 width: 100%;
-                justify-content: center;
             }
             
-            .header-filters {
+            .header-right {
                 width: 100%;
-                justify-content: center;
             }
         }
         
         @media (max-width: 768px) {
-            .header-left {
+            .header-top {
                 flex-direction: column;
+                align-items: center;
                 text-align: center;
-                gap: 10px;
             }
             
-            .header-filters {
-                flex-direction: row;
-                align-items: flex-end;
-                justify-content: center;
-                gap: 15px;
-                width: 100%;
-                flex-wrap: wrap;
-            }
-            
-            .header-filter-group {
-                display: flex;
-                flex-direction: column;
+            .header-left {
                 align-items: center;
             }
             
-            .header-filter-actions {
-                display: flex;
-                gap: 10px;
+            .header-right {
+                width: 100%;
+            }
+            
+            .header-filters {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+            
+            .header-filter-group {
+                width: 100%;
+                max-width: 280px;
+                align-items: stretch;
+            }
+            
+            .header-filter-select {
+                width: 100%;
             }
         }
         
@@ -146,105 +149,88 @@ def get_css_styles() -> str:
         
         .header-left {
             display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .header-right {
+            display: flex;
             align-items: center;
-            gap: 20px;
         }
         
         .header-filters {
             display: flex;
-            align-items: flex-end;
-            gap: 15px;
+            justify-content: center;
+            align-items: center;
+            gap: 1.2rem;
             flex-wrap: wrap;
-        }
-        
-        .header-logo {
-            max-width: 100%;
-            height: auto;
-            max-height: 120px;
-            object-fit: contain;
-        }
-        
-        .header-content {
-            text-align: left;
+            background: rgba(0, 0, 0, 0.05);
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-top: 0.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
         
         .header-title {
             font-size: 2em;
-            margin-bottom: 5px;
+            margin: 0;
             font-weight: 700;
             text-shadow: 3px 3px 0px rgba(0,0,0,0.3), -1px -1px 0px rgba(255,255,255,0.1);
             letter-spacing: 2px;
+            color: #FFD100;
         }
         
-        .header-subtitle {
+        .date-range {
             font-size: 0.95em;
             opacity: 0.95;
             font-weight: 600;
+            color: #FFD100;
+            margin: 0;
         }
         
         .header-filter-group {
             display: flex;
             flex-direction: column;
-            gap: 5px;
+            align-items: flex-start;
         }
         
         .header-filter-label {
-            font-size: 0.8em;
-            font-weight: 600;
-            color: #FFD100;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 400;
+            margin-bottom: 4px;
+            padding: 0 8px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .filter-icon {
+            opacity: 0.8;
         }
         
         .header-filter-select {
+            border: 2px solid transparent;
+            border-radius: 6px;
             padding: 6px 10px;
-            border: 1px solid #FFD100;
-            border-radius: 4px;
-            background: white;
-            font-size: 0.85em;
-            color: #495057;
-            min-width: 140px;
+            background-color: #fff;
+            color: #111;
+            font-weight: 500;
+            min-width: 180px;
             cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .header-filter-select:hover {
+            border-color: #facc15;
+            box-shadow: 0 0 6px rgba(255, 255, 0, 0.3), 0 2px 8px rgba(250, 204, 21, 0.2);
         }
         
         .header-filter-select:focus {
             outline: none;
-            border-color: #FFD100;
-            box-shadow: 0 0 0 2px rgba(255, 209, 0, 0.25);
+            border-color: #facc15;
+            box-shadow: 0 0 0 3px rgba(250, 204, 21, 0.3), 0 2px 8px rgba(250, 204, 21, 0.2);
         }
-        
-        .header-filter-actions {
-            display: flex;
-            gap: 6px;
-        }
-        
-        .header-filter-btn {
-            padding: 6px 12px;
-            border: 1px solid #FFD100;
-            border-radius: 4px;
-            font-size: 0.85em;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-        
-        .header-filter-btn.primary {
-            background: #FFD100;
-            color: #006442;
-            font-weight: 600;
-        }
-        
-        .header-filter-btn.primary:hover {
-            background: #e6c200;
-        }
-        
-        .header-filter-btn.secondary {
-            background: transparent;
-            color: #FFD100;
-        }
-        
-        .header-filter-btn.secondary:hover {
-            background: rgba(255, 209, 0, 0.1);
-        }
-        
-        
         
         .filter-container {
             max-width: 1200px;
@@ -358,7 +344,8 @@ def get_css_styles() -> str:
         .beer-list {
             display: grid;
             grid-template-columns: repeat(5, 1fr);
-            gap: 18px;
+            column-gap: 18px;
+            row-gap: 28px;
         }
         
         .beer-item {
@@ -366,12 +353,13 @@ def get_css_styles() -> str:
             border-radius: 6px;
             overflow: hidden;
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-            transition: transform 0.2s, box-shadow 0.2s;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             display: flex;
             flex-direction: column;
             height: fit-content;
             text-decoration: none;
             color: inherit;
+            cursor: pointer;
         }
         
         .beer-item.hidden {
@@ -385,14 +373,19 @@ def get_css_styles() -> str:
         }
         
         .beer-item:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transform: translateY(-6px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.18);
             text-decoration: none;
             color: inherit;
         }
         
         .beer-item:hover .beer-name {
             color: #004d32;
+        }
+        
+        .beer-item:active {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.12);
         }
         
         .beer-image-container {
@@ -472,24 +465,25 @@ def get_css_styles() -> str:
         }
         
         .apk {
-            background: #555;
-            color: #ffffff;
-            padding: 4px 8px;
-            border-radius: 12px;
-            font-weight: 700;
+            background: #ca8a04;
+            color: #fff;
+            border-radius: 6px;
+            padding: 2px 8px;
+            font-weight: 600;
             font-size: 0.75em;
             text-align: center;
             width: 100%;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
         }
         
         .apk.high {
-            background: #004225;
-            color: #ffffff;
+            background: #15803d;
+            color: #fff;
         }
         
         .apk.medium {
-            background: #b8860b;
-            color: #ffffff;
+            background: #d97706;
+            color: #fff;
         }
         
         footer {
@@ -603,29 +597,36 @@ def generate_html_header(today: datetime, two_weeks_forward: datetime) -> str:
 <body>
     <div class="container">
         <header>
-            <div class="header-main">
+            <div class="header-top">
                 <div class="header-left">
-                    <img src="logga.png" alt="KOMMANDE ÖLSLÄPP" class="header-logo">
-                    <div class="header-content">
-                        <h1 class="header-title">KOMMANDE ÖLSLÄPP</h1>
-                        <p class="header-subtitle">⭐ {today.date()} till {two_weeks_forward.date()} ⭐</p>
-                    </div>
+                    <h1 class="header-title">KOMMANDE ÖLSLÄPP</h1>
+                    <p class="date-range">⭐ {today.date()} till {two_weeks_forward.date()} ⭐</p>
                 </div>
-                <div class="header-filters">
+                <div class="header-right">
+                    <div class="header-filters">
                     <div class="header-filter-group">
-                        <label class="header-filter-label" for="category2-filter">Kategori:</label>
+                        <label class="header-filter-label" for="category2-filter">
+                            <span class="filter-icon">🗂</span>
+                            <span>Kategori:</span>
+                        </label>
                         <select id="category2-filter" class="header-filter-select">
                             <option value="">Alla kategorier</option>
                         </select>
                     </div>
                     <div class="header-filter-group">
-                        <label class="header-filter-label" for="category3-filter">Underkategori:</label>
+                        <label class="header-filter-label" for="category3-filter">
+                            <span class="filter-icon">⚙️</span>
+                            <span>Underkategori:</span>
+                        </label>
                         <select id="category3-filter" class="header-filter-select">
                             <option value="">Alla kategorier</option>
                         </select>
                     </div>
                     <div class="header-filter-group">
-                        <label class="header-filter-label" for="apk-filter">APK:</label>
+                        <label class="header-filter-label" for="apk-filter">
+                            <span class="filter-icon">🧮</span>
+                            <span>APK:</span>
+                        </label>
                         <select id="apk-filter" class="header-filter-select">
                             <option value="">Alla APK-värden</option>
                             <option value="0.8+">Hög APK (0.8+)</option>
@@ -635,9 +636,6 @@ def generate_html_header(today: datetime, two_weeks_forward: datetime) -> str:
                             <option value="0-0.2">Minimal APK (0-0.2)</option>
                         </select>
                     </div>
-                    <div class="header-filter-actions">
-                        <button id="apply-filter" class="header-filter-btn primary">Filtrera</button>
-                        <button id="clear-filter" class="header-filter-btn secondary">Rensa</button>
                     </div>
                 </div>
             </div>
@@ -838,10 +836,6 @@ def generate_html_footer() -> str:
         // Initialize filters when page loads
         document.addEventListener('DOMContentLoaded', function() {{
             populateFilters();
-            
-            // Add event listeners
-            document.getElementById('apply-filter').addEventListener('click', filterBeers);
-            document.getElementById('clear-filter').addEventListener('click', clearFilters);
             
             // Auto-filter on dropdown change
             document.getElementById('category2-filter').addEventListener('change', function() {{
