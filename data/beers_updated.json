@@ -1,55 +1,5 @@
 [
   {
-    "id": "8827403",
-    "date": 1764115200000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "1085901",
-    "date": 1764115200000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "8838701",
-    "date": 1764115200000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "8817001",
-    "date": 1764115200000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "8819302",
-    "date": 1764115200000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "8868101",
-    "date": 1764115200000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "8800834",
-    "date": 1764115200000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "8895634",
-    "date": 1764115200000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "5741135",
-    "date": 1764115200000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "123401",
-    "date": 1764115200000,
-    "reason": "Priset ändrades från 17.7 till 19.9 kr."
-  },
-  {
     "id": "3297203",
     "date": 1764201600000,
     "reason": "Ny produkt."
@@ -988,5 +938,15 @@
     "id": "3831715",
     "date": 1764633600000,
     "reason": "Priset ändrades från 25.9 till 19.9 kr."
+  },
+  {
+    "id": "8823709",
+    "date": 1764720000000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "8829534",
+    "date": 1764720000000,
+    "reason": "Ny produkt."
   }
 ]
