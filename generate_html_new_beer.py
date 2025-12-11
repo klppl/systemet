@@ -192,14 +192,6 @@ def generate_html_header(today: datetime, two_weeks_forward: datetime, categorie
                         <option value="price_asc">Pris (Lägst)</option>
                     </select>
                 </div>
-
-                <label class="toggle-wrapper" title="Visa släpp som redan varit">
-                    <input type="checkbox" id="show-past-toggle" class="toggle-switch">
-                    <div class="toggle-track">
-                        <div class="toggle-knob"></div>
-                    </div>
-                    <span class="toggle-label-text">Tidigare</span>
-                </label>
             </div>
         </div>
         <div class="header-content" style="padding-top: 0; padding-bottom: 0;">
@@ -381,28 +373,56 @@ def filter_upcoming_launches() -> None:
             
             # Use Swedish weekday names from constants
             
-            # Iterate through dates in order
-            for launch_date in sorted(beers_by_date.keys()):
+            # Split dates into past and future
+            sorted_dates = sorted(beers_by_date.keys())
+            past_dates = [d for d in sorted_dates if d < today.date()]
+            future_dates = [d for d in sorted_dates if d >= today.date()]
+            
+            # --- Past Releases Accordion ---
+            if past_dates:
+                f.write(f"""
+        <div class="past-releases-header" onclick="togglePastReleases()">
+            <span>Tidigare släpp ({min(past_dates)} till {max(past_dates)})</span>
+            <span class="accordion-icon">▼</span>
+        </div>
+        <div id="past-releases-container" style="display: none;">
+""")
+                for launch_date in past_dates:
+                    weekday_english = launch_date.strftime('%A')
+                    weekday_swedish = SWEDISH_WEEKDAYS.get(weekday_english, weekday_english)
+                    date_str = launch_date.strftime('%Y-%m-%d')
+                    list_id = f"list-{date_str}"
+                    
+                    f.write(f"""
+            <div class="date-section past-release" data-date="{date_str}">
+                <div class="date-header">
+                    📅 {date_str} ({weekday_swedish})
+                    <span class="beer-count">{len(beers_by_date[launch_date])} öl</span>
+                </div>
+                <div class="beer-list" id="{list_id}">
+""")
+                    for beer in beers_by_date[launch_date]:
+                        beer['parent_id'] = list_id
+                        f.write(generate_beer_card(beer))
+                    f.write("            </div></div>")
+                
+                f.write("        </div>") # End accordion container
+                
+            # --- Upcoming Releases ---
+            for launch_date in future_dates:
                 weekday_english = launch_date.strftime('%A')
                 weekday_swedish = SWEDISH_WEEKDAYS.get(weekday_english, weekday_english)
                 date_str = launch_date.strftime('%Y-%m-%d')
                 list_id = f"list-{date_str}"
                 
-                is_past = launch_date < today.date()
-                section_class = "date-section past-release" if is_past else "date-section"
-                
-                # By default past releases are hidden via CSS or JS toggle state
-                # We will handle visibility via a parent class or specific class toggle
-                
                 f.write(f"""
-        <div class="{section_class}" data-date="{date_str}">
+        <div class="date-section" data-date="{date_str}">
             <div class="date-header">
                 📅 {date_str} ({weekday_swedish})
                 <span class="beer-count">{len(beers_by_date[launch_date])} öl</span>
             </div>
             <div class="beer-list" id="{list_id}">
 """)
-                
                 for beer in beers_by_date[launch_date]:
                     beer['parent_id'] = list_id
                     f.write(generate_beer_card(beer))

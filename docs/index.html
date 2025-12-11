@@ -52,14 +52,6 @@
                         <option value="price_asc">Pris (Lägst)</option>
                     </select>
                 </div>
-
-                <label class="toggle-wrapper" title="Visa släpp som redan varit">
-                    <input type="checkbox" id="show-past-toggle" class="toggle-switch">
-                    <div class="toggle-track">
-                        <div class="toggle-knob"></div>
-                    </div>
-                    <span class="toggle-label-text">Tidigare</span>
-                </label>
             </div>
         </div>
         <div class="header-content" style="padding-top: 0; padding-bottom: 0;">
@@ -69,12 +61,18 @@
 
     <div class="container">
 
-        <div class="date-section past-release" data-date="2025-11-28">
-            <div class="date-header">
-                📅 2025-11-28 (Fredag)
-                <span class="beer-count">6 öl</span>
-            </div>
-            <div class="beer-list" id="list-2025-11-28">
+        <div class="past-releases-header" onclick="togglePastReleases()">
+            <span>Tidigare släpp (2025-11-28 till 2025-12-10)</span>
+            <span class="accordion-icon">▼</span>
+        </div>
+        <div id="past-releases-container" style="display: none;">
+
+            <div class="date-section past-release" data-date="2025-11-28">
+                <div class="date-header">
+                    📅 2025-11-28 (Fredag)
+                    <span class="beer-count">6 öl</span>
+                </div>
+                <div class="beer-list" id="list-2025-11-28">
 
         <div class="beer-card" 
              data-category2="Porter &amp; Stout" 
@@ -303,16 +301,13 @@
                 </div>
             </a>
         </div>
-    
-            </div>
-        </div>
-
-        <div class="date-section past-release" data-date="2025-12-01">
-            <div class="date-header">
-                📅 2025-12-01 (Måndag)
-                <span class="beer-count">31 öl</span>
-            </div>
-            <div class="beer-list" id="list-2025-12-01">
+                </div></div>
+            <div class="date-section past-release" data-date="2025-12-01">
+                <div class="date-header">
+                    📅 2025-12-01 (Måndag)
+                    <span class="beer-count">31 öl</span>
+                </div>
+                <div class="beer-list" id="list-2025-12-01">
 
         <div class="beer-card" 
              data-category2="Ljus lager" 
@@ -1471,16 +1466,13 @@
                 </div>
             </a>
         </div>
-    
-            </div>
-        </div>
-
-        <div class="date-section past-release" data-date="2025-12-02">
-            <div class="date-header">
-                📅 2025-12-02 (Tisdag)
-                <span class="beer-count">4 öl</span>
-            </div>
-            <div class="beer-list" id="list-2025-12-02">
+                </div></div>
+            <div class="date-section past-release" data-date="2025-12-02">
+                <div class="date-header">
+                    📅 2025-12-02 (Tisdag)
+                    <span class="beer-count">4 öl</span>
+                </div>
+                <div class="beer-list" id="list-2025-12-02">
 
         <div class="beer-card" 
              data-category2="Ale" 
@@ -1633,16 +1625,13 @@
                 </div>
             </a>
         </div>
-    
-            </div>
-        </div>
-
-        <div class="date-section past-release" data-date="2025-12-03">
-            <div class="date-header">
-                📅 2025-12-03 (Onsdag)
-                <span class="beer-count">7 öl</span>
-            </div>
-            <div class="beer-list" id="list-2025-12-03">
+                </div></div>
+            <div class="date-section past-release" data-date="2025-12-03">
+                <div class="date-header">
+                    📅 2025-12-03 (Onsdag)
+                    <span class="beer-count">7 öl</span>
+                </div>
+                <div class="beer-list" id="list-2025-12-03">
 
         <div class="beer-card" 
              data-category2="Ljus lager" 
@@ -1901,16 +1890,13 @@
                 </div>
             </a>
         </div>
-    
-            </div>
-        </div>
-
-        <div class="date-section past-release" data-date="2025-12-05">
-            <div class="date-header">
-                📅 2025-12-05 (Fredag)
-                <span class="beer-count">16 öl</span>
-            </div>
-            <div class="beer-list" id="list-2025-12-05">
+                </div></div>
+            <div class="date-section past-release" data-date="2025-12-05">
+                <div class="date-header">
+                    📅 2025-12-05 (Fredag)
+                    <span class="beer-count">16 öl</span>
+                </div>
+                <div class="beer-list" id="list-2025-12-05">
 
         <div class="beer-card" 
              data-category2="Porter &amp; Stout" 
@@ -2499,16 +2485,13 @@
                 </div>
             </a>
         </div>
-    
-            </div>
-        </div>
-
-        <div class="date-section past-release" data-date="2025-12-08">
-            <div class="date-header">
-                📅 2025-12-08 (Måndag)
-                <span class="beer-count">155 öl</span>
-            </div>
-            <div class="beer-list" id="list-2025-12-08">
+                </div></div>
+            <div class="date-section past-release" data-date="2025-12-08">
+                <div class="date-header">
+                    📅 2025-12-08 (Måndag)
+                    <span class="beer-count">155 öl</span>
+                </div>
+                <div class="beer-list" id="list-2025-12-08">
 
         <div class="beer-card" 
              data-category2="Mellanmörk &amp; Mörk lager" 
@@ -8095,16 +8078,13 @@
                 </div>
             </a>
         </div>
-    
-            </div>
-        </div>
-
-        <div class="date-section past-release" data-date="2025-12-09">
-            <div class="date-header">
-                📅 2025-12-09 (Tisdag)
-                <span class="beer-count">8 öl</span>
-            </div>
-            <div class="beer-list" id="list-2025-12-09">
+                </div></div>
+            <div class="date-section past-release" data-date="2025-12-09">
+                <div class="date-header">
+                    📅 2025-12-09 (Tisdag)
+                    <span class="beer-count">8 öl</span>
+                </div>
+                <div class="beer-list" id="list-2025-12-09">
 
         <div class="beer-card" 
              data-category2="Porter &amp; Stout" 
@@ -8401,16 +8381,13 @@
                 </div>
             </a>
         </div>
-    
-            </div>
-        </div>
-
-        <div class="date-section past-release" data-date="2025-12-10">
-            <div class="date-header">
-                📅 2025-12-10 (Onsdag)
-                <span class="beer-count">2 öl</span>
-            </div>
-            <div class="beer-list" id="list-2025-12-10">
+                </div></div>
+            <div class="date-section past-release" data-date="2025-12-10">
+                <div class="date-header">
+                    📅 2025-12-10 (Onsdag)
+                    <span class="beer-count">2 öl</span>
+                </div>
+                <div class="beer-list" id="list-2025-12-10">
 
         <div class="beer-card" 
              data-category2="Annan öl" 
@@ -8483,10 +8460,7 @@
                 </div>
             </a>
         </div>
-    
-            </div>
-        </div>
-
+                </div></div>        </div>
         <div class="date-section" data-date="2025-12-15">
             <div class="date-header">
                 📅 2025-12-15 (Måndag)
@@ -9188,7 +9162,7 @@
 
         <footer>
             <div class="footer-info">
-                Genererad 2025-12-11 11:19 <br>
+                Genererad 2025-12-11 14:01 <br>
                 APK = Alkohol per krona (ml ren alkohol/kr)
             </div>
         </footer>

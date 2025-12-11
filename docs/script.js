@@ -1,3 +1,24 @@
+// Past Releases Toggle
+window.togglePastReleases = function () {
+    const container = document.getElementById('past-releases-container');
+    const header = document.querySelector('.past-releases-header');
+
+    console.log('Toggle Clicked. Container:', container);
+    if (container.style.display === 'none' || container.style.display === '') {
+        container.style.display = 'block';
+        header.classList.add('active');
+
+        // Safety: Ensure internal sections are visible
+        const sections = container.querySelectorAll('.date-section');
+        sections.forEach(s => s.style.display = 'block');
+        console.log('Opened accordion. Found sections:', sections.length);
+
+    } else {
+        container.style.display = 'none';
+        header.classList.remove('active');
+    }
+};
+
 // Ensure functions are global
 window.filterBeers = function () {
     console.log("filterBeers START");
