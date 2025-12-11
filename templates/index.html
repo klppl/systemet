@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Systemet - Kommande ölsläpp ({{ today }} — {{ end_date }})</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍺</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-branding">
+                <h1>Systemet — Kommande Ölsläpp</h1>
+                <div class="date-range">{{ today }} — {{ end_date }}</div>
+            </div>
+
+            <div class="filter-panel">
+                <div class="filter-group">
+                    <label class="filter-label">Kategori</label>
+                    <select id="category-select" class="filter-select" onchange="window.filterBeers()">
+                        <option value="">Alla kategorier</option>
+                        {% for cat in categories %}
+                        <option value="{{ cat }}">{{ cat }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label class="filter-label">APK Filter</label>
+                    <select id="apk-select" class="filter-select" onchange="window.filterBeers()">
+                        <option value="all">Alla Nivåer</option>
+                        <option value="over_2">APK &gt; 2.0 (Topp)</option>
+                        <option value="1.5_2">1.5 - 2.0 (Bra)</option>
+                        <option value="1_1.5">1.0 - 1.5 (Ok)</option>
+                        <option value="under_1">Under 1.0 (Låg)</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label class="filter-label">Sortering</label>
+                    <select id="sort-select" class="filter-select" onchange="window.sortBeers()">
+                        <option value="date">Standard</option>
+                        <option value="rating_desc">Betyg (Högst)</option>
+                        <option value="apk_desc">APK (Högst)</option>
+                        <option value="price_asc">Pris (Lägst)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        {% for group in date_groups %}
+        <div class="date-section {{ 'past-release' if group.is_past else '' }} {{ 'hidden' if group.is_hidden else '' }}"
+            data-date="{{ group.date_str }}">
+            <div class="date-header {{ '' if group.is_past else 'active' }}" onclick="toggleDateSection(this)"
+                data-target="{{ group.list_id }}">
+                <span>📅 {{ group.friendly_date }}</span>
+                <div class="header-right">
+                    <span class="beer-count">{{ group.beers|length }} öl</span>
+                    <span class="accordion-icon">▼</span>
+                </div>
+            </div>
+
+            <div class="beer-list" id="{{ group.list_id }}" style="{{ 'display: none;' if group.is_past else '' }}">
+                {% for beer in group.beers %}
+                <div class="beer-card" data-category2="{{ beer.categoryLevel2 }}"
+                    data-apk="{{ '%.2f'|format(beer.apk) }}" data-price="{{ '%.2f'|format(beer.price) }}"
+                    data-rating="{{ '%.2f'|format(beer.untappd.rating_score) if beer.untappd else '0.00' }}"
+                    data-parent-id="{{ group.list_id }}">
+
+                    {% if beer.untappd and beer.untappd.rating_score > 0 %}
+                    <a href="https://untappd.com/beer/{{ beer.untappd.bid }}" target="_blank" rel="noopener"
+                        class="badge-untappd" onclick="event.stopPropagation();">
+                        <img src="untappd_16x16.png" class="untappd-icon" alt="U">
+                        <span>{{ '%.2f'|format(beer.untappd.rating_score) }}</span>
+                        <span style="opacity:0.7; font-weight:400">
+                            {% if beer.untappd.rating_count >= 1000 %}
+                            ({{ '%.1f'|format(beer.untappd.rating_count/1000) }}k)
+                            {% else %}
+                            ({{ beer.untappd.rating_count }})
+                            {% endif %}
+                        </span>
+                    </a>
+                    {% endif %}
+
+                    <div class="badge-apk {{ beer.apk_class }}">APK {{ '%.2f'|format(beer.apk) }}</div>
+
+                    <a href="{{ beer.sys_url }}" target="_blank" rel="noopener" class="card-link">
+                        <div class="image-container">
+                            {% if beer.img_url %}
+                            <img src="{{ beer.img_url }}" alt="{{ beer.name }}" class="beer-image" loading="lazy"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            {% endif %}
+                            <div class="beer-image-placeholder" style="{{ 'display: none;' if beer.img_url else '' }}">
+                                🍺</div>
+                        </div>
+
+                        <div class="card-content">
+                            <div class="beer-category">{{ beer.display_category }}</div>
+                            <div class="beer-name" title="{{ beer.name }}">{{ beer.name }}</div>
+
+                            <div class="product-meta">
+                                <div class="price-row">
+                                    <span class="price">{{ '%.2f'|format(beer.price) }} kr</span>
+                                </div>
+                                <div class="specs">
+                                    <span>{{ beer.alcoholPercentage }}%</span> •
+                                    <span>{{ beer.volumeText }}</span> •
+                                    <span>#{{ beer.productNumber }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+
+        <!-- Global container for sorting -->
+        <div id="global-beer-list" class="beer-list" style="display:none;"></div>
+
+    </div>
+
+    <footer>
+        <div class="footer-info">
+            Genererad {{ generated_time }} <br>
+            APK = Alkohol per krona (ml ren alkohol/kr)
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
