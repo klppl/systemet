@@ -407,7 +407,7 @@ def filter_upcoming_launches() -> None:
                 
                 f.write(f"""
         <div class="{section_classes}" data-date="{date_str}">
-            <div class="date-header {header_active_class}" onclick="toggleDateSection('{list_id}')">
+            <div class="date-header {header_active_class}" onclick="toggleDateSection(this)" data-target="{list_id}">
                 <span>📅 {friendly_date}</span>
                 <div class="header-right">
                     <span class="beer-count">{len(beers_by_date[launch_date])} öl</span>

@@ -1,9 +1,7 @@
 // Toggle individual date sections
-window.toggleDateSection = function (listId) {
+window.toggleDateSection = function (header) {
+    const listId = header.getAttribute('data-target');
     const list = document.getElementById(listId);
-    // Find the header by going up to parent date-section then down to header, or just previous sibling
-    // Since we know the structure: header is previous sibling of list
-    const header = list.previousElementSibling;
 
     if (list.style.display === 'none' || list.style.display === '') {
         list.style.display = 'grid'; // Grid for beer cards
@@ -65,18 +63,13 @@ window.filterBeers = function () {
     // Handle date visibility
     const dates = document.querySelectorAll('.date-section');
     dates.forEach(date => {
-        const beersInDate = date.querySelectorAll('.beer-card:not(.hidden)');
-        const visibleBeers = date.querySelectorAll('.beer-card:not([style*="display: none"])');
+        // Check for visible beer cards by class, not inline style
+        const visibleBeers = date.querySelectorAll('.beer-card:not(.hidden)');
+
         if (visibleBeers.length === 0) {
-            date.style.display = 'none';
-            if (date.classList.contains('past-release')) {
-                console.log('Hiding past release section: ' + date.dataset.date);
-            }
+            date.classList.add('hidden');
         } else {
-            date.style.display = 'block';
-            if (date.classList.contains('past-release')) {
-                console.log('Showing past release section: ' + date.dataset.date + ' with ' + visibleBeers.length + ' beers');
-            }
+            date.classList.remove('hidden');
         }
     });
 
