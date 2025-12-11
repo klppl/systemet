@@ -194,9 +194,6 @@ def generate_html_header(today: datetime, two_weeks_forward: datetime, categorie
                 </div>
             </div>
         </div>
-        <div class="header-content" style="padding-top: 0; padding-bottom: 0;">
-             <div class="filter-results" id="filter-results"></div>
-        </div>
     </header>
 
     <div class="container">

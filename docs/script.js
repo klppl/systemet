@@ -80,10 +80,6 @@ window.filterBeers = function () {
         }
     });
 
-    const resultDiv = document.getElementById('filter-results');
-    if (resultDiv) {
-        resultDiv.textContent = 'Visar ' + visibleCount + ' öl';
-    }
 };
 
 window.sortBeers = function () {
