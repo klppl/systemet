@@ -493,8 +493,8 @@ header {
     transition: background-color 0.2s;
     user-select: none;
     position: sticky;
-    top: 155px;
-    /* Offset for main header */
+    top: var(--header-height, 155px);
+    /* dynamic offset */
     z-index: 80;
     /* Below main header (100) but above cards */
     background-color: var(--bg-page);
