@@ -160,14 +160,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const sortSelect = document.getElementById('sort-select');
         if (sortSelect) sortSelect.addEventListener('change', window.sortBeers);
 
-        const toggle = document.getElementById('show-past-toggle');
-        if (toggle) {
-            toggle.addEventListener('change', function (e) {
-                if (e.target.checked) document.body.classList.add('show-past');
-                else document.body.classList.remove('show-past');
-                window.filterBeers();
-            });
-        }
     } catch (e) { console.error(e); }
 
     window.filterBeers();

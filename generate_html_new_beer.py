@@ -33,6 +33,11 @@ SWEDISH_WEEKDAYS = {
     'Sunday': 'Söndag'
 }
 
+SWEDISH_MONTHS = {
+    1: 'Jan', 2: 'Feb', 3: 'Mar', 4: 'Apr', 5: 'Maj', 6: 'Jun',
+    7: 'Jul', 8: 'Aug', 9: 'Sep', 10: 'Okt', 11: 'Nov', 12: 'Dec'
+}
+
 
 def calculate_apk(beer: Dict[str, Any]) -> float:
     """Calculate Alcohol Per Krona (ml pure alcohol per krona)"""
@@ -385,7 +390,12 @@ def filter_upcoming_launches() -> None:
             for launch_date in sorted_dates:
                 weekday_english = launch_date.strftime('%A')
                 weekday_swedish = SWEDISH_WEEKDAYS.get(weekday_english, weekday_english)
-                date_str = launch_date.strftime('%Y-%m-%d')
+                day = launch_date.day
+                month = SWEDISH_MONTHS.get(launch_date.month, launch_date.strftime('%b'))
+                
+                # Friendly format: "Måndag 15 Dec"
+                friendly_date = f"{weekday_swedish} {day} {month}"
+                date_str = launch_date.strftime('%Y-%m-%d') # Keep for data-date attributes but not display
                 list_id = f"list-{date_str}"
                 
                 is_past = launch_date < today.date()
@@ -398,7 +408,7 @@ def filter_upcoming_launches() -> None:
                 f.write(f"""
         <div class="{section_classes}" data-date="{date_str}">
             <div class="date-header {header_active_class}" onclick="toggleDateSection('{list_id}')">
-                <span>📅 {date_str} ({weekday_swedish})</span>
+                <span>📅 {friendly_date}</span>
                 <div class="header-right">
                     <span class="beer-count">{len(beers_by_date[launch_date])} öl</span>
                     <span class="accordion-icon">▼</span>
