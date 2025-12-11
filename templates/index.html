@@ -70,7 +70,7 @@
                 </div>
             </div>
 
-            <div class="beer-list" id="{{ group.list_id }}" style="{{ 'display: none;' if group.is_past else '' }}">
+            <div class="beer-list" id="{{ group.list_id }}" {% if group.is_past %}style="display: none;" {% endif %}>
                 {% for beer in group.beers %}
                 <div class="beer-card" data-category2="{{ beer.categoryLevel2 }}"
                     data-apk="{{ '%.2f'|format(beer.apk) }}" data-price="{{ '%.2f'|format(beer.price) }}"
@@ -100,7 +100,7 @@
                             <img src="{{ beer.img_url }}" alt="{{ beer.name }}" class="beer-image" loading="lazy"
                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                             {% endif %}
-                            <div class="beer-image-placeholder" style="{{ 'display: none;' if beer.img_url else '' }}">
+                            <div class="beer-image-placeholder" {% if beer.img_url %}style="display: none;" {% endif %}>
                                 🍺</div>
                         </div>
 
