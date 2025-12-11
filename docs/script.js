@@ -1,20 +1,15 @@
-// Past Releases Toggle
-window.togglePastReleases = function () {
-    const container = document.getElementById('past-releases-container');
-    const header = document.querySelector('.past-releases-header');
+// Toggle individual date sections
+window.toggleDateSection = function (listId) {
+    const list = document.getElementById(listId);
+    // Find the header by going up to parent date-section then down to header, or just previous sibling
+    // Since we know the structure: header is previous sibling of list
+    const header = list.previousElementSibling;
 
-    console.log('Toggle Clicked. Container:', container);
-    if (container.style.display === 'none' || container.style.display === '') {
-        container.style.display = 'block';
+    if (list.style.display === 'none' || list.style.display === '') {
+        list.style.display = 'grid'; // Grid for beer cards
         header.classList.add('active');
-
-        // Safety: Ensure internal sections are visible
-        const sections = container.querySelectorAll('.date-section');
-        sections.forEach(s => s.style.display = 'block');
-        console.log('Opened accordion. Found sections:', sections.length);
-
     } else {
-        container.style.display = 'none';
+        list.style.display = 'none';
         header.classList.remove('active');
     }
 };
@@ -71,12 +66,17 @@ window.filterBeers = function () {
     const dates = document.querySelectorAll('.date-section');
     dates.forEach(date => {
         const beersInDate = date.querySelectorAll('.beer-card:not(.hidden)');
-        const hasVisibleBeers = beersInDate.length > 0;
-
-        if (hasVisibleBeers) {
-            date.style.display = '';
-        } else {
+        const visibleBeers = date.querySelectorAll('.beer-card:not([style*="display: none"])');
+        if (visibleBeers.length === 0) {
             date.style.display = 'none';
+            if (date.classList.contains('past-release')) {
+                console.log('Hiding past release section: ' + date.dataset.date);
+            }
+        } else {
+            date.style.display = 'block';
+            if (date.classList.contains('past-release')) {
+                console.log('Showing past release section: ' + date.dataset.date + ' with ' + visibleBeers.length + ' beers');
+            }
         }
     });
 

@@ -282,6 +282,14 @@ def filter_upcoming_launches() -> None:
     # Sort by launch date
     upcoming_beers.sort(key=lambda x: x["productLaunchDate"])
     
+    # Debug: Print date range found
+    if upcoming_beers:
+        min_date = upcoming_beers[0]["productLaunchDate"]
+        max_date = upcoming_beers[-1]["productLaunchDate"]
+        print(f"DEBUG: Found {len(upcoming_beers)} beers. First date: {min_date}, Last date: {max_date}")
+        past_count = sum(1 for b in upcoming_beers if b["productLaunchDate"] < str(today))
+        print(f"DEBUG: Found {past_count} past beers (before {today.date()})")
+    
     # Calculate and store APK for each beer once
     for beer in upcoming_beers:
         beer['apk'] = calculate_apk(beer)
@@ -371,55 +379,32 @@ def filter_upcoming_launches() -> None:
             
             # Use Swedish weekday names from constants
             
-            # Split dates into past and future
+            # Unified Timeline Loop
             sorted_dates = sorted(beers_by_date.keys())
-            past_dates = [d for d in sorted_dates if d < today.date()]
-            future_dates = [d for d in sorted_dates if d >= today.date()]
             
-            # --- Past Releases Accordion ---
-            if past_dates:
-                f.write(f"""
-        <div class="past-releases-header" onclick="togglePastReleases()">
-            <span>Tidigare släpp ({min(past_dates)} till {max(past_dates)})</span>
-            <span class="accordion-icon">▼</span>
-        </div>
-        <div id="past-releases-container" style="display: none;">
-""")
-                for launch_date in past_dates:
-                    weekday_english = launch_date.strftime('%A')
-                    weekday_swedish = SWEDISH_WEEKDAYS.get(weekday_english, weekday_english)
-                    date_str = launch_date.strftime('%Y-%m-%d')
-                    list_id = f"list-{date_str}"
-                    
-                    f.write(f"""
-            <div class="date-section past-release" data-date="{date_str}">
-                <div class="date-header">
-                    📅 {date_str} ({weekday_swedish})
-                    <span class="beer-count">{len(beers_by_date[launch_date])} öl</span>
-                </div>
-                <div class="beer-list" id="{list_id}">
-""")
-                    for beer in beers_by_date[launch_date]:
-                        beer['parent_id'] = list_id
-                        f.write(generate_beer_card(beer))
-                    f.write("            </div></div>")
-                
-                f.write("        </div>") # End accordion container
-                
-            # --- Upcoming Releases ---
-            for launch_date in future_dates:
+            for launch_date in sorted_dates:
                 weekday_english = launch_date.strftime('%A')
                 weekday_swedish = SWEDISH_WEEKDAYS.get(weekday_english, weekday_english)
                 date_str = launch_date.strftime('%Y-%m-%d')
                 list_id = f"list-{date_str}"
                 
+                is_past = launch_date < today.date()
+                section_classes = "date-section past-release" if is_past else "date-section"
+                
+                # Past dates collapsed by default, Future dates expanded
+                list_style = 'style="display: none;"' if is_past else ''
+                header_active_class = '' if is_past else 'active'
+                
                 f.write(f"""
-        <div class="date-section" data-date="{date_str}">
-            <div class="date-header">
-                📅 {date_str} ({weekday_swedish})
-                <span class="beer-count">{len(beers_by_date[launch_date])} öl</span>
+        <div class="{section_classes}" data-date="{date_str}">
+            <div class="date-header {header_active_class}" onclick="toggleDateSection('{list_id}')">
+                <span>📅 {date_str} ({weekday_swedish})</span>
+                <div class="header-right">
+                    <span class="beer-count">{len(beers_by_date[launch_date])} öl</span>
+                    <span class="accordion-icon">▼</span>
+                </div>
             </div>
-            <div class="beer-list" id="{list_id}">
+            <div class="beer-list" id="{list_id}" {list_style}>
 """)
                 for beer in beers_by_date[launch_date]:
                     beer['parent_id'] = list_id

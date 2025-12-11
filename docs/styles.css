@@ -493,65 +493,46 @@ body.show-past .date-section.past-release {
     }
 }
 
-/* Past Releases Accordion */
-/* Past Releases Accordion */
-.past-releases-header {
-    background: #FEF9C3;
-    /* Light Yellow/Gold - distinct but not dark */
-    color: #0a3d25;
-    /* Dark brand green text */
-    padding: 18px 24px;
+/* Date Header Interactivity */
+.date-header {
     cursor: pointer;
-    font-weight: 800;
-    /* Extra bold for presence */
-    font-size: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #e2e8f0;
-    /* Subtle separator */
-    border-left: 6px solid #FFD100;
-    /* Accent mark on the left to indicate functionality */
-    transition: all 0.2s ease;
+    transition: background-color 0.2s;
     user-select: none;
-    margin-bottom: 0;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-    /* Subtle depth */
-    position: relative;
-    z-index: 10;
 }
 
-.past-releases-header:hover {
-    background: #FEF08A;
-    /* Slightly darker yellow on hover */
-    padding-left: 28px;
-    /* Subtle movement on hover */
+.date-header:hover {
+    background-color: #f1f5f9;
+}
+
+/* Header Right Side (Count + Chevron) */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
 }
 
 .accordion-icon {
-    font-size: 0.9rem;
-    transition: transform 0.3s ease;
-    color: #0a3d25;
-    background: rgba(10, 61, 37, 0.1);
-    /* Light circle background */
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
+    font-size: 0.8rem;
+    transition: transform 0.3s;
+    color: var(--color-text-secondary);
 }
 
-.past-releases-header.active .accordion-icon {
+.date-header.active .accordion-icon {
     transform: rotate(180deg);
-    background: #FFD100;
-    /* Active state highlight */
 }
 
-#past-releases-container {
-    background: #f0fdf4;
-    /* Very light green hint */
-    border-bottom: 4px solid #0a3d25;
+/* Past Release Styling */
+.past-release .date-header {
+    background-color: #e5e7eb;
+    /* Muted gray for past */
+    color: var(--color-text-secondary);
+    border-bottom: 1px solid #d1d5db;
+}
+
+.past-release .date-header:hover {
+    background-color: #d1d5db;
+    color: var(--color-text-main);
 }
