@@ -149,7 +149,8 @@ def generate_html_header(today: datetime, two_weeks_forward: datetime, categorie
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kommande Ölsläpp</title>
+    <title>Systemet - Kommande ölsläpp ({today.date()} — {two_weeks_forward.date()})</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍺</text></svg>">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -159,7 +160,7 @@ def generate_html_header(today: datetime, two_weeks_forward: datetime, categorie
     <header>
         <div class="header-content">
             <div class="header-branding">
-                <h1>Kommande Ölsläpp</h1>
+                <h1>Systemet — Kommande Ölsläpp</h1>
                 <div class="date-range">{today.date()} — {two_weeks_forward.date()}</div>
             </div>
 
