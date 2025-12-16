@@ -1704,5 +1704,23 @@
     "rating_count": 64247,
     "beer_slug": null,
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5512_89997_sm.jpeg"
+  },
+  "8857734": {
+    "bid": 6496967,
+    "beer_name": "NIMBUS",
+    "brewery_name": "Laugar Brewery",
+    "rating_score": 3.91406,
+    "rating_count": 64,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6496967_cc783_sm.jpeg"
+  },
+  "8884603": {
+    "bid": 2522413,
+    "beer_name": "The Doom Series: FUNERALOPOLIS",
+    "brewery_name": "Laugar Brewery",
+    "rating_score": 4.1451,
+    "rating_count": 9616,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2522413_9373c_sm.jpeg"
   }
 }
