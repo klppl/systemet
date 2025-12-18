@@ -1722,5 +1722,88 @@
     "rating_count": 9616,
     "beer_slug": null,
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2522413_9373c_sm.jpeg"
+  },
+  "3103135": {
+    "bid": 181608,
+    "beer_name": "Sunshine Daydream",
+    "brewery_name": "Fat Head’s Brewery",
+    "rating_score": 3.71517,
+    "rating_count": 59787,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-181608_78d85_sm.jpeg"
+  },
+  "3372835": {
+    "bid": 4343030,
+    "beer_name": "Ängla-Pils",
+    "brewery_name": "Spike Brewery",
+    "rating_score": 3.15609,
+    "rating_count": 2858,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4343030_7178c_sm.jpeg"
+  },
+  "3336835": {
+    "bid": 2786564,
+    "beer_name": "Västkustpilsner",
+    "brewery_name": "Odd Island Brewing ",
+    "rating_score": 3.18247,
+    "rating_count": 9950,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2786564_ee834_sm.jpeg"
+  },
+  "3276434": {
+    "bid": 6152822,
+    "beer_name": "Prodigium",
+    "brewery_name": "Odd Island Brewing ",
+    "rating_score": 3.76016,
+    "rating_count": 1511,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png"
+  },
+  "3059535": {
+    "bid": 4314045,
+    "beer_name": "Arvingarnas Lager",
+    "brewery_name": "Odd Island Brewing ",
+    "rating_score": 3.00629,
+    "rating_count": 2951,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4314045_17c98_sm.jpeg"
+  },
+  "3315435": {
+    "bid": 4815432,
+    "beer_name": "Pilsner",
+    "brewery_name": "Omnipollo",
+    "rating_score": 3.3798,
+    "rating_count": 11039,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4815432_fc54f_sm.jpeg"
+  },
+  "8913835": {
+    "bid": 157990,
+    "beer_name": "Umeå Pale Ale",
+    "brewery_name": "U&ME; Beer AB",
+    "rating_score": 3.26135,
+    "rating_count": 2564,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-157990_1b51e_sm.jpeg"
+  },
+  "3367235": {
+    "bid": 6263308,
+    "beer_name": "Hazy Yellow",
+    "brewery_name": "Majornas Bryggeri",
+    "rating_score": 3.41111,
+    "rating_count": 360,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6263308_15b41_sm.jpeg"
+  },
+  "3709335": null,
+  "3333435": null,
+  "3218135": {
+    "bid": 5812976,
+    "beer_name": "En Kall",
+    "brewery_name": "Coppersmith's Brewery",
+    "rating_score": 2.90475,
+    "rating_count": 1811,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5812976_16bb8_sm.jpeg"
   }
 }
