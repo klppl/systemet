@@ -1805,5 +1805,50 @@
     "rating_count": 1811,
     "beer_slug": null,
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5812976_16bb8_sm.jpeg"
+  },
+  "8884034": {
+    "bid": 6520077,
+    "beer_name": "Don't Believe A Word",
+    "brewery_name": "Stigbergets Bryggeri",
+    "rating_score": 3.73893,
+    "rating_count": 131,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6520077_ae764_sm.jpeg"
+  },
+  "8859634": {
+    "bid": 5398994,
+    "beer_name": "IPA",
+    "brewery_name": "Boxer Brewing Co.",
+    "rating_score": 3.60833,
+    "rating_count": 222,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5398994_7c435_sm.jpeg"
+  },
+  "8877734": {
+    "bid": 5350453,
+    "beer_name": "Pale Ale",
+    "brewery_name": "Boxer Brewing Co.",
+    "rating_score": 3.59248,
+    "rating_count": 153,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5350453_9aad1_sm.jpeg"
+  },
+  "8862106": {
+    "bid": 5350453,
+    "beer_name": "Pale Ale",
+    "brewery_name": "Boxer Brewing Co.",
+    "rating_score": 3.59248,
+    "rating_count": 153,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5350453_9aad1_sm.jpeg"
+  },
+  "8856301": {
+    "bid": 4377585,
+    "beer_name": "Kumpeni",
+    "brewery_name": "Kemker Kultuur (Brauerei J. Kemker)",
+    "rating_score": 3.89473,
+    "rating_count": 664,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png"
   }
 }
