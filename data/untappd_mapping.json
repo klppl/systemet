@@ -1850,5 +1850,32 @@
     "rating_count": 664,
     "beer_slug": null,
     "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png"
+  },
+  "8891634": {
+    "bid": 6180115,
+    "beer_name": "TXOKOTRIP",
+    "brewery_name": "Laugar Brewery",
+    "rating_score": 4.14178,
+    "rating_count": 894,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6180115_2be92_sm.jpeg"
+  },
+  "8887203": {
+    "bid": 353348,
+    "beer_name": "AUPA TOVARISCH",
+    "brewery_name": "Laugar Brewery",
+    "rating_score": 4.05852,
+    "rating_count": 9608,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-353348_23891_sm.jpeg"
+  },
+  "8813401": {
+    "bid": 5644944,
+    "beer_name": "Rosa",
+    "brewery_name": "Kemker Kultuur (Brauerei J. Kemker)",
+    "rating_score": 3.88187,
+    "rating_count": 284,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png"
   }
 }
