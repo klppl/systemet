@@ -1877,5 +1877,113 @@
     "rating_count": 284,
     "beer_slug": null,
     "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png"
+  },
+  "8313035": {
+    "bid": 967627,
+    "beer_name": "A Ship Full of IPA",
+    "brewery_name": "Brutal Brewing",
+    "rating_score": 3.38007,
+    "rating_count": 77554,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-967627_2bc51_sm.jpeg"
+  },
+  "142132": {
+    "bid": 6380,
+    "beer_name": "Premium Gold",
+    "brewery_name": "Spendrups Bryggeri",
+    "rating_score": 2.72897,
+    "rating_count": 18856,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png"
+  },
+  "8920535": {
+    "bid": 31794,
+    "beer_name": "Sitting Bulldog IPA",
+    "brewery_name": "Gotlands Bryggeri",
+    "rating_score": 3.45384,
+    "rating_count": 56100,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-31794_cc136_sm.jpeg"
+  },
+  "8971232": {
+    "bid": 527850,
+    "beer_name": "Höga Kusten",
+    "brewery_name": "Zeunerts",
+    "rating_score": 3.04313,
+    "rating_count": 39834,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-527850_be021_sm.jpeg"
+  },
+  "148135": {
+    "bid": 52949,
+    "beer_name": "Fagerhult Export",
+    "brewery_name": "Kopparbergs Bryggeri",
+    "rating_score": 2.65588,
+    "rating_count": 25302,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-52949_ca52a_sm.jpeg"
+  },
+  "3190135": {
+    "bid": 4377367,
+    "beer_name": "Peachy Bulldog PA",
+    "brewery_name": "Gotlands Bryggeri",
+    "rating_score": 3.39478,
+    "rating_count": 22248,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4377367_781ca_sm.jpeg"
+  },
+  "8201135": {
+    "bid": 2865871,
+    "beer_name": "Hazy Bulldog APA",
+    "brewery_name": "Gotlands Bryggeri",
+    "rating_score": 3.4461,
+    "rating_count": 24127,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2865871_18883_sm.jpeg"
+  },
+  "145735": {
+    "bid": 5856,
+    "beer_name": "Newcastle Brown Ale",
+    "brewery_name": "John Smith’s",
+    "rating_score": 3.38966,
+    "rating_count": 317781,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5856_9797e_sm.jpeg"
+  },
+  "8906735": {
+    "bid": 2531454,
+    "beer_name": "Pistonhead Haze Lager",
+    "brewery_name": "Brutal Brewing",
+    "rating_score": 3.21963,
+    "rating_count": 44603,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2531454_eeaae_sm.jpeg"
+  },
+  "1142132": {
+    "bid": 60262,
+    "beer_name": "Sarek",
+    "brewery_name": "Carlsberg Sverige",
+    "rating_score": 2.76072,
+    "rating_count": 13095,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-Sarek_60262.jpeg"
+  },
+  "5596234": {
+    "bid": 3728096,
+    "beer_name": "Imperial NEIPA",
+    "brewery_name": "Poppels Bryggeri",
+    "rating_score": 3.83536,
+    "rating_count": 23438,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3728096_ebf80_sm.jpeg"
+  },
+  "127932": {
+    "bid": 1893536,
+    "beer_name": "Receta 6.0 Belgian Blonde Ale",
+    "brewery_name": "Cervezas El Ayla",
+    "rating_score": 3.31,
+    "rating_count": 63,
+    "beer_slug": "cervezas-el-ayla-receta-6-0-belgian-blonde-ale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1893536_4b134_sm.jpeg"
   }
 }
