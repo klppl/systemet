@@ -1,65 +1,5 @@
 [
   {
-    "id": "127932",
-    "date": 1766620800000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "5596234",
-    "date": 1766620800000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "1142132",
-    "date": 1766620800000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "8906735",
-    "date": 1766620800000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "145735",
-    "date": 1766620800000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "8201135",
-    "date": 1766620800000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3190135",
-    "date": 1766620800000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "148135",
-    "date": 1766620800000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "8971232",
-    "date": 1766620800000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "8920535",
-    "date": 1766620800000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "142132",
-    "date": 1766620800000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "8313035",
-    "date": 1766620800000,
-    "reason": "Ny produkt."
-  },
-  {
     "id": "8845434",
     "date": 1766966400000,
     "reason": "Ny produkt."
@@ -82,6 +22,11 @@
   {
     "id": "1405301",
     "date": 1767139200000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "1051603",
+    "date": 1767225600000,
     "reason": "Ny produkt."
   }
 ]
