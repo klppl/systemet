@@ -2422,5 +2422,14 @@
     "beer_slug": null,
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1924519_d863e_sm.jpeg"
   },
-  "3349703": null
+  "3349703": null,
+  "8887006": {
+    "bid": 5398994,
+    "beer_name": "IPA",
+    "brewery_name": "Boxer Brewing Co.",
+    "rating_score": 3.60863,
+    "rating_count": 226,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5398994_7c435_sm.jpeg"
+  }
 }
