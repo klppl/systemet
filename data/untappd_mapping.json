@@ -2431,5 +2431,115 @@
     "rating_count": 226,
     "beer_slug": null,
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5398994_7c435_sm.jpeg"
+  },
+  "1333214": {
+    "bid": 982103,
+    "beer_name": "Ransack the Universe",
+    "brewery_name": "Collective Arts Brewing",
+    "rating_score": 3.82645,
+    "rating_count": 109199,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-982103_812dd_sm.jpeg"
+  },
+  "1088134": null,
+  "1030734": {
+    "bid": 5938525,
+    "beer_name": "Mosaic Mamba",
+    "brewery_name": "Toppling Goliath Brewing Co.",
+    "rating_score": 4.10622,
+    "rating_count": 6251,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5938525_4a001_sm.jpeg"
+  },
+  "1043634": {
+    "bid": 6323104,
+    "beer_name": "Barrel-Aged Speedway Stout: Hammerhead Edition (2025)",
+    "brewery_name": "AleSmith Brewing Company",
+    "rating_score": 4.28759,
+    "rating_count": 677,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6323104_71e76_sm.jpeg"
+  },
+  "1039234": {
+    "bid": 5996145,
+    "beer_name": "Roller Ghoster",
+    "brewery_name": "WeldWerks Brewing Co.",
+    "rating_score": 4.01166,
+    "rating_count": 1548,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5996145_f508b_sm.jpeg"
+  },
+  "1058201": {
+    "bid": 19475,
+    "beer_name": "Aecht Schlenkerla Eiche – Doppelbock",
+    "brewery_name": "Schlenkerla (\"Heller-Bräu\" Trum)",
+    "rating_score": 3.72369,
+    "rating_count": 53197,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-19475_7c593_sm.jpeg"
+  },
+  "8924603": {
+    "bid": 475,
+    "beer_name": "Prior 8",
+    "brewery_name": "Brouwerij St.Bernardus",
+    "rating_score": 3.69743,
+    "rating_count": 131882,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-475_0a4ba_sm.jpeg"
+  },
+  "149403": {
+    "bid": 2013,
+    "beer_name": "La Trappe Tripel",
+    "brewery_name": "Bierbrouwerij De Koningshoeven",
+    "rating_score": 3.74427,
+    "rating_count": 201669,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2013_43d0c_sm.jpeg"
+  },
+  "1049001": null,
+  "1311901": {
+    "bid": 29776,
+    "beer_name": "Schwarz-Bier",
+    "brewery_name": "Störtebeker Braumanufaktur",
+    "rating_score": 3.29059,
+    "rating_count": 34405,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-29776_332bb_sm.jpeg"
+  },
+  "1050203": {
+    "bid": 4047703,
+    "beer_name": "Thomas Hardy's Ale",
+    "brewery_name": "Thomas Hardy Burtonwood Limited",
+    "rating_score": 3.98184,
+    "rating_count": 735,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png"
+  },
+  "1043403": {
+    "bid": 6441176,
+    "beer_name": "Thomas Hardy's Ale - The Historical (2025)",
+    "brewery_name": "Thomas Hardy Burtonwood Limited",
+    "rating_score": 4.26111,
+    "rating_count": 144,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6441176_a7cac_sm.jpeg"
+  },
+  "1021801": {
+    "bid": 4643212,
+    "beer_name": "Winterlambiek - Sparkling Infused",
+    "brewery_name": "Oud Beersel",
+    "rating_score": 3.84826,
+    "rating_count": 946,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4643212_9a89d_sm.jpeg"
+  },
+  "1333732": {
+    "bid": 1136272,
+    "beer_name": "Lilla London Bitter",
+    "brewery_name": "Göteborgs Nya Bryggeri",
+    "rating_score": 3.07,
+    "rating_count": 1849,
+    "beer_slug": "goteborgs-nya-bryggeri-lilla-london-bitter",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1136272_21a2a_sm.jpeg"
   }
 }
