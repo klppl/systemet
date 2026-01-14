@@ -2552,5 +2552,50 @@
     "rating_count": 16,
     "beer_slug": null,
     "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png"
+  },
+  "8810634": {
+    "bid": 1236912,
+    "beer_name": "Jutsu",
+    "brewery_name": "Bellwoods Brewery",
+    "rating_score": 3.93389,
+    "rating_count": 18865,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1236912_d637b_sm.jpeg"
+  },
+  "8814834": {
+    "bid": 229668,
+    "beer_name": "Roman Candle",
+    "brewery_name": "Bellwoods Brewery",
+    "rating_score": 3.98128,
+    "rating_count": 17897,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-229668_0fef9_sm.jpeg"
+  },
+  "8823603": {
+    "bid": 8484,
+    "beer_name": "Almaza Pilsener",
+    "brewery_name": "Brasserie Almaza",
+    "rating_score": 2.98604,
+    "rating_count": 51971,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-AlmazaPilsener_8484.jpeg"
+  },
+  "8840203": {
+    "bid": 6890,
+    "beer_name": "Kasteel Rouge",
+    "brewery_name": "Kasteel Brouwerij Vanhonsebrouck",
+    "rating_score": 3.5908,
+    "rating_count": 171910,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6890_30d57_sm.jpeg"
+  },
+  "8830903": {
+    "bid": 3545175,
+    "beer_name": "Smauk",
+    "brewery_name": "Kemker Kultuur (Brauerei J. Kemker)",
+    "rating_score": 3.88155,
+    "rating_count": 759,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3545175_4c5dd_sm.jpeg"
   }
 }
