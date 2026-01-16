@@ -2597,5 +2597,107 @@
     "rating_count": 759,
     "beer_slug": null,
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3545175_4c5dd_sm.jpeg"
+  },
+  "1335335": {
+    "bid": 5223881,
+    "beer_name": "Barley Sheen",
+    "brewery_name": "Nyköping Brewing Company",
+    "rating_score": 3.66713,
+    "rating_count": 502,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5223881_8cc66_sm.jpeg"
+  },
+  "1052315": {
+    "bid": 3734759,
+    "beer_name": "Texas Bourbon Barrel Series Imperial Coffee Ale",
+    "brewery_name": "Ranger Creek Brewing & Distilling",
+    "rating_score": 4.02379,
+    "rating_count": 248,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png"
+  },
+  "1333614": {
+    "bid": 5259899,
+    "beer_name": "Best Bitter",
+    "brewery_name": "Nils Oscar",
+    "rating_score": 3.31345,
+    "rating_count": 5431,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5259899_66df9_sm.jpeg"
+  },
+  "1406635": null,
+  "1048412": {
+    "bid": 6357214,
+    "beer_name": "The Beekeeper Vol. 12",
+    "brewery_name": "TankBusters.Co",
+    "rating_score": 4.11553,
+    "rating_count": 309,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6357214_5f73f_sm.jpeg"
+  },
+  "1020335": {
+    "bid": 4744,
+    "beer_name": "Ten FIDY®",
+    "brewery_name": "Oskar Blues Brewery®",
+    "rating_score": 4.08228,
+    "rating_count": 184131,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4744_60735_sm.jpeg"
+  },
+  "1051934": {
+    "bid": 6448723,
+    "beer_name": "SUPERSWEDE 2",
+    "brewery_name": "Stigbergets Bryggeri",
+    "rating_score": 0,
+    "rating_count": 4,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6448723_7acab_sm.jpeg"
+  },
+  "1060003": {
+    "bid": 999441,
+    "beer_name": "Waterloo Double Dark",
+    "brewery_name": "Waterloo Brewery Mont-St-Jean",
+    "rating_score": 3.48533,
+    "rating_count": 31471,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-999441_0d2fa_sm.jpeg"
+  },
+  "1333301": {
+    "bid": 35406,
+    "beer_name": "Bitter",
+    "brewery_name": "Hawkshead Brewery",
+    "rating_score": 3.45715,
+    "rating_count": 4419,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-35406_0ef2e_sm.jpeg"
+  },
+  "1051703": {
+    "bid": 6440741,
+    "beer_name": "Dark Horizon 9 Tokaji Edition",
+    "brewery_name": "Nøgne Ø",
+    "rating_score": 4.40016,
+    "rating_count": 1918,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6440741_a26e3_sm.jpeg"
+  },
+  "1013101": null,
+  "1406701": {
+    "bid": 57368,
+    "beer_name": "Schmankerl Weiße Dunkel",
+    "brewery_name": "Privatbrauerei Schweiger / Schweiger Bräu",
+    "rating_score": 3.55937,
+    "rating_count": 539,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-SchweigerSchmankerlWeisseDunkel_57368.jpeg"
+  },
+  "1002203": null,
+  "8904001": {
+    "bid": 32722,
+    "beer_name": "Spitfire Amber Kentish Ale",
+    "brewery_name": "Shepherd Neame",
+    "rating_score": 3.25367,
+    "rating_count": 88568,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-32722_c11af_sm.jpeg"
   }
 }
