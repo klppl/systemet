@@ -2699,5 +2699,77 @@
     "rating_count": 88568,
     "beer_slug": null,
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-32722_c11af_sm.jpeg"
+  },
+  "3380635": {
+    "bid": 3161338,
+    "beer_name": "Hallon Passion",
+    "brewery_name": "Odd Island Brewing ",
+    "rating_score": 3.44005,
+    "rating_count": 9703,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3161338_22719_sm.jpeg"
+  },
+  "3992235": {
+    "bid": 5516080,
+    "beer_name": "Marsfjället",
+    "brewery_name": "Westerbottens Bryggeri",
+    "rating_score": 3.27733,
+    "rating_count": 719,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png"
+  },
+  "3917635": {
+    "bid": 5389684,
+    "beer_name": "Vänerpilsner",
+    "brewery_name": "Bustad Brewing Co.",
+    "rating_score": 3.1693,
+    "rating_count": 1176,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png"
+  },
+  "3102635": {
+    "bid": 4021257,
+    "beer_name": "Snöan",
+    "brewery_name": "Westerbottens Bryggeri",
+    "rating_score": 3.36864,
+    "rating_count": 1470,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png"
+  },
+  "3132535": {
+    "bid": 2263364,
+    "beer_name": "The Steam Beer",
+    "brewery_name": "Coppersmith's Brewery",
+    "rating_score": 3.18242,
+    "rating_count": 7046,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2263364_ea885_sm.jpeg"
+  },
+  "3917334": {
+    "bid": 1521217,
+    "beer_name": "Westerås Premium Lager",
+    "brewery_name": "Coppersmith's Brewery",
+    "rating_score": 3.10548,
+    "rating_count": 3176,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1521217_4e9b3_sm.jpeg"
+  },
+  "3442934": {
+    "bid": 3735572,
+    "beer_name": "Misty IPA",
+    "brewery_name": "Coppersmith's Brewery",
+    "rating_score": 3.51927,
+    "rating_count": 2520,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3735572_05778_sm.jpeg"
+  },
+  "3398435": {
+    "bid": 3417825,
+    "beer_name": "Imperial Pike",
+    "brewery_name": "U&ME; Beer AB",
+    "rating_score": 3.52914,
+    "rating_count": 1220,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png"
   }
 }
