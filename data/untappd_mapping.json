@@ -3362,5 +3362,23 @@
     "rating_count": 2,
     "beer_slug": null,
     "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png"
+  },
+  "8823534": {
+    "bid": 6014110,
+    "beer_name": "Fresh Hop Little Field",
+    "brewery_name": "Tilted Barn Brewery",
+    "rating_score": 4.13507,
+    "rating_count": 201,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6014110_c2dab_sm.jpeg"
+  },
+  "8823934": {
+    "bid": 1061474,
+    "beer_name": "The Chosen One",
+    "brewery_name": "Tilted Barn Brewery",
+    "rating_score": 4.27631,
+    "rating_count": 15922,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1061474_d09a1_sm.jpeg"
   }
 }
