@@ -3582,5 +3582,23 @@
     "rating_count": 5807,
     "beer_slug": null,
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3847952_c160d_sm.jpeg"
+  },
+  "8854101": {
+    "bid": 5504844,
+    "beer_name": "Oude Viognier Tilquin à l'Ancienne (2022-2023)",
+    "brewery_name": "Gueuzerie Tilquin",
+    "rating_score": 4.16263,
+    "rating_count": 689,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5504844_c8c48_sm.jpeg"
+  },
+  "8849001": {
+    "bid": 4914179,
+    "beer_name": "Meerts Tilquin au Gewurztraminer (2020-2021)",
+    "brewery_name": "Gueuzerie Tilquin",
+    "rating_score": 4.04916,
+    "rating_count": 1660,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4914179_86ccf_sm.jpeg"
   }
 }
