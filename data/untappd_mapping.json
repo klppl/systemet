@@ -3642,5 +3642,14 @@
     "beer_slug": null,
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6031389_f7cc6_sm.jpeg"
   },
-  "1030601": null
+  "1030601": null,
+  "8850434": {
+    "bid": 4640759,
+    "beer_name": "Fresh Hop #2 Mosaic",
+    "brewery_name": "Verdant Brewing Co",
+    "rating_score": 3.90355,
+    "rating_count": 1085,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4640759_d0802_sm.jpeg"
+  }
 }
