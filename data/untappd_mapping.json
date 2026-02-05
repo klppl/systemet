@@ -3679,5 +3679,17 @@
     "beer_slug": null,
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1915745_3dea1_sm.jpeg"
   },
-  "8831509": null
+  "8831509": null,
+  "8846511": null,
+  "8829011": null,
+  "8857208": null,
+  "8867503": {
+    "bid": 8480,
+    "beer_name": "Einbecker Mai-Ur-Bock",
+    "brewery_name": "Einbecker Brauhaus",
+    "rating_score": 3.29327,
+    "rating_count": 29011,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-8480_0fc2d_sm.jpeg"
+  }
 }
