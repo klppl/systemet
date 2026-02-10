@@ -3787,5 +3787,14 @@
   "8867734": null,
   "8808334": null,
   "8821034": null,
-  "8821706": null
+  "8821706": null,
+  "8827735": {
+    "bid": 1548111,
+    "beer_name": "Sur i Hatten",
+    "brewery_name": "Dugges Bryggeri",
+    "rating_score": 3.51,
+    "rating_count": 3904,
+    "beer_slug": "dugges-bryggeri-sur-i-hatten",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1548111_75b54_sm.jpeg"
+  }
 }
