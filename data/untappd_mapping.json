@@ -3796,5 +3796,25 @@
     "rating_count": 3904,
     "beer_slug": "dugges-bryggeri-sur-i-hatten",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1548111_75b54_sm.jpeg"
-  }
+  },
+  "8842635": null,
+  "8874635": {
+    "bid": 3037809,
+    "beer_name": "Rose City Sour (2017)",
+    "brewery_name": "Cascade Brewing",
+    "rating_score": 3.99344,
+    "rating_count": 6056,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3037809_1ab6d_sm.jpeg"
+  },
+  "8847635": {
+    "bid": 3853725,
+    "beer_name": "Patio Paradise",
+    "brewery_name": "Cascade Brewing",
+    "rating_score": 3.83831,
+    "rating_count": 962,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3853725_c58d1_sm.jpeg"
+  },
+  "8881434": null
 }
