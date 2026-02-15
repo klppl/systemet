@@ -3968,5 +3968,177 @@
     "beer_slug": "brouwerij-3-fonteinen-3-fonteinen-oude-geuze-cuvee-armand-and-gaston-vintage-2022",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6437909_a95a1_sm.jpeg"
   },
-  "1053611": null
+  "1053611": null,
+  "3409832": {
+    "bid": 6307856,
+    "beer_name": "Joddla med Siv – Kent Killers Kalla",
+    "brewery_name": "Klackabackens Bryggeri",
+    "rating_score": 3.27,
+    "rating_count": 655,
+    "beer_slug": "klackabackens-bryggeri-joddla-med-siv-kent-killers-kalla",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-klackabackensbryggeriab_63378.jpeg"
+  },
+  "3412332": null,
+  "3214435": {
+    "bid": 5431246,
+    "beer_name": "Slåttarns Emmerlager",
+    "brewery_name": "Barlingbo Bryggeri",
+    "rating_score": 3.08,
+    "rating_count": 637,
+    "beer_slug": "barlingbo-bryggeri-slattarns-emmerlager",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-122933_afb5f.jpeg"
+  },
+  "3004235": {
+    "bid": 6148558,
+    "beer_name": "Makrill-lager 3,5%",
+    "brewery_name": "Majornas Bryggeri",
+    "rating_score": 2.99125,
+    "rating_count": 40,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6148558_84582_sm.jpeg"
+  },
+  "3146935": {
+    "bid": 5814945,
+    "beer_name": "Källaröl",
+    "brewery_name": "Sälens Fjällbryggeri",
+    "rating_score": 3.31,
+    "rating_count": 1090,
+    "beer_slug": "salens-fjallbryggeri-kallarol",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-SalensFjallbryggeri_50560_57c45.jpeg"
+  },
+  "3436435": {
+    "bid": 2518333,
+    "beer_name": "Hazie Dizzie",
+    "brewery_name": "Odd Island Brewing ",
+    "rating_score": 3.7,
+    "rating_count": 11365,
+    "beer_slug": "odd-island-brewing-hazie-dizzie",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2518333_c7dca_sm.jpeg"
+  },
+  "3294835": {
+    "bid": 2532171,
+    "beer_name": "Burger Beer",
+    "brewery_name": "Spike Brewery",
+    "rating_score": 3.46,
+    "rating_count": 8808,
+    "beer_slug": "spike-brewery-burger-beer",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2532171_9ff62_sm.jpeg"
+  },
+  "3190935": {
+    "bid": 6178997,
+    "beer_name": "Här Ska Staden Ligga!",
+    "brewery_name": "Majornas Bryggeri",
+    "rating_score": 3.55,
+    "rating_count": 821,
+    "beer_slug": "majornas-bryggeri-har-ska-staden-ligga",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6178997_2be06_sm.jpeg"
+  },
+  "3553135": {
+    "bid": 3945777,
+    "beer_name": "Afrodite",
+    "brewery_name": "Omaka",
+    "rating_score": 3.15,
+    "rating_count": 3220,
+    "beer_slug": "omaka-afrodite",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3945777_ba792_sm.jpeg"
+  },
+  "3731135": {
+    "bid": 4132555,
+    "beer_name": "Kallsup",
+    "brewery_name": "Omaka",
+    "rating_score": 2.9,
+    "rating_count": 5896,
+    "beer_slug": "omaka-kallsup",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4132555_123ee_sm.jpeg"
+  },
+  "3533735": {
+    "bid": 3945942,
+    "beer_name": "A.K.A.I.P.A.",
+    "brewery_name": "Omaka",
+    "rating_score": 3.4,
+    "rating_count": 7745,
+    "beer_slug": "omaka-a-k-a-i-p-a",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-475658_678d6.jpeg"
+  },
+  "3207635": {
+    "bid": 4829731,
+    "beer_name": "Betong",
+    "brewery_name": "Omaka",
+    "rating_score": 3.16,
+    "rating_count": 6382,
+    "beer_slug": "omaka-betong",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4829731_3f37d_sm.jpeg"
+  },
+  "3064435": {
+    "bid": 5133360,
+    "beer_name": "Ofarlig",
+    "brewery_name": "Omaka",
+    "rating_score": 3.49,
+    "rating_count": 9058,
+    "beer_slug": "omaka-ofarlig",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-475658_678d6.jpeg"
+  },
+  "3538735": {
+    "bid": 3945917,
+    "beer_name": "Mamma",
+    "brewery_name": "Omaka",
+    "rating_score": 3.25,
+    "rating_count": 2950,
+    "beer_slug": "omaka-mamma",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-475658_678d6.jpeg"
+  },
+  "3135335": {
+    "bid": 6144347,
+    "beer_name": "Skånsk Bitter",
+    "brewery_name": "Vellinge Bryggeri",
+    "rating_score": 3.24,
+    "rating_count": 387,
+    "beer_slug": "vellinge-bryggeri-skansk-bitter",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6144347_02dff_sm.jpeg"
+  },
+  "110835": {
+    "bid": 2504640,
+    "beer_name": "Pivot Pils",
+    "brewery_name": "O/O Brewing ",
+    "rating_score": 3.22,
+    "rating_count": 16289,
+    "beer_slug": "o-o-brewing-pivot-pils",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2504640_1a796_sm.jpeg"
+  },
+  "3142335": {
+    "bid": 1842092,
+    "beer_name": "Azalea Lager",
+    "brewery_name": "Vega Bryggeri",
+    "rating_score": 3.19,
+    "rating_count": 5544,
+    "beer_slug": "vega-bryggeri-azalea-lager",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1842092_6171e_sm.jpeg"
+  },
+  "3114535": {
+    "bid": 5972920,
+    "beer_name": "Bowline Bitter",
+    "brewery_name": "Vega Bryggeri",
+    "rating_score": 3.38,
+    "rating_count": 744,
+    "beer_slug": "vega-bryggeri-bowline-bitter",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5972920_4cdbb_sm.jpeg"
+  },
+  "3910135": {
+    "bid": 5302290,
+    "beer_name": "Greetings From Ringön",
+    "brewery_name": "Vega Bryggeri",
+    "rating_score": 3.59,
+    "rating_count": 2821,
+    "beer_slug": "vega-bryggeri-greetings-from-ringon",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-30350_98c89.jpeg"
+  },
+  "3009635": {
+    "bid": 6027353,
+    "beer_name": "Sour Power - Svarta vinbär + hallon",
+    "brewery_name": "Vega Bryggeri",
+    "rating_score": 3.63468,
+    "rating_count": 248,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6027353_a702c_sm.jpeg"
+  }
 }
