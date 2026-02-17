@@ -4961,5 +4961,23 @@
     "rating_count": 0,
     "beer_slug": "brygglabbet-bla-bomber-och-granatapplen",
     "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-372252_f9c6b.jpeg"
+  },
+  "8867403": {
+    "bid": 5935999,
+    "beer_name": "Crush the Pint",
+    "brewery_name": "The Bruery Terreux",
+    "rating_score": 4.25,
+    "rating_count": 261,
+    "beer_slug": "the-bruery-terreux-crush-the-pint",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5935999_45c06_sm.jpeg"
+  },
+  "8857403": {
+    "bid": 4823992,
+    "beer_name": "We All Scream",
+    "brewery_name": "The Bruery",
+    "rating_score": 4.26,
+    "rating_count": 858,
+    "beer_slug": "the-bruery-we-all-scream",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4823992_3bf89_sm.jpeg"
   }
 }
