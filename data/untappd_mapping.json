@@ -4979,5 +4979,59 @@
     "rating_count": 858,
     "beer_slug": "the-bruery-we-all-scream",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4823992_3bf89_sm.jpeg"
+  },
+  "8820834": {
+    "bid": 6561791,
+    "beer_name": "Āpocalypse",
+    "brewery_name": "Neon Raptor Brewing Co.",
+    "rating_score": 4.02,
+    "rating_count": 125,
+    "beer_slug": "neon-raptor-brewing-co-apocalypse",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6561791_1ae24_sm.jpeg"
+  },
+  "8822234": {
+    "bid": 6561816,
+    "beer_name": "Cyberspace",
+    "brewery_name": "Neon Raptor Brewing Co.",
+    "rating_score": 3.91,
+    "rating_count": 137,
+    "beer_slug": "neon-raptor-brewing-co-cyberspace",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6561816_9f5ed_sm.jpeg"
+  },
+  "8833634": {
+    "bid": 6561821,
+    "beer_name": "Balderdash",
+    "brewery_name": "Neon Raptor Brewing Co.",
+    "rating_score": 4.08,
+    "rating_count": 128,
+    "beer_slug": "neon-raptor-brewing-co-balderdash",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6561821_34713_sm.jpeg"
+  },
+  "8889503": {
+    "bid": 6277886,
+    "beer_name": "Coffee Is Life (2025)",
+    "brewery_name": "The Bruery",
+    "rating_score": 4.17,
+    "rating_count": 315,
+    "beer_slug": "the-bruery-coffee-is-life-2025",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6277886_5433c_sm.jpeg"
+  },
+  "8863603": {
+    "bid": 6277944,
+    "beer_name": "Honey & Dunn Apis Grand Cru",
+    "brewery_name": "The Bruery",
+    "rating_score": 4.22,
+    "rating_count": 258,
+    "beer_slug": "the-bruery-honey-and-dunn-apis-grand-cru",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6277944_daa90_sm.jpeg"
+  },
+  "8849802": {
+    "bid": 4527278,
+    "beer_name": "Love Me Tender",
+    "brewery_name": "The Bruery",
+    "rating_score": 4.25,
+    "rating_count": 1180,
+    "beer_slug": "the-bruery-love-me-tender",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4527278_0c57f_sm.jpeg"
   }
 }
