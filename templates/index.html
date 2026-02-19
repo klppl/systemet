@@ -137,24 +137,7 @@
             APK = Alkohol per krona (ml ren alkohol/kr)
         </div>
     </footer>
-    <!-- Matomo -->
-    <script type="text/javascript">
-    var _paq = _paq || [];
-    _paq.push(["trackPageView"]);
-    _paq.push(["enableLinkTracking"]);
-    (function() {
-        _paq.push(["setTrackerUrl", "//logga.geek.nu//hej.php"]);
-        _paq.push(["setSiteId", "7"]);
-        _paq.push(['disableAlwaysUseSendBeacon', 'true']);
-        var a = document, r = a.createElement("script"), s = a.getElementsByTagName("script")[0];
-        r.async = !0;
-        r.defer = !0;
-        r.src = "//logga.geek.nu//hej.js";
-        s.parentNode.insertBefore(r, s);
-    })();
-    </script>
-    <noscript><img src="//logga.geek.nu//hej.php?qid=7&trk=1" /></noscript>
-    <!-- End Matomo Code -->
+    {% include 'analytics.html' %}
 
     <script src="script.js"></script>
 </body>
