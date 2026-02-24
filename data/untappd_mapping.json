@@ -5338,5 +5338,105 @@
     "rating_count": 879,
     "beer_slug": "brouwerij-3-fonteinen-speling-van-het-lot-i-ii-nocturne-het-uur-van-de-wolf",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2615674_71910_sm.jpeg"
-  }
+  },
+  "8846035": {
+    "bid": 446330,
+    "beer_name": "American Pale Ale",
+    "brewery_name": "Poppels Bryggeri",
+    "rating_score": 3.55,
+    "rating_count": 41349,
+    "beer_slug": "poppels-bryggeri-american-pale-ale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-446330_b36ab_sm.jpeg"
+  },
+  "1159835": {
+    "bid": 13131,
+    "beer_name": "Caribbean Rum Cask",
+    "brewery_name": "Innis & Gunn",
+    "rating_score": 3.59,
+    "rating_count": 133620,
+    "beer_slug": "innis-and-gunn-caribbean-rum-cask",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-13131_0bbc0_sm.jpeg"
+  },
+  "1144735": {
+    "bid": 24675,
+    "beer_name": "Original",
+    "brewery_name": "Innis & Gunn",
+    "rating_score": 3.54,
+    "rating_count": 174560,
+    "beer_slug": "innis-and-gunn-original",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-24675_ce451_sm.jpeg"
+  },
+  "2030135": {
+    "bid": 53128,
+    "beer_name": "Arboga – Originalet",
+    "brewery_name": "Three Towns Independent Brewers",
+    "rating_score": 2.81,
+    "rating_count": 15013,
+    "beer_slug": "three-towns-independent-brewers-arboga-originalet",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-53128_4aeb3_sm.jpeg"
+  },
+  "2030032": {
+    "bid": 53128,
+    "beer_name": "Arboga – Originalet",
+    "brewery_name": "Three Towns Independent Brewers",
+    "rating_score": 2.81,
+    "rating_count": 15013,
+    "beer_slug": "three-towns-independent-brewers-arboga-originalet",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-53128_4aeb3_sm.jpeg"
+  },
+  "8979635": {
+    "bid": 54117,
+    "beer_name": "IPA (India Pale Ale)",
+    "brewery_name": "Jämtlands Bryggeri",
+    "rating_score": 3.2,
+    "rating_count": 35323,
+    "beer_slug": "jamtlands-bryggeri-ipa-india-pale-ale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-54117_63885_sm.jpeg"
+  },
+  "166915": {
+    "bid": 3784,
+    "beer_name": "Bud Light",
+    "brewery_name": "Anheuser-Busch",
+    "rating_score": 2.35,
+    "rating_count": 467203,
+    "beer_slug": "anheuser-busch-bud-light",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3784_0e2c3_sm.jpeg"
+  },
+  "8827934": {
+    "bid": 5725367,
+    "beer_name": "Northleft ",
+    "brewery_name": "Great Notion Brewing",
+    "rating_score": 4.01,
+    "rating_count": 6164,
+    "beer_slug": "great-notion-brewing-northleft",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5725367_466e3_sm.jpeg"
+  },
+  "8863834": {
+    "bid": 2223205,
+    "beer_name": "Super Over Ripe",
+    "brewery_name": "Great Notion Brewing",
+    "rating_score": 4.34,
+    "rating_count": 7299,
+    "beer_slug": "great-notion-brewing-super-over-ripe",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2223205_b77ba_sm.jpeg"
+  },
+  "8876734": {
+    "bid": 3321950,
+    "beer_name": "Luminous 05",
+    "brewery_name": "Great Notion Brewing",
+    "rating_score": 4.19,
+    "rating_count": 4834,
+    "beer_slug": "great-notion-brewing-luminous-05",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3321950_27fe4_sm.jpeg"
+  },
+  "8856103": {
+    "bid": 5051147,
+    "beer_name": "Black Tuesday Blender's Choice",
+    "brewery_name": "The Bruery",
+    "rating_score": 4.4,
+    "rating_count": 541,
+    "beer_slug": "the-bruery-black-tuesday-blender-s-choice",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5051147_ffe12_sm.jpeg"
+  },
+  "8808603": null
 }
