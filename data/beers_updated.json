@@ -1,290 +1,5 @@
 [
   {
-    "id": "8849802",
-    "date": 1771372800000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "8863603",
-    "date": 1771372800000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "8889503",
-    "date": 1771372800000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "8833634",
-    "date": 1771372800000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "8822234",
-    "date": 1771372800000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "8820834",
-    "date": 1771372800000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3446003",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 30.0 till 29.9 kr."
-  },
-  {
-    "id": "3064203",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 25.6 till 25.5 kr."
-  },
-  {
-    "id": "3449303",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 129.0 till 129.2 kr."
-  },
-  {
-    "id": "3269003",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 35.0 till 34.9 kr."
-  },
-  {
-    "id": "3127903",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 40.0 till 39.9 kr."
-  },
-  {
-    "id": "3292703",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 28.0 till 27.9 kr."
-  },
-  {
-    "id": "3514535",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 36.6 till 37.9 kr."
-  },
-  {
-    "id": "3492935",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 20.0 till 19.9 kr."
-  },
-  {
-    "id": "3473235",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 44.2 till 44.1 kr."
-  },
-  {
-    "id": "3459335",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 30.5 till 30.3 kr."
-  },
-  {
-    "id": "3445535",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 39.0 till 38.9 kr."
-  },
-  {
-    "id": "3422434",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 44.1 till 43.9 kr."
-  },
-  {
-    "id": "3089635",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 20.0 till 19.9 kr."
-  },
-  {
-    "id": "3229135",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 30.0 till 29.9 kr."
-  },
-  {
-    "id": "3433714",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 43.0 till 42.9 kr."
-  },
-  {
-    "id": "3450935",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 25.0 till 24.9 kr."
-  },
-  {
-    "id": "3387835",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 35.0 till 34.9 kr."
-  },
-  {
-    "id": "3295234",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 53.0 till 52.9 kr."
-  },
-  {
-    "id": "3333034",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 44.0 till 43.9 kr."
-  },
-  {
-    "id": "3182035",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 27.0 till 26.9 kr."
-  },
-  {
-    "id": "3304034",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 70.0 till 69.9 kr."
-  },
-  {
-    "id": "3166734",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 70.0 till 69.9 kr."
-  },
-  {
-    "id": "3146935",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 29.9 till 29.3 kr."
-  },
-  {
-    "id": "3392034",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 45.0 till 44.9 kr."
-  },
-  {
-    "id": "3108932",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 38.0 till 37.9 kr."
-  },
-  {
-    "id": "3327035",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 20.0 till 19.9 kr."
-  },
-  {
-    "id": "3197235",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 25.0 till 24.9 kr."
-  },
-  {
-    "id": "3291334",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 63.0 till 62.9 kr."
-  },
-  {
-    "id": "3265134",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 53.0 till 52.9 kr."
-  },
-  {
-    "id": "3171135",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 17.0 till 16.9 kr."
-  },
-  {
-    "id": "3126235",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 45.0 till 44.9 kr."
-  },
-  {
-    "id": "3324635",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 35.0 till 34.9 kr."
-  },
-  {
-    "id": "3346034",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 37.0 till 36.9 kr."
-  },
-  {
-    "id": "3027334",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 50.0 till 49.9 kr."
-  },
-  {
-    "id": "3046434",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 44.0 till 43.9 kr."
-  },
-  {
-    "id": "3292335",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 35.0 till 34.9 kr."
-  },
-  {
-    "id": "3111435",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 40.0 till 39.9 kr."
-  },
-  {
-    "id": "3178834",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 40.0 till 39.9 kr."
-  },
-  {
-    "id": "3136834",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 50.0 till 49.9 kr."
-  },
-  {
-    "id": "3054334",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 50.0 till 49.9 kr."
-  },
-  {
-    "id": "3056835",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 46.0 till 45.9 kr."
-  },
-  {
-    "id": "3021435",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 59.0 till 58.9 kr."
-  },
-  {
-    "id": "3088334",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 45.0 till 44.9 kr."
-  },
-  {
-    "id": "3071834",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 60.0 till 59.9 kr."
-  },
-  {
-    "id": "3031534",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 35.0 till 34.9 kr."
-  },
-  {
-    "id": "3227815",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 25.0 till 24.9 kr."
-  },
-  {
-    "id": "3249235",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 41.0 till 35.0 kr."
-  },
-  {
-    "id": "3401635",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 31.0 till 29.6 kr."
-  },
-  {
-    "id": "3222515",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 23.0 till 22.9 kr."
-  },
-  {
-    "id": "3412332",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 46.9 till 45.9 kr."
-  },
-  {
-    "id": "1040401",
-    "date": 1771372800000,
-    "reason": "Priset ändrades från 39.9 till 40.0 kr."
-  },
-  {
     "id": "1096701",
     "date": 1771545600000,
     "reason": "Ny produkt."
@@ -882,6 +597,51 @@
   {
     "id": "8846035",
     "date": 1771891200000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "8899301",
+    "date": 1771977600000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "8856601",
+    "date": 1771977600000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "8830534",
+    "date": 1771977600000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "8876334",
+    "date": 1771977600000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "8808734",
+    "date": 1771977600000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "8833634",
+    "date": 1771977600000,
+    "reason": "Priset ändrades från 148.9 till 149.1 kr."
+  },
+  {
+    "id": "8822234",
+    "date": 1771977600000,
+    "reason": "Priset ändrades från 123.9 till 124.0 kr."
+  },
+  {
+    "id": "8820834",
+    "date": 1771977600000,
+    "reason": "Priset ändrades från 143.0 till 143.1 kr."
+  },
+  {
+    "id": "3442301",
+    "date": 1771977600000,
     "reason": "Ny produkt."
   }
 ]

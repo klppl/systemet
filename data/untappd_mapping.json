@@ -5438,5 +5438,50 @@
     "beer_slug": "the-bruery-black-tuesday-blender-s-choice",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5051147_ffe12_sm.jpeg"
   },
-  "8808603": null
+  "8808603": null,
+  "8808734": {
+    "bid": 6515429,
+    "beer_name": "Centaur Army White",
+    "brewery_name": "Neon Raptor Brewing Co.",
+    "rating_score": 4.2,
+    "rating_count": 423,
+    "beer_slug": "neon-raptor-brewing-co-centaur-army-white",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6515429_7eee8_sm.jpeg"
+  },
+  "8876334": {
+    "bid": 3575152,
+    "beer_name": "Centaur Army",
+    "brewery_name": "Neon Raptor Brewing Co.",
+    "rating_score": 4.38,
+    "rating_count": 6028,
+    "beer_slug": "neon-raptor-brewing-co-centaur-army",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3575152_1161a_sm.jpeg"
+  },
+  "8830534": {
+    "bid": 6525285,
+    "beer_name": "Project West",
+    "brewery_name": "Great Notion Brewing",
+    "rating_score": 3.91,
+    "rating_count": 331,
+    "beer_slug": "great-notion-brewing-project-west",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6525285_e5386_sm.jpeg"
+  },
+  "8856601": {
+    "bid": 6076777,
+    "beer_name": "Midnight Frost",
+    "brewery_name": "The Bruery",
+    "rating_score": 4.15,
+    "rating_count": 249,
+    "beer_slug": "the-bruery-midnight-frost",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6076777_8ecea_sm.jpeg"
+  },
+  "8899301": {
+    "bid": 5551136,
+    "beer_name": "BoysenBBLs",
+    "brewery_name": "The Bruery Terreux",
+    "rating_score": 4.17,
+    "rating_count": 460,
+    "beer_slug": "the-bruery-terreux-boysenbbls",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5551136_82e2f_sm.jpeg"
+  }
 }
