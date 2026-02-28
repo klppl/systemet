@@ -1,10 +1,5 @@
 [
   {
-    "id": "143015",
-    "date": 1771632000000,
-    "reason": "Ny produkt."
-  },
-  {
     "id": "1125732",
     "date": 1771718400000,
     "reason": "Ny produkt."
@@ -647,6 +642,11 @@
   {
     "id": "1407314",
     "date": 1772150400000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "3858315",
+    "date": 1772236800000,
     "reason": "Ny produkt."
   }
 ]
