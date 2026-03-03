@@ -6068,5 +6068,51 @@
     "rating_count": 173,
     "beer_slug": "beersmiths-bunny-hop",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6213825_ccd84_sm.jpeg"
+  },
+  "8804234": null,
+  "8814935": {
+    "bid": 3459727,
+    "beer_name": "Giant Double Step",
+    "brewery_name": "CRAK Brewery",
+    "rating_score": 4.1,
+    "rating_count": 4091,
+    "beer_slug": "crak-brewery-giant-double-step",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3459727_84ded_sm.jpeg"
+  },
+  "8872935": {
+    "bid": 6517962,
+    "beer_name": "2026",
+    "brewery_name": "CRAK Brewery",
+    "rating_score": 3.98,
+    "rating_count": 164,
+    "beer_slug": "crak-brewery-2026",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-183551_66341.jpeg"
+  },
+  "8821934": {
+    "bid": 1454350,
+    "beer_name": "Blueberry Muffin",
+    "brewery_name": "Great Notion Brewing",
+    "rating_score": 4.24,
+    "rating_count": 43327,
+    "beer_slug": "great-notion-brewing-blueberry-muffin",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1454350_0dfbc_sm.jpeg"
+  },
+  "8839203": {
+    "bid": 6106308,
+    "beer_name": "Amburana Noir",
+    "brewery_name": "The Bruery",
+    "rating_score": 4.25,
+    "rating_count": 177,
+    "beer_slug": "the-bruery-amburana-noir",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6106308_804f1_sm.jpeg"
+  },
+  "8869703": {
+    "bid": 3473100,
+    "beer_name": "Black Tuesday Spicy Island",
+    "brewery_name": "The Bruery",
+    "rating_score": 4.33,
+    "rating_count": 1682,
+    "beer_slug": "the-bruery-black-tuesday-spicy-island",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3473100_26c72_sm.jpeg"
   }
 }
