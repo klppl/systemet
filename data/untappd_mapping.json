@@ -6114,5 +6114,41 @@
     "rating_count": 1682,
     "beer_slug": "the-bruery-black-tuesday-spicy-island",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3473100_26c72_sm.jpeg"
+  },
+  "8841134": {
+    "bid": 3683257,
+    "beer_name": "Berry Pusher",
+    "brewery_name": "Great Notion Brewing",
+    "rating_score": 4.21,
+    "rating_count": 5244,
+    "beer_slug": "great-notion-brewing-berry-pusher",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3683257_2ed17_sm.jpeg"
+  },
+  "8824834": {
+    "bid": 5029180,
+    "beer_name": "Jumbo Pants",
+    "brewery_name": "Great Notion Brewing",
+    "rating_score": 4.11,
+    "rating_count": 153,
+    "beer_slug": "great-notion-brewing-jumbo-pants",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5029180_68ffa_sm.jpeg"
+  },
+  "8831634": {
+    "bid": 6525336,
+    "beer_name": "The Soughten",
+    "brewery_name": "Great Notion Brewing",
+    "rating_score": 3.91,
+    "rating_count": 211,
+    "beer_slug": "great-notion-brewing-the-soughten",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6525336_d8ee3_sm.jpeg"
+  },
+  "8858001": {
+    "bid": 4329122,
+    "beer_name": "BirneSnap",
+    "brewery_name": "The Bruery",
+    "rating_score": 4.15122,
+    "rating_count": 286,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4329122_5471d_sm.jpeg"
   }
 }
