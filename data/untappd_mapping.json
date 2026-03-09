@@ -6199,5 +6199,78 @@
     "rating_count": 10174,
     "beer_slug": "mikkeller-kaerlighed-spring-summer-2024",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5792650_23ccc_sm.jpeg"
+  },
+  "8863134": {
+    "bid": 5333636,
+    "beer_name": "Dimmig Starköl",
+    "brewery_name": "Stormare Bryggeri AB",
+    "rating_score": 3.1,
+    "rating_count": 704,
+    "beer_slug": "stormare-bryggeri-ab-dimmig-starkol",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-540491_adce2.jpeg"
+  },
+  "8873634": {
+    "bid": 6583527,
+    "beer_name": "Duality",
+    "brewery_name": "Revenant Brewing Project",
+    "rating_score": 4.16,
+    "rating_count": 479,
+    "beer_slug": "revenant-brewing-project-duality",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6583527_5f660_sm.jpeg"
+  },
+  "8845534": {
+    "bid": 6583497,
+    "beer_name": "Obelisk 26",
+    "brewery_name": "Revenant Brewing Project",
+    "rating_score": 4.03,
+    "rating_count": 878,
+    "beer_slug": "revenant-brewing-project-obelisk-26",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6583497_49177_sm.jpeg"
+  },
+  "8836034": {
+    "bid": 6583407,
+    "beer_name": "Decode",
+    "brewery_name": "Revenant Brewing Project",
+    "rating_score": 3.76,
+    "rating_count": 399,
+    "beer_slug": "revenant-brewing-project-decode",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6583407_d0fd5_sm.jpeg"
+  },
+  "8813734": {
+    "bid": 6583414,
+    "beer_name": "Coil",
+    "brewery_name": "Revenant Brewing Project",
+    "rating_score": 3.93,
+    "rating_count": 574,
+    "beer_slug": "revenant-brewing-project-coil",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6583414_f600c_sm.jpeg"
+  },
+  "8867603": {
+    "bid": 6285492,
+    "beer_name": "Thrill Rider",
+    "brewery_name": "The Bruery",
+    "rating_score": 4.13,
+    "rating_count": 332,
+    "beer_slug": "the-bruery-thrill-rider",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6285492_0eada_sm.jpeg"
+  },
+  "8810703": {
+    "bid": 6394282,
+    "beer_name": "Chère Mardi",
+    "brewery_name": "The Bruery",
+    "rating_score": 4.2,
+    "rating_count": 148,
+    "beer_slug": "the-bruery-chere-mardi",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6394282_91078_sm.jpeg"
+  },
+  "8831706": null,
+  "8839103": {
+    "bid": 420830,
+    "beer_name": "House Lager",
+    "brewery_name": "Belhaven House Brewery",
+    "rating_score": 3.07,
+    "rating_count": 4628,
+    "beer_slug": "belhaven-house-brewery-house-lager",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-420830_2db8a_sm.jpeg"
   }
 }
