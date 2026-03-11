@@ -6272,5 +6272,14 @@
     "rating_count": 4628,
     "beer_slug": "belhaven-house-brewery-house-lager",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-420830_2db8a_sm.jpeg"
+  },
+  "8864834": {
+    "bid": 3818795,
+    "beer_name": "Triple Berry Shake",
+    "brewery_name": "Great Notion Brewing",
+    "rating_score": 4.3,
+    "rating_count": 4050,
+    "beer_slug": "great-notion-brewing-triple-berry-shake",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3818795_e17c9_sm.jpeg"
   }
 }
