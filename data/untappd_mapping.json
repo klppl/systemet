@@ -6281,5 +6281,87 @@
     "rating_count": 4050,
     "beer_slug": "great-notion-brewing-triple-berry-shake",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3818795_e17c9_sm.jpeg"
+  },
+  "1052234": {
+    "bid": 6292774,
+    "beer_name": "Renaître De Ses Cendres",
+    "brewery_name": "Fauve",
+    "rating_score": 4.02,
+    "rating_count": 1192,
+    "beer_slug": "fauve-renaitre-de-ses-cendres",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6292774_45abe_sm.jpeg"
+  },
+  "1032534": {
+    "bid": 6619583,
+    "beer_name": "Master of Alchemy (Freaky Friday)",
+    "brewery_name": "Omnipollo",
+    "rating_score": 4.07,
+    "rating_count": 69,
+    "beer_slug": "omnipollo-master-of-alchemy-freaky-friday",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6619583_04524_sm.jpeg"
+  },
+  "3110135": {
+    "bid": 6572390,
+    "beer_name": "Nik Gose Bananas De Luxe",
+    "brewery_name": "Duckpond Brewing",
+    "rating_score": 3.76,
+    "rating_count": 55,
+    "beer_slug": "duckpond-brewing-nik-gose-bananas-de-luxe",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6572390_95834_sm.jpeg"
+  },
+  "144103": {
+    "bid": 3471497,
+    "beer_name": "Patience For Eylenbosch - Hoppy Saison",
+    "brewery_name": "Brouwerij Eylenbosch",
+    "rating_score": 3.29,
+    "rating_count": 7830,
+    "beer_slug": "brouwerij-eylenbosch-patience-for-eylenbosch-hoppy-saison",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3471497_ed562_sm.jpeg"
+  },
+  "1081103": {
+    "bid": 29643,
+    "beer_name": "Bötet Barley Wine",
+    "brewery_name": "Nynäshamns Ångbryggeri ",
+    "rating_score": 3.56,
+    "rating_count": 4990,
+    "beer_slug": "nynashamns-angbryggeri-botet-barley-wine",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-_29643_sm.jpeg"
+  },
+  "5453403": {
+    "bid": 4286765,
+    "beer_name": "Chimay 150 (Green)",
+    "brewery_name": "Bières de Chimay",
+    "rating_score": 3.76,
+    "rating_count": 63655,
+    "beer_slug": "bieres-de-chimay-chimay-150-green",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4286765_d2129_sm.jpeg"
+  },
+  "1337534": {
+    "bid": 5669787,
+    "beer_name": "Dream House IPA",
+    "brewery_name": "Left Handed Giant",
+    "rating_score": 3.89,
+    "rating_count": 4025,
+    "beer_slug": "left-handed-giant-dream-house-ipa",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5669787_d3cad_sm.jpeg"
+  },
+  "1337735": {
+    "bid": 5979107,
+    "beer_name": "Capy Snacks - Cincinnati Black Raspberry",
+    "brewery_name": "Urban Artifact",
+    "rating_score": 4.1,
+    "rating_count": 4432,
+    "beer_slug": "urban-artifact-capy-snacks-cincinnati-black-raspberry",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5979107_f40cd_sm.jpeg"
+  },
+  "1086734": null,
+  "1027901": {
+    "bid": 104762,
+    "beer_name": "Cuvée des Jonquilles",
+    "brewery_name": "Brasserie au Baron",
+    "rating_score": 3.73,
+    "rating_count": 11170,
+    "beer_slug": "brasserie-au-baron-cuvee-des-jonquilles",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-104762_835c0_sm.jpeg"
   }
 }
