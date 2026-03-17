@@ -6363,5 +6363,32 @@
     "rating_count": 11170,
     "beer_slug": "brasserie-au-baron-cuvee-des-jonquilles",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-104762_835c0_sm.jpeg"
+  },
+  "8827334": {
+    "bid": 4496400,
+    "beer_name": "Tiger's Blood",
+    "brewery_name": "Great Notion Brewing",
+    "rating_score": 4,
+    "rating_count": 3653,
+    "beer_slug": "great-notion-brewing-tiger-s-blood",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4496400_f116e_sm.jpeg"
+  },
+  "8899434": {
+    "bid": 1499197,
+    "beer_name": "Key Lime Pie",
+    "brewery_name": "Great Notion Brewing",
+    "rating_score": 4.05,
+    "rating_count": 9641,
+    "beer_slug": "great-notion-brewing-key-lime-pie",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1499197_fbeb6_sm.jpeg"
+  },
+  "8888234": {
+    "bid": 5301517,
+    "beer_name": "POG Frog",
+    "brewery_name": "Great Notion Brewing",
+    "rating_score": 3.99,
+    "rating_count": 2873,
+    "beer_slug": "great-notion-brewing-pog-frog",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5301517_f584b_sm.jpeg"
   }
 }
