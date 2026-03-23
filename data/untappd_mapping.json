@@ -6611,5 +6611,72 @@
     "rating_count": 2633,
     "beer_slug": "majornas-bryggeri-majornas-kapardrottning",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3123006_96bd8_sm.jpeg"
+  },
+  "8884714": {
+    "bid": 5929263,
+    "beer_name": "Saint Bard",
+    "brewery_name": "Dugges Bryggeri",
+    "rating_score": 4.2,
+    "rating_count": 1373,
+    "beer_slug": "dugges-bryggeri-saint-bard",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5929263_073f0_sm.jpeg"
+  },
+  "8848832": {
+    "bid": 6560479,
+    "beer_name": "Lazarus",
+    "brewery_name": "Dugges Bryggeri",
+    "rating_score": 3.83,
+    "rating_count": 79,
+    "beer_slug": "dugges-bryggeri-lazarus",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6560479_cf5bb_sm.jpeg"
+  },
+  "8889234": null,
+  "8847734": null,
+  "8859734": null,
+  "8859834": null,
+  "8886101": {
+    "bid": 8484,
+    "beer_name": "Almaza Pilsener",
+    "brewery_name": "Brasserie Almaza",
+    "rating_score": 2.99,
+    "rating_count": 52719,
+    "beer_slug": "brasserie-almaza-almaza-pilsener",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-AlmazaPilsener_8484.jpeg"
+  },
+  "8800001": {
+    "bid": 14646,
+    "beer_name": "Citra",
+    "brewery_name": "Oakham Ales",
+    "rating_score": 3.61,
+    "rating_count": 42111,
+    "beer_slug": "oakham-ales-citra",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-14646_1ca7c_sm.jpeg"
+  },
+  "8813301": {
+    "bid": 14764,
+    "beer_name": "Inferno",
+    "brewery_name": "Oakham Ales",
+    "rating_score": 3.49,
+    "rating_count": 17374,
+    "beer_slug": "oakham-ales-inferno",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-14764_aff94_sm.jpeg"
+  },
+  "8871701": {
+    "bid": 478,
+    "beer_name": "Very Bad Elf",
+    "brewery_name": "Ridgeway Brewing",
+    "rating_score": 3.33,
+    "rating_count": 14492,
+    "beer_slug": "ridgeway-brewing-very-bad-elf",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-478_87149_sm.jpeg"
+  },
+  "8860001": {
+    "bid": 62554,
+    "beer_name": "Nikšićko Svijetlo Pivo",
+    "brewery_name": "Trebjesa Brewery",
+    "rating_score": 2.99,
+    "rating_count": 42869,
+    "beer_slug": "trebjesa-brewery-niksicko-svijetlo-pivo",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-_62554_sm_b471b56e392e389a48da2e4a1f51c5.jpeg"
   }
 }
