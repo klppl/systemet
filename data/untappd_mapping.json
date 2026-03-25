@@ -6751,5 +6751,150 @@
     "beer_slug": "brouwerij-3-fonteinen-3-fonteinen-zenne-y-frontera-season-18-19-blend-no-92",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3913114_ea7ed_sm.jpeg"
   },
-  "8842002": null
+  "8842002": null,
+  "3105935": {
+    "bid": 977885,
+    "beer_name": "100W",
+    "brewery_name": "Nya Carnegiebryggeriet ",
+    "rating_score": 3.54,
+    "rating_count": 58803,
+    "beer_slug": "nya-carnegiebryggeriet-100w",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-977885_07976_sm.jpeg"
+  },
+  "8992335": {
+    "bid": 24433,
+    "beer_name": "Sleepy Bulldog Pale Ale",
+    "brewery_name": "Gotlands Bryggeri",
+    "rating_score": 3.38,
+    "rating_count": 60993,
+    "beer_slug": "gotlands-bryggeri-sleepy-bulldog-pale-ale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-24433_ce1bd_sm.jpeg"
+  },
+  "1305235": {
+    "bid": 5351496,
+    "beer_name": "Ruby Ale",
+    "brewery_name": "Oppigårds Bryggeri",
+    "rating_score": 3.28,
+    "rating_count": 10647,
+    "beer_slug": "oppigards-bryggeri-ruby-ale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5351496_06aa7_sm.jpeg"
+  },
+  "122235": {
+    "bid": 52950,
+    "beer_name": "Sofiero Original (5.2%)",
+    "brewery_name": "Kopparbergs Bryggeri",
+    "rating_score": 2.63,
+    "rating_count": 29328,
+    "beer_slug": "kopparbergs-bryggeri-sofiero-original-5-2",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-52950_25814_sm.jpeg"
+  },
+  "3868535": {
+    "bid": 5111545,
+    "beer_name": "Omnipollos Hatt IPA",
+    "brewery_name": "Omnipollo",
+    "rating_score": 3.82,
+    "rating_count": 25847,
+    "beer_slug": "omnipollo-omnipollos-hatt-ipa",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5111545_0dca7_sm.jpeg"
+  },
+  "3342335": {
+    "bid": 2809562,
+    "beer_name": "Trouble Sleep",
+    "brewery_name": "Stigbergets Bryggeri",
+    "rating_score": 3.79,
+    "rating_count": 27532,
+    "beer_slug": "stigbergets-bryggeri-trouble-sleep",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2809562_ff3ef_sm.jpeg"
+  },
+  "122035": {
+    "bid": 628687,
+    "beer_name": "Kellerbier",
+    "brewery_name": "Nya Carnegiebryggeriet ",
+    "rating_score": 3.29,
+    "rating_count": 27991,
+    "beer_slug": "nya-carnegiebryggeriet-kellerbier",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-628687_f7f2a_sm.jpeg"
+  },
+  "123135": {
+    "bid": 4554422,
+    "beer_name": "Nebuchadnezzar Remix Citra Idaho 7",
+    "brewery_name": "Omnipollo",
+    "rating_score": 3.62,
+    "rating_count": 6630,
+    "beer_slug": "omnipollo-nebuchadnezzar-remix-citra-idaho-7",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4554422_ada94_sm.jpeg"
+  },
+  "154834": {
+    "bid": 5496053,
+    "beer_name": "Dubbelnelson",
+    "brewery_name": "Stigbergets Bryggeri",
+    "rating_score": 4.08,
+    "rating_count": 11893,
+    "beer_slug": "stigbergets-bryggeri-dubbelnelson",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5496053_31c2c_sm.jpeg"
+  },
+  "3552234": {
+    "bid": 4080143,
+    "beer_name": "Existens Essens Transcendens",
+    "brewery_name": "Stigbergets Bryggeri",
+    "rating_score": 3.79,
+    "rating_count": 27549,
+    "beer_slug": "stigbergets-bryggeri-existens-essens-transcendens",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4080143_7316a_sm.jpeg"
+  },
+  "8878835": {
+    "bid": 6135503,
+    "beer_name": "75 Degrees IPA",
+    "brewery_name": "Poppels Bryggeri",
+    "rating_score": 3.68,
+    "rating_count": 8908,
+    "beer_slug": "poppels-bryggeri-75-degrees-ipa",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6135503_05b88_sm.jpeg"
+  },
+  "3263135": null,
+  "3591335": {
+    "bid": 4263884,
+    "beer_name": "Öl",
+    "brewery_name": "Stigbergets Bryggeri",
+    "rating_score": 3.14,
+    "rating_count": 16998,
+    "beer_slug": "stigbergets-bryggeri-ol",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4263884_859d8_sm.jpeg"
+  },
+  "5521835": {
+    "bid": 4602823,
+    "beer_name": "Neon IPA",
+    "brewery_name": "Nya Carnegiebryggeriet ",
+    "rating_score": 3.61,
+    "rating_count": 15289,
+    "beer_slug": "nya-carnegiebryggeriet-neon-ipa",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4602823_c8a9c_sm.jpeg"
+  },
+  "8865034": {
+    "bid": 4354383,
+    "beer_name": "Folk Magic",
+    "brewery_name": "Belleflower Brewing",
+    "rating_score": 4.02,
+    "rating_count": 3805,
+    "beer_slug": "belleflower-brewing-folk-magic",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4354383_1db3a_sm.jpeg"
+  },
+  "8858201": {
+    "bid": 5256604,
+    "beer_name": "Clingstone",
+    "brewery_name": "Balance Brewing & Blending",
+    "rating_score": 3.96,
+    "rating_count": 435,
+    "beer_slug": "balance-brewing-and-blending-clingstone",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5256604_8316d_sm.jpeg"
+  },
+  "8844002": {
+    "bid": 6583003,
+    "beer_name": "Saison De Maison (Blend 11)",
+    "brewery_name": "Balance Brewing & Blending",
+    "rating_score": 4.06,
+    "rating_count": 65,
+    "beer_slug": "balance-brewing-and-blending-saison-de-maison-blend-11",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-521909_76840.jpeg"
+  }
 }
