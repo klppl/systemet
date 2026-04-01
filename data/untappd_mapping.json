@@ -8039,5 +8039,50 @@
     "rating_count": 309,
     "beer_slug": "the-bruery-double-double-mash",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5850335_49e9a_sm.jpeg"
+  },
+  "8881234": {
+    "bid": 4237727,
+    "beer_name": "Magpie",
+    "brewery_name": "Belleflower Brewing",
+    "rating_score": 3.95,
+    "rating_count": 3503,
+    "beer_slug": "belleflower-brewing-magpie",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4237727_a32fe_sm.jpeg"
+  },
+  "8805601": {
+    "bid": 4433746,
+    "beer_name": "Satisfies",
+    "brewery_name": "The Bruery",
+    "rating_score": 4.11,
+    "rating_count": 777,
+    "beer_slug": "the-bruery-satisfies",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4433746_064e6_sm.jpeg"
+  },
+  "8844103": {
+    "bid": 5437545,
+    "beer_name": "Cassaheim",
+    "brewery_name": "The Bruery",
+    "rating_score": 4.11,
+    "rating_count": 219,
+    "beer_slug": "the-bruery-cassaheim",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5437545_29206_sm.jpeg"
+  },
+  "8883803": {
+    "bid": 5042232,
+    "beer_name": "Ripple",
+    "brewery_name": "Balance Brewing & Blending",
+    "rating_score": 4.01,
+    "rating_count": 678,
+    "beer_slug": "balance-brewing-and-blending-ripple",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5042232_566b0_sm.jpeg"
+  },
+  "8883101": {
+    "bid": 6328134,
+    "beer_name": "C.B.D. - Cider Beer Drink",
+    "brewery_name": "Kemker Kultuur (Brauerei J. Kemker)",
+    "rating_score": 3.72,
+    "rating_count": 15,
+    "beer_slug": "kemker-kultuur-brauerei-j-kemker-c-b-d-cider-beer-drink",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-344764_4da9a.jpeg"
   }
 }
