@@ -8084,5 +8084,14 @@
     "rating_count": 15,
     "beer_slug": "kemker-kultuur-brauerei-j-kemker-c-b-d-cider-beer-drink",
     "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-344764_4da9a.jpeg"
+  },
+  "8865734": {
+    "bid": 5516018,
+    "beer_name": "Crystal Cover",
+    "brewery_name": "Belleflower Brewing",
+    "rating_score": 4.02,
+    "rating_count": 1169,
+    "beer_slug": "belleflower-brewing-crystal-cover",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5516018_754ac_sm.jpeg"
   }
 }
