@@ -8093,5 +8093,52 @@
     "rating_count": 1169,
     "beer_slug": "belleflower-brewing-crystal-cover",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5516018_754ac_sm.jpeg"
+  },
+  "1041934": {
+    "bid": 6560467,
+    "beer_name": "Maple X Coffee X Chocolate X Peanut Butter Imperial Stout",
+    "brewery_name": "Ārpus Brewing Co.",
+    "rating_score": 4.17,
+    "rating_count": 431,
+    "beer_slug": "arpus-brewing-co-maple-x-coffee-x-chocolate-x-peanut-butter-imperial-stout",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6560467_83e3a_sm.jpeg"
+  },
+  "1044134": {
+    "bid": 5263669,
+    "beer_name": "Roaring Forties",
+    "brewery_name": "FUERST WIACEK Berlin",
+    "rating_score": 3.93,
+    "rating_count": 2005,
+    "beer_slug": "fuerst-wiacek-berlin-roaring-forties",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5263669_b92ab_sm.jpeg"
+  },
+  "1336912": {
+    "bid": 1862728,
+    "beer_name": "Tasty Juice",
+    "brewery_name": "LERVIG",
+    "rating_score": 3.86,
+    "rating_count": 77670,
+    "beer_slug": "lervig-tasty-juice",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1862728_6fe9a_sm.jpeg"
+  },
+  "1042034": {
+    "bid": 1137314,
+    "beer_name": "Reciprocal",
+    "brewery_name": "Bissell Brothers Brewing Company",
+    "rating_score": 4.21,
+    "rating_count": 44877,
+    "beer_slug": "bissell-brothers-brewing-company-reciprocal",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1137314_afc23_sm.jpeg"
+  },
+  "1000034": null,
+  "1044235": null,
+  "1031903": {
+    "bid": 3059845,
+    "beer_name": "Franc Belge",
+    "brewery_name": "Brouwerij De Ranke",
+    "rating_score": 3.31,
+    "rating_count": 11361,
+    "beer_slug": "brouwerij-de-ranke-franc-belge",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3059845_5e839_sm.jpeg"
   }
 }
