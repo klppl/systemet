@@ -8140,5 +8140,14 @@
     "rating_count": 11361,
     "beer_slug": "brouwerij-de-ranke-franc-belge",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3059845_5e839_sm.jpeg"
+  },
+  "8854603": {
+    "bid": 4625904,
+    "beer_name": "Giotto 2021",
+    "brewery_name": "CRAK Brewery",
+    "rating_score": 4.28,
+    "rating_count": 808,
+    "beer_slug": "crak-brewery-giotto-2021",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4625904_83b3b_sm.jpeg"
   }
 }
