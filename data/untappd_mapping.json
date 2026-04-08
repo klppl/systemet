@@ -8194,5 +8194,50 @@
     "rating_count": 321,
     "beer_slug": "balance-brewing-and-blending-birthday-blend-24",
     "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-521909_76840.jpeg"
+  },
+  "8898734": {
+    "bid": 4739200,
+    "beer_name": "Staying Hoptimistic",
+    "brewery_name": "Cascade Brewing",
+    "rating_score": 3.93,
+    "rating_count": 658,
+    "beer_slug": "cascade-brewing-staying-hoptimistic",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4739200_8bc08_sm.jpeg"
+  },
+  "8885534": {
+    "bid": 4870374,
+    "beer_name": "DDH Finch And Thistle",
+    "brewery_name": "Belleflower Brewing",
+    "rating_score": 4.15,
+    "rating_count": 2690,
+    "beer_slug": "belleflower-brewing-ddh-finch-and-thistle",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4870374_1dc0d_sm.jpeg"
+  },
+  "8896103": {
+    "bid": 5331468,
+    "beer_name": "Hoarder's Cuvée",
+    "brewery_name": "The Bruery",
+    "rating_score": 4.38,
+    "rating_count": 444,
+    "beer_slug": "the-bruery-hoarder-s-cuvee",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5331468_14181_sm.jpeg"
+  },
+  "8856803": {
+    "bid": 4527247,
+    "beer_name": "24k Tuesday",
+    "brewery_name": "The Bruery",
+    "rating_score": 4.15,
+    "rating_count": 1202,
+    "beer_slug": "the-bruery-24k-tuesday",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4527247_1bab4_sm.jpeg"
+  },
+  "8894703": {
+    "bid": 6205280,
+    "beer_name": "Spectral Diffusion",
+    "brewery_name": "Balance Brewing & Blending",
+    "rating_score": 3.94,
+    "rating_count": 206,
+    "beer_slug": "balance-brewing-and-blending-spectral-diffusion",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-521909_76840.jpeg"
   }
 }
