@@ -8305,5 +8305,15 @@
     "beer_slug": "hepworth-and-co-charger-ipa",
     "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-HepworthCo_5282.jpeg"
   },
-  "1407535": null
+  "1407535": null,
+  "8853535": null,
+  "8822103": {
+    "bid": 8021,
+    "beer_name": "Rodenbach Grand Cru",
+    "brewery_name": "Brouwerij Rodenbach",
+    "rating_score": 3.64,
+    "rating_count": 209551,
+    "beer_slug": "brouwerij-rodenbach-rodenbach-grand-cru",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-8021_7fc32_sm.jpeg"
+  }
 }
