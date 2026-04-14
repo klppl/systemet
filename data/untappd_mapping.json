@@ -8315,5 +8315,32 @@
     "rating_count": 209551,
     "beer_slug": "brouwerij-rodenbach-rodenbach-grand-cru",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-8021_7fc32_sm.jpeg"
+  },
+  "8851801": {
+    "bid": 3984960,
+    "beer_name": "Castle Magic",
+    "brewery_name": "The Bruery",
+    "rating_score": 4.1028,
+    "rating_count": 286,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3984960_f6107_sm.jpeg"
+  },
+  "8894501": {
+    "bid": 89357,
+    "beer_name": "Grey Monday",
+    "brewery_name": "The Bruery",
+    "rating_score": 4.45,
+    "rating_count": 11626,
+    "beer_slug": "the-bruery-grey-monday",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-_89357_a3a1810ea89cd48f9e61379801d0.jpeg"
+  },
+  "8818001": {
+    "bid": 6208051,
+    "beer_name": "Motley Cru (2025)",
+    "brewery_name": "Bellwoods Brewery",
+    "rating_score": 4.02,
+    "rating_count": 376,
+    "beer_slug": "bellwoods-brewery-motley-cru-2025",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6208051_666ca_sm.jpeg"
   }
 }
