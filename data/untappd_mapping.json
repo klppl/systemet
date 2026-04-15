@@ -8342,5 +8342,74 @@
     "rating_count": 376,
     "beer_slug": "bellwoods-brewery-motley-cru-2025",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6208051_666ca_sm.jpeg"
+  },
+  "8816934": null,
+  "8871934": null,
+  "8889835": null,
+  "8816234": null,
+  "8816334": null,
+  "8895234": {
+    "bid": 6606628,
+    "beer_name": "STACKS // CHOCOLATE & HAZELNUT SPREAD PANCAKE STOUT",
+    "brewery_name": "Northern Monk",
+    "rating_score": 4.06,
+    "rating_count": 411,
+    "beer_slug": "northern-monk-stacks-chocolate-and-hazelnut-spread-pancake-stout",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6606628_09b44_sm.jpeg"
+  },
+  "8862801": {
+    "bid": 6316464,
+    "beer_name": "Birra Morretti Filtrata A Freddo",
+    "brewery_name": "Heineken Italia",
+    "rating_score": 3.38,
+    "rating_count": 40,
+    "beer_slug": "heineken-italia-birra-morretti-filtrata-a-freddo",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-2754_abfc9.jpeg"
+  },
+  "8857003": null,
+  "8890601": {
+    "bid": 6079113,
+    "beer_name": "Double Barrel Imperial Stout Volume 5 - Heaven Hill Rye 6-Year",
+    "brewery_name": "The Drowned Lands Brewery",
+    "rating_score": 4.4,
+    "rating_count": 45,
+    "beer_slug": "the-drowned-lands-brewery-double-barrel-imperial-stout-volume-5-heaven-hill-rye-6-year",
+    "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png"
+  },
+  "8876401": {
+    "bid": 5051147,
+    "beer_name": "Black Tuesday Blender's Choice",
+    "brewery_name": "The Bruery",
+    "rating_score": 4.4,
+    "rating_count": 553,
+    "beer_slug": "the-bruery-black-tuesday-blender-s-choice",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5051147_ffe12_sm.jpeg"
+  },
+  "8888603": {
+    "bid": 606657,
+    "beer_name": "Scudata",
+    "brewery_name": "Birrificio Antoniano",
+    "rating_score": 3.03,
+    "rating_count": 2113,
+    "beer_slug": "birrificio-antoniano-scudata",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-606657_b8f80_sm.jpeg"
+  },
+  "8888301": {
+    "bid": 6143434,
+    "beer_name": "Figgie",
+    "brewery_name": "DUST Blending",
+    "rating_score": 4.18,
+    "rating_count": 124,
+    "beer_slug": "dust-blending-figgie",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6143434_e46da_sm.jpeg"
+  },
+  "8858801": {
+    "bid": 6163519,
+    "beer_name": "Burning Plumz",
+    "brewery_name": "DUST Blending",
+    "rating_score": 4.19,
+    "rating_count": 117,
+    "beer_slug": "dust-blending-burning-plumz",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6163519_8758e_sm.jpeg"
   }
 }
