@@ -8411,5 +8411,79 @@
     "rating_count": 117,
     "beer_slug": "dust-blending-burning-plumz",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6163519_8758e_sm.jpeg"
+  },
+  "3310435": {
+    "bid": 6354134,
+    "beer_name": "Best Coast Pilsner",
+    "brewery_name": "Vega Bryggeri",
+    "rating_score": 3.38,
+    "rating_count": 469,
+    "beer_slug": "vega-bryggeri-best-coast-pilsner",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6354134_19720_sm.jpeg"
+  },
+  "3271835": null,
+  "3946435": {
+    "bid": 2544649,
+    "beer_name": "Elin",
+    "brewery_name": "Klackabackens Bryggeri",
+    "rating_score": 3.52,
+    "rating_count": 5118,
+    "beer_slug": "klackabackens-bryggeri-elin",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-klackabackensbryggeriab_63378.jpeg"
+  },
+  "3362235": {
+    "bid": 3093643,
+    "beer_name": "Twelve Fifty",
+    "brewery_name": "Odd Island Brewing ",
+    "rating_score": 3.56,
+    "rating_count": 7474,
+    "beer_slug": "odd-island-brewing-twelve-fifty",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3093643_72016_sm.jpeg"
+  },
+  "3125435": null,
+  "3976835": {
+    "bid": 5448025,
+    "beer_name": "Skördefestens Pilsner",
+    "brewery_name": "Remmarlöv Gårdsbryggeri",
+    "rating_score": 3.25,
+    "rating_count": 1218,
+    "beer_slug": "remmarlov-gardsbryggeri-skordefestens-pilsner",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-164604_453de.jpeg"
+  },
+  "3888035": {
+    "bid": 5236348,
+    "beer_name": "Älva",
+    "brewery_name": "Jämtlands Bryggeri",
+    "rating_score": 3.32,
+    "rating_count": 1793,
+    "beer_slug": "jamtlands-bryggeri-alva",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5236348_9590d_sm.jpeg"
+  },
+  "3796735": {
+    "bid": 4889526,
+    "beer_name": "Huldra",
+    "brewery_name": "Jämtlands Bryggeri",
+    "rating_score": 3.54,
+    "rating_count": 3454,
+    "beer_slug": "jamtlands-bryggeri-huldra",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4889526_ced95_sm.jpeg"
+  },
+  "100535": {
+    "bid": 105168,
+    "beer_name": "Kallholmen Levande Lager",
+    "brewery_name": "Kurjovikens Bryggeri (Skellefteå Bryggeri)",
+    "rating_score": 3.11,
+    "rating_count": 6967,
+    "beer_slug": "kurjovikens-bryggeri-skelleftea-bryggeri-kallholmen-levande-lager",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-19579_dbc42.jpeg"
+  },
+  "8906935": {
+    "bid": 233694,
+    "beer_name": "Kallholmen Levande IPA",
+    "brewery_name": "Kurjovikens Bryggeri (Skellefteå Bryggeri)",
+    "rating_score": 3.22,
+    "rating_count": 8776,
+    "beer_slug": "kurjovikens-bryggeri-skelleftea-bryggeri-kallholmen-levande-ipa",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-19579_dbc42.jpeg"
   }
 }
