@@ -8485,5 +8485,850 @@
     "rating_count": 8776,
     "beer_slug": "kurjovikens-bryggeri-skelleftea-bryggeri-kallholmen-levande-ipa",
     "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-19579_dbc42.jpeg"
+  },
+  "8859003": {
+    "bid": 6103962,
+    "beer_name": "Opera Omnia",
+    "brewery_name": "Brujos Brewing",
+    "rating_score": 4.64,
+    "rating_count": 518,
+    "beer_slug": "brujos-brewing-opera-omnia",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-178746_96491.jpeg"
+  },
+  "3426014": {
+    "bid": 2882569,
+    "beer_name": "Bangatan",
+    "brewery_name": "O/O Brewing ",
+    "rating_score": 3.86,
+    "rating_count": 19732,
+    "beer_slug": "o-o-brewing-bangatan",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2882569_4f8dd_sm.jpeg"
+  },
+  "3107115": null,
+  "3946215": {
+    "bid": 1988442,
+    "beer_name": "Summer Ale",
+    "brewery_name": "Klackabackens Bryggeri",
+    "rating_score": 3.26,
+    "rating_count": 6281,
+    "beer_slug": "klackabackens-bryggeri-summer-ale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1988442_c25ff_sm.jpeg"
+  },
+  "3072415": {
+    "bid": 5814642,
+    "beer_name": "Sagolika Sommarlager",
+    "brewery_name": "Fenix Brewery",
+    "rating_score": 3.2,
+    "rating_count": 723,
+    "beer_slug": "fenix-brewery-sagolika-sommarlager",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-464819_1e574.jpeg"
+  },
+  "3402114": {
+    "bid": 6298225,
+    "beer_name": "Silver Fox",
+    "brewery_name": "Ekerö Brygghus",
+    "rating_score": 3.64,
+    "rating_count": 538,
+    "beer_slug": "ekero-brygghus-silver-fox",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6298225_95981_sm.jpeg"
+  },
+  "3028215": {
+    "bid": 6298052,
+    "beer_name": "Waxholm Sommar Ale 2025",
+    "brewery_name": "Waxholms Bryggeri",
+    "rating_score": 3.07,
+    "rating_count": 237,
+    "beer_slug": "waxholms-bryggeri-waxholm-sommar-ale-2025",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-179023_924ee.jpeg"
+  },
+  "3410714": {
+    "bid": 6301420,
+    "beer_name": "Master of Fruitality 2",
+    "brewery_name": "Örebro Brygghus",
+    "rating_score": 3.38,
+    "rating_count": 508,
+    "beer_slug": "orebro-brygghus-master-of-fruitality-2",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6301420_0d29d_sm.jpeg"
+  },
+  "3098432": null,
+  "3191035": null,
+  "3339534": null,
+  "3303835": {
+    "bid": 5899771,
+    "beer_name": "Pure Pilsner",
+    "brewery_name": "Spike Brewery",
+    "rating_score": 3.21,
+    "rating_count": 1091,
+    "beer_slug": "spike-brewery-pure-pilsner",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5899771_f1922_sm.jpeg"
+  },
+  "3147534": {
+    "bid": 4939116,
+    "beer_name": "Session Sabro (Liquid Label)",
+    "brewery_name": "McCall Collective Brewing Co.",
+    "rating_score": 3.91,
+    "rating_count": 107,
+    "beer_slug": "mccall-collective-brewing-co-session-sabro-liquid-label",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4939116_8b19f_sm.jpeg"
+  },
+  "3451735": {
+    "bid": 6589412,
+    "beer_name": "Bryggvärk",
+    "brewery_name": "Mullvadsbryggeriet",
+    "rating_score": 3.28,
+    "rating_count": 55,
+    "beer_slug": "mullvadsbryggeriet-bryggvark",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6589412_def4d_sm.jpeg"
+  },
+  "3464435": {
+    "bid": 6237090,
+    "beer_name": "Mullvad No.1",
+    "brewery_name": "Mullvadsbryggeriet",
+    "rating_score": 3.55,
+    "rating_count": 91,
+    "beer_slug": "mullvadsbryggeriet-mullvad-no-1",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6237090_278dd_sm.jpeg"
+  },
+  "3420135": null,
+  "3288235": {
+    "bid": 6656818,
+    "beer_name": "Fresh X No3",
+    "brewery_name": "Television Brewing Co.",
+    "rating_score": 0,
+    "rating_count": 8,
+    "beer_slug": "television-brewing-co-fresh-x-no3",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6656818_ae759_sm.jpeg"
+  },
+  "3458535": {
+    "bid": 6571543,
+    "beer_name": "Kapten Trätass",
+    "brewery_name": "Prins Katts Hantverksöl",
+    "rating_score": 3.61,
+    "rating_count": 147,
+    "beer_slug": "prins-katts-hantverksol-kapten-tratass",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-339019_92c69.jpeg"
+  },
+  "3232034": null,
+  "3234835": null,
+  "3211235": null,
+  "3248732": {
+    "bid": 2952716,
+    "beer_name": "POST Holiday Coconut",
+    "brewery_name": "Goonda Beersmiths",
+    "rating_score": 0,
+    "rating_count": 5,
+    "beer_slug": "goonda-beersmiths-post-holiday-coconut",
+    "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png"
+  },
+  "3281235": {
+    "bid": 5753837,
+    "beer_name": "Golden Dragon Belgian Tripel (金龙比利时三料）",
+    "brewery_name": "Beersmith 鲜啤吧",
+    "rating_score": 0,
+    "rating_count": 5,
+    "beer_slug": "beersmith-golden-dragon-belgian-tripel",
+    "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png"
+  },
+  "3281435": null,
+  "3227935": {
+    "bid": 6188982,
+    "beer_name": "Smegevôrna (2025)",
+    "brewery_name": "BarlindBeer",
+    "rating_score": 3.92,
+    "rating_count": 135,
+    "beer_slug": "barlindbeer-smegevorna-2025",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6188982_36b96_sm.jpeg"
+  },
+  "3209634": {
+    "bid": 6658143,
+    "beer_name": "Bohemian Raspberry",
+    "brewery_name": "Ten Hands Brewing",
+    "rating_score": 4.12,
+    "rating_count": 30,
+    "beer_slug": "ten-hands-brewing-bohemian-raspberry",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6658143_f1604_sm.jpeg"
+  },
+  "3249034": {
+    "bid": 4186003,
+    "beer_name": "Orcus IPA",
+    "brewery_name": "Apex Brewing Company",
+    "rating_score": 4.01,
+    "rating_count": 5471,
+    "beer_slug": "apex-brewing-company-orcus-ipa",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4186003_89d88_sm.jpeg"
+  },
+  "3214334": {
+    "bid": 6658147,
+    "beer_name": "Hammerhead",
+    "brewery_name": "Ten Hands Brewing",
+    "rating_score": 3.85,
+    "rating_count": 32,
+    "beer_slug": "ten-hands-brewing-hammerhead",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6658147_1386d_sm.jpeg"
+  },
+  "3206335": null,
+  "3209135": {
+    "bid": 6644216,
+    "beer_name": "Bunny's American Brown Ale",
+    "brewery_name": "Bromma Allmänna Bryggeri ",
+    "rating_score": 3.1,
+    "rating_count": 58,
+    "beer_slug": "bromma-allmanna-bryggeri-bunny-s-american-brown-ale",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-581897_e6fe6.jpeg"
+  },
+  "3283635": {
+    "bid": 3484729,
+    "beer_name": "Strawberry Pie",
+    "brewery_name": "Brewski",
+    "rating_score": 3.72,
+    "rating_count": 21324,
+    "beer_slug": "brewski-strawberry-pie",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3484729_47428_sm.jpeg"
+  },
+  "3213835": null,
+  "3044335": null,
+  "3226435": null,
+  "3043535": null,
+  "3600335": null,
+  "3204735": null,
+  "3246235": null,
+  "3143335": {
+    "bid": 6621339,
+    "beer_name": "Double West Coast Nelson",
+    "brewery_name": "Bearded Rabbit Brewery ",
+    "rating_score": 3.88,
+    "rating_count": 85,
+    "beer_slug": "bearded-rabbit-brewery-double-west-coast-nelson",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6621339_c4950_sm.jpeg"
+  },
+  "3210635": null,
+  "3235715": {
+    "bid": 4909303,
+    "beer_name": "Forever Sun",
+    "brewery_name": "Remmarlöv Gårdsbryggeri",
+    "rating_score": 3.64,
+    "rating_count": 2233,
+    "beer_slug": "remmarlov-gardsbryggeri-forever-sun-ipa",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-164604_453de.jpeg"
+  },
+  "3222312": {
+    "bid": 4314046,
+    "beer_name": "Sommarlager",
+    "brewery_name": "Remmarlöv Gårdsbryggeri",
+    "rating_score": 3.31,
+    "rating_count": 1824,
+    "beer_slug": "remmarlov-gardsbryggeri-sommarlager",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-164604_453de.jpeg"
+  },
+  "3038034": {
+    "bid": 6634214,
+    "beer_name": "Mega Death DDH Double IPA",
+    "brewery_name": "Shapes & Objects Beer Co",
+    "rating_score": 4.01,
+    "rating_count": 55,
+    "beer_slug": "shapes-and-objects-beer-co-mega-death-ddh-double-ipa",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6634214_5fcda_sm.jpeg"
+  },
+  "3051734": {
+    "bid": 6588289,
+    "beer_name": "HAZY HARRY",
+    "brewery_name": "FERMENTERARNA",
+    "rating_score": 0,
+    "rating_count": 0,
+    "beer_slug": "fermenterarna-hazy-harry",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6588289_07105_sm.jpeg"
+  },
+  "3039934": {
+    "bid": 6588291,
+    "beer_name": "VILENTICO",
+    "brewery_name": "FERMENTERARNA",
+    "rating_score": 3.83,
+    "rating_count": 51,
+    "beer_slug": "fermenterarna-vilentico",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6588291_5ba4a_sm.jpeg"
+  },
+  "3022935": {
+    "bid": 6648136,
+    "beer_name": "Fizzy Bubble",
+    "brewery_name": "Dugges Bryggeri",
+    "rating_score": 3.64,
+    "rating_count": 33,
+    "beer_slug": "dugges-bryggeri-fizzy-bubble",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6648136_c6e62_sm.jpeg"
+  },
+  "3006135": null,
+  "3231735": {
+    "bid": 5310737,
+    "beer_name": "Ostron Porter",
+    "brewery_name": "Hönöbryggeriet",
+    "rating_score": 3.31,
+    "rating_count": 3121,
+    "beer_slug": "honobryggeriet-ostron-porter",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5310737_c8560_sm.jpeg"
+  },
+  "3210235": null,
+  "3084335": {
+    "bid": 6580847,
+    "beer_name": "GOSIG",
+    "brewery_name": "Gagnef Brewing",
+    "rating_score": 0,
+    "rating_count": 0,
+    "beer_slug": "gagnef-brewing-gosig",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6580847_cec4e_sm.jpeg"
+  },
+  "3072335": null,
+  "3036735": null,
+  "3109135": {
+    "bid": 5325140,
+    "beer_name": "SUMMER Session IPA",
+    "brewery_name": "Nya Carnegiebryggeriet ",
+    "rating_score": 3.36316,
+    "rating_count": 1767,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5325140_a82a9_sm.jpeg"
+  },
+  "3140435": null,
+  "3222134": {
+    "bid": 6634194,
+    "beer_name": "iChamo! FFS Dark Lager",
+    "brewery_name": "Shapes & Objects Beer Co",
+    "rating_score": 3.52,
+    "rating_count": 91,
+    "beer_slug": "shapes-and-objects-beer-co-ichamo-ffs-dark-lager",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6634194_17ce2_sm.jpeg"
+  },
+  "3241434": null,
+  "3214034": {
+    "bid": 6666509,
+    "beer_name": "Shell of Light",
+    "brewery_name": "Elmeleven",
+    "rating_score": 0,
+    "rating_count": 0,
+    "beer_slug": "elmeleven-shell-of-light",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6666509_bd66a_sm.jpeg"
+  },
+  "3041834": {
+    "bid": 6666507,
+    "beer_name": "New Frequencies (PULP)",
+    "brewery_name": "Elmeleven",
+    "rating_score": 4.3,
+    "rating_count": 27,
+    "beer_slug": "elmeleven-new-frequencies-pulp",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6666507_9f52b_sm.jpeg"
+  },
+  "3041734": {
+    "bid": 6254120,
+    "beer_name": "Mofaza IPA",
+    "brewery_name": "Jemtehed & Brande",
+    "rating_score": 3.7,
+    "rating_count": 543,
+    "beer_slug": "jemtehed-and-brande-mofaza-ipa",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6254120_ca182_sm.jpeg"
+  },
+  "3214734": null,
+  "3029135": null,
+  "3143234": null,
+  "3159235": null,
+  "3137335": {
+    "bid": 6242358,
+    "beer_name": "Dubbel Hyllipan",
+    "brewery_name": "Hyllie Bryggeri",
+    "rating_score": 3.83,
+    "rating_count": 767,
+    "beer_slug": "hyllie-bryggeri-dubbel-hyllipan",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-195485_d7073.jpeg"
+  },
+  "3217935": null,
+  "3142935": {
+    "bid": 6654820,
+    "beer_name": "Pirens Pale Ale",
+    "brewery_name": "Nyköping Brewing Company",
+    "rating_score": 3.61,
+    "rating_count": 39,
+    "beer_slug": "nykoping-brewing-company-pirens-pale-ale",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-343407_e9cff.jpeg"
+  },
+  "3022835": {
+    "bid": 6668730,
+    "beer_name": "DubbelDIPA",
+    "brewery_name": "Kvarnagårdens Bryggeri",
+    "rating_score": 0,
+    "rating_count": 0,
+    "beer_slug": "kvarnagardens-bryggeri-dubbeldipa",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-168339_02e1f.jpeg"
+  },
+  "3219435": null,
+  "3190234": null,
+  "3168534": null,
+  "3102134": {
+    "bid": 6672831,
+    "beer_name": "Glenn",
+    "brewery_name": "Spike Brewery",
+    "rating_score": 3.81,
+    "rating_count": 46,
+    "beer_slug": "spike-brewery-glenn",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6672831_c0af9_sm.jpeg"
+  },
+  "3160934": {
+    "bid": 5808928,
+    "beer_name": "Midsummer Pilsner",
+    "brewery_name": "Poppels Bryggeri",
+    "rating_score": 3.45,
+    "rating_count": 1157,
+    "beer_slug": "poppels-bryggeri-midsummer-pilsner",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5808928_e1b72_sm.jpeg"
+  },
+  "3312335": {
+    "bid": 6652281,
+    "beer_name": "How To Sundae Chill",
+    "brewery_name": "Moment Lab Stockholm",
+    "rating_score": 0,
+    "rating_count": 0,
+    "beer_slug": "moment-lab-stockholm-how-to-sundae-chill",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-586828_a4635.jpeg"
+  },
+  "3279934": null,
+  "3339635": {
+    "bid": 6663279,
+    "beer_name": "Flora Session IPA 2026",
+    "brewery_name": "Omnipollo",
+    "rating_score": 3.6,
+    "rating_count": 32,
+    "beer_slug": "omnipollo-flora-session-ipa-2026",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-29486_3f2a6.jpeg"
+  },
+  "3279135": null,
+  "3418434": null,
+  "3003634": {
+    "bid": 6292854,
+    "beer_name": "Dubbelsmocka DDh IPA",
+    "brewery_name": "Revsunds Brewery & Distillery",
+    "rating_score": 3.71,
+    "rating_count": 240,
+    "beer_slug": "revsunds-brewery-and-distillery-dubbelsmocka-ddh-ipa",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-241392_e5c0f.jpeg"
+  },
+  "3165035": null,
+  "3377035": {
+    "bid": 3824243,
+    "beer_name": "Summer Bulldog Pale Ale",
+    "brewery_name": "Gotlands Bryggeri",
+    "rating_score": 3.33,
+    "rating_count": 6105,
+    "beer_slug": "gotlands-bryggeri-summer-bulldog-pale-ale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3824243_224a6_sm.jpeg"
+  },
+  "3002535": null,
+  "3020734": {
+    "bid": 3364825,
+    "beer_name": "Double Headed DDH West Coast IPA",
+    "brewery_name": "Stigbergets Bryggeri",
+    "rating_score": 4.02,
+    "rating_count": 17774,
+    "beer_slug": "stigbergets-bryggeri-double-headed-ddh-west-coast-ipa",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3364825_0783d_sm.jpeg"
+  },
+  "3126434": {
+    "bid": 3886603,
+    "beer_name": "Killer Pale",
+    "brewery_name": "Stigbergets Bryggeri",
+    "rating_score": 3.75,
+    "rating_count": 7767,
+    "beer_slug": "stigbergets-bryggeri-killer-pale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3886603_62b73_sm.jpeg"
+  },
+  "3058735": {
+    "bid": 6433471,
+    "beer_name": "Amber Ale SOB 2025",
+    "brewery_name": "Timjans Brygghus",
+    "rating_score": 3.16,
+    "rating_count": 52,
+    "beer_slug": "timjans-brygghus-amber-ale-sob-2025",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6433471_06d39_sm.jpeg"
+  },
+  "3065635": null,
+  "3313435": {
+    "bid": 6266976,
+    "beer_name": "Fläder",
+    "brewery_name": "Rocket Brewing Company",
+    "rating_score": 3.38,
+    "rating_count": 246,
+    "beer_slug": "rocket-brewing-company-flader",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-157449_eb330.jpeg"
+  },
+  "3276235": {
+    "bid": 644730,
+    "beer_name": "Craft Lager",
+    "brewery_name": "Grebbestad Bryggeri",
+    "rating_score": 3.36,
+    "rating_count": 677,
+    "beer_slug": "grebbestad-bryggeri-craft-lager",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-644730_dd737_sm.jpeg"
+  },
+  "3317735": {
+    "bid": 6602110,
+    "beer_name": "Emilia Bärig Syrlig",
+    "brewery_name": "Wapnö Gårdsbryggeri",
+    "rating_score": 4.12,
+    "rating_count": 118,
+    "beer_slug": "wapno-gardsbryggeri-emilia-barig-syrlig",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6602110_ec829_sm.jpeg"
+  },
+  "3368034": {
+    "bid": 4909370,
+    "beer_name": "Hazy Crazy",
+    "brewery_name": "Ängöl",
+    "rating_score": 3.67,
+    "rating_count": 7073,
+    "beer_slug": "angol-hazy-crazy",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4909370_05095_sm.jpeg"
+  },
+  "3392234": null,
+  "3186735": {
+    "bid": 3774885,
+    "beer_name": "Artut Extra Special Bitter",
+    "brewery_name": "Åre Bryggcompagni",
+    "rating_score": 3.35,
+    "rating_count": 724,
+    "beer_slug": "are-bryggcompagni-artut-extra-special-bitter",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3774885_c3ed8_sm.jpeg"
+  },
+  "3309634": {
+    "bid": 6672277,
+    "beer_name": "Berliner Weisse Hallon 2026",
+    "brewery_name": "Örebro Brygghus",
+    "rating_score": 0,
+    "rating_count": 5,
+    "beer_slug": "orebro-brygghus-berliner-weisse-hallon-2026",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6672277_6f2e7_sm.jpeg"
+  },
+  "3416035": null,
+  "3474635": {
+    "bid": 3742870,
+    "beer_name": "Fjällen Sommar",
+    "brewery_name": "Åre Bryggcompagni",
+    "rating_score": 3.52,
+    "rating_count": 812,
+    "beer_slug": "are-bryggcompagni-fjallen-sommar",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3742870_eaae2_sm.jpeg"
+  },
+  "3478035": {
+    "bid": 3246938,
+    "beer_name": "Gårdslager",
+    "brewery_name": "Vareböke Bryggeri",
+    "rating_score": 3.13,
+    "rating_count": 1201,
+    "beer_slug": "vareboke-bryggeri-gardslager",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3246938_05e1c_sm.jpeg"
+  },
+  "3430235": {
+    "bid": 3693915,
+    "beer_name": "Jungle Sour",
+    "brewery_name": "Vareböke Bryggeri",
+    "rating_score": 3.36,
+    "rating_count": 1066,
+    "beer_slug": "vareboke-bryggeri-jungle-sour",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3693915_eb8a7_sm.jpeg"
+  },
+  "3474035": null,
+  "3433535": {
+    "bid": 6675158,
+    "beer_name": "Jos - Dolcita/Rakau/Galaxy",
+    "brewery_name": "Vega Bryggeri",
+    "rating_score": 3.8,
+    "rating_count": 18,
+    "beer_slug": "vega-bryggeri-jos-dolcita-rakau-galaxy",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6675158_da877_sm.jpeg"
+  },
+  "3448304": {
+    "bid": 5925684,
+    "beer_name": "Bryggarbubbel",
+    "brewery_name": "Qvänum Mat & Malt",
+    "rating_score": 3.4,
+    "rating_count": 171,
+    "beer_slug": "qvanum-mat-and-malt-bryggarbubbel",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-10766_6bfce.jpeg"
+  },
+  "3410803": {
+    "bid": 6221361,
+    "beer_name": "Gårds-Lager",
+    "brewery_name": "Ölsbo Gårdsbryggeri",
+    "rating_score": 3.21,
+    "rating_count": 127,
+    "beer_slug": "olsbo-gardsbryggeri-gards-lager",
+    "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png"
+  },
+  "3390403": {
+    "bid": 6868,
+    "beer_name": "Duvel",
+    "brewery_name": "Duvel Moortgat",
+    "rating_score": 3.71,
+    "rating_count": 441355,
+    "beer_slug": "duvel-moortgat-duvel",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6868_ea292_sm.jpeg"
+  },
+  "3615303": {
+    "bid": 4343247,
+    "beer_name": "Gräsklipparöl",
+    "brewery_name": "Roslagens Brygghus",
+    "rating_score": 3.2,
+    "rating_count": 1017,
+    "beer_slug": "roslagens-brygghus-grasklipparol",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4343247_089fe_sm.jpeg"
+  },
+  "3620203": {
+    "bid": 4369400,
+    "beer_name": "Solsting",
+    "brewery_name": "Ödåkra Brygghus",
+    "rating_score": 3.29,
+    "rating_count": 463,
+    "beer_slug": "odakra-brygghus-solsting",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4369400_46895_sm.jpeg"
+  },
+  "3304803": {
+    "bid": 2670924,
+    "beer_name": "Sommarboda",
+    "brewery_name": "Emmaboda Bryggeri",
+    "rating_score": 3.39,
+    "rating_count": 3692,
+    "beer_slug": "emmaboda-bryggeri-sommarboda",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2670924_70a20_sm.jpeg"
+  },
+  "3245803": {
+    "bid": 3681225,
+    "beer_name": "Slakthusets Röklager",
+    "brewery_name": "Gamla Enskede Bryggeri",
+    "rating_score": 3.16,
+    "rating_count": 828,
+    "beer_slug": "gamla-enskede-bryggeri-slakthusets-roklager",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3681225_3bc21_sm.jpeg"
+  },
+  "3057803": {
+    "bid": 3117750,
+    "beer_name": "Folkes Imperial Stout",
+    "brewery_name": "Aktiebolaget Centralbryggeriet i Linköping",
+    "rating_score": 3.62,
+    "rating_count": 1105,
+    "beer_slug": "aktiebolaget-centralbryggeriet-i-linkoping-folkes-imperial-stout",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-123279_4b00c.jpeg"
+  },
+  "3053203": null,
+  "3106003": {
+    "bid": 6452091,
+    "beer_name": "Karls Lager",
+    "brewery_name": "Hjo Bryggeri ",
+    "rating_score": 0,
+    "rating_count": 2,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png"
+  },
+  "3269101": null,
+  "3266503": {
+    "bid": 3485080,
+    "beer_name": "Fruta O Plomo",
+    "brewery_name": "Rocket Brewing Company",
+    "rating_score": 3.48,
+    "rating_count": 185,
+    "beer_slug": "rocket-brewing-company-fruta-o-plomo",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3485080_e28cf_sm.jpeg"
+  },
+  "3377803": null,
+  "3353503": {
+    "bid": 6654724,
+    "beer_name": "Old Ale",
+    "brewery_name": "Närke Kulturbryggeri",
+    "rating_score": 0,
+    "rating_count": 0,
+    "beer_slug": "narke-kulturbryggeri-old-ale",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-NarkeKulturbryggeri_2361.jpeg"
+  },
+  "3291703": {
+    "bid": 5693393,
+    "beer_name": "Rävgångens Golden Ale",
+    "brewery_name": "Närke Kulturbryggeri",
+    "rating_score": 3.52,
+    "rating_count": 972,
+    "beer_slug": "narke-kulturbryggeri-ravgangens-golden-ale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5693393_6b951_sm.jpeg"
+  },
+  "3503903": null,
+  "3458903": null,
+  "3346703": null,
+  "3266103": {
+    "bid": 1199307,
+    "beer_name": "Barrels Egna Kalasöl",
+    "brewery_name": "Ahlafors Bryggerier",
+    "rating_score": 0,
+    "rating_count": 5,
+    "beer_slug": "ahlafors-bryggerier-barrels-egna-kalasol",
+    "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png"
+  },
+  "3235603": null,
+  "3206203": {
+    "bid": 5619151,
+    "beer_name": "Torkan Single Hop Lager",
+    "brewery_name": "Roslags Näsby Bryggeri",
+    "rating_score": 3.37,
+    "rating_count": 13,
+    "beer_slug": "roslags-nasby-bryggeri-torkan-single-hop-lager",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-208294_ffff3.jpeg"
+  },
+  "3050603": null,
+  "3221103": null,
+  "3128403": {
+    "bid": 5890887,
+    "beer_name": "Première Blonde",
+    "brewery_name": "Drottningholms Bryggeri",
+    "rating_score": 3.24839,
+    "rating_count": 93,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png"
+  },
+  "3195803": {
+    "bid": 3252915,
+    "beer_name": "Kungälvs-Pilsner",
+    "brewery_name": "En Aleigen Brewery",
+    "rating_score": 3.08,
+    "rating_count": 537,
+    "beer_slug": "en-aleigen-brewery-kungalvs-pilsnern",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3252915_387fd_sm.jpeg"
+  },
+  "3131403": null,
+  "3219501": null,
+  "3301003": null,
+  "3215603": {
+    "bid": 6370024,
+    "beer_name": "Mango & Passion",
+    "brewery_name": "Hjo Bryggeri ",
+    "rating_score": 3.27,
+    "rating_count": 23,
+    "beer_slug": "hjo-bryggeri-mango-and-passion",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-91885_a4944.jpeg"
+  },
+  "3262003": {
+    "bid": 6370081,
+    "beer_name": "Hallon & Citron",
+    "brewery_name": "Hjo Bryggeri ",
+    "rating_score": 0,
+    "rating_count": 8,
+    "beer_slug": "hjo-bryggeri-hallon-and-citron",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-91885_a4944.jpeg"
+  },
+  "3164901": {
+    "bid": 6225886,
+    "beer_name": "2025 Seven Flowers Sour",
+    "brewery_name": "Poppels Bryggeri",
+    "rating_score": 3.76,
+    "rating_count": 511,
+    "beer_slug": "poppels-bryggeri-2025-seven-flowers-sour",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6225886_861d8_sm.jpeg"
+  },
+  "3002303": {
+    "bid": 6672076,
+    "beer_name": "En Lager Till:",
+    "brewery_name": "Jämtlands Bryggeri",
+    "rating_score": 0,
+    "rating_count": 0,
+    "beer_slug": "jamtlands-bryggeri-en-lager-till",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6672076_6075c_sm.jpeg"
+  },
+  "3191503": {
+    "bid": 5850673,
+    "beer_name": "Witness West Coast IPA",
+    "brewery_name": "Lock, Hop & Barrel",
+    "rating_score": 3.64,
+    "rating_count": 26,
+    "beer_slug": "lock-hop-and-barrel-witness-west-coast-ipa",
+    "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png"
+  },
+  "3153903": null,
+  "3312003": {
+    "bid": 6645649,
+    "beer_name": "East Coast Session IPA",
+    "brewery_name": "Lock, Hop & Barrel",
+    "rating_score": 0,
+    "rating_count": 0,
+    "beer_slug": "lock-hop-and-barrel-east-coast-session-ipa",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-342514_a2861.jpeg"
+  },
+  "3061403": {
+    "bid": 6593449,
+    "beer_name": "Frisisk Pilsner",
+    "brewery_name": "Närke Kulturbryggeri",
+    "rating_score": 0,
+    "rating_count": 5,
+    "beer_slug": "narke-kulturbryggeri-frisisk-pilsner",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-NarkeKulturbryggeri_2361.jpeg"
+  },
+  "3097103": null,
+  "3199403": {
+    "bid": 6676909,
+    "beer_name": "Ivan",
+    "brewery_name": "Stjernsund Brygghus",
+    "rating_score": 0,
+    "rating_count": 6,
+    "beer_slug": "stjernsund-brygghus-ivan",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-395377_b617c.jpeg"
+  },
+  "3287403": null,
+  "3344301": null,
+  "3127203": {
+    "bid": 5848642,
+    "beer_name": "Värmdö Summer Breeze",
+    "brewery_name": "Värmdö Bryggeri",
+    "rating_score": 3.14593,
+    "rating_count": 172,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5848642_1bc6c_sm.jpeg"
+  },
+  "3144403": null,
+  "3288903": {
+    "bid": 6612242,
+    "beer_name": "Den Sjungande Nunnan",
+    "brewery_name": "Vreta kloster bryggeri",
+    "rating_score": 3.55,
+    "rating_count": 147,
+    "beer_slug": "vreta-kloster-bryggeri-den-sjungande-nunnan",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6612242_f3440_sm.jpeg"
+  },
+  "3331103": {
+    "bid": 4906246,
+    "beer_name": "Torsbo IPA",
+    "brewery_name": "Torsbo 5.2",
+    "rating_score": 2.94676,
+    "rating_count": 185,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png"
+  },
+  "3145903": {
+    "bid": 6518034,
+    "beer_name": "Kårboda KåPA",
+    "brewery_name": "Kårboda Bryggeri",
+    "rating_score": 3.33,
+    "rating_count": 45,
+    "beer_slug": "karboda-bryggeri-karboda-kapa",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6518034_29f76_sm.jpeg"
+  },
+  "3380501": null,
+  "1044312": null,
+  "8823103": null,
+  "3761903": null,
+  "3112034": {
+    "bid": 6615010,
+    "beer_name": "#15 DIPA",
+    "brewery_name": "To Øl",
+    "rating_score": 3.84,
+    "rating_count": 360,
+    "beer_slug": "to-ol-15-dipa",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-2241_bb819.jpeg"
+  },
+  "3098203": {
+    "bid": 6456623,
+    "beer_name": "Kellerbier",
+    "brewery_name": "Burgsviks Bryggeri",
+    "rating_score": 3.4881,
+    "rating_count": 21,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png"
   }
 }
