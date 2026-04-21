@@ -9330,5 +9330,23 @@
     "rating_count": 21,
     "beer_slug": null,
     "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png"
+  },
+  "8836601": {
+    "bid": 5093211,
+    "beer_name": "Sans",
+    "brewery_name": "The Bruery",
+    "rating_score": 4.03,
+    "rating_count": 377,
+    "beer_slug": "the-bruery-sans",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5093211_cd6ab_sm.jpeg"
+  },
+  "8895701": {
+    "bid": 5820004,
+    "beer_name": "Mirroring Dimensions",
+    "brewery_name": "Bissell Brothers Brewing Company",
+    "rating_score": 4.41,
+    "rating_count": 681,
+    "beer_slug": "bissell-brothers-brewing-company-mirroring-dimensions",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5820004_c6c45_sm.jpeg"
   }
 }
