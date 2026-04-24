@@ -9348,5 +9348,170 @@
     "rating_count": 681,
     "beer_slug": "bissell-brothers-brewing-company-mirroring-dimensions",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5820004_c6c45_sm.jpeg"
+  },
+  "1128435": {
+    "bid": 4509,
+    "beer_name": "IPA",
+    "brewery_name": "Lagunitas Brewing Company",
+    "rating_score": 3.69,
+    "rating_count": 803639,
+    "beer_slug": "lagunitas-brewing-company-ipa",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4509_21190_sm.jpeg"
+  },
+  "120135": {
+    "bid": 6153622,
+    "beer_name": "Hazy IPA Ekologisk",
+    "brewery_name": "Remmarlöv Gårdsbryggeri",
+    "rating_score": 3.44,
+    "rating_count": 12416,
+    "beer_slug": "remmarlov-gardsbryggeri-hazy-ipa-ekologisk",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6153622_c4f78_sm.jpeg"
+  },
+  "121135": {
+    "bid": 3692912,
+    "beer_name": "Rabarber Sur",
+    "brewery_name": "S:t Eriks Bryggeri",
+    "rating_score": 3.33,
+    "rating_count": 15898,
+    "beer_slug": "s-t-eriks-bryggeri-rabarber-sur",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3692912_fade1_sm.jpeg"
+  },
+  "121235": {
+    "bid": 1449898,
+    "beer_name": "Kukko Helles 4.7%",
+    "brewery_name": "Laitilan Wirvoitusjuomatehdas",
+    "rating_score": 2.71,
+    "rating_count": 19783,
+    "beer_slug": "laitilan-wirvoitusjuomatehdas-kukko-helles-4-7",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1449898_eeebf_sm.jpeg"
+  },
+  "9210934": {
+    "bid": 6016357,
+    "beer_name": "Nova",
+    "brewery_name": "CoolHead Brew",
+    "rating_score": 3.52,
+    "rating_count": 2226,
+    "beer_slug": "coolhead-brew-nova",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6016357_6a087_sm.jpeg"
+  },
+  "1338535": {
+    "bid": 5226,
+    "beer_name": "IPA",
+    "brewery_name": "Lakefront Brewery",
+    "rating_score": 3.64,
+    "rating_count": 73438,
+    "beer_slug": "lakefront-brewery-ipa",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5226_75cbf_sm.jpeg"
+  },
+  "1038015": {
+    "bid": 1889142,
+    "beer_name": "Saison Dupont Cuvée Dry Hopping",
+    "brewery_name": "Brasserie Dupont",
+    "rating_score": 3.67,
+    "rating_count": 13686,
+    "beer_slug": "brasserie-dupont-saison-dupont-cuvee-dry-hopping",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1889142_816bd_sm.jpeg"
+  },
+  "1407235": {
+    "bid": 3918428,
+    "beer_name": "Spiked Smoothie Raspberry Lemonade",
+    "brewery_name": "Connecticut Valley Brewing Company",
+    "rating_score": 4.15,
+    "rating_count": 767,
+    "beer_slug": "connecticut-valley-brewing-company-spiked-smoothie-raspberry-lemonade",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3918428_61dc6_sm.jpeg"
+  },
+  "1084434": null,
+  "1052434": {
+    "bid": 6542408,
+    "beer_name": "Cold Kingdom",
+    "brewery_name": "Left Handed Giant",
+    "rating_score": 3.94,
+    "rating_count": 488,
+    "beer_slug": "left-handed-giant-cold-kingdom",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6542408_25f43_sm.jpeg"
+  },
+  "1000635": {
+    "bid": 6562566,
+    "beer_name": "Sticky Business: Espresso Martini",
+    "brewery_name": "Frontaal Brewing Co.",
+    "rating_score": 3.48,
+    "rating_count": 1030,
+    "beer_slug": "frontaal-brewing-co-sticky-business-espresso-martini",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6562566_cf0f6_sm.jpeg"
+  },
+  "1037834": null,
+  "1040534": {
+    "bid": 6671883,
+    "beer_name": "Pilgrim Ale - Jubileumsöl",
+    "brewery_name": "Jämtlands Bryggeri",
+    "rating_score": 3.63,
+    "rating_count": 24,
+    "beer_slug": "jamtlands-bryggeri-pilgrim-ale-jubileumsol",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6671883_fc718_sm.jpeg"
+  },
+  "1407834": {
+    "bid": 1859,
+    "beer_name": "Nog",
+    "brewery_name": "Woodforde's Brewery",
+    "rating_score": 3.56,
+    "rating_count": 4764,
+    "beer_slug": "woodforde-s-brewery-nog",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1859_ce160_sm.jpeg"
+  },
+  "1040234": {
+    "bid": 6617957,
+    "beer_name": "12th Birthday Cake Celebration - All Things Pineapple Ice Cream Smoothie Sour",
+    "brewery_name": "Amundsen Brewery",
+    "rating_score": 4.2,
+    "rating_count": 144,
+    "beer_slug": "amundsen-brewery-12th-birthday-cake-celebration-all-things-pineapple-ice-cream-smoothie-sour",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-16909_e3daa.jpeg"
+  },
+  "1083034": {
+    "bid": 71833,
+    "beer_name": "Smoke & Dagger",
+    "brewery_name": "Jack’s Abby Craft Lagers",
+    "rating_score": 3.73,
+    "rating_count": 37745,
+    "beer_slug": "jack-s-abby-craft-lagers-smoke-and-dagger",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-71833_50a27_sm.jpeg"
+  },
+  "1041534": {
+    "bid": 6630225,
+    "beer_name": "12th Birthday Cake Celebration - Cherry, Blueberry, Chocolate & Coconut Lamington Stout",
+    "brewery_name": "Amundsen Brewery",
+    "rating_score": 4.27,
+    "rating_count": 185,
+    "beer_slug": "amundsen-brewery-12th-birthday-cake-celebration-cherry-blueberry-chocolate-and-coconut-lamington-stout",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-16909_e3daa.jpeg"
+  },
+  "1235001": {
+    "bid": 18044,
+    "beer_name": "Andechser Bergbock Hell",
+    "brewery_name": "Klosterbrauerei Andechs",
+    "rating_score": 3.44,
+    "rating_count": 28741,
+    "beer_slug": "klosterbrauerei-andechs-andechser-bergbock-hell",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-18044_535d7_sm.jpeg"
+  },
+  "1211001": null,
+  "1082001": {
+    "bid": 350733,
+    "beer_name": "Saison d'Erpe-Mere Lentebier",
+    "brewery_name": "Brouwerij De Glazen Toren",
+    "rating_score": 3.72,
+    "rating_count": 8172,
+    "beer_slug": "brouwerij-de-glazen-toren-saison-d-erpe-mere-lentebier",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-350733_1f990_sm.jpeg"
+  },
+  "1337001": {
+    "bid": 34044,
+    "beer_name": "La Rulles Blonde",
+    "brewery_name": "Brasserie Artisanale de Rulles",
+    "rating_score": 3.52,
+    "rating_count": 11091,
+    "beer_slug": "brasserie-artisanale-de-rulles-la-rulles-blonde",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-LaRullesBlondeBiereDeGaume_34044.jpeg"
   }
 }
