@@ -9513,5 +9513,33 @@
     "rating_count": 11091,
     "beer_slug": "brasserie-artisanale-de-rulles-la-rulles-blonde",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-LaRullesBlondeBiereDeGaume_34044.jpeg"
+  },
+  "8862735": null,
+  "8809403": {
+    "bid": 86843,
+    "beer_name": "Maledetta",
+    "brewery_name": "Birra Del Borgo",
+    "rating_score": 3.61,
+    "rating_count": 11243,
+    "beer_slug": "birra-del-borgo-maledetta",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-Maledetta_86843.jpeg"
+  },
+  "8852301": {
+    "bid": 2532745,
+    "beer_name": "LISA",
+    "brewery_name": "Birra Del Borgo",
+    "rating_score": 3.33,
+    "rating_count": 18992,
+    "beer_slug": "birra-del-borgo-lisa",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2532745_2321c_sm.jpeg"
+  },
+  "8852401": {
+    "bid": 2790858,
+    "beer_name": "IPA Italian Pale Ale",
+    "brewery_name": "Birra Del Borgo",
+    "rating_score": 3.33,
+    "rating_count": 3684,
+    "beer_slug": "birra-del-borgo-ipa-italian-pale-ale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2790858_726b5_sm.jpeg"
   }
 }
