@@ -9541,5 +9541,41 @@
     "rating_count": 3684,
     "beer_slug": "birra-del-borgo-ipa-italian-pale-ale",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2790858_726b5_sm.jpeg"
+  },
+  "8895301": {
+    "bid": 6160394,
+    "beer_name": "Duin",
+    "brewery_name": "DUST Blending",
+    "rating_score": 4.07,
+    "rating_count": 122,
+    "beer_slug": "dust-blending-duin",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6160394_b4cc5_sm.jpeg"
+  },
+  "8884801": {
+    "bid": 6381702,
+    "beer_name": "Terwaar V",
+    "brewery_name": "DUST Blending",
+    "rating_score": 4.09615,
+    "rating_count": 13,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6381702_c5a39_sm.jpeg"
+  },
+  "8892003": {
+    "bid": 6591619,
+    "beer_name": "Aline 2025",
+    "brewery_name": "Bevog Brewery",
+    "rating_score": 4.14,
+    "rating_count": 195,
+    "beer_slug": "bevog-brewery-aline-2025",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6591619_2efc7_sm.jpeg"
+  },
+  "8807303": {
+    "bid": 4702,
+    "beer_name": "Chimay Dorée (Gold)",
+    "brewery_name": "Bières de Chimay",
+    "rating_score": 3.55,
+    "rating_count": 103963,
+    "beer_slug": "bieres-de-chimay-chimay-doree-gold",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4702_29d13_sm.jpeg"
   }
 }
