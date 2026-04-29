@@ -9577,5 +9577,16 @@
     "rating_count": 103963,
     "beer_slug": "bieres-de-chimay-chimay-doree-gold",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4702_29d13_sm.jpeg"
-  }
+  },
+  "8885632": {
+    "bid": 6646498,
+    "beer_name": "Extinction is forever!: Snowy Owl",
+    "brewery_name": "Bevog Brewery",
+    "rating_score": 3.98,
+    "rating_count": 174,
+    "beer_slug": "bevog-brewery-extinction-is-forever-snowy-owl",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6646498_e54cd_sm.jpeg"
+  },
+  "8806132": null,
+  "8852902": null
 }
