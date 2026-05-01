@@ -9588,5 +9588,88 @@
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6646498_e54cd_sm.jpeg"
   },
   "8806132": null,
-  "8852902": null
+  "8852902": null,
+  "9269934": {
+    "bid": 6407833,
+    "beer_name": "Super Salmiac Double Licorice Triple Blackcurrant",
+    "brewery_name": "CoolHead Brew",
+    "rating_score": 4.03,
+    "rating_count": 1299,
+    "beer_slug": "coolhead-brew-super-salmiac-double-licorice-triple-blackcurrant",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6407833_40d8c_sm.jpeg"
+  },
+  "1048634": null,
+  "1049634": {
+    "bid": 6681126,
+    "beer_name": "Halo Hoop",
+    "brewery_name": "Marlobobo's Megabear",
+    "rating_score": 4.01,
+    "rating_count": 17,
+    "beer_slug": "marlobobo-s-megabear-halo-hoop",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6681126_c98f9_sm.jpeg"
+  },
+  "1053334": {
+    "bid": 5565478,
+    "beer_name": "POND",
+    "brewery_name": "Villages",
+    "rating_score": 3.34,
+    "rating_count": 1500,
+    "beer_slug": "villages-pond",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5565478_bb5f0_sm.jpeg"
+  },
+  "1048832": {
+    "bid": 6563351,
+    "beer_name": "Theory of Chaos",
+    "brewery_name": "TankBusters.Co",
+    "rating_score": 3.9,
+    "rating_count": 387,
+    "beer_slug": "tankbusters-co-theory-of-chaos",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6563351_19e08_sm.jpeg"
+  },
+  "1048532": {
+    "bid": 4580732,
+    "beer_name": "Time To Fly",
+    "brewery_name": "TankBusters.Co",
+    "rating_score": 3.83,
+    "rating_count": 1163,
+    "beer_slug": "tankbusters-co-time-to-fly",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4580732_d3f0d_sm.jpeg"
+  },
+  "1060303": {
+    "bid": 5851735,
+    "beer_name": "Long Boil Barley Wine 2021 - Bourbon Barrel Aged",
+    "brewery_name": "O/O Brewing ",
+    "rating_score": 4.25,
+    "rating_count": 546,
+    "beer_slug": "o-o-brewing-long-boil-barley-wine-2021-bourbon-barrel-aged",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5851735_48e05_sm.jpeg"
+  },
+  "1000903": {
+    "bid": 2150146,
+    "beer_name": "Pfingststöffla",
+    "brewery_name": "Brauerei Knoblach Schammelsdorf",
+    "rating_score": 3.71,
+    "rating_count": 520,
+    "beer_slug": "brauerei-knoblach-schammelsdorf-pfingststoffla",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2150146_fcad4_sm.jpeg"
+  },
+  "1200103": {
+    "bid": 4827489,
+    "beer_name": "3 Fonteinen Oude Kriek Intens Rood (season 20|21) Blend No. 78",
+    "brewery_name": "Brouwerij 3 Fonteinen",
+    "rating_score": 4.09,
+    "rating_count": 2264,
+    "beer_slug": "brouwerij-3-fonteinen-3-fonteinen-oude-kriek-intens-rood-season-20-21-blend-no-78",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4827489_a89ed_sm.jpeg"
+  },
+  "3206601": null,
+  "1031603": {
+    "bid": 6481133,
+    "beer_name": "Tafelbier",
+    "brewery_name": "Badische Staatsbrauerei Rothaus",
+    "rating_score": 3.48,
+    "rating_count": 2569,
+    "beer_slug": "badische-staatsbrauerei-rothaus-tafelbier",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6481133_37651_sm.jpeg"
+  }
 }
