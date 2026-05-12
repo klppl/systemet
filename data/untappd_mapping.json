@@ -9920,5 +9920,32 @@
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-65056_65251_sm.jpeg"
   },
   "8897503": null,
-  "8854703": null
+  "8854703": null,
+  "8839303": {
+    "bid": 6591631,
+    "beer_name": "Wolgor Blend 1225",
+    "brewery_name": "Bevog Brewery",
+    "rating_score": 4.19,
+    "rating_count": 178,
+    "beer_slug": "bevog-brewery-wolgor-blend-1225",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6591631_3b45a_sm.jpeg"
+  },
+  "8808103": {
+    "bid": 5203752,
+    "beer_name": "TRI 22",
+    "brewery_name": "Bevog Brewery",
+    "rating_score": 3.99,
+    "rating_count": 752,
+    "beer_slug": "bevog-brewery-tri-22",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5203752_27285_sm.jpeg"
+  },
+  "8853003": {
+    "bid": 6089421,
+    "beer_name": "Hagger Blend 1124",
+    "brewery_name": "Bevog Brewery",
+    "rating_score": 4.27,
+    "rating_count": 1020,
+    "beer_slug": "bevog-brewery-hagger-blend-1124",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6089421_29019_sm.jpeg"
+  }
 }
