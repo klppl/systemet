@@ -9947,5 +9947,23 @@
     "rating_count": 1020,
     "beer_slug": "bevog-brewery-hagger-blend-1124",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6089421_29019_sm.jpeg"
+  },
+  "8830601": {
+    "bid": 4196610,
+    "beer_name": "Juicy & Wild Muscar-Elle (Batch 2 - 2020)",
+    "brewery_name": "Lambiek Fabriek",
+    "rating_score": 3.84,
+    "rating_count": 3041,
+    "beer_slug": "lambiek-fabriek-juicy-and-wild-muscar-elle-11-2020",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4196610_60cd0_sm.jpeg"
+  },
+  "8863701": {
+    "bid": 2310890,
+    "beer_name": "Oude Geuze Brett-Elle",
+    "brewery_name": "Lambiek Fabriek",
+    "rating_score": 3.86,
+    "rating_count": 10989,
+    "beer_slug": "lambiek-fabriek-brett-elle-oude-geuze",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2310890_eb9d4_sm.jpeg"
   }
 }
