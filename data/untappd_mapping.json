@@ -10336,5 +10336,24 @@
     "beer_slug": "more-brewing-company-strawberry-double-marbles",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3989680_fea0e_sm.jpeg"
   },
-  "8834734": null
+  "8834734": null,
+  "8841234": null,
+  "8846434": {
+    "bid": 4475618,
+    "beer_name": "Rainbow Scoop",
+    "brewery_name": "More Brewing Company",
+    "rating_score": 4.1,
+    "rating_count": 2012,
+    "beer_slug": "more-brewing-company-rainbow-scoop",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4475618_e8da3_sm.jpeg"
+  },
+  "8843534": {
+    "bid": 3396459,
+    "beer_name": "Barrel-Aged Roaming Elephant (2019)",
+    "brewery_name": "More Brewing Company",
+    "rating_score": 4.45,
+    "rating_count": 1220,
+    "beer_slug": "more-brewing-company-barrel-aged-roaming-elephant-2019",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3396459_b9f19_sm.jpeg"
+  }
 }
