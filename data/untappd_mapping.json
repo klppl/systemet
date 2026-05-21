@@ -10355,5 +10355,14 @@
     "rating_count": 1220,
     "beer_slug": "more-brewing-company-barrel-aged-roaming-elephant-2019",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3396459_b9f19_sm.jpeg"
+  },
+  "1036701": {
+    "bid": 19004,
+    "beer_name": "Utopias",
+    "brewery_name": "Samuel Adams",
+    "rating_score": 4.44,
+    "rating_count": 22113,
+    "beer_slug": "samuel-adams-utopias",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-bostonUtopias.jpg"
   }
 }
