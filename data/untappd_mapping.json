@@ -10364,5 +10364,74 @@
     "rating_count": 22113,
     "beer_slug": "samuel-adams-utopias",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-bostonUtopias.jpg"
+  },
+  "3318635": {
+    "bid": 6021976,
+    "beer_name": "Suntrip",
+    "brewery_name": "Omaka",
+    "rating_score": 3.43,
+    "rating_count": 5149,
+    "beer_slug": "omaka-suntrip",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-475658_678d6.jpeg"
+  },
+  "1035732": null,
+  "1030934": null,
+  "1039034": null,
+  "3612034": {
+    "bid": 4192942,
+    "beer_name": "Acres",
+    "brewery_name": "GlassHouse Beer Co",
+    "rating_score": 4,
+    "rating_count": 2078,
+    "beer_slug": "glasshouse-beer-co-acres",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4192942_0d3c1_sm.jpeg"
+  },
+  "1408034": {
+    "bid": 6595984,
+    "beer_name": "Croc Encounters of the Second Kind",
+    "brewery_name": "GlassHouse Beer Co",
+    "rating_score": 4.2,
+    "rating_count": 644,
+    "beer_slug": "glasshouse-beer-co-croc-encounters-of-the-second-kind",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6595984_31d7d_sm.jpeg"
+  },
+  "1097335": {
+    "bid": 5724,
+    "beer_name": "Jai Alai®",
+    "brewery_name": "Cigar City Brewing®",
+    "rating_score": 3.91,
+    "rating_count": 439337,
+    "beer_slug": "cigar-city-brewing-jai-alai",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5724_8923f_sm.jpeg"
+  },
+  "1407735": {
+    "bid": 5747958,
+    "beer_name": "Hoppy Hour Hero West Coast IPA",
+    "brewery_name": "Saranac Brewery",
+    "rating_score": 3.49,
+    "rating_count": 8418,
+    "beer_slug": "saranac-brewery-f-x-matt-brewing-co-hoppy-hour-hero-west-coast-ipa",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5747958_e43c2_sm.jpeg"
+  },
+  "1084535": null,
+  "1326001": {
+    "bid": 52593,
+    "beer_name": "La Chouffe Blonde",
+    "brewery_name": "Brasserie d'Achouffe",
+    "rating_score": 3.81,
+    "rating_count": 438154,
+    "beer_slug": "brasserie-d-achouffe-la-chouffe-blonde",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-52593_4dab2_sm.jpeg"
+  },
+  "1096103": null,
+  "3283101": null,
+  "1338603": {
+    "bid": 420671,
+    "beer_name": "1664 Rosé",
+    "brewery_name": "Brasseries Kronenbourg",
+    "rating_score": 2.89,
+    "rating_count": 19028,
+    "beer_slug": "brasseries-kronenbourg-1664-rose",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-420671_9e10f_sm.jpeg"
   }
 }
