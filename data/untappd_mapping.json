@@ -11576,5 +11576,23 @@
     "beer_slug": "are-bryggcompagni-into-the-mystic-2024",
     "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-arebryggcompagni_70519.jpeg"
   },
-  "3280735": null
+  "3280735": null,
+  "8804834": {
+    "bid": 3669078,
+    "beer_name": "Lil' Dusty",
+    "brewery_name": "More Brewing Company",
+    "rating_score": 3.95,
+    "rating_count": 3746,
+    "beer_slug": "more-brewing-company-lil-dusty",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3669078_4c0eb_sm.jpeg"
+  },
+  "8896932": {
+    "bid": 6681238,
+    "beer_name": "Henna: Cinnamon Babka (2026)",
+    "brewery_name": "More Brewing Company",
+    "rating_score": 4.03,
+    "rating_count": 161,
+    "beer_slug": "more-brewing-company-henna-cinnamon-babka-2026",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6681238_16c1f_sm.jpeg"
+  }
 }
