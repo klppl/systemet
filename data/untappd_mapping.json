@@ -11594,5 +11594,15 @@
     "rating_count": 161,
     "beer_slug": "more-brewing-company-henna-cinnamon-babka-2026",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6681238_16c1f_sm.jpeg"
-  }
+  },
+  "141835": {
+    "bid": 7427,
+    "beer_name": "Nastro Azzurro",
+    "brewery_name": "Birra Peroni",
+    "rating_score": 3.18,
+    "rating_count": 485159,
+    "beer_slug": "birra-peroni-nastro-azzurro",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-7427_57d7c_sm.jpeg"
+  },
+  "8838401": null
 }
