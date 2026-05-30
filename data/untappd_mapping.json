@@ -11604,5 +11604,23 @@
     "beer_slug": "birra-peroni-nastro-azzurro",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-7427_57d7c_sm.jpeg"
   },
-  "8838401": null
+  "8838401": null,
+  "8883034": {
+    "bid": 6236513,
+    "beer_name": "Meuse Valley (2025)",
+    "brewery_name": "More Brewing Company",
+    "rating_score": 4.18,
+    "rating_count": 303,
+    "beer_slug": "more-brewing-company-meuse-valley-2025",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6236513_31300_sm.jpeg"
+  },
+  "8897934": {
+    "bid": 6728148,
+    "beer_name": "Landslagern",
+    "brewery_name": "Poppels Bryggeri",
+    "rating_score": 0,
+    "rating_count": 0,
+    "beer_slug": "poppels-bryggeri-landslagern",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6728148_215d4_sm.jpeg"
+  }
 }
