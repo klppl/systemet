@@ -11622,5 +11622,24 @@
     "rating_count": 0,
     "beer_slug": "poppels-bryggeri-landslagern",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6728148_215d4_sm.jpeg"
+  },
+  "8807834": null,
+  "8825703": {
+    "bid": 5968718,
+    "beer_name": "3 Fonteinen Gele Belgische Perzik (season 23|24) Blend No. 2",
+    "brewery_name": "Brouwerij 3 Fonteinen",
+    "rating_score": 4.23,
+    "rating_count": 583,
+    "beer_slug": "brouwerij-3-fonteinen-3-fonteinen-gele-belgische-perzik-season-23-24-blend-no-2",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5968718_9a9aa_sm.jpeg"
+  },
+  "8883601": {
+    "bid": 6022189,
+    "beer_name": "3 Fonteinen x Château La Baronne - Druif Cuvée La Baronne (season 23|24) Blend No. 30",
+    "brewery_name": "Brouwerij 3 Fonteinen",
+    "rating_score": 4.2,
+    "rating_count": 726,
+    "beer_slug": "brouwerij-3-fonteinen-3-fonteinen-x-chateau-la-baronne-druif-cuvee-la-baronne-season-23-24-blend-no-30",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6022189_1ba50_sm.jpeg"
   }
 }
