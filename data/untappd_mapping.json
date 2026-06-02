@@ -11641,5 +11641,51 @@
     "rating_count": 726,
     "beer_slug": "brouwerij-3-fonteinen-3-fonteinen-x-chateau-la-baronne-druif-cuvee-la-baronne-season-23-24-blend-no-30",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6022189_1ba50_sm.jpeg"
+  },
+  "8875103": {
+    "bid": 6493284,
+    "beer_name": "3 Fonteinen Cuvée Miel (season 24|25) Blend No. 34",
+    "brewery_name": "Brouwerij 3 Fonteinen",
+    "rating_score": 4,
+    "rating_count": 555,
+    "beer_slug": "brouwerij-3-fonteinen-3-fonteinen-cuvee-miel-season-24-25-blend-no-34",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6493284_54d68_sm.jpeg"
+  },
+  "8864001": {
+    "bid": 6229486,
+    "beer_name": "3 Fonteinen x Claus Preisinger - Druif Blaufränkisch (season 23|24) Blend No. 20",
+    "brewery_name": "Brouwerij 3 Fonteinen",
+    "rating_score": 4.11,
+    "rating_count": 799,
+    "beer_slug": "brouwerij-3-fonteinen-3-fonteinen-x-claus-preisinger-druif-blaufrankisch-season-23-24-blend-no-20",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6229486_93075_sm.jpeg"
+  },
+  "8843601": {
+    "bid": 5531279,
+    "beer_name": "3 Fonteinen Pruim Dubbele Altesse (season 22|23) Blend No. 18",
+    "brewery_name": "Brouwerij 3 Fonteinen",
+    "rating_score": 4.21,
+    "rating_count": 512,
+    "beer_slug": "brouwerij-3-fonteinen-3-fonteinen-pruim-dubbele-altesse-season-22-23-blend-no-18",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5531279_d53c4_sm.jpeg"
+  },
+  "8855202": {
+    "bid": 5755300,
+    "beer_name": "3 Fonteinen Pruim Belle De Louvain (season 22|23) Blend No. 27",
+    "brewery_name": "Brouwerij 3 Fonteinen",
+    "rating_score": 4.11,
+    "rating_count": 681,
+    "beer_slug": "brouwerij-3-fonteinen-3-fonteinen-pruim-belle-de-louvain-season-22-23-blend-no-27",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5755300_879b8_sm.jpeg"
+  },
+  "8869506": null,
+  "8851703": {
+    "bid": 6677755,
+    "beer_name": "Gamla Stans Lager",
+    "brewery_name": "Nacka Bryggeri ",
+    "rating_score": 0,
+    "rating_count": 9,
+    "beer_slug": "nacka-bryggeri-gamla-stans-lager",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-233437_4e336.jpeg"
   }
 }
