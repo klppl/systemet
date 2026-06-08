@@ -11691,5 +11691,15 @@
   "8898534": null,
   "8834834": null,
   "8851534": null,
-  "8886834": null
+  "8886834": null,
+  "8897003": null,
+  "8892603": {
+    "bid": 4880564,
+    "beer_name": "Pilsner",
+    "brewery_name": "MOVA brewing co.",
+    "rating_score": 3.57,
+    "rating_count": 871,
+    "beer_slug": "mova-brewing-co-pilsner",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4880564_f6ed5_sm.jpeg"
+  }
 }
