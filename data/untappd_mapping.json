@@ -11739,5 +11739,14 @@
     "rating_count": 1709,
     "beer_slug": "mova-brewing-co-blanche",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4843644_ca82a_sm.jpeg"
+  },
+  "8870501": {
+    "bid": 3800985,
+    "beer_name": "Fliärblome",
+    "brewery_name": "Kemker Kultuur (Brauerei J. Kemker)",
+    "rating_score": 3.9,
+    "rating_count": 1053,
+    "beer_slug": "kemker-kultuur-brauerei-j-kemker-fliarblome",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3800985_32f71_sm.jpeg"
   }
 }
