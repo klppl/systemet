@@ -12683,5 +12683,14 @@
     "rating_count": 41,
     "beer_slug": "poppels-bryggeri-white-barrel-aged-pilsner",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5559016_ede15_sm.jpeg"
+  },
+  "136235": {
+    "bid": 1581433,
+    "beer_name": "The Pawn's Non-gluten Pilsener (5.2%)",
+    "brewery_name": "Coppersmith's Brewery",
+    "rating_score": 3,
+    "rating_count": 9618,
+    "beer_slug": "coppersmith-s-brewery-the-pawn-s-non-gluten-pilsener-5-2",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1581433_81a68_sm.jpeg"
   }
 }
