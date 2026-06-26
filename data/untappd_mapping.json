@@ -12692,5 +12692,78 @@
     "rating_count": 9618,
     "beer_slug": "coppersmith-s-brewery-the-pawn-s-non-gluten-pilsener-5-2",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1581433_81a68_sm.jpeg"
+  },
+  "1340115": {
+    "bid": 1932008,
+    "beer_name": "Perler For Svin",
+    "brewery_name": "LERVIG",
+    "rating_score": 3.78,
+    "rating_count": 65241,
+    "beer_slug": "lervig-perler-for-svin",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1932008_b3030_sm.jpeg"
+  },
+  "1050935": {
+    "bid": 6689369,
+    "beer_name": "Tropical Titan",
+    "brewery_name": "Great Divide Brewing Company",
+    "rating_score": 3.73,
+    "rating_count": 121,
+    "beer_slug": "great-divide-brewing-company-tropical-titan",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-604_427db.jpeg"
+  },
+  "5528801": {
+    "bid": 129055,
+    "beer_name": "Kellerbier",
+    "brewery_name": "Ayinger Privatbrauerei",
+    "rating_score": 3.55,
+    "rating_count": 23581,
+    "beer_slug": "ayinger-privatbrauerei-ayinger-kellerbier",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-129055_f1829_sm.jpeg"
+  },
+  "1340201": {
+    "bid": 13776,
+    "beer_name": "Tipopils",
+    "brewery_name": "Birrificio Italiano",
+    "rating_score": 3.58,
+    "rating_count": 27637,
+    "beer_slug": "birrificio-italiano-tipopils",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-13776_3bd4c_sm.jpeg"
+  },
+  "1340401": {
+    "bid": 102388,
+    "beer_name": "NAZIONALE",
+    "brewery_name": "BIRRIFICIO AGRICOLO BALADIN - Baladin Indipendent Italian Farm Brewery",
+    "rating_score": 3.51,
+    "rating_count": 43094,
+    "beer_slug": "birrificio-agricolo-baladin-baladin-indipendente-italian-farm-brewery-nazionale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-102388_6288c_sm.jpeg"
+  },
+  "1020203": null,
+  "1343004": {
+    "bid": 27099,
+    "beer_name": "Tongerlo Tripel",
+    "brewery_name": "Brouwerij Haacht Brasserie",
+    "rating_score": 3.64,
+    "rating_count": 67585,
+    "beer_slug": "brouwerij-haacht-brasserie-tongerlo-tripel",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-27099_7679b_sm.jpeg"
+  },
+  "1000501": {
+    "bid": 446193,
+    "beer_name": "Deliria",
+    "brewery_name": "Delirium - Huyghe Brewery",
+    "rating_score": 3.62,
+    "rating_count": 41179,
+    "beer_slug": "delirium-huyghe-brewery-deliria",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-446193_741b2_sm.jpeg"
+  },
+  "1048003": {
+    "bid": 1271194,
+    "beer_name": "Black Block Bourbon BA (2017)",
+    "brewery_name": "La Pirata Brewing",
+    "rating_score": 4.23,
+    "rating_count": 6279,
+    "beer_slug": "la-pirata-brewing-black-block-bourbon-ba-2017",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1271194_260a2_sm.jpeg"
   }
 }
