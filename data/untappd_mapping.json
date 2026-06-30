@@ -12765,5 +12765,24 @@
     "rating_count": 6279,
     "beer_slug": "la-pirata-brewing-black-block-bourbon-ba-2017",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1271194_260a2_sm.jpeg"
+  },
+  "8804701": {
+    "bid": 6323931,
+    "beer_name": "Levon XV",
+    "brewery_name": "Omnipollo",
+    "rating_score": 3.84,
+    "rating_count": 3393,
+    "beer_slug": "omnipollo-levon-xv",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6323931_b4d3d_sm.jpeg"
+  },
+  "8821534": null,
+  "8882134": {
+    "bid": 2885802,
+    "beer_name": "Double Fudge Coconut Brownie",
+    "brewery_name": "Great Notion Brewing",
+    "rating_score": 4.09,
+    "rating_count": 5457,
+    "beer_slug": "great-notion-brewing-double-fudge-coconut-brownie",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2885802_7e806_sm.jpeg"
   }
 }
