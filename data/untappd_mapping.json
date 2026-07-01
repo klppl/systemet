@@ -12784,5 +12784,41 @@
     "rating_count": 5457,
     "beer_slug": "great-notion-brewing-double-fudge-coconut-brownie",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2885802_7e806_sm.jpeg"
+  },
+  "8824034": {
+    "bid": 4774407,
+    "beer_name": "Bicycle Day",
+    "brewery_name": "Great Notion Brewing",
+    "rating_score": 4.03,
+    "rating_count": 4325,
+    "beer_slug": "great-notion-brewing-bicycle-day",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4774407_a3f02_sm.jpeg"
+  },
+  "8800301": {
+    "bid": 6503454,
+    "beer_name": "Dark Juice",
+    "brewery_name": "Brasserie Fantôme",
+    "rating_score": 3.85,
+    "rating_count": 79,
+    "beer_slug": "brasserie-fantome-dark-juice",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-3241_93f20.jpeg"
+  },
+  "8879501": {
+    "bid": 20254,
+    "beer_name": "Pissenlit",
+    "brewery_name": "Brasserie Fantôme",
+    "rating_score": 3.75,
+    "rating_count": 7652,
+    "beer_slug": "brasserie-fantome-pissenlit",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-20254_a20cb_sm.jpeg"
+  },
+  "8874401": {
+    "bid": 6659827,
+    "beer_name": "Fantome Blonde De Mars",
+    "brewery_name": "Brasserie Fantôme",
+    "rating_score": 3.79,
+    "rating_count": 50,
+    "beer_slug": "brasserie-fantome-fantome-blonde-de-mars",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-3241_93f20.jpeg"
   }
 }
