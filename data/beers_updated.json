@@ -1,10 +1,5 @@
 [
   {
-    "id": "136235",
-    "date": 1782345600000,
-    "reason": "Ny produkt."
-  },
-  {
     "id": "1339303",
     "date": 1782432000000,
     "reason": "Ny produkt."
@@ -128,5 +123,10 @@
     "id": "3014835",
     "date": 1782864000000,
     "reason": "Ny produkt."
+  },
+  {
+    "id": "8876103",
+    "date": 1782950400000,
+    "reason": "Priset ändrades från 29.5 till 36.9 kr."
   }
 ]
