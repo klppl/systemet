@@ -12820,5 +12820,77 @@
     "rating_count": 50,
     "beer_slug": "brasserie-fantome-fantome-blonde-de-mars",
     "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-3241_93f20.jpeg"
+  },
+  "1055932": {
+    "bid": 6563339,
+    "beer_name": "The Beekeeper vol.15",
+    "brewery_name": "TankBusters.Co",
+    "rating_score": 4.12,
+    "rating_count": 477,
+    "beer_slug": "tankbusters-co-the-beekeeper-vol-15",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6563339_c883b_sm.jpeg"
+  },
+  "1042234": {
+    "bid": 4445259,
+    "beer_name": "DeadHead IPA Series: TourBus",
+    "brewery_name": "DESTIHL Brewery",
+    "rating_score": 4.06,
+    "rating_count": 33401,
+    "beer_slug": "destihl-brewery-deadhead-ipa-series-tourbus",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4445259_a24ec_sm.jpeg"
+  },
+  "1034134": {
+    "bid": 6516480,
+    "beer_name": "Burgercalypse",
+    "brewery_name": "Mogwaï Beer Company",
+    "rating_score": 3.18,
+    "rating_count": 454,
+    "beer_slug": "mogwai-beer-company-burgercalypse",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6516480_f4a3d_sm.jpeg"
+  },
+  "1033934": {
+    "bid": 6596060,
+    "beer_name": "A Lil Stoopid: Strawberry, Blackberry & Coconut",
+    "brewery_name": "Vault City Brewing",
+    "rating_score": 4.15,
+    "rating_count": 1659,
+    "beer_slug": "vault-city-brewing-a-lil-stoopid-strawberry-blackberry-and-coconut",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6596060_8832d_sm.jpeg"
+  },
+  "1054632": {
+    "bid": 6720593,
+    "beer_name": "The BeeKeeper Vol. 16",
+    "brewery_name": "TankBusters.Co",
+    "rating_score": 4.14,
+    "rating_count": 23,
+    "beer_slug": "tankbusters-co-the-beekeeper-vol-16",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-470925_1bc29.jpeg"
+  },
+  "1339303": {
+    "bid": 52904,
+    "beer_name": "Adelardus Tripel",
+    "brewery_name": "Brouwerij Kerkom",
+    "rating_score": 3.51,
+    "rating_count": 13420,
+    "beer_slug": "brouwerij-kerkom-adelardus-tripel",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-_52904_sm_9dc73244c3468a92bf7272cb833467.jpeg"
+  },
+  "1238003": {
+    "bid": 6343480,
+    "beer_name": "Oude Rhubarbe Tilquin à L'Ancienne (2023-2024)",
+    "brewery_name": "Gueuzerie Tilquin",
+    "rating_score": 3.76,
+    "rating_count": 1180,
+    "beer_slug": "gueuzerie-tilquin-oude-rhubarbe-tilquin-a-l-ancienne-2023-2024",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6343480_90749_sm.jpeg"
+  },
+  "3930601": {
+    "bid": 19471,
+    "beer_name": "Helles Schlenkerla Lagerbier",
+    "brewery_name": "Schlenkerla (\"Heller-Bräu\" Trum)",
+    "rating_score": 3.48,
+    "rating_count": 52411,
+    "beer_slug": "schlenkerla-heller-brau-trum-helles-schlenkerla-lagerbier",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-19471_b08f7_sm.jpeg"
   }
 }
