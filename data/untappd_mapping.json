@@ -12892,5 +12892,29 @@
     "rating_count": 52411,
     "beer_slug": "schlenkerla-heller-brau-trum-helles-schlenkerla-lagerbier",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-19471_b08f7_sm.jpeg"
+  },
+  "8865634": {
+    "bid": 2404178,
+    "beer_name": "Patrons Project 9.02 // West Yorkshire DIPA // Ben Mather // Northern Heroes // Nora Hulk // Siren",
+    "brewery_name": "Northern Monk",
+    "rating_score": 3.85,
+    "rating_count": 2152,
+    "beer_slug": "northern-monk-patrons-project-9-02-west-yorkshire-dipa-ben-mather-northern-heroes-nora-hulk-siren",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2404178_b3e8f_sm.jpeg"
+  },
+  "8814634": null,
+  "8805534": null,
+  "8864334": null,
+  "8896734": null,
+  "8844534": null,
+  "8819134": null,
+  "8840402": {
+    "bid": 21163,
+    "beer_name": "Nektar Pivo",
+    "brewery_name": "Banjalučka Pivara",
+    "rating_score": 3.02,
+    "rating_count": 12342,
+    "beer_slug": "banjalucka-pivara-nektar-pivo",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-21163_5eea8_sm.jpeg"
   }
 }
