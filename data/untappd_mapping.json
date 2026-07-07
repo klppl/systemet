@@ -12916,5 +12916,23 @@
     "rating_count": 12342,
     "beer_slug": "banjalucka-pivara-nektar-pivo",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-21163_5eea8_sm.jpeg"
+  },
+  "8848603": {
+    "bid": 4843659,
+    "beer_name": "IPA",
+    "brewery_name": "MOVA brewing co.",
+    "rating_score": 3.41,
+    "rating_count": 2240,
+    "beer_slug": "mova-brewing-co-ipa",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4843659_98681_sm.jpeg"
+  },
+  "8871101": {
+    "bid": 4783115,
+    "beer_name": "Ivoire",
+    "brewery_name": "The Bruery",
+    "rating_score": 4.14,
+    "rating_count": 1573,
+    "beer_slug": "the-bruery-ivoire",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4783115_595de_sm.jpeg"
   }
 }
