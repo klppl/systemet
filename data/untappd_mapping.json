@@ -12934,5 +12934,68 @@
     "rating_count": 1573,
     "beer_slug": "the-bruery-ivoire",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4783115_595de_sm.jpeg"
+  },
+  "8889934": {
+    "bid": 6736038,
+    "beer_name": "A Million Ripples",
+    "brewery_name": "Verdant Brewing Co",
+    "rating_score": 3.96,
+    "rating_count": 551,
+    "beer_slug": "verdant-brewing-co-a-million-ripples",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6736038_ab739_sm.jpeg"
+  },
+  "8843934": {
+    "bid": 6727078,
+    "beer_name": "King of May",
+    "brewery_name": "Verdant Brewing Co",
+    "rating_score": 4.24,
+    "rating_count": 1027,
+    "beer_slug": "verdant-brewing-co-king-of-may",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6727078_e0563_sm.jpeg"
+  },
+  "8879434": {
+    "bid": 6708378,
+    "beer_name": "Flux: Phase 6",
+    "brewery_name": "Verdant Brewing Co",
+    "rating_score": 4.22,
+    "rating_count": 1649,
+    "beer_slug": "verdant-brewing-co-flux-phase-6",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6708378_9b2e0_sm.jpeg"
+  },
+  "8879334": {
+    "bid": 6708373,
+    "beer_name": "Flux: Phase 4",
+    "brewery_name": "Verdant Brewing Co",
+    "rating_score": 4.06,
+    "rating_count": 1644,
+    "beer_slug": "verdant-brewing-co-flux-phase-4",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6708373_9f2ef_sm.jpeg"
+  },
+  "8815234": {
+    "bid": 6754657,
+    "beer_name": "Tender Thorns",
+    "brewery_name": "Verdant Brewing Co",
+    "rating_score": 3.98,
+    "rating_count": 478,
+    "beer_slug": "verdant-brewing-co-tender-thorns",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6754657_ff6dd_sm.jpeg"
+  },
+  "8885934": {
+    "bid": 6764265,
+    "beer_name": "Lightness Illusion",
+    "brewery_name": "Verdant Brewing Co",
+    "rating_score": 4.27,
+    "rating_count": 121,
+    "beer_slug": "verdant-brewing-co-lightness-illusion",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6764265_61128_sm.jpeg"
+  },
+  "8834234": {
+    "bid": 6708375,
+    "beer_name": "Flux: Phase 5",
+    "brewery_name": "Verdant Brewing Co",
+    "rating_score": 4.13,
+    "rating_count": 1909,
+    "beer_slug": "verdant-brewing-co-flux-phase-5",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6708375_ca6d7_sm.jpeg"
   }
 }
