@@ -12997,5 +12997,43 @@
     "rating_count": 1909,
     "beer_slug": "verdant-brewing-co-flux-phase-5",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6708375_ca6d7_sm.jpeg"
+  },
+  "1339035": {
+    "bid": 4542419,
+    "beer_name": "Blueberry Wheat",
+    "brewery_name": "Hinterland Brewery",
+    "rating_score": 3.61,
+    "rating_count": 2561,
+    "beer_slug": "hinterland-brewery-blueberry-wheat",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-GreenBayBrewingCompany_608.jpeg"
+  },
+  "1339235": {
+    "bid": 2367876,
+    "beer_name": "Paleta De Mango",
+    "brewery_name": "Rahr & Sons Brewing Company",
+    "rating_score": 3.67,
+    "rating_count": 14200,
+    "beer_slug": "rahr-and-sons-brewing-company-paleta-de-mango",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2367876_59345_sm.jpeg"
+  },
+  "1012334": {
+    "bid": 6623020,
+    "beer_name": "Somewhere We Know",
+    "brewery_name": "Polly's Brew Co.",
+    "rating_score": 3.97,
+    "rating_count": 402,
+    "beer_slug": "polly-s-brew-co-somewhere-we-know",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-373345_1e0c7.jpeg"
+  },
+  "1000134": null,
+  "1055334": null,
+  "1345735": {
+    "bid": 6377631,
+    "beer_name": "Joy Objects House Pilsner",
+    "brewery_name": "Omnipollo",
+    "rating_score": 3.46,
+    "rating_count": 1102,
+    "beer_slug": "omnipollo-joy-objects-house-pilsner",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6377631_d7845_sm.jpeg"
   }
 }
