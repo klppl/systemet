@@ -13035,5 +13035,32 @@
     "rating_count": 1102,
     "beer_slug": "omnipollo-joy-objects-house-pilsner",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6377631_d7845_sm.jpeg"
+  },
+  "8802303": {
+    "bid": 5112,
+    "beer_name": "Ruedrich's Red Seal Ale",
+    "brewery_name": "North Coast Brewing Company",
+    "rating_score": 3.51,
+    "rating_count": 71731,
+    "beer_slug": "north-coast-brewing-company-ruedrich-s-red-seal-ale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5112_e2c3d_sm.jpeg"
+  },
+  "8867203": {
+    "bid": 128043,
+    "beer_name": "Old Stock Ale",
+    "brewery_name": "North Coast Brewing Company",
+    "rating_score": 3.93,
+    "rating_count": 16074,
+    "beer_slug": "north-coast-brewing-company-old-stock-ale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-128043_4d99a_sm.jpeg"
+  },
+  "8879903": {
+    "bid": 30855,
+    "beer_name": "Old Rasputin",
+    "brewery_name": "North Coast Brewing Company",
+    "rating_score": 4,
+    "rating_count": 277672,
+    "beer_slug": "north-coast-brewing-company-old-rasputin",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-30855_10cb8_sm.jpeg"
   }
 }
