@@ -13062,5 +13062,116 @@
     "rating_count": 277672,
     "beer_slug": "north-coast-brewing-company-old-rasputin",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-30855_10cb8_sm.jpeg"
+  },
+  "1340832": {
+    "bid": 734881,
+    "beer_name": "Geneviève De Brabant Blanche",
+    "brewery_name": "Brewery John Martin & Brewery Timmermans",
+    "rating_score": 3.46,
+    "rating_count": 1921,
+    "beer_slug": "brewery-john-martin-brewery-timmermans-genevieve-de-brabant-blanche",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-734881_44017_sm.jpeg"
+  },
+  "1054835": {
+    "bid": 5826803,
+    "beer_name": "Spiked Smoothie Peach Lemonade",
+    "brewery_name": "Connecticut Valley Brewing Company",
+    "rating_score": 4.19,
+    "rating_count": 129,
+    "beer_slug": "connecticut-valley-brewing-company-spiked-smoothie-peach-lemonade",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-350592_ae800.jpeg"
+  },
+  "1055134": null,
+  "1048734": null,
+  "1095034": {
+    "bid": 6603924,
+    "beer_name": "Guardian of the Golden Nugget",
+    "brewery_name": "Seven Island Brewery",
+    "rating_score": 4.04,
+    "rating_count": 1325,
+    "beer_slug": "seven-island-brewery-guardian-of-the-golden-nugget",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6603924_ad667_sm.jpeg"
+  },
+  "1023232": {
+    "bid": 6571665,
+    "beer_name": "Royal Cookie: Peanut Butter Coconut Cookie",
+    "brewery_name": "Funky Fluid",
+    "rating_score": 4.07,
+    "rating_count": 1017,
+    "beer_slug": "funky-fluid-royal-cookie-peanut-butter-coconut-cookie",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6571665_6936c_sm.jpeg"
+  },
+  "1024215": {
+    "bid": 804438,
+    "beer_name": "Texas Bourbon Barrel Series Imperial Brown Ale",
+    "brewery_name": "Ranger Creek Brewing & Distilling",
+    "rating_score": 3.84,
+    "rating_count": 3703,
+    "beer_slug": "ranger-creek-brewing-and-distilling-texas-bourbon-barrel-series-imperial-brown-ale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-804438_3ca27_sm.jpeg"
+  },
+  "1339134": {
+    "bid": 6186514,
+    "beer_name": "DeadHead IPA Series: Mango IPA",
+    "brewery_name": "DESTIHL Brewery",
+    "rating_score": 3.69,
+    "rating_count": 1118,
+    "beer_slug": "destihl-brewery-deadhead-ipa-series-mango-ipa",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6186514_48ab6_sm.jpeg"
+  },
+  "1340703": {
+    "bid": 17826,
+    "beer_name": "Blanche des Neiges",
+    "brewery_name": "Delirium - Huyghe Brewery",
+    "rating_score": 3.43,
+    "rating_count": 12043,
+    "beer_slug": "delirium-huyghe-brewery-blanche-des-neiges",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-17826_e19bc_sm.jpeg"
+  },
+  "1340932": {
+    "bid": 121024,
+    "beer_name": "Weiherer Keller",
+    "brewery_name": "Brauerei Kundmüller",
+    "rating_score": 3.46,
+    "rating_count": 8791,
+    "beer_slug": "brauerei-kundmuller-weiherer-keller",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-121024_17d1e_sm.jpeg"
+  },
+  "1341001": null,
+  "1341101": {
+    "bid": 6015424,
+    "beer_name": "Bernstein Zwickel",
+    "brewery_name": "Hoppebräu",
+    "rating_score": 3.31,
+    "rating_count": 2134,
+    "beer_slug": "hoppebrau-bernstein-zwickel",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6015424_a2318_sm.jpeg"
+  },
+  "1010703": {
+    "bid": 6725274,
+    "beer_name": "DBA Mega",
+    "brewery_name": "Dugges Bryggeri",
+    "rating_score": 3.98,
+    "rating_count": 29,
+    "beer_slug": "dugges-bryggeri-dba-mega",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6725274_1db71_sm.jpeg"
+  },
+  "1340634": {
+    "bid": 2941003,
+    "beer_name": "Double Dippy Doo",
+    "brewery_name": "Dry & Bitter Brewing Company",
+    "rating_score": 4.02,
+    "rating_count": 27764,
+    "beer_slug": "dry-and-bitter-brewing-company-double-dippy-doo",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2941003_92d34_sm.jpeg"
+  },
+  "1338903": {
+    "bid": 941039,
+    "beer_name": "St-Louis Kriek Lambic",
+    "brewery_name": "Kasteel Brouwerij Vanhonsebrouck",
+    "rating_score": 3.43,
+    "rating_count": 19032,
+    "beer_slug": "kasteel-brouwerij-vanhonsebrouck-st-louis-kriek-lambic",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-941039_3bbb4_sm.jpeg"
   }
 }
