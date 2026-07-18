@@ -1,95 +1,5 @@
 [
   {
-    "id": "3049734",
-    "date": 1783728000000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "5912734",
-    "date": 1783728000000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3801835",
-    "date": 1783728000000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3259635",
-    "date": 1783728000000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3603535",
-    "date": 1783728000000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3058135",
-    "date": 1783728000000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3169135",
-    "date": 1783728000000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3067235",
-    "date": 1783728000000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3474535",
-    "date": 1783728000000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3385335",
-    "date": 1783728000000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3120835",
-    "date": 1783728000000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3761134",
-    "date": 1783728000000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3849134",
-    "date": 1783728000000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3273835",
-    "date": 1783728000000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3045635",
-    "date": 1783728000000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3139535",
-    "date": 1783728000000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3293435",
-    "date": 1783728000000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "1340832",
-    "date": 1783728000000,
-    "reason": "Ny produkt."
-  },
-  {
     "id": "3759735",
     "date": 1783814400000,
     "reason": "Ny produkt."
@@ -697,6 +607,21 @@
   {
     "id": "1341534",
     "date": 1784246400000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "8855202",
+    "date": 1784332800000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "8843601",
+    "date": 1784332800000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "8864001",
+    "date": 1784332800000,
     "reason": "Ny produkt."
   }
 ]

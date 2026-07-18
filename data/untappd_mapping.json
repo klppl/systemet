@@ -13173,5 +13173,161 @@
     "rating_count": 19032,
     "beer_slug": "kasteel-brouwerij-vanhonsebrouck-st-louis-kriek-lambic",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-941039_3bbb4_sm.jpeg"
+  },
+  "3293435": {
+    "bid": 689542,
+    "beer_name": "Saison d'etre",
+    "brewery_name": "Stockholm Brewing Co.",
+    "rating_score": 3.29,
+    "rating_count": 10962,
+    "beer_slug": "stockholm-brewing-co-saison-d-etre",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-689542_ea2d0_sm.jpeg"
+  },
+  "3180235": {
+    "bid": 6286490,
+    "beer_name": "Hällnäs",
+    "brewery_name": "Westerbottens Bryggeri",
+    "rating_score": 3.2,
+    "rating_count": 400,
+    "beer_slug": "westerbottens-bryggeri-hallnas",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-146825_4ed6b.jpeg"
+  },
+  "3444235": {
+    "bid": 6230764,
+    "beer_name": "Saga Nelson",
+    "brewery_name": "Wapnö Gårdsbryggeri",
+    "rating_score": 3.62,
+    "rating_count": 562,
+    "beer_slug": "wapno-gardsbryggeri-saga-nelson",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6230764_c6f5a_sm.jpeg"
+  },
+  "3045635": {
+    "bid": 6262192,
+    "beer_name": "Amaretto Sour",
+    "brewery_name": "Dugges Bryggeri",
+    "rating_score": 3.77,
+    "rating_count": 3307,
+    "beer_slug": "dugges-bryggeri-amaretto-sour",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6262192_83f4e_sm.jpeg"
+  },
+  "3049935": {
+    "bid": 6186931,
+    "beer_name": "Nectaron",
+    "brewery_name": "Wättle Brygghus",
+    "rating_score": 3.38,
+    "rating_count": 388,
+    "beer_slug": "wattle-brygghus-nectaron",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6186931_58684_sm.jpeg"
+  },
+  "3759735": {
+    "bid": 4768157,
+    "beer_name": "Förtrollningen",
+    "brewery_name": "Wättle Brygghus",
+    "rating_score": 3.45,
+    "rating_count": 1929,
+    "beer_slug": "wattle-brygghus-fortrollningen",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4768157_a9fff_sm.jpeg"
+  },
+  "3273835": {
+    "bid": 5342454,
+    "beer_name": "Hooja",
+    "brewery_name": "Kurjovikens Bryggeri (Skellefteå Bryggeri)",
+    "rating_score": 2.98,
+    "rating_count": 2860,
+    "beer_slug": "kurjovikens-bryggeri-skelleftea-bryggeri-hooja",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5342454_9d6a1_sm.jpeg"
+  },
+  "3849134": {
+    "bid": 5124967,
+    "beer_name": "The Great Revsund",
+    "brewery_name": "Revsunds Brewery & Distillery",
+    "rating_score": 3.2,
+    "rating_count": 162,
+    "beer_slug": "revsunds-brewery-and-distillery-the-great-revsund",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-241392_e5c0f.jpeg"
+  },
+  "3761134": {
+    "bid": 4592783,
+    "beer_name": "Mannes Baspilsner",
+    "brewery_name": "Revsunds Brewery & Distillery",
+    "rating_score": 3.23,
+    "rating_count": 869,
+    "beer_slug": "revsunds-brewery-and-distillery-mannes-baspilsner",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4592783_183e5_sm.jpeg"
+  },
+  "3120835": {
+    "bid": 6193770,
+    "beer_name": "SOLIG",
+    "brewery_name": "Gagnef Brewing",
+    "rating_score": 3.29,
+    "rating_count": 349,
+    "beer_slug": "gagnef-brewing-solig",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6193770_24662_sm.jpeg"
+  },
+  "3385335": null,
+  "3474535": {
+    "bid": 3860849,
+    "beer_name": "Eslöfs Lager (5%)",
+    "brewery_name": "Remmarlöv Gårdsbryggeri",
+    "rating_score": 3.21,
+    "rating_count": 2701,
+    "beer_slug": "remmarlov-gardsbryggeri-eslofs-lager-5",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-164604_453de.jpeg"
+  },
+  "3067235": {
+    "bid": 5885622,
+    "beer_name": "Eslöfs IPA",
+    "brewery_name": "Remmarlöv Gårdsbryggeri",
+    "rating_score": 3.4,
+    "rating_count": 1733,
+    "beer_slug": "remmarlov-gardsbryggeri-eslofs-ipa",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-164604_453de.jpeg"
+  },
+  "3169135": null,
+  "3058135": {
+    "bid": 234539,
+    "beer_name": "Thurbo Stout",
+    "brewery_name": "Oppigårds Bryggeri",
+    "rating_score": 3.66,
+    "rating_count": 21982,
+    "beer_slug": "oppigards-bryggeri-thurbo-stout",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-ThurboStout_234539.jpeg"
+  },
+  "3603535": {
+    "bid": 4267370,
+    "beer_name": "Rödhaken",
+    "brewery_name": "Wättle Brygghus",
+    "rating_score": 3.36,
+    "rating_count": 2139,
+    "beer_slug": "wattle-brygghus-rodhaken",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4267370_0fe5f_sm.jpeg"
+  },
+  "3259635": {
+    "bid": 1709987,
+    "beer_name": "HKFY Habanero IPA",
+    "brewery_name": "Revsunds Brewery & Distillery",
+    "rating_score": 2.92,
+    "rating_count": 2898,
+    "beer_slug": "revsunds-brewery-and-distillery-hkfy-habanero-ipa",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1709987_d8565_sm.jpeg"
+  },
+  "3801835": null,
+  "5912734": {
+    "bid": 5116076,
+    "beer_name": "Stråket",
+    "brewery_name": "Solna Bryggeri",
+    "rating_score": 3.3,
+    "rating_count": 1030,
+    "beer_slug": "solna-bryggeri-straket",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5116076_1fc38_sm.jpeg"
+  },
+  "3049734": {
+    "bid": 5646793,
+    "beer_name": "Corroded",
+    "brewery_name": "Revsunds Brewery & Distillery",
+    "rating_score": 3.11,
+    "rating_count": 722,
+    "beer_slug": "revsunds-brewery-and-distillery-corroded",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-241392_e5c0f.jpeg"
   }
 }
