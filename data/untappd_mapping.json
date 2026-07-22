@@ -13810,5 +13810,50 @@
     "beer_slug": null,
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1605006_c84f6_sm.jpeg"
   },
-  "3203835": null
+  "3203835": null,
+  "8821234": {
+    "bid": 6698350,
+    "beer_name": "Twelve Year",
+    "brewery_name": "Finback Brewery",
+    "rating_score": 4.23,
+    "rating_count": 312,
+    "beer_slug": "finback-brewery-twelve-year",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6698350_211f1_sm.jpeg"
+  },
+  "8892134": {
+    "bid": 6698364,
+    "beer_name": "Business Class",
+    "brewery_name": "Finback Brewery",
+    "rating_score": 4.17,
+    "rating_count": 131,
+    "beer_slug": "finback-brewery-business-class",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6698364_bb4a3_sm.jpeg"
+  },
+  "8887234": {
+    "bid": 6685026,
+    "beer_name": "Dream Away: Prickly Pear Pineapple",
+    "brewery_name": "Finback Brewery",
+    "rating_score": 4.07,
+    "rating_count": 216,
+    "beer_slug": "finback-brewery-dream-away-prickly-pear-pineapple",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6685026_1a0e4_sm.jpeg"
+  },
+  "8808434": {
+    "bid": 3541904,
+    "beer_name": "Dream Like Sequence",
+    "brewery_name": "Polly's Brew Co.",
+    "rating_score": 4.13,
+    "rating_count": 1140,
+    "beer_slug": "polly-s-brew-co-dream-like-sequence",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3541904_12471_sm.jpeg"
+  },
+  "8874334": {
+    "bid": 6795719,
+    "beer_name": "Route 99",
+    "brewery_name": "Polly's Brew Co.",
+    "rating_score": 0,
+    "rating_count": 0,
+    "beer_slug": "polly-s-brew-co-route-99",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-373345_1e0c7.jpeg"
+  }
 }
