@@ -13918,5 +13918,159 @@
     "rating_count": 142816,
     "beer_slug": "brauerei-gebr-maisel-maisel-s-weisse-original",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-35642_f357d_sm.jpeg"
+  },
+  "120332": {
+    "bid": 8122,
+    "beer_name": "Mariestads Export",
+    "brewery_name": "Spendrups Bryggeri",
+    "rating_score": 3.06,
+    "rating_count": 84542,
+    "beer_slug": "spendrups-bryggeri-mariestads-export",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-8122_e8160_sm.jpeg"
+  },
+  "143521": {
+    "bid": 9933,
+    "beer_name": "Falcon Lager Export",
+    "brewery_name": "Carlsberg Sverige",
+    "rating_score": 2.8,
+    "rating_count": 55322,
+    "beer_slug": "carlsberg-sverige-falcon-lager-export",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-9933_6d6d7_sm.jpeg"
+  },
+  "141235": {
+    "bid": 8267,
+    "beer_name": "Norrlands Guld Export",
+    "brewery_name": "Spendrups Bryggeri",
+    "rating_score": 2.89,
+    "rating_count": 73089,
+    "beer_slug": "spendrups-bryggeri-norrlands-guld-export",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-8267_9aa2e_sm.jpeg"
+  },
+  "141232": {
+    "bid": 8267,
+    "beer_name": "Norrlands Guld Export",
+    "brewery_name": "Spendrups Bryggeri",
+    "rating_score": 2.89,
+    "rating_count": 73089,
+    "beer_slug": "spendrups-bryggeri-norrlands-guld-export",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-8267_9aa2e_sm.jpeg"
+  },
+  "120335": {
+    "bid": 8122,
+    "beer_name": "Mariestads Export",
+    "brewery_name": "Spendrups Bryggeri",
+    "rating_score": 3.06,
+    "rating_count": 84542,
+    "beer_slug": "spendrups-bryggeri-mariestads-export",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-8122_e8160_sm.jpeg"
+  },
+  "1122832": null,
+  "137932": {
+    "bid": 52910,
+    "beer_name": "Mariestads Old Ox",
+    "brewery_name": "Spendrups Bryggeri",
+    "rating_score": 3.12,
+    "rating_count": 26793,
+    "beer_slug": "spendrups-bryggeri-mariestads-old-ox",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-52910_cfda0_sm.jpeg"
+  },
+  "148435": {
+    "bid": 2412154,
+    "beer_name": "Melleruds Paradpilsner",
+    "brewery_name": "Spendrups Bryggeri",
+    "rating_score": 3.07,
+    "rating_count": 26625,
+    "beer_slug": "spendrups-bryggeri-melleruds-paradpilsner",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2412154_bff0b_sm.jpeg"
+  },
+  "136521": {
+    "bid": 178348,
+    "beer_name": "Organic Carlsberg Hof",
+    "brewery_name": "Carlsberg Group",
+    "rating_score": 2.9,
+    "rating_count": 43403,
+    "beer_slug": "carlsberg-group-carlsberg-pilsner-hof",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-178348_4ff38_sm.jpeg"
+  },
+  "153635": {
+    "bid": 5860,
+    "beer_name": "Heineken",
+    "brewery_name": "Heineken",
+    "rating_score": 2.96,
+    "rating_count": 723569,
+    "beer_slug": "heineken-heineken",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5860_a68ef_sm.jpeg"
+  },
+  "125035": {
+    "bid": 4078944,
+    "beer_name": "Král Lev",
+    "brewery_name": "Pivovary CZ Group",
+    "rating_score": 2.77,
+    "rating_count": 21461,
+    "beer_slug": "pivovary-cz-group-kral-lev",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4078944_67ddc_sm.jpeg"
+  },
+  "127532": {
+    "bid": 66679,
+    "beer_name": "Stockholm Fine Festival Beer (5.3%)",
+    "brewery_name": "Krönleins Bryggeri",
+    "rating_score": 2.72,
+    "rating_count": 13579,
+    "beer_slug": "kronleins-bryggeri-stockholm-fine-festival-beer-5-3",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-66679_2f23a_sm.jpeg"
+  },
+  "145435": {
+    "bid": 82286,
+    "beer_name": "Pistonhead Kustom Lager",
+    "brewery_name": "Brutal Brewing",
+    "rating_score": 3.1,
+    "rating_count": 67466,
+    "beer_slug": "brutal-brewing-pistonhead-kustom-lager",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-82286_62ef2_sm.jpeg"
+  },
+  "142932": {
+    "bid": 47012,
+    "beer_name": "Crocodile Original",
+    "brewery_name": "Krönleins Bryggeri",
+    "rating_score": 2.69,
+    "rating_count": 20431,
+    "beer_slug": "kronleins-bryggeri-crocodile-original",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-47012_23808_sm.jpeg"
+  },
+  "1148423": {
+    "bid": 5860,
+    "beer_name": "Heineken",
+    "brewery_name": "Heineken",
+    "rating_score": 2.96,
+    "rating_count": 723569,
+    "beer_slug": "heineken-heineken",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5860_a68ef_sm.jpeg"
+  },
+  "246132": {
+    "bid": 17252,
+    "beer_name": "Bitburger Premium Pils",
+    "brewery_name": "Bitburger Brauerei",
+    "rating_score": 3.2,
+    "rating_count": 323363,
+    "beer_slug": "bitburger-brauerei-bitburger-premium-pils",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-17252_fc89f_sm.jpeg"
+  },
+  "8811035": {
+    "bid": 5999,
+    "beer_name": "1664 Blanc",
+    "brewery_name": "Brasseries Kronenbourg",
+    "rating_score": 3.48,
+    "rating_count": 265791,
+    "beer_slug": "brasseries-kronenbourg-1664-blanc",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5999_bbc68_sm.jpeg"
+  },
+  "3201835": {
+    "bid": 5658007,
+    "beer_name": "Akatsuki Rice Lager",
+    "brewery_name": "Ekerö Brygghus",
+    "rating_score": 3.1,
+    "rating_count": 1029,
+    "beer_slug": "ekero-brygghus-akatsuki-rice-lager",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5658007_018a8_sm.jpeg"
   }
 }
