@@ -14072,5 +14072,14 @@
     "rating_count": 1029,
     "beer_slug": "ekero-brygghus-akatsuki-rice-lager",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5658007_018a8_sm.jpeg"
+  },
+  "122632": {
+    "bid": 2686173,
+    "beer_name": "Norrlands Djup",
+    "brewery_name": "Spendrups Bryggeri",
+    "rating_score": 3.02,
+    "rating_count": 21594,
+    "beer_slug": "spendrups-bryggeri-norrlands-djup",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2686173_6c4a3_sm.jpeg"
   }
 }
