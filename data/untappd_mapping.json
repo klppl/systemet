@@ -14081,5 +14081,29 @@
     "rating_count": 21594,
     "beer_slug": "spendrups-bryggeri-norrlands-djup",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2686173_6c4a3_sm.jpeg"
-  }
+  },
+  "8849134": {
+    "bid": 3779861,
+    "beer_name": "Harvest Kill",
+    "brewery_name": "The Drowned Lands Brewery",
+    "rating_score": 4.02,
+    "rating_count": 4533,
+    "beer_slug": "the-drowned-lands-brewery-harvest-kill",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3779861_705dd_sm.jpeg"
+  },
+  "8870934": {
+    "bid": 4082476,
+    "beer_name": "Double Blueberry Marshmallow Shake",
+    "brewery_name": "Great Notion Brewing",
+    "rating_score": 4.18,
+    "rating_count": 5743,
+    "beer_slug": "great-notion-brewing-double-blueberry-marshmallow-shake",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4082476_b977a_sm.jpeg"
+  },
+  "8855534": null,
+  "8812234": null,
+  "8879634": null,
+  "8845634": null,
+  "8809834": null,
+  "8877535": null
 }
