@@ -14105,5 +14105,14 @@
   "8879634": null,
   "8845634": null,
   "8809834": null,
-  "8877535": null
+  "8877535": null,
+  "8892834": {
+    "bid": 1484322,
+    "beer_name": "The Other One",
+    "brewery_name": "Tilted Barn Brewery",
+    "rating_score": 4.29,
+    "rating_count": 15537,
+    "beer_slug": "tilted-barn-brewery-the-other-one",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1484322_13493_sm.jpeg"
+  }
 }
