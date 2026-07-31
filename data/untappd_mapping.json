@@ -14114,5 +14114,52 @@
     "rating_count": 15537,
     "beer_slug": "tilted-barn-brewery-the-other-one",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1484322_13493_sm.jpeg"
+  },
+  "1340534": {
+    "bid": 1357535,
+    "beer_name": "Area 21 IPA",
+    "brewery_name": "Olarin Panimo",
+    "rating_score": 3.56,
+    "rating_count": 2742,
+    "beer_slug": "olarin-panimo-area-21-ipa",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1357535_06868_sm.jpeg"
+  },
+  "1341335": null,
+  "1342535": {
+    "bid": 189529,
+    "beer_name": "BOOMER™ Brown",
+    "brewery_name": "Bootstrap Brewing",
+    "rating_score": 3.56,
+    "rating_count": 407,
+    "beer_slug": "bootstrap-brewing-boomer-brown",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-189529_9870a_sm.jpeg"
+  },
+  "1339503": {
+    "bid": 2663327,
+    "beer_name": "Coolship Urgose 1375",
+    "brewery_name": "Freigeist Bierkultur",
+    "rating_score": 3.72,
+    "rating_count": 929,
+    "beer_slug": "freigeist-bierkultur-coolship-urgose-1375",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2663327_67449_sm.jpeg"
+  },
+  "1340301": {
+    "bid": 829448,
+    "beer_name": "Litha",
+    "brewery_name": "Birrificio Il Mastio",
+    "rating_score": 3.47,
+    "rating_count": 2448,
+    "beer_slug": "birrificio-il-mastio-litha",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-829448_712c7_sm.jpeg"
+  },
+  "1037303": null,
+  "1089403": {
+    "bid": 6598448,
+    "beer_name": "Bonfire Bänger",
+    "brewery_name": "Põhjala",
+    "rating_score": 4.06,
+    "rating_count": 2645,
+    "beer_slug": "pohjala-bonfire-banger",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6598448_97668_sm.jpeg"
   }
 }
