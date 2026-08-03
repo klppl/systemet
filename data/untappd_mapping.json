@@ -14161,5 +14161,32 @@
     "rating_count": 2645,
     "beer_slug": "pohjala-bonfire-banger",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6598448_97668_sm.jpeg"
+  },
+  "8896234": {
+    "bid": 4940079,
+    "beer_name": "Water Lily",
+    "brewery_name": "Tilted Barn Brewery",
+    "rating_score": 4.02,
+    "rating_count": 751,
+    "beer_slug": "tilted-barn-brewery-water-lily",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4940079_19f1a_sm.jpeg"
+  },
+  "8886334": {
+    "bid": 1217611,
+    "beer_name": "Violet (The Original Farm Girl)",
+    "brewery_name": "Tilted Barn Brewery",
+    "rating_score": 4.15,
+    "rating_count": 9855,
+    "beer_slug": "tilted-barn-brewery-violet-the-original-farm-girl",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1217611_23e70_sm.jpeg"
+  },
+  "8803234": {
+    "bid": 6288908,
+    "beer_name": "Welcome",
+    "brewery_name": "Tilted Barn Brewery",
+    "rating_score": 3.84,
+    "rating_count": 234,
+    "beer_slug": "tilted-barn-brewery-welcome",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6288908_c5b2d_sm.jpeg"
   }
 }
