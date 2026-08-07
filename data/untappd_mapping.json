@@ -14188,5 +14188,107 @@
     "rating_count": 234,
     "beer_slug": "tilted-barn-brewery-welcome",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6288908_c5b2d_sm.jpeg"
+  },
+  "1338835": {
+    "bid": 6220165,
+    "beer_name": "Rally Drum Lemon Shandy",
+    "brewery_name": "Great Lakes Brewing Company",
+    "rating_score": 3.76,
+    "rating_count": 2952,
+    "beer_slug": "great-lakes-brewing-company-rally-drum-lemon-shandy",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6220165_1fc57_sm.jpeg"
+  },
+  "1339635": {
+    "bid": 5046844,
+    "beer_name": "Tower Station - Roadside Grove",
+    "brewery_name": "Mother Road Brewing Company",
+    "rating_score": 3.8,
+    "rating_count": 2916,
+    "beer_slug": "mother-road-brewing-company-tower-station-roadside-grove",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5046844_20d0a_sm.jpeg"
+  },
+  "1341834": null,
+  "1046735": {
+    "bid": 5557633,
+    "beer_name": "Strawberry Pineapple Wheat",
+    "brewery_name": "Great Lakes Brewing Company",
+    "rating_score": 3.71,
+    "rating_count": 9171,
+    "beer_slug": "great-lakes-brewing-company-strawberry-pineapple-wheat",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5557633_93b7d_sm.jpeg"
+  },
+  "1095532": {
+    "bid": 6374415,
+    "beer_name": "Gelato XTREME: Berries & Cream",
+    "brewery_name": "Funky Fluid",
+    "rating_score": 4.24,
+    "rating_count": 4732,
+    "beer_slug": "funky-fluid-gelato-xtreme-berries-and-cream",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6374415_1ef17_sm.jpeg"
+  },
+  "1042334": {
+    "bid": 6782046,
+    "beer_name": "Över Gränsen Black IPA",
+    "brewery_name": "Poppels Bryggeri",
+    "rating_score": 3.59,
+    "rating_count": 46,
+    "beer_slug": "poppels-bryggeri-over-gransen-black-ipa",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6782046_7c355_sm.jpeg"
+  },
+  "1029334": {
+    "bid": 6508072,
+    "beer_name": "Norwegian Nitro",
+    "brewery_name": "LERVIG",
+    "rating_score": 3.39,
+    "rating_count": 1225,
+    "beer_slug": "lervig-norwegian-nitro",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6508072_6d120_sm.jpeg"
+  },
+  "1024634": {
+    "bid": 6568151,
+    "beer_name": "First 10",
+    "brewery_name": "3 Sons Brewing Co.",
+    "rating_score": 4.17,
+    "rating_count": 612,
+    "beer_slug": "3-sons-brewing-co-first-10",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6568151_bcf6f_sm.jpeg"
+  },
+  "1001534": {
+    "bid": 6562276,
+    "beer_name": "Fresh Start",
+    "brewery_name": "3 Sons Brewing Co.",
+    "rating_score": 4.06,
+    "rating_count": 368,
+    "beer_slug": "3-sons-brewing-co-fresh-start",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6562276_9d65a_sm.jpeg"
+  },
+  "1033434": null,
+  "1342601": {
+    "bid": 1995,
+    "beer_name": "Helles Hefe Weizen",
+    "brewery_name": "Tucher Bräu",
+    "rating_score": 3.59,
+    "rating_count": 64855,
+    "beer_slug": "tucher-brau-tucher-helles-hefe-weizen",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1995_bb4d4_sm.jpeg"
+  },
+  "1031203": null,
+  "1027001": {
+    "bid": 6813182,
+    "beer_name": "Megablend (2026)",
+    "brewery_name": "Åre Bryggcompagni",
+    "rating_score": 0,
+    "rating_count": 0,
+    "beer_slug": "are-bryggcompagni-megablend-2026",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-arebryggcompagni_70519.jpeg"
+  },
+  "1111601": {
+    "bid": 471,
+    "beer_name": "Aecht Schlenkerla Rauchbier – Märzen",
+    "brewery_name": "Schlenkerla (\"Heller-Bräu\" Trum)",
+    "rating_score": 3.46,
+    "rating_count": 164085,
+    "beer_slug": "schlenkerla-heller-brau-trum-aecht-schlenkerla-rauchbier-marzen",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-471_8cf40_sm.jpeg"
   }
 }
