@@ -14290,5 +14290,14 @@
     "rating_count": 164085,
     "beer_slug": "schlenkerla-heller-brau-trum-aecht-schlenkerla-rauchbier-marzen",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-471_8cf40_sm.jpeg"
+  },
+  "8869134": {
+    "bid": 1061474,
+    "beer_name": "The Chosen One",
+    "brewery_name": "Tilted Barn Brewery",
+    "rating_score": 4.27,
+    "rating_count": 16670,
+    "beer_slug": "tilted-barn-brewery-the-chosen-one",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1061474_d09a1_sm.jpeg"
   }
 }
