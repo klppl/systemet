@@ -14300,5 +14300,79 @@
     "beer_slug": "tilted-barn-brewery-the-chosen-one",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1061474_d09a1_sm.jpeg"
   },
-  "8832034": null
+  "8832034": null,
+  "3120334": {
+    "bid": 3872382,
+    "beer_name": "BIGGER! BOLDER!",
+    "brewery_name": "Stigbergets Bryggeri",
+    "rating_score": 4.1,
+    "rating_count": 11730,
+    "beer_slug": "stigbergets-bryggeri-bigger-bolder",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3872382_56e5b_sm.jpeg"
+  },
+  "1319412": {
+    "bid": 5964725,
+    "beer_name": "Autumn Light",
+    "brewery_name": "Brygghuset Finn",
+    "rating_score": 3.44,
+    "rating_count": 5785,
+    "beer_slug": "brygghuset-finn-autumn-light",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5964725_86883_sm.jpeg"
+  },
+  "1342435": {
+    "bid": 5878502,
+    "beer_name": "Hazicus Maximus",
+    "brewery_name": "Lagunitas Brewing Company",
+    "rating_score": 3.77,
+    "rating_count": 9032,
+    "beer_slug": "lagunitas-brewing-company-hazicus-maximus",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5878502_c4f6c_sm.jpeg"
+  },
+  "1053935": null,
+  "4219134": {
+    "bid": 6499193,
+    "beer_name": "INTERSTELLAR HAZE // PRETTY DECENT // COLLABORATION DDH HAZY IPA",
+    "brewery_name": "Northern Monk",
+    "rating_score": 3.85,
+    "rating_count": 3817,
+    "beer_slug": "northern-monk-interstellar-haze-pretty-decent-collaboration-ddh-hazy-ipa",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6499193_54425_sm.jpeg"
+  },
+  "1018402": {
+    "bid": 9070,
+    "beer_name": "Avancé",
+    "brewery_name": "Allagash Brewing Company",
+    "rating_score": 4.06,
+    "rating_count": 9865,
+    "beer_slug": "allagash-brewing-company-avance",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-9070_e4084_sm.jpeg"
+  },
+  "1031803": {
+    "bid": 6615021,
+    "beer_name": "Venom Hell",
+    "brewery_name": "Holy Goat Brewing",
+    "rating_score": 3.95,
+    "rating_count": 864,
+    "beer_slug": "holy-goat-brewing-venom-hell",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6615021_10eb9_sm.jpeg"
+  },
+  "1058034": {
+    "bid": 6155135,
+    "beer_name": "Dark Ages: Wrath Lord",
+    "brewery_name": "Seven Island Brewery",
+    "rating_score": 4.11,
+    "rating_count": 2456,
+    "beer_slug": "seven-island-brewery-dark-ages-wrath-lord",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6155135_f3578_sm.jpeg"
+  },
+  "1035634": {
+    "bid": 6648333,
+    "beer_name": "Lucid Delay",
+    "brewery_name": "Polly's Brew Co.",
+    "rating_score": 4.03,
+    "rating_count": 1140,
+    "beer_slug": "polly-s-brew-co-lucid-delay",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6648333_d5600_sm.jpeg"
+  },
+  "1027132": null
 }
