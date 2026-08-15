@@ -14374,5 +14374,32 @@
     "beer_slug": "polly-s-brew-co-lucid-delay",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6648333_d5600_sm.jpeg"
   },
-  "1027132": null
+  "1027132": null,
+  "8898934": {
+    "bid": 3812337,
+    "beer_name": "‘Mingo",
+    "brewery_name": "Tilted Barn Brewery",
+    "rating_score": 3.98,
+    "rating_count": 2544,
+    "beer_slug": "tilted-barn-brewery-mingo",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3812337_873e8_sm.jpeg"
+  },
+  "8871334": {
+    "bid": 4899360,
+    "beer_name": "Kōwhai",
+    "brewery_name": "Tilted Barn Brewery",
+    "rating_score": 3.95,
+    "rating_count": 1049,
+    "beer_slug": "tilted-barn-brewery-kowhai",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4899360_52406_sm.jpeg"
+  },
+  "8879034": {
+    "bid": 4909325,
+    "beer_name": "Maho Bay",
+    "brewery_name": "Tilted Barn Brewery",
+    "rating_score": 4.03,
+    "rating_count": 2119,
+    "beer_slug": "tilted-barn-brewery-maho-bay",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4909325_1cf6a_sm.jpeg"
+  }
 }
