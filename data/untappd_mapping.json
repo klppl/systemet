@@ -14956,5 +14956,32 @@
     "beer_slug": "double-nickel-brewing-company-cotton-headed-ninny-muggins",
     "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png"
   },
-  "3399335": null
+  "3399335": null,
+  "8803634": {
+    "bid": 5008640,
+    "beer_name": "Bakery: Oatmeal Raisin Cookie",
+    "brewery_name": "The Bruery",
+    "rating_score": 3.83,
+    "rating_count": 1542,
+    "beer_slug": "the-bruery-bakery-oatmeal-raisin-cookie",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5008640_adec8_sm.jpeg"
+  },
+  "8814734": {
+    "bid": 6562597,
+    "beer_name": "Dreamscape",
+    "brewery_name": "Neon Raptor Brewing Co.",
+    "rating_score": 3.79,
+    "rating_count": 571,
+    "beer_slug": "neon-raptor-brewing-co-dreamscape",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6562597_8d552_sm.jpeg"
+  },
+  "8868534": {
+    "bid": 6794069,
+    "beer_name": "Originator",
+    "brewery_name": "Neon Raptor Brewing Co.",
+    "rating_score": 3.88,
+    "rating_count": 88,
+    "beer_slug": "neon-raptor-brewing-co-originator",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6794069_50095_sm.jpeg"
+  }
 }
