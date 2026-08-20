@@ -14983,5 +14983,23 @@
     "rating_count": 88,
     "beer_slug": "neon-raptor-brewing-co-originator",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6794069_50095_sm.jpeg"
+  },
+  "8879703": {
+    "bid": 6223572,
+    "beer_name": "Limoncello Neipa",
+    "brewery_name": "Stadshaven Brouwerij",
+    "rating_score": 3.4,
+    "rating_count": 8867,
+    "beer_slug": "stadshaven-brouwerij-limoncello-neipa",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6223572_63cb5_sm.jpeg"
+  },
+  "8836803": {
+    "bid": 4312286,
+    "beer_name": "Octopus/Kraken Blond",
+    "brewery_name": "Stadshaven Brouwerij",
+    "rating_score": 3.37,
+    "rating_count": 54074,
+    "beer_slug": "stadshaven-brouwerij-octopus-kraken-blond",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4312286_277ac_sm.jpeg"
   }
 }
