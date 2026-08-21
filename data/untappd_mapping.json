@@ -15001,5 +15001,116 @@
     "rating_count": 54074,
     "beer_slug": "stadshaven-brouwerij-octopus-kraken-blond",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4312286_277ac_sm.jpeg"
+  },
+  "1037734": {
+    "bid": 6714933,
+    "beer_name": "Peculier Assassin",
+    "brewery_name": "Rooster's Brewing Co (UK)",
+    "rating_score": 3.62,
+    "rating_count": 1133,
+    "beer_slug": "rooster-s-brewing-co-uk-peculier-assassin",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6714933_340f3_sm.jpeg"
+  },
+  "1134235": null,
+  "1054734": {
+    "bid": 6479733,
+    "beer_name": "Flat Mars Society",
+    "brewery_name": "Mogwaï Beer Company",
+    "rating_score": 3.59,
+    "rating_count": 102,
+    "beer_slug": "mogwai-beer-company-flat-mars-society",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6479733_b8962_sm.jpeg"
+  },
+  "1342834": {
+    "bid": 6799233,
+    "beer_name": "DeadHead IPA Series: Autumn Red",
+    "brewery_name": "DESTIHL Brewery",
+    "rating_score": 0,
+    "rating_count": 0,
+    "beer_slug": "destihl-brewery-deadhead-ipa-series-autumn-red",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6799233_6db2f_sm.jpeg"
+  },
+  "1034634": {
+    "bid": 6607758,
+    "beer_name": "Barcode: Silver & Jet Black",
+    "brewery_name": "Moersleutel Craft Brewery",
+    "rating_score": 4.41,
+    "rating_count": 3257,
+    "beer_slug": "moersleutel-craft-brewery-barcode-silver-and-jet-black",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6607758_2c3f5_sm.jpeg"
+  },
+  "1345034": {
+    "bid": 5209933,
+    "beer_name": "Extra Black",
+    "brewery_name": "Campervan Brewery",
+    "rating_score": 3.73,
+    "rating_count": 4175,
+    "beer_slug": "campervan-brewery-extra-black",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5209933_96a54_sm.jpeg"
+  },
+  "1056934": {
+    "bid": 5265882,
+    "beer_name": "Overnight Oats (Blueberry, Raspberry, Açai, Maple Syrup & Coffee)",
+    "brewery_name": "Vault City Brewing",
+    "rating_score": 4.17,
+    "rating_count": 4803,
+    "beer_slug": "vault-city-brewing-overnight-oats-blueberry-raspberry-acai-maple-syrup-and-coffee",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5265882_cb05e_sm.jpeg"
+  },
+  "1034932": {
+    "bid": 5765585,
+    "beer_name": "In A World of 9s Be A 10",
+    "brewery_name": "3 Sons Brewing Co.",
+    "rating_score": 4.11,
+    "rating_count": 1695,
+    "beer_slug": "3-sons-brewing-co-in-a-world-of-9-s-be-a-10",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5765585_eca91_sm.jpeg"
+  },
+  "1046334": {
+    "bid": 6737366,
+    "beer_name": "EPITHYMIA",
+    "brewery_name": "Stigbergets Bryggeri",
+    "rating_score": 0,
+    "rating_count": 0,
+    "beer_slug": "stigbergets-bryggeri-epithymia",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6737366_80d4d_sm.jpeg"
+  },
+  "1038901": {
+    "bid": 300374,
+    "beer_name": "Märzen Festbier",
+    "brewery_name": "Hohenthanner Schlossbrauerei",
+    "rating_score": 3.41,
+    "rating_count": 16087,
+    "beer_slug": "hohenthanner-schlossbrauerei-marzen-festbier",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-300374_72e98_sm.jpeg"
+  },
+  "1340003": null,
+  "1036501": {
+    "bid": 6684082,
+    "beer_name": "HORAL's Oude Geuze Mega Blend (2026)",
+    "brewery_name": "Brouwerij Boon",
+    "rating_score": 3.92,
+    "rating_count": 1206,
+    "beer_slug": "brouwerij-boon-horal-s-oude-geuze-mega-blend-2026",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6684082_f8d50_sm.jpeg"
+  },
+  "1030135": null,
+  "1049234": {
+    "bid": 6516041,
+    "beer_name": "Royal Sofa",
+    "brewery_name": "Revision Brewing Company",
+    "rating_score": 3.98,
+    "rating_count": 257,
+    "beer_slug": "revision-brewing-company-royal-sofa",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6516041_7d16f_sm.jpeg"
+  },
+  "1143734": {
+    "bid": 6340737,
+    "beer_name": "Mass Exodus",
+    "brewery_name": "Revision Brewing Company",
+    "rating_score": 4.07,
+    "rating_count": 300,
+    "beer_slug": "revision-brewing-company-mass-exodus",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6340737_7eb24_sm.jpeg"
   }
 }
