@@ -15693,5 +15693,294 @@
     "rating_count": 3626,
     "beer_slug": "goteborgs-nya-bryggeri-dunkel",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3994002_36202_sm.jpeg"
+  },
+  "138935": {
+    "bid": 178348,
+    "beer_name": "Organic Carlsberg Hof",
+    "brewery_name": "Carlsberg Group",
+    "rating_score": 2.9,
+    "rating_count": 43676,
+    "beer_slug": "carlsberg-group-carlsberg-pilsner-hof",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-178348_4ff38_sm.jpeg"
+  },
+  "136532": {
+    "bid": 178348,
+    "beer_name": "Organic Carlsberg Hof",
+    "brewery_name": "Carlsberg Group",
+    "rating_score": 2.9,
+    "rating_count": 43676,
+    "beer_slug": "carlsberg-group-carlsberg-pilsner-hof",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-178348_4ff38_sm.jpeg"
+  },
+  "101635": {
+    "bid": 1826,
+    "beer_name": "East IPA",
+    "brewery_name": "Brooklyn Brewery",
+    "rating_score": 3.49,
+    "rating_count": 260470,
+    "beer_slug": "brooklyn-brewery-brooklyn-east-ipa",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1826_8d471_sm.jpeg"
+  },
+  "126035": {
+    "bid": 4473,
+    "beer_name": "Guinness Draught",
+    "brewery_name": "Guinness",
+    "rating_score": 3.77,
+    "rating_count": 992660,
+    "beer_slug": "guinness-guinness-draught",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4473_1cbe8_sm.jpeg"
+  },
+  "130435": {
+    "bid": 1488846,
+    "beer_name": "Defender IPA",
+    "brewery_name": "Brooklyn Brewery",
+    "rating_score": 3.43,
+    "rating_count": 160150,
+    "beer_slug": "brooklyn-brewery-defender-ipa",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1488846_0f8ef_sm.jpeg"
+  },
+  "129135": {
+    "bid": 47248,
+    "beer_name": "Carlsberg Sort Guld / Black Gold",
+    "brewery_name": "Carlsberg Group",
+    "rating_score": 2.97,
+    "rating_count": 42978,
+    "beer_slug": "carlsberg-group-carlsberg-sort-guld-black-gold",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-47248_9ce3b_sm.jpeg"
+  },
+  "161703": {
+    "bid": 331258,
+    "beer_name": "Melleruds Utmärkta Pilsner",
+    "brewery_name": "Spendrups Bryggeri",
+    "rating_score": 3.12,
+    "rating_count": 51281,
+    "beer_slug": "spendrups-bryggeri-melleruds-utmarkta-pilsner",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-331258_3b299_sm.jpeg"
+  },
+  "8906435": {
+    "bid": 6347,
+    "beer_name": "Birra Moretti L'Autentica / Ricetta Originale",
+    "brewery_name": "Birra Moretti",
+    "rating_score": 3.2,
+    "rating_count": 490687,
+    "beer_slug": "birra-moretti-birra-moretti-l-autentica-ricetta-originale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6347_a13ce_sm.jpeg"
+  },
+  "1212034": {
+    "bid": 331258,
+    "beer_name": "Melleruds Utmärkta Pilsner",
+    "brewery_name": "Spendrups Bryggeri",
+    "rating_score": 3.12,
+    "rating_count": 51281,
+    "beer_slug": "spendrups-bryggeri-melleruds-utmarkta-pilsner",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-331258_3b299_sm.jpeg"
+  },
+  "167932": {
+    "bid": 38700,
+    "beer_name": "Staropramen Premium / Ležák 12",
+    "brewery_name": "Pivovary Staropramen",
+    "rating_score": 3.26,
+    "rating_count": 260293,
+    "beer_slug": "pivovary-staropramen-staropramen-premium-lezak-12",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-38700_653d5_sm.jpeg"
+  },
+  "151935": {
+    "bid": 3558,
+    "beer_name": "Brooklyn Lager",
+    "brewery_name": "Brooklyn Brewery",
+    "rating_score": 3.44,
+    "rating_count": 389617,
+    "beer_slug": "brooklyn-brewery-brooklyn-lager",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3558_2dbd7_sm.jpeg"
+  },
+  "135332": {
+    "bid": 5385,
+    "beer_name": "Budweiser Budvar / Czechvar Original",
+    "brewery_name": "Budějovický Budvar",
+    "rating_score": 3.31,
+    "rating_count": 288579,
+    "beer_slug": "budejovicky-budvar-budweiser-budvar-czechvar-original",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5385_3d69c_sm.jpeg"
+  },
+  "104235": {
+    "bid": 2885563,
+    "beer_name": "The Stonewall Inn IPA",
+    "brewery_name": "Brooklyn Brewery",
+    "rating_score": 3.46,
+    "rating_count": 120869,
+    "beer_slug": "brooklyn-brewery-the-stonewall-inn-ipa",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2885563_da69c_sm.jpeg"
+  },
+  "129132": {
+    "bid": 47248,
+    "beer_name": "Carlsberg Sort Guld / Black Gold",
+    "brewery_name": "Carlsberg Group",
+    "rating_score": 2.97,
+    "rating_count": 42978,
+    "beer_slug": "carlsberg-group-carlsberg-sort-guld-black-gold",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-47248_9ce3b_sm.jpeg"
+  },
+  "135335": {
+    "bid": 5385,
+    "beer_name": "Budweiser Budvar / Czechvar Original",
+    "brewery_name": "Budějovický Budvar",
+    "rating_score": 3.31,
+    "rating_count": 288579,
+    "beer_slug": "budejovicky-budvar-budweiser-budvar-czechvar-original",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5385_3d69c_sm.jpeg"
+  },
+  "1139835": {
+    "bid": 66679,
+    "beer_name": "Stockholm Fine Festival Beer (5.3%)",
+    "brewery_name": "Krönleins Bryggeri",
+    "rating_score": 2.72,
+    "rating_count": 13704,
+    "beer_slug": "kronleins-bryggeri-stockholm-fine-festival-beer-5-3",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-66679_2f23a_sm.jpeg"
+  },
+  "135632": {
+    "bid": 3121,
+    "beer_name": "Morland Old Speckled Hen",
+    "brewery_name": "Greene King",
+    "rating_score": 3.37,
+    "rating_count": 181461,
+    "beer_slug": "greene-king-morland-old-speckled-hen",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3121_e42e0_sm.jpeg"
+  },
+  "8904735": {
+    "bid": 613684,
+    "beer_name": "The Tail of a Whale",
+    "brewery_name": "Brutal Brewing",
+    "rating_score": 3.39,
+    "rating_count": 37265,
+    "beer_slug": "brutal-brewing-the-tail-of-a-whale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-613684_6fd77_sm.jpeg"
+  },
+  "5015235": {
+    "bid": 4667,
+    "beer_name": "Ichiban (Ichiban Shibori) (一番搾り)",
+    "brewery_name": "Kirin Brewery Company",
+    "rating_score": 3.17,
+    "rating_count": 423947,
+    "beer_slug": "kirin-brewery-company-ichiban-ichiban-shibori",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4667_f3820_sm.jpeg"
+  },
+  "154635": {
+    "bid": 5497771,
+    "beer_name": "Knight Rider Porter",
+    "brewery_name": "Sigtuna Brygghus",
+    "rating_score": 3.38,
+    "rating_count": 8610,
+    "beer_slug": "sigtuna-brygghus-knight-rider-porter",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5497771_195c1_sm.jpeg"
+  },
+  "144935": null,
+  "3182835": {
+    "bid": 1831441,
+    "beer_name": "Mango Mango Mango",
+    "brewery_name": "Dugges Bryggeri",
+    "rating_score": 3.72,
+    "rating_count": 46922,
+    "beer_slug": "dugges-bryggeri-mango-mango-mango",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1831441_f98e9_sm.jpeg"
+  },
+  "8142535": {
+    "bid": 203390,
+    "beer_name": "Three Hearts Premium Lager",
+    "brewery_name": "Krönleins Bryggeri",
+    "rating_score": 2.73,
+    "rating_count": 8179,
+    "beer_slug": "kronleins-bryggeri-three-hearts-premium-lager",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-203390_43e66_sm.jpeg"
+  },
+  "143532": {
+    "bid": 9933,
+    "beer_name": "Falcon Lager Export",
+    "brewery_name": "Carlsberg Sverige",
+    "rating_score": 2.8,
+    "rating_count": 55893,
+    "beer_slug": "carlsberg-sverige-falcon-lager-export",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-9933_6d6d7_sm.jpeg"
+  },
+  "140935": {
+    "bid": 9933,
+    "beer_name": "Falcon Lager Export",
+    "brewery_name": "Carlsberg Sverige",
+    "rating_score": 2.8,
+    "rating_count": 55893,
+    "beer_slug": "carlsberg-sverige-falcon-lager-export",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-9933_6d6d7_sm.jpeg"
+  },
+  "141242": {
+    "bid": 8267,
+    "beer_name": "Norrlands Guld Export",
+    "brewery_name": "Spendrups Bryggeri",
+    "rating_score": 2.9,
+    "rating_count": 74154,
+    "beer_slug": "spendrups-bryggeri-norrlands-guld-export",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-8267_9aa2e_sm.jpeg"
+  },
+  "142535": {
+    "bid": 4939759,
+    "beer_name": "Sundbybergs IPA",
+    "brewery_name": "Omnipollo",
+    "rating_score": 3.74,
+    "rating_count": 14626,
+    "beer_slug": "omnipollo-sundbybergs-ipa",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4939759_81801_sm.jpeg"
+  },
+  "3403135": {
+    "bid": 3459674,
+    "beer_name": "Triple Berry Pie (4%)",
+    "brewery_name": "Brewski",
+    "rating_score": 3.74,
+    "rating_count": 29976,
+    "beer_slug": "brewski-triple-berry-pie-4",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3459674_5d99a_sm.jpeg"
+  },
+  "8897735": {
+    "bid": 5731136,
+    "beer_name": "Korvöl",
+    "brewery_name": "Nils Oscar",
+    "rating_score": 3.03,
+    "rating_count": 9699,
+    "beer_slug": "nils-oscar-korvol",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5731136_29cc4_sm.jpeg"
+  },
+  "150635": {
+    "bid": 5325,
+    "beer_name": "Jever Pilsener",
+    "brewery_name": "Friesisches Brauhaus zu Jever",
+    "rating_score": 3.13,
+    "rating_count": 134077,
+    "beer_slug": "friesisches-brauhaus-zu-jever-jever-pilsener",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5325_f4509_sm.jpeg"
+  },
+  "3525434": {
+    "bid": 6271231,
+    "beer_name": "Big Pim",
+    "brewery_name": "Omnipollo",
+    "rating_score": 3.75,
+    "rating_count": 3091,
+    "beer_slug": "omnipollo-big-pim",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6271231_8e429_sm.jpeg"
+  },
+  "3987135": {
+    "bid": 5481221,
+    "beer_name": "Omnipollos Tokyo",
+    "brewery_name": "Omnipollo",
+    "rating_score": 3.61,
+    "rating_count": 14407,
+    "beer_slug": "omnipollo-omnipollos-tokyo",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5481221_fdb0d_sm.jpeg"
+  },
+  "3386734": {
+    "bid": 2822994,
+    "beer_name": "NE Mosaic & Simcoe IPA",
+    "brewery_name": "Apex Brewing Company",
+    "rating_score": 3.9,
+    "rating_count": 17296,
+    "beer_slug": "apex-brewing-company-ne-mosaic-and-simcoe-ipa",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2822994_e8f71_sm.jpeg"
   }
 }
