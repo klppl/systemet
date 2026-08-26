@@ -15982,5 +15982,17 @@
     "rating_count": 17296,
     "beer_slug": "apex-brewing-company-ne-mosaic-and-simcoe-ipa",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2822994_e8f71_sm.jpeg"
-  }
+  },
+  "8809534": null,
+  "8809734": {
+    "bid": 6677244,
+    "beer_name": "Two Track Lover",
+    "brewery_name": "Neon Raptor Brewing Co.",
+    "rating_score": 4.02,
+    "rating_count": 310,
+    "beer_slug": "neon-raptor-brewing-co-two-track-lover",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6677244_2fd16_sm.jpeg"
+  },
+  "8810935": null,
+  "8806434": null
 }
