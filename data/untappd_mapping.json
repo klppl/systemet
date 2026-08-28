@@ -15994,5 +15994,73 @@
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6677244_2fd16_sm.jpeg"
   },
   "8810935": null,
-  "8806434": null
+  "8806434": null,
+  "1341435": {
+    "bid": 3117861,
+    "beer_name": "Southern Bulldog",
+    "brewery_name": "Gotlands Bryggeri",
+    "rating_score": 3.35,
+    "rating_count": 8638,
+    "beer_slug": "gotlands-bryggeri-southern-bulldog",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3117861_e92ed_sm.jpeg"
+  },
+  "1081034": {
+    "bid": 6574785,
+    "beer_name": "Turbid Dreams",
+    "brewery_name": "Factory Brewing",
+    "rating_score": 4.1,
+    "rating_count": 1698,
+    "beer_slug": "factory-brewing-turbid-dreams",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6574785_7d8a1_sm.jpeg"
+  },
+  "1054334": {
+    "bid": 6681918,
+    "beer_name": "Dethrone",
+    "brewery_name": "Polly's Brew Co.",
+    "rating_score": 3.84,
+    "rating_count": 641,
+    "beer_slug": "polly-s-brew-co-dethrone",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-373345_1e0c7.jpeg"
+  },
+  "1025034": null,
+  "1041034": null,
+  "1344635": {
+    "bid": 6844056,
+    "beer_name": "Burning Amber",
+    "brewery_name": "Captain Lawrence Brewing Company",
+    "rating_score": 0,
+    "rating_count": 0,
+    "beer_slug": "captain-lawrence-brewing-company-burning-amber",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-341_7be8f.jpeg"
+  },
+  "1345635": null,
+  "1088434": null,
+  "1032003": null,
+  "1052501": {
+    "bid": 4674610,
+    "beer_name": "Le Grand Mélange By Rackhouse",
+    "brewery_name": "LERVIG",
+    "rating_score": 4.08,
+    "rating_count": 3951,
+    "beer_slug": "lervig-le-grand-melange-by-rackhouse",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4674610_9025b_sm.jpeg"
+  },
+  "1050403": {
+    "bid": 6704386,
+    "beer_name": "Duvel Tripel Hop Krush",
+    "brewery_name": "Duvel Moortgat",
+    "rating_score": 3.69,
+    "rating_count": 8333,
+    "beer_slug": "duvel-moortgat-duvel-tripel-hop-krush",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-167_d9ccf.jpeg"
+  },
+  "1341235": {
+    "bid": 6842929,
+    "beer_name": "Oyster Stout",
+    "brewery_name": "En Aleigen Brewery",
+    "rating_score": 0,
+    "rating_count": 0,
+    "beer_slug": "en-aleigen-brewery-oyster-stout",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6842929_a36ac_sm.jpeg"
+  }
 }
