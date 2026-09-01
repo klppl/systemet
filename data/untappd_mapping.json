@@ -16062,5 +16062,14 @@
     "rating_count": 0,
     "beer_slug": "en-aleigen-brewery-oyster-stout",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6842929_a36ac_sm.jpeg"
+  },
+  "8850506": {
+    "bid": 40173,
+    "beer_name": "Pilsener",
+    "brewery_name": "Brauerei VELTINS",
+    "rating_score": 3.18,
+    "rating_count": 177960,
+    "beer_slug": "brauerei-veltins-pilsener",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-40173_77513_sm.jpeg"
   }
 }
