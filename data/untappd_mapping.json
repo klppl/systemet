@@ -16109,5 +16109,81 @@
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-876389_07ca9_sm.jpeg"
   },
   "8870106": null,
-  "8860503": null
+  "8860503": null,
+  "1130935": {
+    "bid": 6408966,
+    "beer_name": "Kåda",
+    "brewery_name": "O/O Brewing ",
+    "rating_score": 3.46,
+    "rating_count": 4896,
+    "beer_slug": "o-o-brewing-kada",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-oobrewing_58318.jpeg"
+  },
+  "1343634": null,
+  "1031735": {
+    "bid": 5311060,
+    "beer_name": "The Beast of Both Worlds",
+    "brewery_name": "Lagunitas Brewing Company",
+    "rating_score": 3.79,
+    "rating_count": 31073,
+    "beer_slug": "lagunitas-brewing-company-the-beast-of-both-worlds",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5311060_4fa90_sm.jpeg"
+  },
+  "1033835": null,
+  "1001934": {
+    "bid": 6581011,
+    "beer_name": "You Won’t Believe It’s Not Crumble!",
+    "brewery_name": "Vault City Brewing",
+    "rating_score": 4.23,
+    "rating_count": 2519,
+    "beer_slug": "vault-city-brewing-you-won-t-believe-it-s-not-crumble",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6581011_391cd_sm.jpeg"
+  },
+  "1024934": {
+    "bid": 4334310,
+    "beer_name": "Spiked Smoothie Passionfruit Lemonade",
+    "brewery_name": "Connecticut Valley Brewing Company",
+    "rating_score": 4,
+    "rating_count": 270,
+    "beer_slug": "connecticut-valley-brewing-company-spiked-smoothie-passionfruit-lemonade",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4334310_096b9_sm.jpeg"
+  },
+  "1039434": null,
+  "1020834": {
+    "bid": 11109,
+    "beer_name": "White Oak Jai Alai®",
+    "brewery_name": "Cigar City Brewing®",
+    "rating_score": 4,
+    "rating_count": 80770,
+    "beer_slug": "cigar-city-brewing-white-oak-jai-alai",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-11109_08c8c_sm.jpeg"
+  },
+  "1040934": {
+    "bid": 71833,
+    "beer_name": "Smoke & Dagger",
+    "brewery_name": "Jack’s Abby Craft Lagers",
+    "rating_score": 3.73,
+    "rating_count": 37989,
+    "beer_slug": "jack-s-abby-craft-lagers-smoke-and-dagger",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-71833_50a27_sm.jpeg"
+  },
+  "1341603": {
+    "bid": 5910814,
+    "beer_name": "Ostrea Ostronporter",
+    "brewery_name": "Ängöl",
+    "rating_score": 3.39,
+    "rating_count": 2139,
+    "beer_slug": "angol-ostrea-ostronporter",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5910814_b88e8_sm.jpeg"
+  },
+  "1085003": {
+    "bid": 8343,
+    "beer_name": "Bourbon County Brand Stout",
+    "brewery_name": "Goose Island Beer Co.",
+    "rating_score": 4.37,
+    "rating_count": 223034,
+    "beer_slug": "goose-island-beer-co-bourbon-county-brand-stout",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-8343_4245e_sm.jpeg"
+  },
+  "1055003": null
 }
