@@ -16213,5 +16213,69 @@
     "beer_slug": "bellwoods-brewery-jelly-king",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1498099_a0a21_sm.jpeg"
   },
-  "8834434": null
+  "8834434": null,
+  "8839534": {
+    "bid": 6772568,
+    "beer_name": "Greenbelly Riawaka & Peacharine",
+    "brewery_name": "Bellwoods Brewery",
+    "rating_score": 4.22,
+    "rating_count": 132,
+    "beer_slug": "bellwoods-brewery-greenbelly-riawaka-and-peacharine",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6772568_05beb_sm.jpeg"
+  },
+  "8856934": null,
+  "8871634": {
+    "bid": 4949281,
+    "beer_name": "PIG",
+    "brewery_name": "Bellwoods Brewery",
+    "rating_score": 3.83,
+    "rating_count": 4461,
+    "beer_slug": "bellwoods-brewery-pig",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4949281_c7520_sm.jpeg"
+  },
+  "8800835": {
+    "bid": 48217,
+    "beer_name": "Aooni (インドの青鬼)",
+    "brewery_name": "Yo-Ho Brewing Company",
+    "rating_score": 3.57,
+    "rating_count": 35222,
+    "beer_slug": "yo-ho-brewing-company-aooni",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-48217_219f0_sm.jpeg"
+  },
+  "8855134": {
+    "bid": 6829821,
+    "beer_name": "Big Stupid Hazy V2",
+    "brewery_name": "Verdant Brewing Co",
+    "rating_score": 4.07,
+    "rating_count": 277,
+    "beer_slug": "verdant-brewing-co-big-stupid-hazy-v2",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6829821_fc63c_sm.jpeg"
+  },
+  "8856534": {
+    "bid": 6836719,
+    "beer_name": "CAUTION! INTERNAL TRAFFIC",
+    "brewery_name": "Verdant Brewing Co",
+    "rating_score": 4.11,
+    "rating_count": 301,
+    "beer_slug": "verdant-brewing-co-caution-internal-traffic",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-211325_2ba94.jpeg"
+  },
+  "8880934": {
+    "bid": 4856663,
+    "beer_name": "Under the Same Sky",
+    "brewery_name": "Verdant Brewing Co",
+    "rating_score": 4.19,
+    "rating_count": 6504,
+    "beer_slug": "verdant-brewing-co-under-the-same-sky",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4856663_1ed74_sm.jpeg"
+  },
+  "8849535": {
+    "bid": 6821572,
+    "beer_name": "Big Stupid Westy V6 (Mosaic, Krush, Nectaron, Chinook, Columbus)",
+    "brewery_name": "Verdant Brewing Co",
+    "rating_score": 3.96,
+    "rating_count": 246,
+    "beer_slug": "verdant-brewing-co-big-stupid-westy-v6-mosaic-krush-nectaron-chinook-columbus",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6821572_52443_sm.jpeg"
+  }
 }
