@@ -16277,5 +16277,14 @@
     "rating_count": 246,
     "beer_slug": "verdant-brewing-co-big-stupid-westy-v6-mosaic-krush-nectaron-chinook-columbus",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6821572_52443_sm.jpeg"
+  },
+  "8876806": {
+    "bid": 4667,
+    "beer_name": "Ichiban (Ichiban Shibori) (一番搾り)",
+    "brewery_name": "Kirin Brewery Company",
+    "rating_score": 3.17,
+    "rating_count": 425245,
+    "beer_slug": "kirin-brewery-company-ichiban-ichiban-shibori",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4667_f3820_sm.jpeg"
   }
 }
