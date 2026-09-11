@@ -16286,5 +16286,62 @@
     "rating_count": 425245,
     "beer_slug": "kirin-brewery-company-ichiban-ichiban-shibori",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4667_f3820_sm.jpeg"
+  },
+  "1343832": null,
+  "1029032": {
+    "bid": 6392121,
+    "beer_name": "Royal Cookie: Maple Coffee",
+    "brewery_name": "Funky Fluid",
+    "rating_score": 4.09,
+    "rating_count": 507,
+    "beer_slug": "funky-fluid-royal-cookie-maple-coffee",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6392121_a0083_sm.jpeg"
+  },
+  "1027534": null,
+  "1014934": {
+    "bid": 3543874,
+    "beer_name": "Double Dry Hop King Sue",
+    "brewery_name": "Toppling Goliath Brewing Co.",
+    "rating_score": 4.38,
+    "rating_count": 37897,
+    "beer_slug": "toppling-goliath-brewing-co-double-dry-hop-king-sue",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3543874_924c8_sm.jpeg"
+  },
+  "1024034": {
+    "bid": 6860171,
+    "beer_name": "Yttre Rymden (PULP)",
+    "brewery_name": "Elmeleven",
+    "rating_score": 0,
+    "rating_count": 0,
+    "beer_slug": "elmeleven-yttre-rymden-pulp",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-332630_2ba8c.jpeg"
+  },
+  "1029603": null,
+  "160703": {
+    "bid": 2013,
+    "beer_name": "La Trappe Tripel",
+    "brewery_name": "Bierbrouwerij de Koningshoeven",
+    "rating_score": 3.74,
+    "rating_count": 208435,
+    "beer_slug": "bierbrouwerij-de-koningshoeven-la-trappe-tripel",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2013_43d0c_sm.jpeg"
+  },
+  "1046801": {
+    "bid": 1084404,
+    "beer_name": "Straffe Hendrik Heritage",
+    "brewery_name": "Brouwerij De Halve Maan",
+    "rating_score": 4.03,
+    "rating_count": 4867,
+    "beer_slug": "brouwerij-de-halve-maan-straffe-hendrik-heritage",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1084404_b784a_sm.jpeg"
+  },
+  "1049301": {
+    "bid": 4982759,
+    "beer_name": "Life is Relentless (Bourbon)",
+    "brewery_name": "Bellwoods Brewery",
+    "rating_score": 4.24,
+    "rating_count": 239,
+    "beer_slug": "bellwoods-brewery-life-is-relentless-bourbon",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4982759_3ced9_sm.jpeg"
   }
 }
