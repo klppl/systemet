@@ -16343,5 +16343,23 @@
     "rating_count": 239,
     "beer_slug": "bellwoods-brewery-life-is-relentless-bourbon",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4982759_3ced9_sm.jpeg"
+  },
+  "8854001": {
+    "bid": 6023808,
+    "beer_name": "Trooper Day of the Dead Stout",
+    "brewery_name": "Robinsons Brewery",
+    "rating_score": 3.62,
+    "rating_count": 247,
+    "beer_slug": "robinsons-brewery-trooper-day-of-the-dead-stout",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-2908_e0b24.jpeg"
+  },
+  "8850301": {
+    "bid": 5311,
+    "beer_name": "Pilsener",
+    "brewery_name": "Flensburger Brauerei Emil Petersen",
+    "rating_score": 3.28,
+    "rating_count": 119141,
+    "beer_slug": "flensburger-brauerei-emil-petersen-pilsener",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5311_b69a1_sm.jpeg"
   }
 }
