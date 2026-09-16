@@ -16361,5 +16361,23 @@
     "rating_count": 119141,
     "beer_slug": "flensburger-brauerei-emil-petersen-pilsener",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5311_b69a1_sm.jpeg"
+  },
+  "8830803": {
+    "bid": 4997,
+    "beer_name": "Torpedo Extra IPA",
+    "brewery_name": "Sierra Nevada Brewing Co.",
+    "rating_score": 3.72,
+    "rating_count": 377460,
+    "beer_slug": "sierra-nevada-brewing-co-torpedo-extra-ipa",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4997_97cc4_sm.jpeg"
+  },
+  "8820403": {
+    "bid": 41995,
+    "beer_name": "Export India Porter",
+    "brewery_name": "The Kernel Brewery",
+    "rating_score": 3.82,
+    "rating_count": 21319,
+    "beer_slug": "the-kernel-brewery-export-india-porter",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-41995_3ace4_sm.jpeg"
   }
 }
