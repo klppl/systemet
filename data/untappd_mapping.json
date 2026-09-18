@@ -16683,5 +16683,72 @@
     "rating_count": 2074,
     "beer_slug": "bryggverket-hooja-varg-ipa",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6256372_d8037_sm.jpeg"
-  }
+  },
+  "1343434": {
+    "bid": 358026,
+    "beer_name": "Velvet Underbrown",
+    "brewery_name": "Heavy Riff Brewing Company",
+    "rating_score": 3.88,
+    "rating_count": 9056,
+    "beer_slug": "heavy-riff-brewing-company-velvet-underbrown",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-358026_20bde_sm.jpeg"
+  },
+  "1343234": {
+    "bid": 2354123,
+    "beer_name": "Sea Dragon",
+    "brewery_name": "Asbury Park Brewery",
+    "rating_score": 3.63,
+    "rating_count": 15480,
+    "beer_slug": "asbury-park-brewery-sea-dragon",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2354123_427ac_sm.jpeg"
+  },
+  "1343535": {
+    "bid": 6540722,
+    "beer_name": "Triple Black Magic",
+    "brewery_name": "Black Pond Brews",
+    "rating_score": 4.17,
+    "rating_count": 47,
+    "beer_slug": "black-pond-brews-black-pond-triple-black-magic",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-58173_18abc.jpeg"
+  },
+  "1034035": {
+    "bid": 6604477,
+    "beer_name": "Fully Stoked Coffee Brown Ale",
+    "brewery_name": "Black Pond Brews",
+    "rating_score": 3.96,
+    "rating_count": 17,
+    "beer_slug": "black-pond-brews-fully-stoked-coffee-brown-ale",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-58173_18abc.jpeg"
+  },
+  "1344435": {
+    "bid": 51730,
+    "beer_name": "Good Gourd™",
+    "brewery_name": "Cigar City Brewing®",
+    "rating_score": 3.97,
+    "rating_count": 38122,
+    "beer_slug": "cigar-city-brewing-good-gourd",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-51730_c45d8_sm.jpeg"
+  },
+  "1045035": null,
+  "1044034": {
+    "bid": 1843473,
+    "beer_name": "MC²",
+    "brewery_name": "Equilibrium Brewery",
+    "rating_score": 4.2,
+    "rating_count": 89758,
+    "beer_slug": "equilibrium-brewery-mc2",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1843473_654ac_sm.jpeg"
+  },
+  "1056134": {
+    "bid": 6837722,
+    "beer_name": "Super Duper DIPA",
+    "brewery_name": "To Øl",
+    "rating_score": 3.93,
+    "rating_count": 66,
+    "beer_slug": "to-ol-super-duper-dipa",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-2241_bb819.jpeg"
+  },
+  "1343901": null,
+  "1027703": null,
+  "1081235": null
 }
