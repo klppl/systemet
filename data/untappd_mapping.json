@@ -17298,5 +17298,140 @@
     "rating_count": 1208,
     "beer_slug": "honobryggeriet-mareld-lager",
     "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-199154_2533f.jpeg"
+  },
+  "143235": {
+    "bid": 3940618,
+    "beer_name": "Ey'Bro",
+    "brewery_name": "Åbro Bryggeri",
+    "rating_score": 2.74,
+    "rating_count": 39827,
+    "beer_slug": "abro-bryggeri-ey-bro",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3940618_01860_sm.jpeg"
+  },
+  "137135": {
+    "bid": 421569,
+    "beer_name": "Åbro Original 7.3%",
+    "brewery_name": "Åbro Bryggeri",
+    "rating_score": 2.71,
+    "rating_count": 10300,
+    "beer_slug": "abro-bryggeri-abro-original-7-3",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-421569_63bea_sm.jpeg"
+  },
+  "144532": {
+    "bid": 56253,
+    "beer_name": "Bryggmästarens Premium Gold",
+    "brewery_name": "Åbro Bryggeri",
+    "rating_score": 2.99,
+    "rating_count": 39005,
+    "beer_slug": "abro-bryggeri-bryggmastarens-premium-gold",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-_56253_sm.jpeg"
+  },
+  "143232": {
+    "bid": 3940618,
+    "beer_name": "Ey'Bro",
+    "brewery_name": "Åbro Bryggeri",
+    "rating_score": 2.74,
+    "rating_count": 39827,
+    "beer_slug": "abro-bryggeri-ey-bro",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3940618_01860_sm.jpeg"
+  },
+  "100635": {
+    "bid": 828748,
+    "beer_name": "Mariestads Dunkel",
+    "brewery_name": "Spendrups Bryggeri",
+    "rating_score": 3.02,
+    "rating_count": 13125,
+    "beer_slug": "spendrups-bryggeri-mariestads-dunkel",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-828748_d6910_sm.jpeg"
+  },
+  "228434": {
+    "bid": 4715715,
+    "beer_name": "Brewmaster Nitro Stout",
+    "brewery_name": "Brewmaster by Dundalk Bay Brewery and Distillery ",
+    "rating_score": 3.45,
+    "rating_count": 11549,
+    "beer_slug": "brewmaster-by-dundalk-bay-brewery-and-distillery-brewmaster-nitro-stout",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4715715_55722_sm.jpeg"
+  },
+  "1137935": {
+    "bid": 4010,
+    "beer_name": "Stella Artois",
+    "brewery_name": "Stella Artois",
+    "rating_score": 3.29,
+    "rating_count": 713622,
+    "beer_slug": "stella-artois-stella-artois",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4010_5da67_sm.jpeg"
+  },
+  "147735": {
+    "bid": 62255,
+    "beer_name": "Småland",
+    "brewery_name": "Åbro Bryggeri",
+    "rating_score": 2.78,
+    "rating_count": 31584,
+    "beer_slug": "abro-bryggeri-smaland",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-_62255_sm.jpeg"
+  },
+  "234132": {
+    "bid": 6288854,
+    "beer_name": "Nästgårds Ljusa",
+    "brewery_name": "Åbro Bryggeri",
+    "rating_score": 3.08,
+    "rating_count": 6141,
+    "beer_slug": "abro-bryggeri-nastgards-ljusa",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6288854_6382c_sm.jpeg"
+  },
+  "1158735": {
+    "bid": 4325787,
+    "beer_name": "Arton56 Glutenfri",
+    "brewery_name": "Åbro Bryggeri",
+    "rating_score": 2.81,
+    "rating_count": 11350,
+    "beer_slug": "abro-bryggeri-arton56-glutenfri",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4325787_c3d80_sm.jpeg"
+  },
+  "150235": {
+    "bid": 10759,
+    "beer_name": "Dale's® Pale Ale",
+    "brewery_name": "Oskar Blues Brewery®",
+    "rating_score": 3.62,
+    "rating_count": 328325,
+    "beer_slug": "oskar-blues-brewery-dale-s-pale-ale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-10759_cc4a9_sm.jpeg"
+  },
+  "159432": {
+    "bid": 36800,
+    "beer_name": "Lapin Kulta",
+    "brewery_name": "Hartwall",
+    "rating_score": 2.69,
+    "rating_count": 33508,
+    "beer_slug": "hartwall-lapin-kulta",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-36800_e9cde_sm.jpeg"
+  },
+  "125135": {
+    "bid": 5822542,
+    "beer_name": "Bärtz",
+    "brewery_name": "Train Station Brewery",
+    "rating_score": 2.94,
+    "rating_count": 6005,
+    "beer_slug": "train-station-brewery-bartz",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-29556_e15a9.jpeg"
+  },
+  "5918532": {
+    "bid": 20126,
+    "beer_name": "Obolon Premium (Оболонь Премiум)",
+    "brewery_name": "Obolon (Оболонь)",
+    "rating_score": 3.02,
+    "rating_count": 25577,
+    "beer_slug": "obolon-obolon-obolon-premium-obolon-premium",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-20126_3f6a7_sm.jpeg"
+  },
+  "153935": {
+    "bid": 5729,
+    "beer_name": "Modus Hoperandi",
+    "brewery_name": "Ska Brewing",
+    "rating_score": 3.74,
+    "rating_count": 127445,
+    "beer_slug": "ska-brewing-modus-hoperandi",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5729_bc30f_sm.jpeg"
   }
 }
