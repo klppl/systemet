@@ -17433,5 +17433,96 @@
     "rating_count": 127445,
     "beer_slug": "ska-brewing-modus-hoperandi",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5729_bc30f_sm.jpeg"
+  },
+  "1344501": null,
+  "1082935": {
+    "bid": 37235,
+    "beer_name": "Black Chocolate Stout",
+    "brewery_name": "Brooklyn Brewery",
+    "rating_score": 3.84,
+    "rating_count": 134401,
+    "beer_slug": "brooklyn-brewery-black-chocolate-stout",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-37235_fdc9c_sm.jpeg"
+  },
+  "1344035": {
+    "bid": 5733588,
+    "beer_name": "How To Catch A Falling Knife",
+    "brewery_name": "This Is How",
+    "rating_score": 3.49,
+    "rating_count": 541,
+    "beer_slug": "this-is-how-how-to-catch-a-falling-knife",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5733588_8e35b_sm.jpeg"
+  },
+  "1344735": {
+    "bid": 6146487,
+    "beer_name": "Red Beerd Autumn Ale",
+    "brewery_name": "Bootstrap Brewing",
+    "rating_score": 0,
+    "rating_count": 2,
+    "beer_slug": null,
+    "beer_label": "https://assets.untappd.com/site/assets/images/temp/badge-beer-default.png"
+  },
+  "1055535": {
+    "bid": 1768406,
+    "beer_name": "Haunted House",
+    "brewery_name": "Allagash Brewing Company",
+    "rating_score": 3.74,
+    "rating_count": 35943,
+    "beer_slug": "allagash-brewing-company-haunted-house",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1768406_52b51_sm.jpeg"
+  },
+  "8936903": {
+    "bid": 1830,
+    "beer_name": "La Trappe Quadrupel",
+    "brewery_name": "Bierbrouwerij de Koningshoeven",
+    "rating_score": 3.9,
+    "rating_count": 274701,
+    "beer_slug": "bierbrouwerij-de-koningshoeven-la-trappe-quadrupel",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1830_c9bdc_sm.jpeg"
+  },
+  "1032202": {
+    "bid": 6573893,
+    "beer_name": "Crimson Veil",
+    "brewery_name": "Holy Goat Brewing",
+    "rating_score": 3.88,
+    "rating_count": 987,
+    "beer_slug": "holy-goat-brewing-crimson-veil",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6573893_dd125_sm.jpeg"
+  },
+  "9470101": {
+    "bid": 21902,
+    "beer_name": "Saison d'Epeautre",
+    "brewery_name": "Brasserie de Blaugies",
+    "rating_score": 3.73,
+    "rating_count": 14072,
+    "beer_slug": "brasserie-de-blaugies-saison-d-epeautre",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-SaisondEpeautre_21902.jpeg"
+  },
+  "1086801": {
+    "bid": 310200,
+    "beer_name": "La Vermontoise",
+    "brewery_name": "Brasserie de Blaugies",
+    "rating_score": 3.8,
+    "rating_count": 39753,
+    "beer_slug": "brasserie-de-blaugies-la-vermontoise",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-_310200_sm_46d1015a7f214689d7a24adaf216a6.jpeg"
+  },
+  "1026832": {
+    "bid": 5202144,
+    "beer_name": "Yummy Pineapple, Papaya & Coconut",
+    "brewery_name": "Sibeeria Brewery",
+    "rating_score": 4.13,
+    "rating_count": 2911,
+    "beer_slug": "sibeeria-brewery-yummy-pineapple-papaya-and-coconut",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5202144_33729_sm.jpeg"
+  },
+  "1041101": {
+    "bid": 6439269,
+    "beer_name": "Bourbon County Brand Chocolate Praline Stout (2025)",
+    "brewery_name": "Goose Island Beer Co.",
+    "rating_score": 4.34,
+    "rating_count": 16893,
+    "beer_slug": "goose-island-beer-co-bourbon-county-brand-chocolate-praline-stout-2025",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6439269_2afee_sm.jpeg"
   }
 }
