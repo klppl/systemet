@@ -17524,5 +17524,50 @@
     "rating_count": 16893,
     "beer_slug": "goose-island-beer-co-bourbon-county-brand-chocolate-praline-stout-2025",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6439269_2afee_sm.jpeg"
+  },
+  "8870435": {
+    "bid": 230029,
+    "beer_name": "Suiyoubi no Neko (水曜日のネコ)",
+    "brewery_name": "Yo-Ho Brewing Company",
+    "rating_score": 3.48,
+    "rating_count": 24110,
+    "beer_slug": "yo-ho-brewing-company-suiyoubi-no-neko",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-230029_73e3f_sm.jpeg"
+  },
+  "8866703": {
+    "bid": 3354,
+    "beer_name": "Jacobite Ale",
+    "brewery_name": "Traquair House Brewery",
+    "rating_score": 3.77,
+    "rating_count": 25701,
+    "beer_slug": "traquair-house-brewery-jacobite-ale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-JacobiteAle_3354.jpeg"
+  },
+  "8853803": {
+    "bid": 8791,
+    "beer_name": "Dunkel",
+    "brewery_name": "Flensburger Brauerei Emil Petersen",
+    "rating_score": 3.33,
+    "rating_count": 37688,
+    "beer_slug": "flensburger-brauerei-emil-petersen-dunkel",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-8791_80495_sm.jpeg"
+  },
+  "8811901": {
+    "bid": 478,
+    "beer_name": "Very Bad Elf",
+    "brewery_name": "Ridgeway Brewing",
+    "rating_score": 3.33,
+    "rating_count": 14542,
+    "beer_slug": "ridgeway-brewing-very-bad-elf",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-478_87149_sm.jpeg"
+  },
+  "8806703": {
+    "bid": 9087,
+    "beer_name": "Gouden Carolus Classic",
+    "brewery_name": "Brouwerij Het Anker",
+    "rating_score": 3.73,
+    "rating_count": 145107,
+    "beer_slug": "brouwerij-het-anker-gouden-carolus-classic",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-9087_5383c_sm.jpeg"
   }
 }
