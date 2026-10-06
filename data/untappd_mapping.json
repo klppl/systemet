@@ -17644,5 +17644,36 @@
     "beer_slug": "williams-brothers-brewing-co-march-of-the-penguins",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-34067_6210a_sm.jpeg"
   },
-  "1030834": null
+  "1030834": null,
+  "8855334": {
+    "bid": 6762010,
+    "beer_name": "Spice Caravan",
+    "brewery_name": "More Brewing Company",
+    "rating_score": 4.35,
+    "rating_count": 109,
+    "beer_slug": "more-brewing-company-spice-caravan",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6762010_062fa_sm.jpeg"
+  },
+  "8881403": {
+    "bid": 356,
+    "beer_name": "Gouden Carolus Tripel",
+    "brewery_name": "Brouwerij Het Anker",
+    "rating_score": 3.81,
+    "rating_count": 182588,
+    "beer_slug": "brouwerij-het-anker-gouden-carolus-tripel",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-356_e2231_sm.jpeg"
+  },
+  "8810434": null,
+  "8899034": null,
+  "8872434": null,
+  "8809234": null,
+  "8869303": {
+    "bid": 75128,
+    "beer_name": "Oktoberfest Bier",
+    "brewery_name": "Augustiner-Bräu München",
+    "rating_score": 3.77,
+    "rating_count": 35266,
+    "beer_slug": "augustiner-brau-munchen-oktoberfest-bier",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-75128_3b460_sm.jpeg"
+  }
 }
