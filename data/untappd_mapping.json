@@ -17675,5 +17675,14 @@
     "rating_count": 35266,
     "beer_slug": "augustiner-brau-munchen-oktoberfest-bier",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-75128_3b460_sm.jpeg"
+  },
+  "8819835": {
+    "bid": 48217,
+    "beer_name": "Aooni (インドの青鬼)",
+    "brewery_name": "Yo-Ho Brewing Company",
+    "rating_score": 3.57,
+    "rating_count": 35460,
+    "beer_slug": "yo-ho-brewing-company-aooni",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-48217_219f0_sm.jpeg"
   }
 }
