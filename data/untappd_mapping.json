@@ -17733,5 +17733,32 @@
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-8676_379f5_sm.jpeg"
   },
   "1045903": null,
-  "7729435": null
+  "7729435": null,
+  "8898834": {
+    "bid": 1856796,
+    "beer_name": "Outrigger",
+    "brewery_name": "Moonraker Brewing Company",
+    "rating_score": 3.94,
+    "rating_count": 4393,
+    "beer_slug": "moonraker-brewing-company-outrigger",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1856796_de0a4_sm.jpeg"
+  },
+  "8893534": {
+    "bid": 1877806,
+    "beer_name": "The Holy Hermit",
+    "brewery_name": "Moonraker Brewing Company",
+    "rating_score": 4.26,
+    "rating_count": 10105,
+    "beer_slug": "moonraker-brewing-company-the-holy-hermit",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1877806_fbfbe_sm.jpeg"
+  },
+  "8817134": {
+    "bid": 3268749,
+    "beer_name": "Dean the Machine",
+    "brewery_name": "Moonraker Brewing Company",
+    "rating_score": 4.06,
+    "rating_count": 1581,
+    "beer_slug": "moonraker-brewing-company-dean-the-machine",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3268749_974cf_sm.jpeg"
+  }
 }
