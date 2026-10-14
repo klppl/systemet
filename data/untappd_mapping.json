@@ -17760,5 +17760,32 @@
     "rating_count": 1581,
     "beer_slug": "moonraker-brewing-company-dean-the-machine",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3268749_974cf_sm.jpeg"
+  },
+  "8852103": {
+    "bid": 5302778,
+    "beer_name": "75BEER Craft Lager",
+    "brewery_name": "Orion Breweries, Ltd.",
+    "rating_score": 3.29,
+    "rating_count": 697,
+    "beer_slug": "orion-breweries-ltd-75beer-craft-lager",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5302778_e2965_sm.jpeg"
+  },
+  "8869034": {
+    "bid": 3896861,
+    "beer_name": "Beam Reach",
+    "brewery_name": "Moonraker Brewing Company",
+    "rating_score": 4.1,
+    "rating_count": 1309,
+    "beer_slug": "moonraker-brewing-company-beam-reach",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3896861_495df_sm.jpeg"
+  },
+  "8813934": {
+    "bid": 6639540,
+    "beer_name": "Mountain High",
+    "brewery_name": "Moonraker Brewing Company",
+    "rating_score": 4.04,
+    "rating_count": 164,
+    "beer_slug": "moonraker-brewing-company-mountain-high",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-232119_9de39.jpeg"
   }
 }
