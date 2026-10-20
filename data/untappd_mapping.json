@@ -19184,5 +19184,50 @@
     "rating_count": 236,
     "beer_slug": "prins-katts-hantverksol-the-christmas-ale",
     "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-339019_92c69.jpeg"
+  },
+  "8841103": {
+    "bid": 6859724,
+    "beer_name": "3 Fonteinen Oude Wintergeuze (season 25|26) Blend No. 16",
+    "brewery_name": "Brouwerij 3 Fonteinen",
+    "rating_score": 4.03,
+    "rating_count": 44,
+    "beer_slug": "brouwerij-3-fonteinen-3-fonteinen-oude-wintergeuze-season-25-26-blend-no-16",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6859724_29478_sm.jpeg"
+  },
+  "8891501": {
+    "bid": 6818050,
+    "beer_name": "Zenne D'Auge Calvados Barrel Aged Geuze (season 25|26) Blend No. 4",
+    "brewery_name": "Brouwerij 3 Fonteinen",
+    "rating_score": 4.32,
+    "rating_count": 208,
+    "beer_slug": "brouwerij-3-fonteinen-zenne-d-auge-calvados-barrel-aged-geuze-season-25-26-blend-no-4",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6818050_61a49_sm.jpeg"
+  },
+  "8816601": {
+    "bid": 6818338,
+    "beer_name": "3 Fonteinen Zenne y Frontera (season 24|25) Blend No. 13",
+    "brewery_name": "Brouwerij 3 Fonteinen",
+    "rating_score": 4.33,
+    "rating_count": 78,
+    "beer_slug": "brouwerij-3-fonteinen-3-fonteinen-zenne-y-frontera-season-24-25-blend-no-13",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6818338_cef3b_sm.jpeg"
+  },
+  "8895601": {
+    "bid": 6818053,
+    "beer_name": "3 Fonteinen Oude Geuze Cuvée Armand & Gaston Vintage 2023",
+    "brewery_name": "Brouwerij 3 Fonteinen",
+    "rating_score": 4.33,
+    "rating_count": 142,
+    "beer_slug": "brouwerij-3-fonteinen-3-fonteinen-oude-geuze-cuvee-armand-and-gaston-vintage-2023",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6818053_cdb85_sm.jpeg"
+  },
+  "8887303": {
+    "bid": 6818043,
+    "beer_name": "3 Fonteinen Oude Lambik Doesjel (season 21|22) Blend No. 58",
+    "brewery_name": "Brouwerij 3 Fonteinen",
+    "rating_score": 4.18,
+    "rating_count": 44,
+    "beer_slug": "brouwerij-3-fonteinen-3-fonteinen-oude-lambik-doesjel-season-21-22-blend-no-58",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6818043_f2d0a_sm.jpeg"
   }
 }

@@ -1,140 +1,5 @@
 [
   {
-    "id": "8817134",
-    "date": 1791849600000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "8893534",
-    "date": 1791849600000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "8898834",
-    "date": 1791849600000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3218403",
-    "date": 1791849600000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3199303",
-    "date": 1791849600000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3358903",
-    "date": 1791849600000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3332103",
-    "date": 1791849600000,
-    "reason": "Priset ändrades från 27.5 till 31.4 kr."
-  },
-  {
-    "id": "3029503",
-    "date": 1791849600000,
-    "reason": "Priset ändrades från 31.0 till 30.9 kr."
-  },
-  {
-    "id": "3149801",
-    "date": 1791849600000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3494835",
-    "date": 1791849600000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3328135",
-    "date": 1791849600000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3199535",
-    "date": 1791849600000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3336035",
-    "date": 1791849600000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3054935",
-    "date": 1791849600000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3002935",
-    "date": 1791849600000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3092735",
-    "date": 1791849600000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3074335",
-    "date": 1791849600000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3011235",
-    "date": 1791849600000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3016735",
-    "date": 1791849600000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3015335",
-    "date": 1791849600000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3005314",
-    "date": 1791849600000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3244035",
-    "date": 1791849600000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3005935",
-    "date": 1791849600000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3222635",
-    "date": 1791849600000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3101635",
-    "date": 1791849600000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3223135",
-    "date": 1791849600000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3264835",
-    "date": 1791849600000,
-    "reason": "Ny produkt."
-  },
-  {
     "id": "8856103",
     "date": 1791936000000,
     "reason": "Ny produkt."
@@ -782,6 +647,106 @@
   {
     "id": "3738335",
     "date": 1792368000000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "8887303",
+    "date": 1792454400000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "8895601",
+    "date": 1792454400000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "8816601",
+    "date": 1792454400000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "8891501",
+    "date": 1792454400000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "8841103",
+    "date": 1792454400000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "8858434",
+    "date": 1792454400000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "3473603",
+    "date": 1792454400000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "3237303",
+    "date": 1792454400000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "3471903",
+    "date": 1792454400000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "3048203",
+    "date": 1792454400000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "3290732",
+    "date": 1792454400000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "3250735",
+    "date": 1792454400000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "3435634",
+    "date": 1792454400000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "3255235",
+    "date": 1792454400000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "3384132",
+    "date": 1792454400000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "3342435",
+    "date": 1792454400000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "3289335",
+    "date": 1792454400000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "3062235",
+    "date": 1792454400000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "3125335",
+    "date": 1792454400000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "3212035",
+    "date": 1792454400000,
     "reason": "Ny produkt."
   }
 ]
