@@ -1,0 +1,53 @@
+<section class="day{{ ' is-past' if group.is_past }}{{ ' is-next' if group_index == 0 }}" data-date="{{ group.date_str }}" aria-labelledby="h-{{ group.list_id }}">
+    <h2 class="day-stub" id="h-{{ group.list_id }}">
+        <span class="day-date">{{ group.weekday_short }} {{ group.day_month }}</span>
+        <span class="day-relative" data-relative="{{ group.date_str }}">{{ group.relative }}</span>
+        <span class="day-when">{% if group.sell_start and not group.is_past %}{{ group.sell_start }} · {% endif %}<span class="day-count" data-total="{{ group.beers|length }}">{{ group.beers|length }} öl</span></span>
+    </h2>
+
+    <div class="day-lines" id="{{ group.list_id }}">
+        {% for beer in group.beers %}
+        <article class="line" id="beer-{{ beer.productNumber }}" data-id="{{ beer.productNumber }}"
+            data-name="{{ beer.name }}" data-category2="{{ beer.categoryLevel2 }}"
+            data-apk="{{ '%.2f'|format(beer.apk) }}" data-price="{{ '%.2f'|format(beer.price) }}"
+            data-rating="{{ '%.2f'|format(beer.rating) }}" data-date="{{ beer.date_str }}"
+            data-short-date="{{ beer.short_date }}" data-search="{{ beer.search_text }}"
+            data-parent-id="{{ group.list_id }}"{% if group.is_past %} data-past{% endif %}>
+            <button type="button" class="mark" aria-pressed="false" aria-label="Spara {{ beer.name }} i min lista">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.25" /><path class="tick" d="M6.5 10.25l2.4 2.4 4.6-5" /></svg>
+            </button>
+            <button type="button" class="line-main" aria-expanded="false" aria-controls="d-{{ beer.productNumber }}">
+                <span class="col-name">
+                    <span class="line-name">{{ beer.name }}</span>
+                    <span class="line-sub">{% if beer.is_order %}<span class="seg tag" title="Beställningsvara: finns inte på hyllan, beställs till butik">Beställs ·</span> {% endif %}<span class="seg line-date">{{ group.weekday_short|lower }} {{ beer.short_date }} ·</span> <span class="seg">{{ beer.display_category }} ·</span> <span class="seg seg-country">{{ beer.country }} ·</span> <span class="seg num">{{ beer.volumeText }} · {{ beer.abv_text }} %</span></span>
+                </span>
+                <span class="col-num line-price num">{{ beer.price|sek }}</span>
+                <span class="col-num line-apk num{{ ' is-high' if beer.apk_class == 'high' }}"><span class="unit">APK </span>{{ beer.apk|sek }}</span>
+                <span class="col-num line-rating num" data-tier="{{ beer.rating_tier }}">{% if beer.rating > 0 %}<span class="unit">Untappd </span><i class="dot" aria-hidden="true"></i>{{ beer.rating|sek }}{% else %}<span class="none" aria-label="Inget betyg">–</span>{% endif %}</span>
+                <span class="col-num col-nr num">{{ beer.productNumberShort }}</span>
+            </button>
+            <div class="line-detail" id="d-{{ beer.productNumber }}" hidden>
+                <div class="detail-inner">
+                    {% if beer.img_url %}
+                    <div class="detail-image"><img src="{{ beer.img_url }}" loading="lazy" alt="" width="160" height="160" onerror="this.parentNode.hidden=true"></div>
+                    {% endif %}
+                    <div class="detail-text">
+                        {% if beer.taste %}<p class="detail-taste">{{ beer.taste }}</p>{% endif %}
+                        <dl class="detail-facts">
+                            {% if beer.producer %}<div><dt>Bryggeri</dt><dd>{{ beer.producer }}</dd></div>{% endif %}
+                            {% if beer.origin %}<div><dt>Ursprung</dt><dd>{{ beer.origin }}</dd></div>{% endif %}
+                            {% if beer.assortment %}<div><dt>Sortiment</dt><dd>{{ beer.assortment }}</dd></div>{% endif %}
+                            <div><dt>Varunummer</dt><dd class="num">{{ beer.productNumberShort }}</dd></div>
+                            {% if beer.untappd and beer.rating > 0 %}<div><dt>Untappd</dt><dd class="num">{{ beer.rating|sek }} av {{ beer.untappd.rating_count }} betyg</dd></div>{% endif %}
+                        </dl>
+                        <p class="detail-links">
+                            <a href="{{ beer.sys_url }}" target="_blank" rel="noopener">Systembolaget<svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M7 13l6-6M8 7h5v5" /></svg></a>
+                            {% if beer.untappd %}<a href="https://untappd.com/beer/{{ beer.untappd.bid }}" target="_blank" rel="noopener">Untappd<svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M7 13l6-6M8 7h5v5" /></svg></a>{% endif %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</section>

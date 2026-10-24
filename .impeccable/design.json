@@ -1,0 +1,341 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-23T19:10:05+00:00",
+  "title": "Design System: systemet.beer",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Thermal Paper",
+        "canonical": "#F5F5F3",
+        "tonalRamp": [
+          "oklch(15% 0.003 106)",
+          "oklch(25% 0.003 106)",
+          "oklch(38% 0.003 106)",
+          "oklch(50% 0.003 106)",
+          "oklch(62% 0.003 106)",
+          "oklch(74% 0.003 106)",
+          "oklch(86% 0.003 106)",
+          "oklch(95% 0.003 106)"
+        ]
+      },
+      "slip": {
+        "role": "neutral",
+        "displayName": "Slip White",
+        "canonical": "#FFFFFF",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(25% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(50% 0 0)",
+          "oklch(62% 0 0)",
+          "oklch(74% 0 0)",
+          "oklch(86% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Carbon Ink",
+        "canonical": "#111111",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(25% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(50% 0 0)",
+          "oklch(62% 0 0)",
+          "oklch(74% 0 0)",
+          "oklch(86% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Faded Ink",
+        "canonical": "#5C5C5A",
+        "tonalRamp": [
+          "oklch(15% 0.003 107)",
+          "oklch(25% 0.003 107)",
+          "oklch(38% 0.003 107)",
+          "oklch(50% 0.003 107)",
+          "oklch(62% 0.003 107)",
+          "oklch(74% 0.003 107)",
+          "oklch(86% 0.003 107)",
+          "oklch(95% 0.003 107)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "rgba(17, 17, 17, 0.14)"
+      },
+      "rule-strong": {
+        "role": "neutral",
+        "displayName": "Tear Line",
+        "canonical": "rgba(17, 17, 17, 0.9)"
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Saved Violet",
+        "canonical": "#5B4FD6",
+        "tonalRamp": [
+          "oklch(15% 0.199 281)",
+          "oklch(25% 0.199 281)",
+          "oklch(38% 0.199 281)",
+          "oklch(50% 0.199 281)",
+          "oklch(62% 0.199 281)",
+          "oklch(74% 0.199 281)",
+          "oklch(86% 0.199 281)",
+          "oklch(95% 0.199 281)"
+        ]
+      },
+      "accent-ink": {
+        "role": "primary",
+        "displayName": "Violet Ink",
+        "canonical": "#FFFFFF"
+      },
+      "accent-wash": {
+        "role": "primary",
+        "displayName": "Violet Wash",
+        "canonical": "#EDEBFB",
+        "tonalRamp": [
+          "oklch(15% 0.021 292)",
+          "oklch(25% 0.021 292)",
+          "oklch(38% 0.021 292)",
+          "oklch(50% 0.021 292)",
+          "oklch(62% 0.021 292)",
+          "oklch(74% 0.021 292)",
+          "oklch(86% 0.021 292)",
+          "oklch(95% 0.021 292)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "Site name in the masthead only; uppercase."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section heading for past releases; largest type in the system."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Beer names on each ledger line."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Base text; taste notes at 15px with a 68ch measure."
+      },
+      "body-sm": {
+        "displayName": "Body small",
+        "purpose": "Sub-lines, detail facts, buttons, links."
+      },
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "Every comparable number: price, APK, rating, article number. Tabular."
+      },
+      "date-stub": {
+        "displayName": "Date stub",
+        "purpose": "Release day date, uppercase."
+      },
+      "receipt": {
+        "displayName": "Receipt",
+        "purpose": "All Min lista content and day-stub secondary lines."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Column headers, field labels, fact terms; uppercase, never a heading."
+      }
+    },
+    "shadows": [
+      {
+        "name": "slip-rest",
+        "value": "0 1px 2px rgba(17,17,17,0.06), 0 8px 24px -12px rgba(17,17,17,0.18)",
+        "purpose": "Desktop Min lista receipt; the only lifted surface."
+      },
+      {
+        "name": "slip-bar",
+        "value": "0 -8px 24px -12px rgba(17,17,17,0.18)",
+        "purpose": "Collapsed mobile Min lista bar."
+      },
+      {
+        "name": "slip-lifted",
+        "value": "drop-shadow(0 -6px 18px rgba(17,17,17,0.12))",
+        "purpose": "Open mobile slip (filter, over a 92% paper scrim)."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "All state transitions and entrances."
+      },
+      {
+        "name": "unfold",
+        "value": "0.32s ease-out, opacity 0 and 4px rise",
+        "purpose": "Beer detail opening."
+      },
+      {
+        "name": "print",
+        "value": "0.42s ease-out, clip-path reveal from top with violet wash",
+        "purpose": "A line printing onto Min lista."
+      },
+      {
+        "name": "mark-fill",
+        "value": "fill 0.2s, tick stroke-dashoffset 0.3s (0.05s delay), press scale 0.88",
+        "purpose": "Saving a beer."
+      },
+      {
+        "name": "field-hover",
+        "value": "border-color 0.15s",
+        "purpose": "Fields and buttons."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "slip-to-bar",
+        "value": "1180px"
+      },
+      {
+        "name": "rows-restack",
+        "value": "760px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Inked button for the one action in a context (copy list, clear filters).",
+      "html": "<button class=\"ds-btn\">Kopiera listan</button>",
+      "css": ".ds-btn{height:40px;padding:0 16px;border:1px solid var(--ink,#111);border-radius:6px;background:var(--ink,#111);color:var(--paper,#F5F5F3);font-family:var(--sans,'Geist',system-ui,sans-serif);font-weight:500;font-size:14px;cursor:pointer;transition:background .15s}.ds-btn:hover{background:var(--ink-2,#5C5C5A);border-color:var(--ink-2,#5C5C5A)}.ds-btn:focus-visible{outline:2px solid var(--accent,#5B4FD6);outline-offset:2px}"
+    },
+    {
+      "name": "Link Button",
+      "kind": "button",
+      "refersTo": "button-link",
+      "description": "Secondary action as underlined text.",
+      "html": "<button class=\"ds-link\">Töm</button>",
+      "css": ".ds-link{padding:0;border:0;background:none;font-family:var(--sans,'Geist',system-ui,sans-serif);font-size:14px;color:var(--ink,#111);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;cursor:pointer}.ds-link:hover{color:var(--ink-2,#5C5C5A)}.ds-link:focus-visible{outline:2px solid var(--accent,#5B4FD6);outline-offset:2px;border-radius:4px}"
+    },
+    {
+      "name": "Labelled Select",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Filter select with its mono label inside the field.",
+      "html": "<label class=\"ds-field\"><span class=\"ds-field-label\">Stil</span><select><option>Alla</option><option>IPA</option></select></label>",
+      "css": ".ds-field{display:inline-flex;align-items:center;height:40px;border:1px solid var(--rule,rgba(17,17,17,.14));border-radius:6px;background:var(--slip,#fff);transition:border-color .15s;font-family:var(--sans,'Geist',system-ui,sans-serif);color:var(--ink,#111)}.ds-field:hover{border-color:rgba(17,17,17,.35)}.ds-field:focus-within{border-color:var(--ink,#111);outline:2px solid var(--accent,#5B4FD6);outline-offset:2px}.ds-field-label{padding-left:12px;font-family:var(--mono,'Geist Mono',ui-monospace,monospace);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2,#5C5C5A)}.ds-field select{appearance:none;height:38px;width:116px;padding:0 32px 0 8px;border:0;font:inherit;font-size:16px;color:inherit;background:transparent url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='%23111' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 8l4 4 4-4'/%3E%3C/svg%3E\") no-repeat right 10px center/16px;outline:none;cursor:pointer}"
+    },
+    {
+      "name": "Search Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Search with inset stroke magnifier.",
+      "html": "<label class=\"ds-search\"><svg viewBox=\"0 0 20 20\" aria-hidden=\"true\"><circle cx=\"8.5\" cy=\"8.5\" r=\"5.75\"/><path d=\"M13 13l4.25 4.25\"/></svg><input type=\"search\" placeholder=\"Sök öl, bryggeri, stil eller nr\"></label>",
+      "css": ".ds-search{position:relative;display:flex;align-items:center;width:340px;height:40px;border:1px solid var(--rule,rgba(17,17,17,.14));border-radius:6px;background:var(--slip,#fff);transition:border-color .15s}.ds-search:hover{border-color:rgba(17,17,17,.35)}.ds-search:focus-within{border-color:var(--ink,#111);outline:2px solid var(--accent,#5B4FD6);outline-offset:2px}.ds-search svg{position:absolute;left:11px;top:9px;width:20px;height:20px;fill:none;stroke:var(--ink-2,#5C5C5A);stroke-width:1.5;stroke-linecap:round}.ds-search input{width:100%;height:38px;padding:0 12px 0 38px;border:0;background:transparent;font-family:var(--sans,'Geist',system-ui,sans-serif);font-size:16px;color:var(--ink,#111);outline:none}.ds-search input::placeholder{color:var(--ink-2,#5C5C5A)}"
+    },
+    {
+      "name": "Beer Line",
+      "kind": "custom",
+      "refersTo": "beer-line",
+      "description": "One beer per receipt line: mark ring, name and sub-line, right-aligned tabular figures.",
+      "html": "<div class=\"ds-line\"><button class=\"ds-mark\" aria-pressed=\"false\" onclick=\"this.setAttribute('aria-pressed',this.getAttribute('aria-pressed')!=='true');this.parentNode.classList.toggle('is-saved')\"><svg viewBox=\"0 0 20 20\"><circle cx=\"10\" cy=\"10\" r=\"7.25\"/><path class=\"ds-tick\" d=\"M6.5 10.25l2.4 2.4 4.6-5\"/></svg></button><div class=\"ds-main\"><span><span class=\"ds-name\">Bryggverket Barley Wine</span><span class=\"ds-sub\">Barley wine · Sverige · <span class=\"ds-num\">330 ml · 12 %</span></span></span><span class=\"ds-num ds-col\">50,00</span><span class=\"ds-num ds-col\">0,79</span><span class=\"ds-num ds-col\"><i class=\"ds-dot\"></i>3,65</span><span class=\"ds-num ds-col ds-nr\">13449</span></div></div>",
+      "css": ".ds-line{display:grid;grid-template-columns:28px minmax(0,1fr);column-gap:10px;border-bottom:1px dotted var(--rule,rgba(17,17,17,.14));font-family:var(--sans,'Geist',system-ui,sans-serif);color:var(--ink,#111);width:640px}.ds-mark{width:28px;height:44px;display:grid;place-items:center;padding:0;border:0;background:none;color:var(--ink,#111);cursor:pointer}.ds-mark svg{width:20px;height:20px;fill:transparent;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;transition:fill .2s cubic-bezier(.16,1,.3,1),stroke .2s,transform .25s cubic-bezier(.16,1,.3,1)}.ds-tick{stroke:#fff;stroke-width:1.75;stroke-dasharray:12;stroke-dashoffset:12;transition:stroke-dashoffset .3s cubic-bezier(.16,1,.3,1) .05s}.ds-mark:hover svg{stroke:var(--accent,#5B4FD6)}.ds-mark:active svg{transform:scale(.88)}.ds-mark:focus-visible{outline:2px solid var(--accent,#5B4FD6);outline-offset:2px;border-radius:4px}.ds-mark[aria-pressed=true] svg{fill:var(--accent,#5B4FD6);stroke:var(--accent,#5B4FD6)}.ds-mark[aria-pressed=true] .ds-tick{stroke-dashoffset:0}.ds-main{display:grid;grid-template-columns:minmax(0,1fr) 92px 64px 84px 68px;column-gap:16px;align-items:baseline;padding:11px 0}.ds-name{display:block;font-weight:500}.ds-main:hover .ds-name{text-decoration:underline;text-decoration-color:var(--ink-2,#5C5C5A)}.is-saved .ds-name{color:var(--accent,#5B4FD6)}.ds-sub{display:block;font-size:14px;color:var(--ink-2,#5C5C5A)}.ds-num{font-family:var(--mono,'Geist Mono',ui-monospace,monospace);font-variant-numeric:tabular-nums;letter-spacing:-.01em}.ds-sub .ds-num{font-size:13px}.ds-col{text-align:right;font-size:15px;white-space:nowrap}.ds-nr{color:var(--ink-2,#5C5C5A)}.ds-dot{display:inline-block;width:9px;height:9px;margin-right:6px;vertical-align:1px;border-radius:50%;background:radial-gradient(circle,var(--ink,#111) 2.5px,transparent 3px)}"
+    },
+    {
+      "name": "Rating Dot Ramp",
+      "kind": "custom",
+      "refersTo": "beer-line",
+      "description": "Fixed three-step Untappd dot: 3.50+, 3.75+, 4.00+.",
+      "html": "<span class=\"ds-r\" data-tier=\"1\"><i></i>3,52</span> <span class=\"ds-r\" data-tier=\"2\"><i></i>3,80</span> <span class=\"ds-r\" data-tier=\"3\"><i></i>4,12</span> <span class=\"ds-r\">3,21</span>",
+      "css": ".ds-r{font-family:var(--mono,'Geist Mono',ui-monospace,monospace);font-variant-numeric:tabular-nums;font-size:15px;color:var(--ink,#111);margin-right:20px}.ds-r i{display:inline-block;width:9px;height:9px;margin-right:6px;vertical-align:1px;border-radius:50%}[data-tier='1'] i{background:radial-gradient(circle,var(--ink,#111) 2.5px,transparent 3px)}[data-tier='2'] i{background:radial-gradient(circle,var(--ink,#111) 3.5px,transparent 4px)}[data-tier='3'] i{background:var(--ink,#111)}[data-tier='3']{font-weight:600}"
+    },
+    {
+      "name": "Day Stub",
+      "kind": "custom",
+      "refersTo": "day-stub",
+      "description": "Mono date block on the day thread; the next release day's ring is filled.",
+      "html": "<div class=\"ds-day\"><div class=\"ds-stub\"><span class=\"ds-date\">FRE 30 OKT</span><span class=\"ds-rel\">Om 7 dagar</span><span>10:00 · 11 öl</span></div><div class=\"ds-lines\"></div></div>",
+      "css": ".ds-day{display:grid;grid-template-columns:148px 360px;column-gap:28px;position:relative;min-height:96px}.ds-day::before{content:'';position:absolute;left:4px;top:0;bottom:0;border-left:1px solid var(--rule,rgba(17,17,17,.14))}.ds-stub{position:relative;display:grid;gap:2px;align-content:start;padding:14px 0 18px 20px;font-family:var(--mono,'Geist Mono',ui-monospace,monospace);font-size:13px;line-height:1.4;color:var(--ink-2,#5C5C5A)}.ds-stub::before{content:'';position:absolute;left:0;top:19px;width:9px;height:9px;border-radius:50%;background:var(--ink,#111);border:1px solid var(--ink,#111);box-sizing:border-box}.ds-date{color:var(--ink,#111);font-size:15px;font-weight:600;letter-spacing:.02em}.ds-rel{color:var(--ink,#111)}.ds-lines{border-top:1px dashed var(--rule-strong,rgba(17,17,17,.9))}"
+    },
+    {
+      "name": "Detail Link",
+      "kind": "chip",
+      "refersTo": "detail-link",
+      "description": "Outlined slip pill linking out to Systembolaget or Untappd.",
+      "html": "<a class=\"ds-pill\" href=\"#\">Systembolaget<svg viewBox=\"0 0 20 20\" aria-hidden=\"true\"><path d=\"M7 13l6-6M8 7h5v5\"/></svg></a>",
+      "css": ".ds-pill{display:inline-flex;align-items:center;gap:4px;height:36px;padding:0 10px 0 12px;border:1px solid var(--rule,rgba(17,17,17,.14));border-radius:6px;background:var(--slip,#fff);font-family:var(--sans,'Geist',system-ui,sans-serif);font-size:14px;font-weight:500;color:var(--ink,#111);text-decoration:none}.ds-pill:hover{border-color:var(--ink,#111)}.ds-pill:focus-visible{outline:2px solid var(--accent,#5B4FD6);outline-offset:2px}.ds-pill svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}"
+    },
+    {
+      "name": "Min lista Slip",
+      "kind": "card",
+      "refersTo": "slip",
+      "description": "The visitor's receipt: the only lifted surface, with a torn bottom edge.",
+      "html": "<div class=\"ds-slip\"><h2 class=\"ds-slip-title\">Min lista</h2><p class=\"ds-slip-note\">Sparas i den här webbläsaren</p><div class=\"ds-slip-day\">FRE 23 OKT</div><div class=\"ds-slip-line\"><span>Bryggverket Barley Wine</span><span>50,00</span></div><div class=\"ds-slip-day\">TIS 27 OKT</div><div class=\"ds-slip-line\"><span>3 Fonteinen Oude Wintergeuze</span><span>129,90</span></div><div class=\"ds-slip-total\"><span>2 st</span><span>179,90 kr</span></div></div>",
+      "css": ".ds-slip{width:320px;background:var(--slip,#fff);padding:24px 22px 30px;font-family:var(--mono,'Geist Mono',ui-monospace,monospace);font-size:13px;color:var(--ink,#111);box-shadow:0 1px 2px rgba(17,17,17,.06),0 8px 24px -12px rgba(17,17,17,.18);-webkit-mask:linear-gradient(#000,#000) top/100% calc(100% - 8px) no-repeat,conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/12px 8px repeat-x;mask:linear-gradient(#000,#000) top/100% calc(100% - 8px) no-repeat,conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/12px 8px repeat-x}.ds-slip-title{margin:0;font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;text-align:center}.ds-slip-note{margin:2px 0 16px;text-align:center;font-size:12px;color:var(--ink-2,#5C5C5A)}.ds-slip-day{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2,#5C5C5A);padding:10px 0 4px;border-top:1px dashed var(--rule,rgba(17,17,17,.14))}.ds-slip-day:first-of-type{border-top:0;padding-top:0}.ds-slip-line{display:flex;justify-content:space-between;gap:8px;padding:3px 0}.ds-slip-line:hover span:first-child{text-decoration:underline}.ds-slip-total{display:flex;justify-content:space-between;margin-top:12px;padding-top:12px;border-top:1px dashed var(--rule-strong,rgba(17,17,17,.9));font-size:15px;font-weight:600}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Kvittot (The Receipt)",
+    "overview": "**Creative North Star: \"Kvittot\" (The Receipt)**\n\nThe whole release calendar reads as one long, quiet till receipt: thermal-paper ground, carbon ink, figures set in a monospace that lines up like a printout. The visitor reads top to bottom through every coming release day in a single scroll; days are torn off by dashed rules, lines are separated by dotted hairlines, and a thin vertical thread runs down the left through every day's date stub. Nothing is boxed into a card. The only object that sits above the paper is the visitor's own receipt, Min lista, which totals what they have marked.\n\nDensity is ledger-like: one beer per line, name and style on the left, price, APK, Untappd and article number in right-aligned tabular columns. Hierarchy comes from weight and from the ink/grey split, never from size jumps or colour. Colour is almost absent: two values (paper and ink), one grey for everything secondary, and one violet that means \"you saved this\". Past releases do not disappear; they print grey.\n\nThe site is an unofficial fan site and must never borrow Systembolaget's visual identity; the receipt world is deliberately its own.",
+    "keyCharacteristics": [
+      "Two values plus one grey plus one accent; the accent marks what the visitor saved.",
+      "Geist for names and prose, Geist Mono for every figure, date and label, always tabular.",
+      "Dashed rules divide days and sections; dotted hairlines divide lines.",
+      "Flat paper everywhere; the only shadow belongs to the Min lista slip.",
+      "Ratings read on a fixed three-step dot ramp, not stars or colour.",
+      "Past releases print grey and stay in the list."
+    ],
+    "rules": [
+      {
+        "name": "The Two Values Rule",
+        "body": "Content is ink or faded ink on paper. A third tone appears only as the violet accent, and only for something the visitor did.",
+        "section": "colors"
+      },
+      {
+        "name": "The Saved Is Violet Rule",
+        "body": "Violet means \"mine\". Never use it for a category, a high APK, a good rating or a link; those are carried by weight and the dot ramp.",
+        "section": "colors"
+      },
+      {
+        "name": "The Every Figure Is Mono Rule",
+        "body": "Any number a visitor compares (price, APK, rating, volume, ABV, count, article number, time) is set in Geist Mono with tabular figures, so columns line up like a printout.",
+        "section": "typography"
+      },
+      {
+        "name": "The Weight Not Size Rule",
+        "body": "Emphasis is weight (500 for names, 600 for dates, totals, high APK of 0,80+ and top-tier ratings), not a bigger size or a colour.",
+        "section": "typography"
+      },
+      {
+        "name": "The Label Floor Rule",
+        "body": "Uppercase mono labels stop at 11px; they name a column or field and never introduce a heading.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Slip Rule",
+        "body": "Only the visitor's receipt casts a shadow or has a torn edge. Nothing in the ledger is lifted, and no other surface borrows the torn edge.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do set every comparable figure in Geist Mono with tabular numerals, right-aligned in its column.",
+      "Do divide release days with a 1px dashed tear-line rule and lines with a 1px dotted hairline.",
+      "Do keep violet for the visitor's own marks and the focus ring, selection and caret.",
+      "Do print past releases in faded ink rather than hiding them.",
+      "Do carry emphasis with weight (500 / 600), not size or colour.",
+      "Do ease motion with cubic-bezier(0.16, 1, 0.3, 1) and drop all animation under prefers-reduced-motion.",
+      "Do use 20px stroked line icons (1.5px stroke, round caps) drawn as inline SVG."
+    ],
+    "donts": [
+      "Don't put beers in cards, tiles or a grid; every beer is a line on the receipt.",
+      "Don't cast shadows or tear edges on anything but the Min lista slip.",
+      "Don't use violet for ratings, APK, categories or links.",
+      "Don't split release days into tabs or a day menu; all days read in one scroll.",
+      "Don't borrow Systembolaget's colours, logo or typography.",
+      "Don't use stars or colour scales for Untappd ratings; use the three-step dot ramp."
+    ]
+  }
+}

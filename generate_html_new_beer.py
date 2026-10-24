@@ -42,6 +42,54 @@ SWEDISH_MONTHS = {
     7: 'Jul', 8: 'Aug', 9: 'Sep', 10: 'Okt', 11: 'Nov', 12: 'Dec'
 }
 
+SWEDISH_WEEKDAYS_SHORT = {
+    'Monday': 'Mån', 'Tuesday': 'Tis', 'Wednesday': 'Ons', 'Thursday': 'Tor',
+    'Friday': 'Fre', 'Saturday': 'Lör', 'Sunday': 'Sön'
+}
+
+ORDER_ASSORTMENT = "Ordervaror"
+
+
+def format_sek(value: float, decimals: int = 2) -> str:
+    """Format a number the Swedish way: 1 234,50"""
+    try:
+        formatted = f"{float(value):,.{decimals}f}"
+    except (TypeError, ValueError):
+        return ""
+    return formatted.replace(",", "\u00a0").replace(".", ",")
+
+
+def format_abv(value: float) -> str:
+    """5.0 -> '5', 6.5 -> '6,5'"""
+    if not value:
+        return "0"
+    return f"{value:g}".replace(".", ",")
+
+
+def get_rating_tier(score: float) -> int:
+    """Fixed dot ramp for Untappd scores: 0 (none) to 3 (standout)."""
+    if score >= 4.0:
+        return 3
+    if score >= 3.75:
+        return 2
+    if score >= 3.5:
+        return 1
+    return 0
+
+
+def relative_day_label(launch_date, today) -> str:
+    """Human label relative to today: 'I dag', 'I morgon', 'Om 6 dagar', 'För 3 dagar sedan'"""
+    delta = (launch_date - today).days
+    if delta == 0:
+        return "I dag"
+    if delta == 1:
+        return "I morgon"
+    if delta == -1:
+        return "I går"
+    if delta > 1:
+        return f"Om {delta} dagar"
+    return f"För {-delta} dagar sedan"
+
 
 def calculate_apk(beer: Dict[str, Any]) -> float:
     """Calculate Alcohol Per Krona (ml pure alcohol per krona)"""
@@ -81,10 +129,21 @@ def prepare_beer_view_model(beer: Dict[str, Any]) -> Dict[str, Any]:
     # URLs
     sys_url = f"{SYSTEMBOLAGET_BASE_URL}/{beer.get('productNumber')}" if product_number != 'N/A' else SYSTEMBOLAGET_BASE_URL
     img_url = f"{SYSTEMBOLAGET_IMAGE_BASE_URL}/{product_id}/{product_id}_400.webp" if product_id else ""
-    
+
+    producer = beer.get('producerName') or ''
+    country = beer.get('country') or ''
+    origin = ", ".join(x for x in [beer.get('originLevel1'), country] if x)
+    assortment = beer.get('assortmentText') or ''
+    untappd_data = beer.get('untappd')
+    rating = untappd_data.get('rating_score', 0) if untappd_data else 0
+    launch_date = beer.get('launch_date_obj')
+
+    search_text = " ".join([name, producer, cat2, cat3, country, product_number, str(beer.get('productNumberShort') or '')]).lower()
+
     return {
         "name": name,
         "productNumber": product_number,
+        "productNumberShort": str(beer.get('productNumberShort') or product_number),
         "productId": product_id,
         "price": beer.get('price', 0),
         "alcoholPercentage": beer.get('alcoholPercentage', 0),
@@ -95,7 +154,20 @@ def prepare_beer_view_model(beer: Dict[str, Any]) -> Dict[str, Any]:
         "apk_class": get_apk_class(apk),
         "sys_url": sys_url,
         "img_url": img_url,
-        "untappd": beer.get('untappd'), # Pass whole dict or None
+        "untappd": untappd_data, # Pass whole dict or None
+        "rating": rating,
+        "rating_tier": get_rating_tier(rating),
+        "producer": producer,
+        "country": country,
+        "origin": origin,
+        "assortment": assortment,
+        "is_order": assortment == ORDER_ASSORTMENT,
+        "taste": beer.get('taste') or '',
+        "usage": beer.get('usage') or '',
+        "abv_text": format_abv(beer.get('alcoholPercentage', 0)),
+        "date_str": launch_date.strftime('%Y-%m-%d') if launch_date else '',
+        "short_date": f"{launch_date.day} {SWEDISH_MONTHS.get(launch_date.month, '').lower()}" if launch_date else '',
+        "search_text": search_text,
     }
 
 
@@ -241,27 +313,45 @@ def filter_upcoming_launches() -> None:
             list_id = f"list-{date_str}"
             
             is_past = launch_date < today.date()
-            
+
+            # Most common sell start time, e.g. "10:00"
+            start_times = [b.get('sellStartTime') for b in group_beers_raw if b.get('sellStartTime')]
+            sell_start = max(set(start_times), key=start_times.count)[:5] if start_times else ""
+
             date_groups.append({
                 "date_obj": launch_date,
                 "date_str": date_str,
                 "friendly_date": friendly_date,
+                "weekday_short": SWEDISH_WEEKDAYS_SHORT.get(weekday_english, weekday_english[:3]),
+                "day_month": f"{day} {month}",
+                "relative": relative_day_label(launch_date, today.date()),
+                "sell_start": sell_start,
                 "list_id": list_id,
                 "is_past": is_past,
                 "beers": group_beers_view
             })
-            
+
+        upcoming_groups = [g for g in date_groups if not g["is_past"]]
+        past_groups = list(reversed([g for g in date_groups if g["is_past"]]))
+
         sorted_categories = sorted(list(categories_set))
         
         # JINJA2 RENDERING
-        env = jinja2.Environment(loader=jinja2.FileSystemLoader(TEMPLATE_DIR))
+        env = jinja2.Environment(loader=jinja2.FileSystemLoader(TEMPLATE_DIR), autoescape=True)
+        env.filters["sek"] = format_sek
         template = env.get_template(TEMPLATE_FILE)
-        
+
+        end_date = two_weeks_forward.date()
         context = {
             "today": today.date(),
-            "end_date": two_weeks_forward.date(),
+            "end_date": end_date,
+            "range_text": f"{today.day} {SWEDISH_MONTHS[today.month].lower()} – {end_date.day} {SWEDISH_MONTHS[end_date.month].lower()}",
             "categories": sorted_categories,
             "date_groups": date_groups,
+            "upcoming_groups": upcoming_groups,
+            "past_groups": past_groups,
+            "upcoming_count": sum(len(g["beers"]) for g in upcoming_groups),
+            "past_count": sum(len(g["beers"]) for g in past_groups),
             "generated_time": datetime.now().strftime('%Y-%m-%d %H:%M')
         }
         

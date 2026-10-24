@@ -33,9 +33,11 @@ This is a two-step pipeline that runs daily via GitHub Actions (`.github/workflo
 
 - **`untappd.py`** — Wraps Algolia search against Untappd's beer index. Results are cached in `data/untappd_mapping.json` keyed by `productNumber` to avoid repeat API calls. Returns `None` for no-match (also cached to avoid re-querying).
 
-- **`templates/index.html`** — Jinja2 template. Receives `today`, `end_date`, `categories` (list of strings), `date_groups` (list of dicts with `date_str`, `friendly_date`, `list_id`, `is_past`, and `beers`), and `generated_time`.
+- **`templates/index.html`** — Jinja2 template (autoescaped, `sek` filter formats numbers as `34,90`). Receives `range_text`, `categories`, `upcoming_groups` (today and later, ascending), `past_groups` (descending), `upcoming_count`, `past_count`, and `generated_time`. Each group (dict with `date_str`, `weekday_short`, `day_month`, `relative`, `sell_start`, `list_id`, `is_past`, `beers`) is rendered by the partial **`templates/day.html`**.
 
-- **`docs/script.js`** — Client-side filtering (by category and APK range) and sorting (by date, Untappd rating, APK, price). Sorting across all dates moves cards into `#global-beer-list`; switching back to date sort restores them to their original `data-parent-id` containers.
+- **`docs/script.js`** — Client-side search and filtering (style, minimum APK, minimum Untappd), sorting (date, Untappd, APK, price), expandable beer details, and the "Min lista" watchlist stored in `localStorage` (`systemet.list.v1`) with a running total. Non-date sorts move upcoming rows into `#global-beer-list`; date sort restores them to their `data-parent-id` containers.
+
+- **Design** — see `PRODUCT.md` and the direction contract in `.impeccable/surfaces/`. The look is a quiet receipt: paper ground, ink, one violet accent reserved for saved beers.
 
 ### Data flow for a beer card
 

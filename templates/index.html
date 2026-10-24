@@ -4,141 +4,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Systemet - Kommande ölsläpp ({{ today }} — {{ end_date }})</title>
+    <title>Kommande ölsläpp · systemet.beer</title>
+    <meta name="description" content="Alla kommande ölsläpp på Systembolaget de närmaste två veckorna, med pris, APK och Untappd-betyg.">
+    <meta name="theme-color" content="#F5F5F3">
     <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍺</text></svg>">
-    <link rel="stylesheet" href="styles.css">
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%23111%22/><circle cx=%2216%22 cy=%2216%22 r=%227%22 fill=%22none%22 stroke=%22%23F5F5F3%22 stroke-width=%223%22/></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400..700&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
-        <div class="header-content">
-            <div class="header-branding">
-                <h1>Systemet — Kommande Ölsläpp</h1>
-                <div class="date-range">{{ today }} — {{ end_date }}</div>
+    <div class="page">
+        <header class="masthead">
+            <div class="masthead-title">
+                <a class="wordmark" href="./">systemet.beer</a>
+                <h1>Kommande ölsläpp</h1>
+                <p class="masthead-sub">{{ range_text }} · <span class="num">{{ upcoming_count }}</span> öl på {{ upcoming_groups|length }} släppdagar</p>
             </div>
 
-            <div class="filter-panel">
-                <div class="filter-group">
-                    <label class="filter-label">Kategori</label>
-                    <select id="category-select" class="filter-select" onchange="window.filterBeers()">
-                        <option value="">Alla kategorier</option>
+            <form class="toolbar" role="search" onsubmit="return false">
+                <label class="field field-search">
+                    <span class="visually-hidden">Sök</span>
+                    <svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.75" /><path d="M13 13l4.25 4.25" /></svg>
+                    <input id="search" type="search" placeholder="Sök öl, bryggeri, stil eller nr" autocomplete="off">
+                </label>
+                <label class="field">
+                    <span class="field-label">Stil</span>
+                    <select id="category-select">
+                        <option value="">Alla</option>
                         {% for cat in categories %}
                         <option value="{{ cat }}">{{ cat }}</option>
                         {% endfor %}
                     </select>
-                </div>
-
-                <div class="filter-group">
-                    <label class="filter-label">APK Filter</label>
-                    <select id="apk-select" class="filter-select" onchange="window.filterBeers()">
-                        <option value="all">Alla Nivåer</option>
-                        <option value="over_2">APK &gt; 2.0 (Topp)</option>
-                        <option value="1.5_2">1.5 - 2.0 (Bra)</option>
-                        <option value="1_1.5">1.0 - 1.5 (Ok)</option>
-                        <option value="under_1">Under 1.0 (Låg)</option>
+                </label>
+                <label class="field">
+                    <span class="field-label">APK</span>
+                    <select id="apk-select">
+                        <option value="0">Alla</option>
+                        <option value="0.5">0,50+</option>
+                        <option value="0.7">0,70+</option>
+                        <option value="0.9">0,90+</option>
                     </select>
-                </div>
-
-                <div class="filter-group">
-                    <label class="filter-label">Sortering</label>
-                    <select id="sort-select" class="filter-select" onchange="window.sortBeers()">
-                        <option value="date">Standard</option>
-                        <option value="rating_desc">Betyg (Högst)</option>
-                        <option value="apk_desc">APK (Högst)</option>
-                        <option value="price_asc">Pris (Lägst)</option>
+                </label>
+                <label class="field">
+                    <span class="field-label">Untappd</span>
+                    <select id="rating-select">
+                        <option value="0">Alla</option>
+                        <option value="3.5">3,50+</option>
+                        <option value="3.75">3,75+</option>
+                        <option value="4">4,00+</option>
                     </select>
-                </div>
-            </div>
-        </div>
-    </header>
+                </label>
+                <label class="field">
+                    <span class="field-label">Sortera</span>
+                    <select id="sort-select">
+                        <option value="date">Datum</option>
+                        <option value="rating_desc">Untappd</option>
+                        <option value="apk_desc">APK</option>
+                        <option value="price_asc">Pris</option>
+                    </select>
+                </label>
+            </form>
+        </header>
 
-    <div class="container">
-
-        {% for group in date_groups %}
-        <div class="date-section {{ 'past-release' if group.is_past else '' }} {{ 'hidden' if group.is_hidden else '' }}"
-            data-date="{{ group.date_str }}">
-            <div class="date-header {{ '' if group.is_past else 'active' }}" onclick="toggleDateSection(this)"
-                data-target="{{ group.list_id }}">
-                <span>📅 {{ group.friendly_date }}</span>
-                <div class="header-right">
-                    <span class="beer-count">{{ group.beers|length }} öl</span>
-                    <span class="accordion-icon">▼</span>
-                </div>
-            </div>
-
-            <div class="beer-list" id="{{ group.list_id }}" {% if group.is_past %}style="display: none;" {% endif %}>
-                {% for beer in group.beers %}
-                <div class="beer-card" data-category2="{{ beer.categoryLevel2 }}"
-                    data-apk="{{ '%.2f'|format(beer.apk) }}" data-price="{{ '%.2f'|format(beer.price) }}"
-                    data-rating="{{ '%.2f'|format(beer.untappd.rating_score) if beer.untappd else '0.00' }}"
-                    data-parent-id="{{ group.list_id }}">
-
-                    {% if beer.untappd and beer.untappd.rating_score > 0 %}
-                    <a href="https://untappd.com/beer/{{ beer.untappd.bid }}" target="_blank" rel="noopener"
-                        class="badge-untappd" onclick="event.stopPropagation();">
-                        <img src="untappd_16x16.png" class="untappd-icon" alt="U">
-                        <span>{{ '%.2f'|format(beer.untappd.rating_score) }}</span>
-                        <span style="opacity:0.7; font-weight:400">
-                            {% if beer.untappd.rating_count >= 1000 %}
-                            ({{ '%.1f'|format(beer.untappd.rating_count/1000) }}k)
-                            {% else %}
-                            ({{ beer.untappd.rating_count }})
-                            {% endif %}
-                        </span>
-                    </a>
-                    {% endif %}
-
-                    <div class="badge-apk {{ beer.apk_class }}">APK {{ '%.2f'|format(beer.apk) }}</div>
-
-                    <a href="{{ beer.sys_url }}" target="_blank" rel="noopener" class="card-link">
-                        <div class="image-container">
-                            {% if beer.img_url %}
-                            <img src="{{ beer.img_url }}" alt="{{ beer.name }}" class="beer-image" loading="lazy"
-                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                            {% endif %}
-                            <div class="beer-image-placeholder" {% if beer.img_url %}style="display: none;" {% endif %}>
-                                🍺</div>
-                        </div>
-
-                        <div class="card-content">
-                            <div class="beer-category">{{ beer.display_category }}</div>
-                            <div class="beer-name" title="{{ beer.name }}">{{ beer.name }}</div>
-
-                            <div class="product-meta">
-                                <div class="price-row">
-                                    <span class="price">{{ '%.2f'|format(beer.price) }} kr</span>
-                                </div>
-                                <div class="specs">
-                                    <span>{{ beer.alcoholPercentage }}%</span> •
-                                    <span>{{ beer.volumeText }}</span> •
-                                    <span>#{{ beer.productNumber }}</span>
-                                </div>
+        <div class="layout">
+            <main class="ledger" id="ledger">
+                <div class="day ledger-head" aria-hidden="true">
+                    <span class="day-stub">Släpp</span>
+                    <div class="day-lines">
+                        <div class="line">
+                            <span class="mark-spacer"></span>
+                            <div class="line-main">
+                                <span class="col-name">Öl</span>
+                                <span class="col-num">Pris</span>
+                                <span class="col-num">APK</span>
+                                <span class="col-num">Untappd</span>
+                                <span class="col-num col-nr">Nr</span>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
-                {% endfor %}
-            </div>
+
+                <p class="filter-status" id="filter-status" hidden>
+                    <span id="filter-count"></span>
+                    <button type="button" class="link-button" id="clear-filters">Rensa filter</button>
+                </p>
+
+                <div id="upcoming">
+                    {% for group in upcoming_groups %}
+                    {% set group_index = loop.index0 %}
+                    {% include 'day.html' %}
+                    {% endfor %}
+                </div>
+
+                <div id="global-beer-list" class="day-lines global-list" hidden></div>
+
+                <div class="empty-state" id="empty-state" hidden>
+                    <p><strong>Inga öl matchar.</strong> Prova en annan stil, ett lägre APK eller en kortare sökning.</p>
+                    <button type="button" class="button" id="empty-clear">Rensa filter</button>
+                </div>
+
+                {% if past_groups %}
+                <section class="past" id="past" aria-labelledby="past-title">
+                    <h2 class="past-title" id="past-title">Redan släppta <span class="num">{{ past_count }}</span></h2>
+                    {% for group in past_groups %}
+                    {% set group_index = -1 %}
+                    {% include 'day.html' %}
+                    {% endfor %}
+                </section>
+                {% endif %}
+
+                <footer class="colophon">
+                    <p>Uppdaterad {{ generated_time }}. Data från Systembolaget, betyg från Untappd.</p>
+                    <p>APK = milliliter ren alkohol per krona. Inofficiell sajt, inte kopplad till Systembolaget.</p>
+                </footer>
+            </main>
+
+            <aside class="slip" id="slip" aria-labelledby="slip-title">
+                <button type="button" class="slip-toggle" id="slip-toggle" aria-expanded="false" aria-controls="slip-body">
+                    <span class="slip-toggle-label">Min lista</span>
+                    <span class="slip-toggle-sum num" id="slip-toggle-sum">0 st</span>
+                    <svg class="icon chevron" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 12.5l5-5 5 5" /></svg>
+                </button>
+                <div class="slip-body" id="slip-body">
+                    <div class="slip-paper">
+                        <h2 class="slip-title" id="slip-title">Min lista</h2>
+                        <p class="slip-note">Sparas i den här webbläsaren</p>
+                        <div class="slip-lines" id="slip-lines" aria-live="polite"></div>
+                        <p class="slip-empty" id="slip-empty">Tryck på ringen vid en öl för att lägga den här. Listan summerar vad det kostar.</p>
+                        <div class="slip-total" id="slip-total" hidden>
+                            <span id="slip-count" class="num">0 st</span>
+                            <span id="slip-sum" class="num">0,00 kr</span>
+                        </div>
+                        <div class="slip-actions" id="slip-actions" hidden>
+                            <button type="button" class="button" id="slip-copy">Kopiera listan</button>
+                            <button type="button" class="link-button" id="slip-clear">Töm</button>
+                        </div>
+                    </div>
+                </div>
+            </aside>
         </div>
-        {% endfor %}
-
-        <!-- Global container for sorting -->
-        <div id="global-beer-list" class="beer-list" style="display:none;"></div>
-
     </div>
 
-    <footer>
-        <div class="footer-info">
-            Genererad {{ generated_time }} <br>
-            APK = Alkohol per krona (ml ren alkohol/kr)
-        </div>
-    </footer>
     {% include 'analytics.html' %}
-
     <script src="script.js"></script>
 </body>
 
