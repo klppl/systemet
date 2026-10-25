@@ -19348,5 +19348,186 @@
     "rating_count": 56647,
     "beer_slug": "brouwerij-de-halve-maan-brugse-bok",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-40277_fd262_sm.jpeg"
-  }
+  },
+  "109632": {
+    "bid": 14564,
+    "beer_name": "Franziskaner Premium Weissbier Naturtrüb",
+    "brewery_name": "Spaten-Franziskaner-Löwenbräu-Gruppe",
+    "rating_score": 3.69,
+    "rating_count": 470847,
+    "beer_slug": "spaten-franziskaner-lowenbrau-gruppe-franziskaner-premium-weissbier",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-14564_16384_sm.jpeg"
+  },
+  "144632": {
+    "bid": 52933,
+    "beer_name": "Kung",
+    "brewery_name": "Åbro Bryggeri",
+    "rating_score": 2.5,
+    "rating_count": 14703,
+    "beer_slug": "abro-bryggeri-kung",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-52933_112e2_sm.jpeg"
+  },
+  "109435": {
+    "bid": 9387,
+    "beer_name": "Train Wreck",
+    "brewery_name": "Mountain Town Brewing Company",
+    "rating_score": 3.52,
+    "rating_count": 19363,
+    "beer_slug": "mountain-town-brewing-company-train-wreck",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-9387_4441b_sm.jpeg"
+  },
+  "162532": {
+    "bid": 52923,
+    "beer_name": "Fem Komma Tvåan",
+    "brewery_name": "Åbro Bryggeri",
+    "rating_score": 2.66,
+    "rating_count": 22908,
+    "beer_slug": "abro-bryggeri-fem-komma-tvaan",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-52923_03200_sm.jpeg"
+  },
+  "144835": {
+    "bid": 5732530,
+    "beer_name": "The Bäär / The Bear",
+    "brewery_name": "Åbro Bryggeri",
+    "rating_score": 2.85,
+    "rating_count": 25704,
+    "beer_slug": "abro-bryggeri-the-bear",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5732530_d048c_sm.jpeg"
+  },
+  "156832": {
+    "bid": 52932,
+    "beer_name": "Sju Komma Tvåan",
+    "brewery_name": "Åbro Bryggeri",
+    "rating_score": 2.61,
+    "rating_count": 6758,
+    "beer_slug": "abro-bryggeri-sju-komma-tvaan",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-52932_38686_sm.jpeg"
+  },
+  "162535": {
+    "bid": 52923,
+    "beer_name": "Fem Komma Tvåan",
+    "brewery_name": "Åbro Bryggeri",
+    "rating_score": 2.66,
+    "rating_count": 22908,
+    "beer_slug": "abro-bryggeri-fem-komma-tvaan",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-52923_03200_sm.jpeg"
+  },
+  "103232": {
+    "bid": 6170913,
+    "beer_name": "Pelles Pilsner",
+    "brewery_name": "Åbro Bryggeri",
+    "rating_score": 2.82,
+    "rating_count": 9905,
+    "beer_slug": "abro-bryggeri-pelles-pilsner",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6170913_db3e5_sm.jpeg"
+  },
+  "144435": {
+    "bid": 52935,
+    "beer_name": "Lejon",
+    "brewery_name": "Åbro Bryggeri",
+    "rating_score": 2.66,
+    "rating_count": 12623,
+    "beer_slug": "abro-bryggeri-lejon",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-52935_4309f_sm.jpeg"
+  },
+  "156432": {
+    "bid": 3791438,
+    "beer_name": "Grosshandlarens Premium Lager",
+    "brewery_name": "Beer & Spiritpartners",
+    "rating_score": 2.96,
+    "rating_count": 17328,
+    "beer_slug": "beer-and-spiritpartners-grosshandlarens-premium-lager",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3791438_13618_sm.jpeg"
+  },
+  "1133332": {
+    "bid": 14564,
+    "beer_name": "Franziskaner Premium Weissbier Naturtrüb",
+    "brewery_name": "Spaten-Franziskaner-Löwenbräu-Gruppe",
+    "rating_score": 3.69,
+    "rating_count": 470847,
+    "beer_slug": "spaten-franziskaner-lowenbrau-gruppe-franziskaner-premium-weissbier",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-14564_16384_sm.jpeg"
+  },
+  "141632": {
+    "bid": 14564,
+    "beer_name": "Franziskaner Premium Weissbier Naturtrüb",
+    "brewery_name": "Spaten-Franziskaner-Löwenbräu-Gruppe",
+    "rating_score": 3.69,
+    "rating_count": 470847,
+    "beer_slug": "spaten-franziskaner-lowenbrau-gruppe-franziskaner-premium-weissbier",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-14564_16384_sm.jpeg"
+  },
+  "3171535": {
+    "bid": 1920392,
+    "beer_name": "A Moment of Clarity",
+    "brewery_name": "Beerbliotek",
+    "rating_score": 3.6,
+    "rating_count": 42348,
+    "beer_slug": "beerbliotek-a-moment-of-clarity",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1920392_ccea8_sm.jpeg"
+  },
+  "115435": {
+    "bid": 5848,
+    "beer_name": "Corona Extra",
+    "brewery_name": "Grupo Modelo",
+    "rating_score": 3.16,
+    "rating_count": 706387,
+    "beer_slug": "grupo-modelo-corona-extra",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5848_e34c0_sm.jpeg"
+  },
+  "166935": {
+    "bid": 3784,
+    "beer_name": "Bud Light",
+    "brewery_name": "Anheuser-Busch",
+    "rating_score": 2.35,
+    "rating_count": 472705,
+    "beer_slug": "anheuser-busch-bud-light",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3784_0e2c3_sm.jpeg"
+  },
+  "169935": {
+    "bid": 55370,
+    "beer_name": "Svensk Starköl Premium Pilsner",
+    "brewery_name": "Åbro Bryggeri",
+    "rating_score": 2.57,
+    "rating_count": 14338,
+    "beer_slug": "abro-bryggeri-svensk-starkol-premium-pilsner",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-55370_7bc04_sm.jpeg"
+  },
+  "1160535": {
+    "bid": 2115756,
+    "beer_name": "TT Pilsner EKO (4.5%)",
+    "brewery_name": "Three Towns Independent Brewers",
+    "rating_score": 2.72,
+    "rating_count": 19353,
+    "beer_slug": "three-towns-independent-brewers-tt-pilsner-eko-4-5",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2115756_b134a_sm.jpeg"
+  },
+  "148535": {
+    "bid": 6870,
+    "beer_name": "Beck's",
+    "brewery_name": "Brauerei Beck",
+    "rating_score": 2.96,
+    "rating_count": 264498,
+    "beer_slug": "brauerei-beck-beck-s",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6870_b6a22_sm.jpeg"
+  },
+  "247032": {
+    "bid": 3235,
+    "beer_name": "Münchner Hell / Münchner Lager / Original Munich Lager",
+    "brewery_name": "Paulaner Brauerei",
+    "rating_score": 3.46,
+    "rating_count": 242318,
+    "beer_slug": "paulaner-brauerei-munchner-hell-munchner-lager-original-munich-lager",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3235_c64ae_sm.jpeg"
+  },
+  "8895435": {
+    "bid": 6325209,
+    "beer_name": "Camping öl",
+    "brewery_name": "Norra Vångas Bryggeri AB",
+    "rating_score": 3.34,
+    "rating_count": 97,
+    "beer_slug": "norra-vangas-bryggeri-ab-camping-ol",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-526129_c04cc.jpeg"
+  },
+  "8800235": null
 }
