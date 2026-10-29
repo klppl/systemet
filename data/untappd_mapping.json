@@ -20243,5 +20243,15 @@
     "rating_count": 34,
     "beer_slug": "pine-brewing-company-the-pushy-parrot-s-new-england-session-ipa",
     "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-152128_d447f.jpeg"
+  },
+  "8826201": null,
+  "8810403": {
+    "bid": 6729347,
+    "beer_name": "North Cat Lager",
+    "brewery_name": "Krönleins Bryggeri",
+    "rating_score": 3.24,
+    "rating_count": 93,
+    "beer_slug": "kronleins-bryggeri-northcat",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-KronleinsBryggeri_11048.jpeg"
   }
 }
