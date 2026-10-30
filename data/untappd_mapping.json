@@ -20253,5 +20253,61 @@
     "rating_count": 93,
     "beer_slug": "kronleins-bryggeri-northcat",
     "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-KronleinsBryggeri_11048.jpeg"
+  },
+  "1342035": {
+    "bid": 48664,
+    "beer_name": "Double Bulldog DIPA",
+    "brewery_name": "Gotlands Bryggeri",
+    "rating_score": 3.53,
+    "rating_count": 11803,
+    "beer_slug": "gotlands-bryggeri-double-bulldog-dipa",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-48664_aa815_sm.jpeg"
+  },
+  "1056034": {
+    "bid": 7650761,
+    "beer_name": "Fresh Hop Pivot Pils",
+    "brewery_name": "O/O Brewing ",
+    "rating_score": 0,
+    "rating_count": 0,
+    "beer_slug": "o-o-brewing-fresh-hop-pivot-pils",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-oobrewing_58318.jpeg"
+  },
+  "1051535": {
+    "bid": 6582203,
+    "beer_name": "Tont",
+    "brewery_name": "Pühaste ",
+    "rating_score": 3.99,
+    "rating_count": 1602,
+    "beer_slug": "puhaste-brewery-tont",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6582203_07639_sm.jpeg"
+  },
+  "1054401": null,
+  "1053701": null,
+  "1031401": {
+    "bid": 1300286,
+    "beer_name": "Stammberg Bock",
+    "brewery_name": "Brauerei Knoblach Schammelsdorf",
+    "rating_score": 3.7,
+    "rating_count": 2263,
+    "beer_slug": "brauerei-knoblach-schammelsdorf-schammelsdorfer-stammberg-bock",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1300286_49073_sm.jpeg"
+  },
+  "1047201": {
+    "bid": 12897,
+    "beer_name": "Père Noël",
+    "brewery_name": "Brouwerij De Ranke",
+    "rating_score": 3.46,
+    "rating_count": 41666,
+    "beer_slug": "brouwerij-de-ranke-pere-noel",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-12897_b4650_sm.jpeg"
+  },
+  "8980601": {
+    "bid": 6646,
+    "beer_name": "La Trappe Isid'or",
+    "brewery_name": "Bierbrouwerij de Koningshoeven",
+    "rating_score": 3.74,
+    "rating_count": 195221,
+    "beer_slug": "bierbrouwerij-de-koningshoeven-la-trappe-isid-or",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6646_6f88a_sm.jpeg"
   }
 }
