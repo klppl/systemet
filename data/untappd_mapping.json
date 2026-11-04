@@ -20309,5 +20309,14 @@
     "rating_count": 195221,
     "beer_slug": "bierbrouwerij-de-koningshoeven-la-trappe-isid-or",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6646_6f88a_sm.jpeg"
+  },
+  "8845134": {
+    "bid": 6448717,
+    "beer_name": "JULPILSNER",
+    "brewery_name": "Stigbergets Bryggeri",
+    "rating_score": 3.44,
+    "rating_count": 612,
+    "beer_slug": "stigbergets-bryggeri-julpilsner",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6448717_4437d_sm.jpeg"
   }
 }
