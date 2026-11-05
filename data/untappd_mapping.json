@@ -20318,5 +20318,14 @@
     "rating_count": 612,
     "beer_slug": "stigbergets-bryggeri-julpilsner",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6448717_4437d_sm.jpeg"
+  },
+  "8837835": {
+    "bid": 4563397,
+    "beer_name": "Santa's Hop Sack",
+    "brewery_name": "Amundsen Brewery",
+    "rating_score": 3.53,
+    "rating_count": 6724,
+    "beer_slug": "amundsen-brewery-santa-s-hop-sack",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4563397_8b702_sm.jpeg"
   }
 }
