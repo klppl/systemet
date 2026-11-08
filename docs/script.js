@@ -346,6 +346,13 @@
         renderSlip();
     });
     els.slipToggle.addEventListener('click', () => setSlipOpen(!els.slip.classList.contains('is-open')));
+    // A tap outside the open slip only closes it; it must not also hit the row underneath.
+    document.addEventListener('click', (e) => {
+        if (!els.slip.classList.contains('is-open') || els.slip.contains(e.target)) return;
+        e.preventDefault();
+        e.stopPropagation();
+        setSlipOpen(false);
+    }, true);
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && els.slip.classList.contains('is-open')) setSlipOpen(false);
     });
