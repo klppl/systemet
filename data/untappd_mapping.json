@@ -20428,5 +20428,23 @@
     "beer_slug": "nogne-o-nordic-noir-4-fortified-ed",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-7176516_fcc0a_sm.jpeg"
   },
-  "1349434": null
+  "1349434": null,
+  "8891303": {
+    "bid": 6359649,
+    "beer_name": "Toasted Delight",
+    "brewery_name": "The Bruery",
+    "rating_score": 4.28,
+    "rating_count": 372,
+    "beer_slug": "the-bruery-toasted-delight",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6359649_95dda_sm.jpeg"
+  },
+  "8899403": {
+    "bid": 6574220,
+    "beer_name": "After School Special",
+    "brewery_name": "The Bruery",
+    "rating_score": 4.21,
+    "rating_count": 575,
+    "beer_slug": "the-bruery-after-school-special",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-1246_6c478.jpeg"
+  }
 }
