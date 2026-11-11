@@ -20446,5 +20446,14 @@
     "rating_count": 575,
     "beer_slug": "the-bruery-after-school-special",
     "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-1246_6c478.jpeg"
+  },
+  "8849003": {
+    "bid": 6430654,
+    "beer_name": "The Pact",
+    "brewery_name": "The Bruery",
+    "rating_score": 4.15,
+    "rating_count": 468,
+    "beer_slug": "the-bruery-the-pact",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6430654_722f4_sm.jpeg"
   }
 }
