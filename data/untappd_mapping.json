@@ -20521,5 +20521,14 @@
     "rating_count": 2589,
     "beer_slug": "deschutes-brewery-fresh-squeezed-old-fashioned",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3560805_bad1a_sm.jpeg"
+  },
+  "8884734": {
+    "bid": 6859064,
+    "beer_name": "Tendril",
+    "brewery_name": "GlassHouse Beer Co",
+    "rating_score": 3.94,
+    "rating_count": 360,
+    "beer_slug": "glasshouse-beer-co-tendril",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6859064_53140_sm.jpeg"
   }
 }
