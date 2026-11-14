@@ -20455,5 +20455,71 @@
     "rating_count": 468,
     "beer_slug": "the-bruery-the-pact",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6430654_722f4_sm.jpeg"
+  },
+  "8847703": {
+    "bid": 6824137,
+    "beer_name": "Imperial Tonka Stout",
+    "brewery_name": "Brasserie du Grand Paris",
+    "rating_score": 3.99,
+    "rating_count": 28,
+    "beer_slug": "brasserie-du-grand-paris-imperial-tonka-stout",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6824137_40530_sm.jpeg"
+  },
+  "8859703": null,
+  "8835703": {
+    "bid": 6534948,
+    "beer_name": "Imperial Stout Cognac",
+    "brewery_name": "Brasserie du Grand Paris",
+    "rating_score": 4.11,
+    "rating_count": 97,
+    "beer_slug": "brasserie-du-grand-paris-imperial-stout-cognac",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6534948_79f7c_sm.jpeg"
+  },
+  "1002934": {
+    "bid": 1221,
+    "beer_name": "Horny Devil",
+    "brewery_name": "AleSmith Brewing Company",
+    "rating_score": 3.84,
+    "rating_count": 26663,
+    "beer_slug": "alesmith-brewing-company-horny-devil",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1221_d39f9_sm.jpeg"
+  },
+  "1027435": {
+    "bid": 7496927,
+    "beer_name": "Old Jock Barrel Aged Wee Heavy",
+    "brewery_name": "Broughton Ales",
+    "rating_score": 0,
+    "rating_count": 0,
+    "beer_slug": "broughton-ales-old-jock-barrel-aged-wee-heavy",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-7496927_4bbee_sm.jpeg"
+  },
+  "1048132": null,
+  "1002603": null,
+  "1045803": {
+    "bid": 5551772,
+    "beer_name": "Arctos Imperial Stout 2022",
+    "brewery_name": "O/O Brewing ",
+    "rating_score": 4.04,
+    "rating_count": 1089,
+    "beer_slug": "o-o-brewing-arctos-imperial-stout-2022",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5551772_f20b5_sm.jpeg"
+  },
+  "1036803": {
+    "bid": 4254276,
+    "beer_name": "Vanilla Villain",
+    "brewery_name": "The Bruery",
+    "rating_score": 4.45,
+    "rating_count": 1697,
+    "beer_slug": "the-bruery-vanilla-villain",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4254276_b5592_sm.jpeg"
+  },
+  "1046403": {
+    "bid": 3560805,
+    "beer_name": "Fresh Squeezed Old Fashioned",
+    "brewery_name": "Deschutes Brewery",
+    "rating_score": 3.71,
+    "rating_count": 2589,
+    "beer_slug": "deschutes-brewery-fresh-squeezed-old-fashioned",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3560805_bad1a_sm.jpeg"
   }
 }
