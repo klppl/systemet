@@ -20530,5 +20530,32 @@
     "rating_count": 360,
     "beer_slug": "glasshouse-beer-co-tendril",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6859064_53140_sm.jpeg"
+  },
+  "88364": {
+    "bid": 5801869,
+    "beer_name": "Biet (2023 - Bottle)",
+    "brewery_name": "Boerenerf",
+    "rating_score": 4.02,
+    "rating_count": 466,
+    "beer_slug": "boerenerf-biet-2023-bottle",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5801869_d3484_sm.jpeg"
+  },
+  "8895003": {
+    "bid": 6249056,
+    "beer_name": "Meubles Blender's Choice",
+    "brewery_name": "The Bruery",
+    "rating_score": 4.2,
+    "rating_count": 232,
+    "beer_slug": "the-bruery-meubles-blender-s-choice",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6249056_4d515_sm.jpeg"
+  },
+  "8891103": {
+    "bid": 6421863,
+    "beer_name": "The Gift",
+    "brewery_name": "The Bruery",
+    "rating_score": 4.15,
+    "rating_count": 268,
+    "beer_slug": "the-bruery-the-gift",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6421863_49f27_sm.jpeg"
   }
 }
