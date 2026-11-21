@@ -1,20 +1,5 @@
 [
   {
-    "id": "8884734",
-    "date": 1794614400000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3617534",
-    "date": 1794614400000,
-    "reason": "Ny produkt."
-  },
-  {
-    "id": "3059035",
-    "date": 1794614400000,
-    "reason": "Ny produkt."
-  },
-  {
     "id": "8891103",
     "date": 1794787200000,
     "reason": "Ny produkt."
@@ -832,6 +817,16 @@
   {
     "id": "1031534",
     "date": 1795132800000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "3005235",
+    "date": 1795219200000,
+    "reason": "Ny produkt."
+  },
+  {
+    "id": "3054035",
+    "date": 1795219200000,
     "reason": "Ny produkt."
   }
 ]
