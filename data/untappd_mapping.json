@@ -22223,5 +22223,87 @@
   },
   "3352903": null,
   "3551603": null,
-  "3322301": null
+  "3322301": null,
+  "3859635": {
+    "bid": 5095201,
+    "beer_name": "Sydväst",
+    "brewery_name": "Smögenbryggarn",
+    "rating_score": 3.21,
+    "rating_count": 2890,
+    "beer_slug": "smogenbryggarn-sydvast",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-461649_7db6b.jpeg"
+  },
+  "3226535": {
+    "bid": 6123617,
+    "beer_name": "Hawaii 2.0",
+    "brewery_name": "Brewhuslän",
+    "rating_score": 3.34,
+    "rating_count": 815,
+    "beer_slug": "brewhuslan-hawaii-2-0",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-495192_4ef4c.jpeg"
+  },
+  "3845734": {
+    "bid": 1407100,
+    "beer_name": "Lorita",
+    "brewery_name": "Amundsen Brewery",
+    "rating_score": 3.45,
+    "rating_count": 37101,
+    "beer_slug": "amundsen-brewery-lorita",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-1407100_124d2_sm.jpeg"
+  },
+  "3844534": null,
+  "3077234": {
+    "bid": 5764811,
+    "beer_name": "Razzle Dazzle - Raspberry & Mango Pastry Sour",
+    "brewery_name": "Amundsen Brewery",
+    "rating_score": 3.63,
+    "rating_count": 6427,
+    "beer_slug": "amundsen-brewery-razzle-dazzle-raspberry-and-mango-pastry-sour",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5764811_6b807_sm.jpeg"
+  },
+  "3267335": {
+    "bid": 6261208,
+    "beer_name": "En Kall Bertil",
+    "brewery_name": "Stay True Brewing",
+    "rating_score": 3.15,
+    "rating_count": 719,
+    "beer_slug": "stay-true-brewing-en-kall-bertil",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-547237_d7e7b.jpeg"
+  },
+  "3327835": {
+    "bid": 6179116,
+    "beer_name": "Bofors Pilsner",
+    "brewery_name": "Stay True Brewing",
+    "rating_score": 3.18,
+    "rating_count": 667,
+    "beer_slug": "stay-true-brewing-bofors-pilsner",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-547237_d7e7b.jpeg"
+  },
+  "3756135": {
+    "bid": 3084391,
+    "beer_name": "Vacationland Juice",
+    "brewery_name": "Business Monkey",
+    "rating_score": 3.62,
+    "rating_count": 2626,
+    "beer_slug": "business-monkey-vacationland-juice",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3084391_5e016_sm.jpeg"
+  },
+  "3714234": {
+    "bid": 4471958,
+    "beer_name": "Helles Good Lager",
+    "brewery_name": "Amundsen Brewery",
+    "rating_score": 3.35,
+    "rating_count": 8153,
+    "beer_slug": "amundsen-brewery-helles-good-lager",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4471958_1d474_sm.jpeg"
+  },
+  "8813601": {
+    "bid": 5799039,
+    "beer_name": "Kri-vino (2023)",
+    "brewery_name": "Boerenerf",
+    "rating_score": 4.28,
+    "rating_count": 764,
+    "beer_slug": "boerenerf-kri-vino-2023",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5799039_a20be_sm.jpeg"
+  }
 }
