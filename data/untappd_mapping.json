@@ -22305,5 +22305,50 @@
     "rating_count": 764,
     "beer_slug": "boerenerf-kri-vino-2023",
     "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5799039_a20be_sm.jpeg"
+  },
+  "3355935": {
+    "bid": 3294456,
+    "beer_name": "Kåtöl - Modern Pale Ale",
+    "brewery_name": "Northern Brewers Norrlandsbryggarna",
+    "rating_score": 3.19,
+    "rating_count": 1268,
+    "beer_slug": "northern-brewers-norrlandsbryggarna-katol-modern-pale-ale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3294456_4f513_sm.jpeg"
+  },
+  "3241635": {
+    "bid": 5151910,
+    "beer_name": "LIPA IPA Från Lappland",
+    "brewery_name": "Northern Brewers Norrlandsbryggarna",
+    "rating_score": 3.28,
+    "rating_count": 1115,
+    "beer_slug": "northern-brewers-norrlandsbryggarna-lipa-ipa-fran-lappland",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-338358_b9f07.jpeg"
+  },
+  "3226235": {
+    "bid": 5691744,
+    "beer_name": "Citra Royale",
+    "brewery_name": "Bearded Rabbit Brewery ",
+    "rating_score": 3.57,
+    "rating_count": 2435,
+    "beer_slug": "bearded-rabbit-brewery-citra-royale",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-5691744_efbd7_sm.jpeg"
+  },
+  "3283035": {
+    "bid": 2006555,
+    "beer_name": "Frölunda IPA",
+    "brewery_name": "Göteborgs Nya Bryggeri",
+    "rating_score": 3.26,
+    "rating_count": 3928,
+    "beer_slug": "goteborgs-nya-bryggeri-frolunda-ipa",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-2006555_30c39_sm.jpeg"
+  },
+  "8823006": {
+    "bid": 6771977,
+    "beer_name": "Maskinisten",
+    "brewery_name": "Ahlafors Bryggerier",
+    "rating_score": 3.21,
+    "rating_count": 260,
+    "beer_slug": "ahlafors-bryggerier-maskinisten",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-9574_33d47.jpeg"
   }
 }
