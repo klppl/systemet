@@ -22350,5 +22350,80 @@
     "rating_count": 260,
     "beer_slug": "ahlafors-bryggerier-maskinisten",
     "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-9574_33d47.jpeg"
+  },
+  "3786835": {
+    "bid": 4720785,
+    "beer_name": "In Between",
+    "brewery_name": "Batch Brewing",
+    "rating_score": 3.81,
+    "rating_count": 1257,
+    "beer_slug": "barkarby-brewing-in-between",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-4720785_fc7ae_sm.jpeg"
+  },
+  "1031534": {
+    "bid": 7003291,
+    "beer_name": "Extravagant: Ultra High Alcohol Stout",
+    "brewery_name": "Moersleutel Craft Brewery",
+    "rating_score": 4.12,
+    "rating_count": 970,
+    "beer_slug": "moersleutel-craft-brewery-extravagant-ultra-high-alcohol-stout",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-7003291_f4c22_sm.jpeg"
+  },
+  "1045734": null,
+  "1051734": null,
+  "1037001": {
+    "bid": 10052,
+    "beer_name": "Aecht Schlenkerla Rauchbier – Urbock",
+    "brewery_name": "Schlenkerla (\"Heller-Bräu\" Trum)",
+    "rating_score": 3.74,
+    "rating_count": 49340,
+    "beer_slug": "schlenkerla-heller-brau-trum-aecht-schlenkerla-rauchbier-urbock",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-10052_49742_sm.jpeg"
+  },
+  "5123001": null,
+  "1086301": {
+    "bid": 6818068,
+    "beer_name": "3 Fonteinen Zenne y Frontera Manzanilla Edition (season 24|25) Blend No. 12",
+    "brewery_name": "Brouwerij 3 Fonteinen",
+    "rating_score": 4.32,
+    "rating_count": 229,
+    "beer_slug": "brouwerij-3-fonteinen-3-fonteinen-zenne-y-frontera-manzanilla-edition-season-24-25-blend-no-12",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6818068_5fa49_sm.jpeg"
+  },
+  "1088201": {
+    "bid": 6637002,
+    "beer_name": "Oude Gueuze Tilquin à l'ancienne - Cuvée Angélique (2024-2025)",
+    "brewery_name": "Gueuzerie Tilquin",
+    "rating_score": 4.11,
+    "rating_count": 218,
+    "beer_slug": "gueuzerie-tilquin-oude-gueuze-tilquin-a-l-ancienne-cuvee-angelique-2024-2025",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-6637002_5aa89_sm.jpeg"
+  },
+  "1054501": {
+    "bid": 7021872,
+    "beer_name": "Excellence Du Val-Dieu Gran Vin Sauternes (2026)",
+    "brewery_name": "Brasserie de l'Abbaye du Val-Dieu",
+    "rating_score": 3.94,
+    "rating_count": 92,
+    "beer_slug": "brasserie-de-l-abbaye-du-val-dieu-excellence-du-val-dieu-gran-vin-sauternes-2026",
+    "beer_label": "https://assets.untappd.com/site/brewery_logos/brewery-175_19ca9.jpeg"
+  },
+  "1346501": {
+    "bid": 3745328,
+    "beer_name": "OS-wALT",
+    "brewery_name": "Brauerei Kundmüller",
+    "rating_score": 3.4,
+    "rating_count": 5782,
+    "beer_slug": "brauerei-kundmuller-os-walt",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3745328_9c207_sm.jpeg"
+  },
+  "1345801": {
+    "bid": 3954,
+    "beer_name": "Duchesse de Bourgogne",
+    "brewery_name": "Brouwerij Verhaeghe",
+    "rating_score": 3.64,
+    "rating_count": 272658,
+    "beer_slug": "brouwerij-verhaeghe-duchesse-de-bourgogne",
+    "beer_label": "https://assets.untappd.com/site/beer_logos/beer-3954_c81f1_sm.jpeg"
   }
 }
